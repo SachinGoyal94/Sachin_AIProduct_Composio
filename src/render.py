@@ -393,9 +393,7 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     <p class="slede">Every artifact behind it is committed. Re-run the pipeline and
       you get the same page back; change the data and the page follows.</p>
   </div>
-  <div class="two-col">
-    <div>
-      <div class="codeblock"><span class="cm"># full run - drafts with Gemini, verifies live</span><br>
+  <div class="codeblock"><span class="cm"># full run - drafts with Gemini, verifies live</span><br>
 <span class="k">git</span> clone &lt;this repo&gt; &amp;&amp; cd composio-app-research<br>
 <span class="k">python</span> -m venv .venv &amp;&amp; .venv\\Scripts\\activate  <span class="cm"># (or bin/)</span><br>
 <span class="k">pip</span> install -r requirements.txt<br>
@@ -403,31 +401,29 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
 <span class="k">python</span> src/run_all.py<br><br>
 <span class="cm"># offline - rebuild page from committed artifacts</span><br>
 <span class="k">python</span> src/run_all.py --offline</div>
-      <pre class="tree">{tree}</pre>
-    </div>
-    <div>
-      <h4 style="margin:4px 0 10px;font-size:15px">Artifacts (the receipts)</h4>
-      <div class="artifacts">
-        <a class="art" href="out/draft_pass1.csv"><code>draft_pass1.csv</code><span>untouched pass-1 draft</span></a>
-        <a class="art" href="out/verification_pass1.json"><code>verification_pass1.json</code><span>live checks, pass 1</span></a>
-        <a class="art" href="out/verification_pass2.json"><code>verification_pass2.json</code><span>live checks, pass 2</span></a>
-        <a class="art" href="data/research_drafts.csv"><code>research_drafts.csv</code><span>agent proposals</span></a>
-        <a class="art" href="data/overrides.csv"><code>overrides.csv</code><span>human-promoted fixes</span></a>
-        <a class="art" href="out/apps_pass2.csv"><code>apps_pass2.csv</code><span>verified dataset</span></a>
-        <a class="art" href="out/audit_pass1.json"><code>audit_pass1.json</code><span>audit, pass 1</span></a>
-        <a class="art" href="out/audit_pass2.json"><code>audit_pass2.json</code><span>audit, pass 2</span></a>
-        <a class="art" href="out/patterns.json"><code>patterns.json</code><span>computed patterns</span></a>
-        <a class="art" href="out/research_report.json"><code>research_report.json</code><span>machine-readable mirror</span></a>
-      </div>
-      <div class="callout amber" style="margin-top:16px"><h4>Composio cross-check</h4>
-        <p style="margin:0">{esc(composio.get('note') or 'not run')} -
-        method: {esc(composio.get('method') or 'n/a')}
-        {f'· {composio["toolkits_seen"]} toolkits seen, {len(composio.get("apps_covered", []))} of our apps covered' if composio.get('ok') else ''}</p></div>
-      <div class="callout" style="background:#eef6ff;border:1px solid #cfe1ff;margin-top:16px">
-        <b>Deploying the page:</b> index.html is a single static file with zero
-        external dependencies - drop it on GitHub Pages / Netlify / any static
-        host, or just open it from disk. It works offline.</div>
-    </div>
+  <pre class="tree">{tree}</pre>
+  <h4 style="margin:22px 0 10px;font-size:15px">Artifacts (the receipts)</h4>
+  <div class="artifacts">
+    <a class="art" href="out/draft_pass1.csv"><code>draft_pass1.csv</code><span>untouched pass-1 draft</span></a>
+    <a class="art" href="out/verification_pass1.json"><code>verification_pass1.json</code><span>live checks, pass 1</span></a>
+    <a class="art" href="out/verification_pass2.json"><code>verification_pass2.json</code><span>live checks, pass 2</span></a>
+    <a class="art" href="data/research_drafts.csv"><code>research_drafts.csv</code><span>agent proposals</span></a>
+    <a class="art" href="data/overrides.csv"><code>overrides.csv</code><span>human-promoted fixes</span></a>
+    <a class="art" href="out/apps_pass2.csv"><code>apps_pass2.csv</code><span>verified dataset</span></a>
+    <a class="art" href="out/audit_pass1.json"><code>audit_pass1.json</code><span>audit, pass 1</span></a>
+    <a class="art" href="out/audit_pass2.json"><code>audit_pass2.json</code><span>audit, pass 2</span></a>
+    <a class="art" href="out/patterns.json"><code>patterns.json</code><span>computed patterns</span></a>
+    <a class="art" href="out/research_report.json"><code>research_report.json</code><span>machine-readable mirror</span></a>
+  </div>
+  <div class="two-col" style="margin-top:16px">
+    <div class="callout amber" style="margin-top:0"><h4>Composio cross-check</h4>
+      <p style="margin:0">{esc(composio.get('note') or 'not run')} -
+      method: {esc(composio.get('method') or 'n/a')}
+      {f'· {composio["toolkits_seen"]} toolkits seen, {len(composio.get("apps_covered", []))} of our apps covered' if composio.get('ok') else ''}</p></div>
+    <div class="callout" style="background:#eef6ff;border:1px solid #cfe1ff;margin-top:0">
+      <b>Deploying the page:</b> index.html is a single static file with zero
+      external dependencies - drop it on GitHub Pages / Netlify / any static
+      host, or just open it from disk. It works offline.</div>
   </div>
 </div></section>"""
 
