@@ -1,0 +1,11 @@
+  batch 1-10: 10 drafts
+  batch 11-20: 10 drafts
+  batch 21-30: 10 drafts
+  batch 31-40: 10 drafts
+  batch 41-50: 10 drafts
+  batch 51-60: 10 drafts
+  batch 61-70: 10 drafts
+  batch 71-80: 10 drafts
+  batch 81-90: 10 drafts
+  batch 91-100: 10 drafts
+draft pass 1: 100 rows -> draft_pass1.csv (10 calls, model=gemini-2.5-flash)

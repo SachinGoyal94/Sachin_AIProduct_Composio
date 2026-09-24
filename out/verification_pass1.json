@@ -1,0 +1,1726 @@
+{
+  "pass": 1,
+  "rows": 100,
+  "evidence_urls": 100,
+  "rows_with_live_evidence": 82,
+  "rows_with_dead_evidence": 18,
+  "flagged_rows": 48,
+  "clean_rows": 52,
+  "flag_counts": {
+    "evidence-not-docs-host": 21,
+    "dead-evidence": 18,
+    "evidence-not-doc-like": 16,
+    "low-confidence": 4,
+    "contradiction:gated-but-ready": 1
+  },
+  "per_row": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "evidence": [
+        {
+          "url": "https://developer.salesforce.com/docs/",
+          "status": 403,
+          "final_url": "https://developer.salesforce.com/docs/",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "evidence": [
+        {
+          "url": "https://developers.hubspot.com/docs/api/overview",
+          "status": 200,
+          "final_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 3,
+      "name": "Pipedrive",
+      "evidence": [
+        {
+          "url": "https://developers.pipedrive.com/docs/api/v1",
+          "status": 0,
+          "final_url": "https://developers.pipedrive.com/docs/api/v1",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Attio",
+      "evidence": [
+        {
+          "url": "https://docs.attio.com/reference/api",
+          "status": 404,
+          "final_url": "https://docs.attio.com/reference/api",
+          "redirected": false,
+          "ok": false,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "evidence": [
+        {
+          "url": "https://docs.twenty.com/api-reference/",
+          "status": 404,
+          "final_url": "https://docs.twenty.com/api-reference",
+          "redirected": true,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Podio",
+      "evidence": [
+        {
+          "url": "https://developers.podio.com/doc/api",
+          "status": 410,
+          "final_url": "https://developers.podio.com/doc/api",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Zoho CRM",
+      "evidence": [
+        {
+          "url": "https://www.zoho.com/crm/developer/docs/api/v5/",
+          "status": 200,
+          "final_url": "https://www.zoho.com/crm/developer/docs/api/v5/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 8,
+      "name": "Close",
+      "evidence": [
+        {
+          "url": "https://developer.close.com/api/v1/",
+          "status": 404,
+          "final_url": "https://developer.close.com/api/v1/",
+          "redirected": false,
+          "ok": false,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Copper",
+      "evidence": [
+        {
+          "url": "https://developer.copper.com/",
+          "status": 200,
+          "final_url": "https://developer.copper.com/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "evidence": [
+        {
+          "url": "https://api.docs.dealcloud.com",
+          "status": 200,
+          "final_url": "https://api.docs.dealcloud.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "evidence": [
+        {
+          "url": "https://developer.zendesk.com/api-reference/",
+          "status": 200,
+          "final_url": "https://developer.zendesk.com/api-reference/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "evidence": [
+        {
+          "url": "https://developers.intercom.com/intercom-api-reference/",
+          "status": 200,
+          "final_url": "https://developers.intercom.com/docs/references/introduction",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "evidence": [
+        {
+          "url": "https://developers.freshdesk.com/api/",
+          "status": 200,
+          "final_url": "https://developers.freshdesk.com/api/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 14,
+      "name": "Front",
+      "evidence": [
+        {
+          "url": "https://dev.frontapp.com/reference/",
+          "status": 200,
+          "final_url": "https://dev.frontapp.com/reference/introduction",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 15,
+      "name": "Pylon",
+      "evidence": [
+        {
+          "url": "https://docs.usepylon.com/api",
+          "status": 404,
+          "final_url": "https://docs.usepylon.com/pylon-docs/api",
+          "redirected": true,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "LiveAgent",
+      "evidence": [
+        {
+          "url": "https://support.liveagent.com/docs/api/",
+          "status": 404,
+          "final_url": "https://support.liveagent.com/docs/api/",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Plain",
+      "evidence": [
+        {
+          "url": "https://docs.plain.com/api",
+          "status": 200,
+          "final_url": "https://www.plain.com/docs/product/what-is-plain",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 18,
+      "name": "Help Scout",
+      "evidence": [
+        {
+          "url": "https://developer.helpscout.com/api/",
+          "status": 404,
+          "final_url": "https://developer.helpscout.com/api/",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Gorgias",
+      "evidence": [
+        {
+          "url": "https://developers.gorgias.com/reference",
+          "status": 200,
+          "final_url": "https://developers.gorgias.com/reference/introduction",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 20,
+      "name": "Gladly",
+      "evidence": [
+        {
+          "url": "https://docs.gladly.com/api/",
+          "status": 0,
+          "final_url": "https://docs.gladly.com/api/",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": "ConnectionError: HTTPSConnectionPool(host='docs.gladly.com', port=443): Max retries exceeded with url: /api/ (Caused by NameResolutionError(\"HTTPSConnection(hos"
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "evidence": [
+        {
+          "url": "https://api.slack.com",
+          "status": 200,
+          "final_url": "https://docs.slack.dev/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "evidence": [
+        {
+          "url": "https://twilio.com/docs/api",
+          "status": 200,
+          "final_url": "https://www.twilio.com:443/docs",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 23,
+      "name": "Zoho Cliq",
+      "evidence": [
+        {
+          "url": "https://zoho.com/cliq/api/",
+          "status": 404,
+          "final_url": "https://www.zoho.com/cliq/api/",
+          "redirected": true,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Lark (Larksuite)",
+      "evidence": [
+        {
+          "url": "https://open.larksuite.com/document/home",
+          "status": 200,
+          "final_url": "https://open.larksuite.com/document/home",
+          "redirected": false,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "evidence": [
+        {
+          "url": "https://pumble.com/help/integrations/",
+          "status": 200,
+          "final_url": "https://pumble.com/help/integrations/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Discord",
+      "evidence": [
+        {
+          "url": "https://discord.com/developers/docs/intro",
+          "status": 200,
+          "final_url": "https://docs.discord.com/developers/intro",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "evidence": [
+        {
+          "url": "https://core.telegram.org/bots/api",
+          "status": 200,
+          "final_url": "https://core.telegram.org/bots/api",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "evidence": [
+        {
+          "url": "https://developers.facebook.com/docs/whatsapp",
+          "status": 200,
+          "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 29,
+      "name": "Aircall",
+      "evidence": [
+        {
+          "url": "https://developer.aircall.io/api-documentation/",
+          "status": 404,
+          "final_url": "https://developer.aircall.io/api-documentation/",
+          "redirected": false,
+          "ok": false,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Vonage",
+      "evidence": [
+        {
+          "url": "https://developer.vonage.com/api-overview",
+          "status": 404,
+          "final_url": "https://developer.vonage.com/en/api-overview",
+          "redirected": true,
+          "ok": false,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Google Ads",
+      "evidence": [
+        {
+          "url": "https://developers.google.com/google-ads",
+          "status": 200,
+          "final_url": "https://developers.google.com/google-ads",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 32,
+      "name": "Meta Ads",
+      "evidence": [
+        {
+          "url": "https://developers.facebook.com/docs/marketing-apis",
+          "status": 200,
+          "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 33,
+      "name": "LinkedIn Ads",
+      "evidence": [
+        {
+          "url": "https://learn.microsoft.com/linkedin/marketing",
+          "status": 200,
+          "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-09",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "evidence": [
+        {
+          "url": "https://highlevel.stoplight.io",
+          "status": 200,
+          "final_url": "https://highlevel.stoplight.io/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "evidence": [
+        {
+          "url": "https://mailchimp.com/developer",
+          "status": 200,
+          "final_url": "https://mailchimp.com/developer/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "evidence": [
+        {
+          "url": "https://developers.klaviyo.com",
+          "status": 200,
+          "final_url": "https://developers.klaviyo.com/en",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 37,
+      "name": "systeme.io",
+      "evidence": [
+        {
+          "url": "https://help.systeme.io/article/207-api-documentation",
+          "status": 200,
+          "final_url": "https://help.systeme.io/article/207-api-documentation",
+          "redirected": false,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Pinterest",
+      "evidence": [
+        {
+          "url": "https://developers.pinterest.com",
+          "status": 200,
+          "final_url": "https://developers.pinterest.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 39,
+      "name": "Threads (Meta)",
+      "evidence": [
+        {
+          "url": "https://developers.facebook.com/docs/threads",
+          "status": 200,
+          "final_url": "https://developers.facebook.com/documentation/threads",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "evidence": [
+        {
+          "url": "https://docs.sendgrid.com",
+          "status": 200,
+          "final_url": "https://www.twilio.com:443/docs/sendgrid",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 41,
+      "name": "Shopify",
+      "evidence": [
+        {
+          "url": "https://shopify.dev",
+          "status": 200,
+          "final_url": "https://shopify.dev/docs",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "WooCommerce",
+      "evidence": [
+        {
+          "url": "https://woocommerce.com/document/woocommerce-rest-api",
+          "status": 200,
+          "final_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "evidence": [
+        {
+          "url": "https://developer.bigcommerce.com",
+          "status": 200,
+          "final_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "evidence": [
+        {
+          "url": "https://developer.salesforce.com/docs/commerce",
+          "status": 403,
+          "final_url": "https://developer.salesforce.com/docs/commerce",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Magento (Adobe Commerce)",
+      "evidence": [
+        {
+          "url": "https://developer.adobe.com/commerce",
+          "status": 200,
+          "final_url": "https://developer.adobe.com/commerce/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Squarespace",
+      "evidence": [
+        {
+          "url": "https://developers.squarespace.com",
+          "status": 200,
+          "final_url": "https://developers.squarespace.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 47,
+      "name": "Ecwid",
+      "evidence": [
+        {
+          "url": "https://api-docs.ecwid.com",
+          "status": 200,
+          "final_url": "https://docs.ecwid.com",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 48,
+      "name": "Gumroad",
+      "evidence": [
+        {
+          "url": "https://gumroad.com/api",
+          "status": 200,
+          "final_url": "https://gumroad.com/api",
+          "redirected": false,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Amazon Selling Partner",
+      "evidence": [
+        {
+          "url": "https://developer-docs.amazon.com/sp-api",
+          "status": 200,
+          "final_url": "https://developer-docs.amazon/sp-api",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 50,
+      "name": "fanbasis",
+      "evidence": [
+        {
+          "url": "https://fanbasis.com",
+          "status": 200,
+          "final_url": "https://commas.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "low-confidence",
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "DataForSEO",
+      "evidence": [
+        {
+          "url": "https://docs.dataforseo.com",
+          "status": 200,
+          "final_url": "https://docs.dataforseo.com/v3/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 52,
+      "name": "SE Ranking",
+      "evidence": [
+        {
+          "url": "https://seranking.com/api",
+          "status": 404,
+          "final_url": "https://seranking.com/api",
+          "redirected": false,
+          "ok": false,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "evidence": [
+        {
+          "url": "https://ahrefs.com/api",
+          "status": 200,
+          "final_url": "https://docs.ahrefs.com",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 54,
+      "name": "MrScraper",
+      "evidence": [
+        {
+          "url": "https://docs.mrscraper.com",
+          "status": 200,
+          "final_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 55,
+      "name": "Apify",
+      "evidence": [
+        {
+          "url": "https://docs.apify.com",
+          "status": 200,
+          "final_url": "https://docs.apify.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "evidence": [
+        {
+          "url": "https://firecrawl.dev",
+          "status": 200,
+          "final_url": "https://www.firecrawl.dev/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Bright Data",
+      "evidence": [
+        {
+          "url": "https://brightdata.com",
+          "status": 200,
+          "final_url": "https://brightdata.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "contradiction:gated-but-ready"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "evidence": [
+        {
+          "url": "https://github.com/sherlock-project/sherlock",
+          "status": 200,
+          "final_url": "https://github.com/sherlock-project/sherlock",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Waterfall.io",
+      "evidence": [
+        {
+          "url": "https://waterfall.io",
+          "status": 200,
+          "final_url": "https://www.waterfall.io/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "low-confidence"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Clay",
+      "evidence": [
+        {
+          "url": "https://clay.com",
+          "status": 200,
+          "final_url": "https://www.clay.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "evidence": [
+        {
+          "url": "https://docs.github.com/rest",
+          "status": 200,
+          "final_url": "https://docs.github.com/en/rest",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 62,
+      "name": "Vercel",
+      "evidence": [
+        {
+          "url": "https://vercel.com/docs/rest-api",
+          "status": 200,
+          "final_url": "https://vercel.com/docs/rest-api",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "evidence": [
+        {
+          "url": "https://docs.netlify.com/api",
+          "status": 200,
+          "final_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 64,
+      "name": "Cloudflare",
+      "evidence": [
+        {
+          "url": "https://developers.cloudflare.com/api",
+          "status": 200,
+          "final_url": "https://developers.cloudflare.com/api/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 65,
+      "name": "Supabase",
+      "evidence": [
+        {
+          "url": "https://supabase.com/docs",
+          "status": 200,
+          "final_url": "https://supabase.com/docs",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 66,
+      "name": "Neo4j",
+      "evidence": [
+        {
+          "url": "https://neo4j.com/docs",
+          "status": 200,
+          "final_url": "https://neo4j.com/docs/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 67,
+      "name": "Snowflake",
+      "evidence": [
+        {
+          "url": "https://docs.snowflake.com",
+          "status": 200,
+          "final_url": "https://docs.snowflake.com/en/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "MongoDB Atlas",
+      "evidence": [
+        {
+          "url": "https://mongodb.com/docs/atlas/api",
+          "status": 200,
+          "final_url": "https://www.mongodb.com/docs/atlas/api/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Datadog",
+      "evidence": [
+        {
+          "url": "https://docs.datadoghq.com/api",
+          "status": 200,
+          "final_url": "https://docs.datadoghq.com/api/latest/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 70,
+      "name": "Sentry",
+      "evidence": [
+        {
+          "url": "https://docs.sentry.io/api",
+          "status": 200,
+          "final_url": "https://docs.sentry.io/api/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 71,
+      "name": "Notion",
+      "evidence": [
+        {
+          "url": "https://developers.notion.com",
+          "status": 200,
+          "final_url": "https://developers.notion.com/guides/get-started/overview",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 72,
+      "name": "Airtable",
+      "evidence": [
+        {
+          "url": "https://airtable.com/developers",
+          "status": 200,
+          "final_url": "https://airtable.com/developers/agents",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 73,
+      "name": "Linear",
+      "evidence": [
+        {
+          "url": "https://developers.linear.app",
+          "status": 200,
+          "final_url": "https://linear.app/developers",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 74,
+      "name": "Jira",
+      "evidence": [
+        {
+          "url": "https://developer.atlassian.com",
+          "status": 200,
+          "final_url": "https://developer.atlassian.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 75,
+      "name": "Asana",
+      "evidence": [
+        {
+          "url": "https://developers.asana.com",
+          "status": 200,
+          "final_url": "https://developers.asana.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 76,
+      "name": "Monday.com",
+      "evidence": [
+        {
+          "url": "https://developer.monday.com",
+          "status": 200,
+          "final_url": "https://developer.monday.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 77,
+      "name": "ClickUp",
+      "evidence": [
+        {
+          "url": "https://clickup.com/api",
+          "status": 200,
+          "final_url": "https://developer.clickup.com",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 78,
+      "name": "Coda",
+      "evidence": [
+        {
+          "url": "https://coda.io/developers",
+          "status": 200,
+          "final_url": "https://docs.superhuman.com/developers/apis/v1",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 79,
+      "name": "Smartsheet",
+      "evidence": [
+        {
+          "url": "https://smartsheet.com/developers",
+          "status": 200,
+          "final_url": "https://developers.smartsheet.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "evidence": [
+        {
+          "url": "https://help.getharvest.com/api-v2",
+          "status": 200,
+          "final_url": "https://help.getharvest.com/api-v2/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 81,
+      "name": "Stripe",
+      "evidence": [
+        {
+          "url": "https://stripe.com/docs/api",
+          "status": 200,
+          "final_url": "https://docs.stripe.com/api",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "evidence": [
+        {
+          "url": "https://plaid.com/docs",
+          "status": 200,
+          "final_url": "https://plaid.com/docs/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 83,
+      "name": "Binance",
+      "evidence": [
+        {
+          "url": "https://binance-docs.github.io",
+          "status": 0,
+          "final_url": "https://binance-docs.github.io",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": "SSLError: HTTPSConnectionPool(host='binance-docs.github.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: "
+        }
+      ],
+      "flags": [
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "evidence": [
+        {
+          "url": "https://paygent.co.jp",
+          "status": 0,
+          "final_url": "https://paygent.co.jp",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": "ConnectionError: HTTPSConnectionPool(host='paygent.co.jp', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='pay"
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "iPayX",
+      "evidence": [
+        {
+          "url": "https://ipayx.ai/docs",
+          "status": 200,
+          "final_url": "https://www.ipayx.ai/docs",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "low-confidence",
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "QuickBooks",
+      "evidence": [
+        {
+          "url": "https://developer.intuit.com",
+          "status": 200,
+          "final_url": "https://developer.intuit.com/app/developer/homepage",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 87,
+      "name": "Xero",
+      "evidence": [
+        {
+          "url": "https://developer.xero.com",
+          "status": 200,
+          "final_url": "https://developer.xero.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 88,
+      "name": "Brex",
+      "evidence": [
+        {
+          "url": "https://developer.brex.com",
+          "status": 200,
+          "final_url": "https://developer.brex.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Ramp",
+      "evidence": [
+        {
+          "url": "https://docs.ramp.com",
+          "status": 200,
+          "final_url": "https://docs.ramp.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "evidence": [
+        {
+          "url": "https://pitchbook.com",
+          "status": 403,
+          "final_url": "https://pitchbook.com/",
+          "redirected": true,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "dead-evidence"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "evidence": [
+        {
+          "url": "https://cloud.google.com/gemini",
+          "status": 200,
+          "final_url": "https://cloud.google.com/ai/gemini",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "evidence": [
+        {
+          "url": "https://help.otter.ai",
+          "status": 200,
+          "final_url": "https://help.otter.ai/hc/en-us",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "evidence": [
+        {
+          "url": "https://fathom.video",
+          "status": 200,
+          "final_url": "https://www.fathom.ai/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Consensus",
+      "evidence": [
+        {
+          "url": "https://consensus.app",
+          "status": 200,
+          "final_url": "https://consensus.app/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host",
+        "evidence-not-doc-like"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Reducto",
+      "evidence": [
+        {
+          "url": "https://reducto.ai",
+          "status": 200,
+          "final_url": "https://reducto.ai/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Devin",
+      "evidence": [
+        {
+          "url": "https://docs.devin.ai",
+          "status": 200,
+          "final_url": "https://docs.devin.ai/get-started/devin-intro",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "low-confidence"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "higgsfield",
+      "evidence": [
+        {
+          "url": "https://higgsfield.ai/cli",
+          "status": 200,
+          "final_url": "https://higgsfield.ai/cli",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Mermaid CLI",
+      "evidence": [
+        {
+          "url": "https://github.com/mermaid-js/mermaid-cli",
+          "status": 200,
+          "final_url": "https://github.com/mermaid-js/mermaid-cli",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "YouTube Transcript",
+      "evidence": [
+        {
+          "url": "https://transcriptapi.com",
+          "status": 200,
+          "final_url": "https://transcriptapi.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": 100,
+      "name": "Grain",
+      "evidence": [
+        {
+          "url": "https://grain.com",
+          "status": 200,
+          "final_url": "https://grain.com/",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": [
+        "evidence-not-docs-host"
+      ]
+    }
+  ]
+}

@@ -120,5 +120,5 @@ def check_vocabulary(app: App) -> list[str]:
 
 
 def split_evidence(app_or_str) -> list[str]:
-    raw = app_or_str if isinstance(app_or_str, str) else app_or_str.evidence
+    raw = app_or_str if isinstance(app_or_str, str) else app_or_str.get("evidence", "")
     return [u.strip() for u in (raw or "").split(",") if u.strip()]

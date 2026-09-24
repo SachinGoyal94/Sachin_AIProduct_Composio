@@ -33,6 +33,8 @@ API_WORDS = re.compile(
 
 
 def check_url(url: str) -> dict:
+    if not urlparse(url).scheme:
+        url = "https://" + url.lstrip("/")
     out = {"url": url, "status": 0, "final_url": url, "redirected": False,
            "ok": False, "docs_like": False, "error": ""}
     try:
