@@ -227,4 +227,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-bet
   .winlist,.outlist{max-height:none;overflow:visible}
   body{background:#fff}
 }
+@media (max-width:820px){
+  nav .nl,nav .tag{display:none}
+  .brand{font-size:16px}
+  header.hero{padding:48px 0 32px}
+  .verdict-strip{flex-direction:column;gap:6px}
+}
 """

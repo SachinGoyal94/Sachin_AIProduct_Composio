@@ -242,6 +242,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-bet
   .winlist,.outlist{max-height:none;overflow:visible}
   body{background:#fff}
 }
+@media (max-width:820px){
+  nav .nl,nav .tag{display:none}
+  .brand{font-size:16px}
+  header.hero{padding:48px 0 32px}
+  .verdict-strip{flex-direction:column;gap:6px}
+}
 </style>
 </head><body>
 <nav><div class="wrap"><span class="brand">app-research<span class="dot">/100</span></span>
@@ -507,9 +513,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-bet
     Every row of the ledger carries its own label - open it and check.</p>
   <div class="stages"><div class="stage"><div class="sn">STAGE 1</div><h4>Pass 1 — the draft agent</h4><p>LLM drafts all 100 apps from its own knowledge, batched 10/call, no web access. This is the honest starting point: fast, broad, and wrong in instructive ways.</p><div class="tool">10 Gemini calls · cached to out/llm_cache/</div></div><div class="stage"><div class="sn">STAGE 2</div><h4>Verify — live evidence loop</h4><p>Every evidence URL is fetched: HTTP status, redirects, and page-text sniffing for auth/API keywords. A rule engine adds cross-field contradiction checks.</p><div class="tool">100 URLs pass 1 · requests + ThreadPool</div></div><div class="stage"><div class="sn">STAGE 3</div><h4>Deep-dive — the research agent</h4><p>Flagged rows get their real docs pages fetched; an LLM extracts facts strictly from that text with verbatim quotes. Output: proposals, never auto-applied.</p><div class="tool">39 rows flagged → 39 proposals</div></div><div class="stage"><div class="sn">STAGE 4</div><h4>Human review — the loop&#x27;s exit</h4><p>Proposals are reviewed by a human who promotes corrections into data/overrides.csv. The dataset ships with the promoted ledger; every change is traceable.</p><div class="tool">911 field corrections promoted</div></div><div class="stage"><div class="sn">STAGE 5</div><h4>Pass 2 + independent audit</h4><p>Overrides are applied, the whole pass is re-verified, and both passes are scored against a hand-built ground truth sample fixed before grading.</p><div class="tool">audit: 20 apps × 5 fields, strict match</div></div><div class="stage"><div class="sn">STAGE 6</div><h4>Patterns + page</h4><p>Distributions, clusters and the headline insights are computed from the final dataset; this page is generated from the artifacts.</p><div class="tool">pure python + inline SVG · zero page deps</div></div></div>
   <p style="margin:18px 0 0;font-size:12.5px;color:var(--faint);text-align:center">
-    Last pipeline run: ?s ·
-    ? mode ·
-    0 stages · full timings in
+    Last pipeline run: 138.7s ·
+    full mode ·
+    15 stages · full timings in
     <a href="out/run_meta.json">out/run_meta.json</a></p>
   <div class="callout amber"><h4>Where a human was needed - said plainly</h4>
     <ul>
@@ -610,6 +616,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-bet
     <a class="art" href="out/audit_pass1.json"><code>audit_pass1.json</code><span>audit, pass 1</span></a>
     <a class="art" href="out/audit_pass2.json"><code>audit_pass2.json</code><span>audit, pass 2</span></a>
     <a class="art" href="out/patterns.json"><code>patterns.json</code><span>computed patterns</span></a>
+    <a class="art" href="out/composio_toolbelt.json"><code>composio_toolbelt.json</code><span>live Composio MCP cross-check</span></a>
+    <a class="art" href="out/run_meta.json"><code>run_meta.json</code><span>per-stage run timings</span></a>
+    <a class="art" href="out/agent_reports/BRIEFS.md"><code>agent_reports/BRIEFS.md</code><span>the exact agent briefs</span></a>
     <a class="art" href="out/research_report.json"><code>research_report.json</code><span>machine-readable mirror</span></a>
   </div>
   <div class="two-col" style="margin-top:16px">
@@ -617,6 +626,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-bet
       <p style="margin:0">64/100 of the researched apps already ship as Composio toolkits (live MCP catalog search) -
       method: Composio MCP (connect.composio.dev/mcp) - COMPOSIO_SEARCH_TOOLS x100
       · 64 of 100 apps already covered</p></div>
+  <div class="two-col">
+    <div class="callout" style="background:#eef6ff;border:1px solid #cfe1ff;margin-top:0">
+      <b>Reviewer spot-check (60 seconds):</b> open any matrix row and click its
+      evidence link; open <a href="out/research_report.json">research_report.json</a>
+      for the machine-readable mirror; run <code>python src/smoke_test.py</code>
+      to re-verify all 33 invariants behind this page.</div>
     <div class="callout" style="background:#eef6ff;border:1px solid #cfe1ff;margin-top:0">
       <b>Deploying the page:</b> index.html is a single static file with zero
       external dependencies - drop it on GitHub Pages / Netlify / any static

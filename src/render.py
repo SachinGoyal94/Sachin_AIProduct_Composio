@@ -503,6 +503,9 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     <a class="art" href="out/audit_pass1.json"><code>audit_pass1.json</code><span>audit, pass 1</span></a>
     <a class="art" href="out/audit_pass2.json"><code>audit_pass2.json</code><span>audit, pass 2</span></a>
     <a class="art" href="out/patterns.json"><code>patterns.json</code><span>computed patterns</span></a>
+    <a class="art" href="out/composio_toolbelt.json"><code>composio_toolbelt.json</code><span>live Composio MCP cross-check</span></a>
+    <a class="art" href="out/run_meta.json"><code>run_meta.json</code><span>per-stage run timings</span></a>
+    <a class="art" href="out/agent_reports/BRIEFS.md"><code>agent_reports/BRIEFS.md</code><span>the exact agent briefs</span></a>
     <a class="art" href="out/research_report.json"><code>research_report.json</code><span>machine-readable mirror</span></a>
   </div>
   <div class="two-col" style="margin-top:16px">
@@ -510,6 +513,12 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
       <p style="margin:0">{esc(composio.get('note') or 'not run')} -
       method: {esc(composio.get('method') or 'n/a')}
       {f'· {composio.get("n_covered", 0)} of 100 apps already covered' if composio.get('ok') else ''}</p></div>
+  <div class="two-col">
+    <div class="callout" style="background:#eef6ff;border:1px solid #cfe1ff;margin-top:0">
+      <b>Reviewer spot-check (60 seconds):</b> open any matrix row and click its
+      evidence link; open <a href="out/research_report.json">research_report.json</a>
+      for the machine-readable mirror; run <code>python src/smoke_test.py</code>
+      to re-verify all 33 invariants behind this page.</div>
     <div class="callout" style="background:#eef6ff;border:1px solid #cfe1ff;margin-top:0">
       <b>Deploying the page:</b> index.html is a single static file with zero
       external dependencies - drop it on GitHub Pages / Netlify / any static

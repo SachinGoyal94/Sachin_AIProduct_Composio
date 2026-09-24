@@ -1,81 +1,41 @@
 {
-  "mode": "full",
-  "finished": "2026-09-25T03:31:05",
-  "duration_seconds": 138.7,
+  "mode": "offline",
+  "finished": "2026-09-25T03:39:42",
+  "duration_seconds": 1.9,
   "stages": [
-    {
-      "stage": "agent_draft.py",
-      "seconds": 0.7,
-      "ok": true
-    },
-    {
-      "stage": "verify.py 1",
-      "seconds": 26.1,
-      "ok": true
-    },
-    {
-      "stage": "research.py",
-      "seconds": 42.0,
-      "ok": true
-    },
-    {
-      "stage": "mcp_sweep.py",
-      "seconds": 40.8,
-      "ok": true
-    },
-    {
-      "stage": "build_corpus.py",
-      "seconds": 0.2,
-      "ok": true
-    },
-    {
-      "stage": "make_overrides.py",
-      "seconds": 0.1,
-      "ok": true
-    },
     {
       "stage": "apply.py",
       "seconds": 0.2,
       "ok": true
     },
     {
-      "stage": "verify.py 2",
-      "seconds": 24.3,
-      "ok": true
-    },
-    {
-      "stage": "composio_check.py",
-      "seconds": 3.3,
-      "ok": true
-    },
-    {
       "stage": "patterns.py",
-      "seconds": 0.2,
+      "seconds": 0.3,
       "ok": true
     },
     {
       "stage": "audit.py 1",
-      "seconds": 0.2,
+      "seconds": 0.3,
       "ok": true
     },
     {
       "stage": "audit.py 2",
-      "seconds": 0.1,
+      "seconds": 0.2,
       "ok": true
     },
     {
       "stage": "render.py",
-      "seconds": 0.2,
+      "seconds": 0.3,
       "ok": true
     },
     {
       "stage": "report.py",
-      "seconds": 0.2,
+      "seconds": 0.3,
       "ok": true
     },
     {
       "stage": "smoke_test.py",
-      "seconds": 0.2,
+      "seconds": 0.3,
       "ok": true
     }
   ]
