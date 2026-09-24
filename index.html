@@ -544,17 +544,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-bet
 <span class="cm"># offline - rebuild page from committed artifacts</span><br>
 <span class="k">python</span> src/run_all.py --offline</div>
       <pre class="tree">repo/
-├─ <span class="d">data/</span>            <span class="c">apps.csv roster · verified.csv (final) · overrides.csv (human ledger) · research_drafts.csv (agent proposals) · audit_sample.csv (ground truth)</span>
+├─ <span class="d">data/</span>            <span class="c">apps.csv roster · verified.csv (final) · overrides.csv (labeled correction ledger) · research_drafts.csv (agent proposals) · audit_sample.csv (ground truth)</span>
 ├─ <span class="d">src/</span>
 │  ├─ agent_draft.py     <span class="c">pass 1: LLM memory-only draft (cached)</span>
 │  ├─ verify.py          <span class="c">live HTTP evidence checks + rule engine</span>
 │  ├─ research.py        <span class="c">deep-dive agent: fetch docs → LLM extract → proposals</span>
+│  ├─ mcp_sweep.py       <span class="c">official MCP registry sweep (mechanical evidence)</span>
+│  ├─ build_corpus.py    <span class="c">seed + agent reports + MCP evidence → verified.csv</span>
+│  ├─ make_overrides.py  <span class="c">labeled diff draft → verified (the human ledger)</span>
 │  ├─ apply.py           <span class="c">draft + overrides → pass 2</span>
 │  ├─ composio_check.py  <span class="c">optional Composio toolbelt cross-reference</span>
 │  ├─ patterns.py        <span class="c">distributions, clusters, headline insights</span>
 │  ├─ audit.py           <span class="c">strict ground-truth scoring, both passes</span>
 │  ├─ render.py          <span class="c">this page, from artifacts</span>
-│  └─ run_all.py         <span class="c">one command, ten stages</span>
+│  └─ run_all.py         <span class="c">one command, fourteen stages</span>
 └─ <span class="d">out/</span>             <span class="c">every intermediate artifact (JSON/CSV) - the receipts</span></pre>
     </div>
     <div>

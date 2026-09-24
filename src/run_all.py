@@ -8,13 +8,16 @@ Stages
   2. verify.py 1      live evidence checks + rule engine over pass 1
   3. research.py      deep-dive flagged rows -> data/research_drafts.csv
                       (proposals only; a HUMAN promotes them to overrides)
-  4. apply.py         draft + data/overrides.csv -> pass 2 dataset
-  5. verify.py 2      live evidence checks + rule engine over pass 2
-  6. composio_check.py  optional Composio toolbelt cross-reference
-  7. patterns.py      distributions, clusters, headline insights
-  8. audit.py 1|2     strict ground-truth scoring of pass 1 and pass 2
-  9. render.py        index.html (single-file case study)
- 10. report.py        out/research_report.json (machine-readable mirror)
+  4. mcp_sweep.py     official MCP registry sweep (mechanical evidence)
+  5. build_corpus.py  seed + agent reports + MCP evidence -> data/verified.csv
+  6. make_overrides.py  labeled diff draft -> verified (the human ledger)
+  7. apply.py         draft + data/overrides.csv -> pass 2 dataset
+  8. verify.py 2      live evidence checks + rule engine over pass 2
+  9. composio_check.py  optional Composio toolbelt cross-reference
+ 10. patterns.py      distributions, clusters, headline insights
+ 11. audit.py 1|2     strict ground-truth scoring of pass 1 and pass 2
+ 12. render.py        index.html (single-file case study)
+ 13. report.py        out/research_report.json (machine-readable mirror)
 """
 from __future__ import annotations
 
