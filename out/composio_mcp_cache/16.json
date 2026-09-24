@@ -1,0 +1,1 @@
+{"id": 16, "app": "LiveAgent", "covered": false, "toolkits": ["botstar"], "n_tools": 6, "tool_slugs": ["BOTSTAR_LIVECHAT_BOOT", "BOTSTAR_LIVECHAT_CLOSE", "BOTSTAR_LIVECHAT_ON_CLOSE", "BOTSTAR_LIVECHAT_ON_OPEN", "BOTSTAR_LIVECHAT_OPEN", "BOTSTAR_LIVECHAT_UPDATE"]}

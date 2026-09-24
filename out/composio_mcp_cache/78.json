@@ -1,0 +1,1 @@
+{"id": 78, "app": "Coda", "covered": true, "toolkits": ["coda"], "n_tools": 5, "tool_slugs": ["CODA_GET_MUTATION_STATUS", "CODA_LIST_PAGES", "CODA_LIST_PAGE_CONTENT", "CODA_RESOLVE_BROWSER_LINK", "CODA_UPDATE_A_PAGE"]}

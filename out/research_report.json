@@ -1,6 +1,6 @@
 {
   "schema": "composio-case-study/1.0",
-  "generated": "2026-09-25T01:57:48",
+  "generated": "2026-09-25T02:49:36",
   "meta": {
     "apps": 100,
     "categories": 10,
@@ -565,20 +565,13 @@
     "oauth_total": 27,
     "oauth_self_serve": 22,
     "oauth_gated": 5,
+    "composio_covered": 64,
     "easy_wins": [
       {
         "id": 6,
         "name": "Podio",
         "category": "CRM & Sales",
         "gate": "Open self-serve",
-        "surface": "Documented REST",
-        "mcp": "No"
-      },
-      {
-        "id": 97,
-        "name": "higgsfield",
-        "category": "AI, Research & Media",
-        "gate": "Paid self-serve",
         "surface": "Documented REST",
         "mcp": "No"
       }
@@ -776,9 +769,9 @@
       },
       {
         "rank": 5,
-        "claim": "2 apps are easy wins - self-serve, documented REST/GraphQL, and still no official MCP",
-        "detail": "These are the highest-leverage toolkit builds: credentials in minutes, real API surface, and no incumbent MCP to compete with. Full list in the matrix.",
-        "metric": "2",
+        "claim": "1 apps are easy wins - self-serve, documented REST/GraphQL, no official MCP, and none of them are in Composio's catalog yet",
+        "detail": "These are the highest-leverage toolkit builds: credentials in minutes, real API surface, no incumbent MCP to compete with - and the Composio catalog cross-check (live MCP search) confirms 64 of the 100 are already covered, so these 1 are exactly what is left.",
+        "metric": "1",
         "metric_label": "build-shortlist apps"
       },
       {
@@ -798,14 +791,1826 @@
     ]
   },
   "composio": {
-    "generated": "2026-09-25T01:27:05",
-    "attempted": true,
-    "ok": false,
-    "method": "",
-    "toolkits_seen": 0,
-    "apps_covered": [],
-    "error": "v3: RuntimeError: v3 /toolkits -> HTTP 401: {\"error\":{\"message\":\"Invalid API key: ck_**r8RT\",\"code\":801,\"slug\":\"APIKey_InvalidAPIKey\",\"status\":401,\"request_id\":\"36e6796e-72f1-46d9-a3c6-8fed5241129e\",\"sugg | legacy SDK: Unexpected error: HTTP 410",
-    "note": "Composio rejected the API key (the provided key predates the v3 API migration). Stage is optional; cross-check marked not-performed rather than guessed."
+    "generated": "2026-09-25T02:39:40",
+    "ok": true,
+    "method": "Composio MCP (connect.composio.dev/mcp) - COMPOSIO_SEARCH_TOOLS x100",
+    "error": "",
+    "note": "64/100 of the researched apps already ship as Composio toolkits (live MCP catalog search)",
+    "apps": [
+      {
+        "id": 1,
+        "app": "Salesforce",
+        "covered": true,
+        "toolkits": [
+          "salesforce"
+        ],
+        "n_tools": 2,
+        "tool_slugs": [
+          "SALESFORCE_EXECUTE_SOSL_SEARCH",
+          "SALESFORCE_PARAMETERIZED_SEARCH"
+        ]
+      },
+      {
+        "id": 2,
+        "app": "HubSpot",
+        "covered": true,
+        "toolkits": [
+          "hubspot"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "HUBSPOT_READ_ALL_PROPERTIES_FOR_OBJECT_TYPE",
+          "HUBSPOT_READ_APAGE_OF_OBJECTS_BY_TYPE",
+          "HUBSPOT_READ_BATCH_OF_CRM_OBJECTS_BY_ID_OR_PROPERTY_VALUES",
+          "HUBSPOT_SEARCH_CRM_OBJECTS_BY_CRITERIA"
+        ]
+      },
+      {
+        "id": 3,
+        "app": "Pipedrive",
+        "covered": true,
+        "toolkits": [
+          "pipedrive"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "PIPEDRIVE_ADD_AN_ACTIVITY",
+          "PIPEDRIVE_ADD_A_DEAL",
+          "PIPEDRIVE_GET_ALL_DEAL_FIELDS",
+          "PIPEDRIVE_SEARCH_ORGANIZATIONS"
+        ]
+      },
+      {
+        "id": 4,
+        "app": "Attio",
+        "covered": true,
+        "toolkits": [
+          "attio"
+        ],
+        "n_tools": 12,
+        "tool_slugs": [
+          "ATTIO_CREATE_RECORD",
+          "ATTIO_FIND_RECORD",
+          "ATTIO_GET_COMPANY",
+          "ATTIO_LIST_ATTRIBUTES",
+          "ATTIO_LIST_COMPANIES",
+          "ATTIO_LIST_LISTS",
+          "ATTIO_LIST_OBJECTS",
+          "ATTIO_LIST_RECORDS",
+          "ATTIO_PEOPLE_LIST_PERSONS",
+          "ATTIO_POST_V2_OBJECTS_OBJECT_RECORDS_QUERY",
+          "ATTIO_QUERY_RECORDS",
+          "ATTIO_SEARCH_RECORDS"
+        ]
+      },
+      {
+        "id": 5,
+        "app": "Twenty",
+        "covered": true,
+        "toolkits": [
+          "twenty"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "TWENTY_LIST_FIELDS",
+          "TWENTY_LIST_OBJECTS",
+          "TWENTY_LIST_RECORDS"
+        ]
+      },
+      {
+        "id": 6,
+        "app": "Podio",
+        "covered": false,
+        "toolkits": [
+          "procfu"
+        ],
+        "n_tools": 1,
+        "tool_slugs": [
+          "PROCFU_COPY_PODIO_FILES_TO_FTP"
+        ]
+      },
+      {
+        "id": 7,
+        "app": "Zoho CRM",
+        "covered": true,
+        "toolkits": [
+          "zoho"
+        ],
+        "n_tools": 14,
+        "tool_slugs": [
+          "ZOHO_CONVERT_ZOHO_LEAD",
+          "ZOHO_CREATE_CONTACT",
+          "ZOHO_CREATE_EVENT",
+          "ZOHO_CREATE_LEAD",
+          "ZOHO_CREATE_NOTE",
+          "ZOHO_CREATE_ZOHO_RECORD",
+          "ZOHO_GET_MODULE_FIELDS",
+          "ZOHO_GET_ZOHO_RECORDS",
+          "ZOHO_GET_ZOHO_USERS",
+          "ZOHO_LIST_MODULES",
+          "ZOHO_SEARCH_CONTACTS",
+          "ZOHO_SEARCH_LEADS"
+        ]
+      },
+      {
+        "id": 8,
+        "app": "Close",
+        "covered": true,
+        "toolkits": [
+          "close"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "CLOSE_CREATE_CALL",
+          "CLOSE_CREATE_LEAD",
+          "CLOSE_CREATE_SMS",
+          "CLOSE_CREATE_TASK",
+          "CLOSE_DELETE_CALL",
+          "CLOSE_GET_NOTE"
+        ]
+      },
+      {
+        "id": 9,
+        "app": "Copper",
+        "covered": true,
+        "toolkits": [
+          "copper"
+        ],
+        "n_tools": 14,
+        "tool_slugs": [
+          "COPPER_CREATE_COMPANY",
+          "COPPER_CREATE_PROJECT",
+          "COPPER_DELETE_ATTACHED_FILE",
+          "COPPER_DELETE_CUSTOM_FIELD_DEFINITION",
+          "COPPER_GET_ACCOUNT",
+          "COPPER_GET_ATTACHED_FILE_METADATA",
+          "COPPER_GET_CUSTOM_FIELD_DEFINITION",
+          "COPPER_LIST_ATTACHED_FILES",
+          "COPPER_LIST_CUSTOM_FIELD_DEFINITIONS",
+          "COPPER_SEARCH_COMPANIES",
+          "COPPER_SEARCH_OPPORTUNITIES",
+          "COPPER_SEARCH_PROJECTS"
+        ]
+      },
+      {
+        "id": 10,
+        "app": "DealCloud",
+        "covered": false,
+        "toolkits": [
+          "api_labz",
+          "apollo"
+        ],
+        "n_tools": 5,
+        "tool_slugs": [
+          "API_LABZ_INTEGRATE_DEAL",
+          "API_LABZ_TRELLO_AI_SEARCH_ENGINE",
+          "APOLLO_GET_DEAL",
+          "APOLLO_LIST_DEALS",
+          "APOLLO_UPDATE_DEALS"
+        ]
+      },
+      {
+        "id": 11,
+        "app": "Zendesk",
+        "covered": true,
+        "toolkits": [
+          "zendesk"
+        ],
+        "n_tools": 9,
+        "tool_slugs": [
+          "ZENDESK_CREATE_ZENDESK_REQUEST",
+          "ZENDESK_CREATE_ZENDESK_TICKET",
+          "ZENDESK_CREATE_ZENDESK_TICKET_OR_VOICEMAIL_TICKET",
+          "ZENDESK_CREATE_ZENDESK_USER",
+          "ZENDESK_GET_REQUEST_COMMENTS",
+          "ZENDESK_GET_ZENDESK_TICKET_BY_ID",
+          "ZENDESK_SEARCH_ZENDESK_USERS",
+          "ZENDESK_SHOW_REQUEST",
+          "ZENDESK_UPDATE_ZENDESK_TICKET"
+        ]
+      },
+      {
+        "id": 12,
+        "app": "Intercom",
+        "covered": true,
+        "toolkits": [
+          "intercom"
+        ],
+        "n_tools": 11,
+        "tool_slugs": [
+          "INTERCOM_ADD_TAG_TO_CONTACT",
+          "INTERCOM_ATTACH_TAG_TO_CONVERSATION",
+          "INTERCOM_DETACH_TAG_FROM_CONVERSATION",
+          "INTERCOM_FIND_TAG",
+          "INTERCOM_GET_A_CONTACT",
+          "INTERCOM_GET_CONVERSATION",
+          "INTERCOM_LIST_TAGS",
+          "INTERCOM_REMOVE_TAG_FROM_A_CONTACT",
+          "INTERCOM_SEARCH_CONTACTS",
+          "INTERCOM_SHOW_CONTACT_BY_EXTERNAL_ID",
+          "INTERCOM_UPDATE_A_CONTACT"
+        ]
+      },
+      {
+        "id": 13,
+        "app": "Freshdesk",
+        "covered": true,
+        "toolkits": [
+          "freshdesk"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "FRESHDESK_GET_SEARCH",
+          "FRESHDESK_GET_TICKETS",
+          "FRESHDESK_LIST_TICKET_FIELDS",
+          "FRESHDESK_VIEW_TICKET"
+        ]
+      },
+      {
+        "id": 14,
+        "app": "Front",
+        "covered": false,
+        "toolkits": [
+          "canvas"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "CANVAS_CREATE_PAGE_FOR_GROUP",
+          "CANVAS_GET_GROUP",
+          "CANVAS_GET_PAGE_FOR_COURSE",
+          "CANVAS_LIST_PAGES_FOR_COURSE",
+          "CANVAS_SHOW_FRONT_PAGE_FOR_GROUP",
+          "CANVAS_UPDATE_CREATE_FRONT_PAGE_GROUPS",
+          "CANVAS_UPDATE_PAGE_FOR_COURSE",
+          "CANVAS_UPDATE_PAGE_FOR_GROUP"
+        ]
+      },
+      {
+        "id": 15,
+        "app": "Pylon",
+        "covered": true,
+        "toolkits": [
+          "pylon_mcp"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "PYLON_MCP_GET_ACCOUNT",
+          "PYLON_MCP_GET_ISSUE",
+          "PYLON_MCP_GET_ISSUE_MESSAGES",
+          "PYLON_MCP_SEARCH_ACCOUNTS",
+          "PYLON_MCP_SEARCH_ISSUES",
+          "PYLON_MCP_UPDATE_ISSUE"
+        ]
+      },
+      {
+        "id": 16,
+        "app": "LiveAgent",
+        "covered": false,
+        "toolkits": [
+          "botstar"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "BOTSTAR_LIVECHAT_BOOT",
+          "BOTSTAR_LIVECHAT_CLOSE",
+          "BOTSTAR_LIVECHAT_ON_CLOSE",
+          "BOTSTAR_LIVECHAT_ON_OPEN",
+          "BOTSTAR_LIVECHAT_OPEN",
+          "BOTSTAR_LIVECHAT_UPDATE"
+        ]
+      },
+      {
+        "id": 17,
+        "app": "Plain",
+        "covered": false,
+        "toolkits": [
+          "box_mcp",
+          "tisane",
+          "zenrows"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "BOX_MCP_GET_FILE_CONTENT",
+          "BOX_MCP_GET_FILE_DETAILS",
+          "BOX_MCP_SEARCH_FILES_KEYWORD",
+          "TISANE_ANALYZE_TEXT",
+          "TISANE_DETECT_LANGUAGES",
+          "TISANE_EXTRACT_TEXT",
+          "ZENROWS_GET_PLAINTEXT",
+          "ZENROWS_SCRAPE_URL_AUTOPARSE"
+        ]
+      },
+      {
+        "id": 18,
+        "app": "Help Scout",
+        "covered": true,
+        "toolkits": [
+          "help_scout"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "HELP_SCOUT_GET_CONVERSATION",
+          "HELP_SCOUT_GET_CONVERSATIONS_DRILLDOWN",
+          "HELP_SCOUT_LIST_CONVERSATIONS",
+          "HELP_SCOUT_LIST_TAGS",
+          "HELP_SCOUT_LIST_THREADS",
+          "HELP_SCOUT_UPDATE_CONVERSATION"
+        ]
+      },
+      {
+        "id": 19,
+        "app": "Gorgias",
+        "covered": true,
+        "toolkits": [
+          "gorgias"
+        ],
+        "n_tools": 13,
+        "tool_slugs": [
+          "GORGIAS_ADD_TICKET_TAGS",
+          "GORGIAS_CREATE_CUSTOMER",
+          "GORGIAS_CREATE_TICKET",
+          "GORGIAS_GET_ACCOUNT",
+          "GORGIAS_GET_TICKET_MESSAGE",
+          "GORGIAS_LIST_ACCOUNT_SETTINGS",
+          "GORGIAS_LIST_CUSTOMERS",
+          "GORGIAS_LIST_MESSAGES",
+          "GORGIAS_LIST_TICKETS",
+          "GORGIAS_LIST_VIEWS",
+          "GORGIAS_REMOVE_TICKET_TAGS",
+          "GORGIAS_SEND_TICKET_MESSAGE"
+        ]
+      },
+      {
+        "id": 20,
+        "app": "Gladly",
+        "covered": false,
+        "toolkits": [
+          "gradium"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "GRADIUM_CREATE_PRONUNCIATION_DICTIONARY",
+          "GRADIUM_GET_PRONUNCIATION_DICTIONARY",
+          "GRADIUM_LIST_PRONUNCIATION_DICTIONARIES",
+          "GRADIUM_UPDATE_PRONUNCIATION_DICTIONARY"
+        ]
+      },
+      {
+        "id": 21,
+        "app": "Slack",
+        "covered": false,
+        "toolkits": [],
+        "n_tools": 0,
+        "tool_slugs": []
+      },
+      {
+        "id": 22,
+        "app": "Twilio",
+        "covered": false,
+        "toolkits": [
+          "chatbotkit",
+          "insighto_ai"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "CHATBOTKIT_CREATE_TWILIO_INTEGRATION",
+          "CHATBOTKIT_DELETE_TWILIO_INTEGRATION",
+          "CHATBOTKIT_FETCH_TWILIO_INTEGRATION",
+          "CHATBOTKIT_LIST_TWILIO_INTEGRATIONS",
+          "CHATBOTKIT_SET_UP_TWILIO_INTEGRATION",
+          "CHATBOTKIT_UPDATE_TWILIO_INTEGRATION",
+          "INSIGHTO_AI_READ_TWILIO_AUTH_LIST",
+          "INSIGHTO_AI_UPDATE_TWILIO_AUTH_BY_ID"
+        ]
+      },
+      {
+        "id": 23,
+        "app": "Zoho Cliq",
+        "covered": true,
+        "toolkits": [
+          "zoho"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "ZOHO_CREATE_EVENT",
+          "ZOHO_GET_MODULE_FIELDS",
+          "ZOHO_SEARCH_EVENTS",
+          "ZOHO_UPDATE_EVENT"
+        ]
+      },
+      {
+        "id": 24,
+        "app": "Lark (Larksuite)",
+        "covered": false,
+        "toolkits": [
+          "craft_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "CRAFT_MCP_BLOCKS_REVERT",
+          "CRAFT_MCP_CRAFT_READ",
+          "CRAFT_MCP_CRAFT_WRITE"
+        ]
+      },
+      {
+        "id": 25,
+        "app": "Pumble",
+        "covered": true,
+        "toolkits": [
+          "pumble"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "PUMBLE_DELETE_MESSAGE",
+          "PUMBLE_EDIT_MESSAGE",
+          "PUMBLE_GET_MESSAGE",
+          "PUMBLE_LIST_CHANNELS",
+          "PUMBLE_LIST_CHANNEL_MESSAGES",
+          "PUMBLE_SEND_MESSAGE"
+        ]
+      },
+      {
+        "id": 26,
+        "app": "Discord",
+        "covered": true,
+        "toolkits": [
+          "discord"
+        ],
+        "n_tools": 1,
+        "tool_slugs": [
+          "DISCORD_GET_GATEWAY"
+        ]
+      },
+      {
+        "id": 27,
+        "app": "Telegram",
+        "covered": true,
+        "toolkits": [
+          "telegram"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "TELEGRAM_ANSWER_CALLBACK_QUERY",
+          "TELEGRAM_GET_CHAT",
+          "TELEGRAM_GET_CHAT_HISTORY",
+          "TELEGRAM_GET_CHAT_MEMBER",
+          "TELEGRAM_GET_ME",
+          "TELEGRAM_GET_UPDATES",
+          "TELEGRAM_SEND_MESSAGE",
+          "TELEGRAM_SET_MY_COMMANDS"
+        ]
+      },
+      {
+        "id": 28,
+        "app": "WhatsApp Business",
+        "covered": true,
+        "toolkits": [
+          "whatsapp"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "WHATSAPP_CREATE_MESSAGE_TEMPLATE",
+          "WHATSAPP_GET_BUSINESS_PROFILE",
+          "WHATSAPP_GET_MESSAGE_TEMPLATES",
+          "WHATSAPP_GET_PHONE_NUMBER",
+          "WHATSAPP_GET_PHONE_NUMBERS",
+          "WHATSAPP_GET_TEMPLATE_STATUS",
+          "WHATSAPP_SEND_MESSAGE",
+          "WHATSAPP_SEND_TEMPLATE_MESSAGE"
+        ]
+      },
+      {
+        "id": 29,
+        "app": "Aircall",
+        "covered": false,
+        "toolkits": [
+          "cal"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "CAL_CREATE_PHONE_CALL_EVENT",
+          "CAL_CREATE_PHONE_CALL_FOR_EVENT_TYPE",
+          "CAL_GET_TEAMS_LIST",
+          "CAL_RETRIEVE_TEAM_EVENT_TYPES"
+        ]
+      },
+      {
+        "id": 30,
+        "app": "Vonage",
+        "covered": false,
+        "toolkits": [
+          "vapi"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "VAPI_CALL_CONTROLLER_FIND_ALL",
+          "VAPI_DELETE_PHONE_NUMBER",
+          "VAPI_GET_ASSISTANT",
+          "VAPI_LIST_ASSISTANTS",
+          "VAPI_LIST_PHONE_NUMBERS",
+          "VAPI_PHONE_NUMBER_CONTROLLER_CREATE",
+          "VAPI_UPDATE_PHONE_NUMBER"
+        ]
+      },
+      {
+        "id": 31,
+        "app": "Google Ads",
+        "covered": true,
+        "toolkits": [
+          "gmail",
+          "googleads",
+          "googledrive",
+          "googlesuper"
+        ],
+        "n_tools": 13,
+        "tool_slugs": [
+          "GMAIL_FETCH_EMAILS",
+          "GMAIL_SEARCH_PEOPLE",
+          "GOOGLEADS_GET_RMF_REPORT",
+          "GOOGLEADS_MUTATE_AD_GROUP_ADS",
+          "GOOGLEADS_MUTATE_BIDDING_STRATEGIES",
+          "GOOGLEADS_MUTATE_CAMPAIGN_CRITERIA",
+          "GOOGLEADS_MUTATE_CONVERSION_ACTIONS",
+          "GOOGLEADS_SEARCH_STREAM_GAQL",
+          "GOOGLEDRIVE_ADD_FILE_SHARING_PREFERENCE",
+          "GOOGLESUPER_LIST_ACCESSIBLE_CUSTOMERS",
+          "GOOGLESUPER_LIST_SUB_ACCOUNTS",
+          "GOOGLESUPER_MUTATE_AD_GROUP_ADS"
+        ]
+      },
+      {
+        "id": 32,
+        "app": "Meta Ads",
+        "covered": true,
+        "toolkits": [
+          "metaads"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "METAADS_GET_AD_ACCOUNTS",
+          "METAADS_GET_INSIGHTS",
+          "METAADS_GET_OBJECT",
+          "METAADS_GET_USER",
+          "METAADS_LIST_ADS",
+          "METAADS_LIST_BUSINESS_AD_ACCOUNTS",
+          "METAADS_LIST_CLIENT_AD_ACCOUNTS",
+          "METAADS_READ_ADSETS"
+        ]
+      },
+      {
+        "id": 33,
+        "app": "LinkedIn Ads",
+        "covered": true,
+        "toolkits": [
+          "linkedin",
+          "linkedin_ads"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "LINKEDIN_ADS_GET_AD_ANALYTICS",
+          "LINKEDIN_ADS_GET_AUDIENCE_COUNTS",
+          "LINKEDIN_ADS_GET_SUPPLY_FORECASTS",
+          "LINKEDIN_ADS_GET_TARGETING_ENTITIES",
+          "LINKEDIN_ADS_GET_TARGETING_FACETS",
+          "LINKEDIN_GET_AD_TARGETING_FACETS",
+          "LINKEDIN_SEARCH_AD_TARGETING_ENTITIES"
+        ]
+      },
+      {
+        "id": 34,
+        "app": "GoHighLevel",
+        "covered": false,
+        "toolkits": [
+          "highlevel"
+        ],
+        "n_tools": 13,
+        "tool_slugs": [
+          "HIGHLEVEL_ADD_CONTACT_TAGS",
+          "HIGHLEVEL_CANCEL_SCHEDULED_MESSAGE",
+          "HIGHLEVEL_CREATE_CONTACT",
+          "HIGHLEVEL_CREATE_MEDIAS_FOLDER",
+          "HIGHLEVEL_GET_CONTACT",
+          "HIGHLEVEL_GET_OBJECT_SCHEMA",
+          "HIGHLEVEL_GET_PIPELINES",
+          "HIGHLEVEL_REMOVE_CONTACT_TAGS",
+          "HIGHLEVEL_SEARCH_CONTACTS",
+          "HIGHLEVEL_SEARCH_OPPORTUNITIES",
+          "HIGHLEVEL_SEND_MESSAGE",
+          "HIGHLEVEL_UPDATE_CONTACT"
+        ]
+      },
+      {
+        "id": 35,
+        "app": "Mailchimp",
+        "covered": true,
+        "toolkits": [
+          "mailchimp"
+        ],
+        "n_tools": 11,
+        "tool_slugs": [
+          "MAILCHIMP_ADD_CAMPAIGN",
+          "MAILCHIMP_GET_CAMPAIGN_INFO",
+          "MAILCHIMP_GET_CAMPAIGN_SEND_CHECKLIST",
+          "MAILCHIMP_GET_LISTS_INFO",
+          "MAILCHIMP_LIST_CAMPAIGNS",
+          "MAILCHIMP_SCHEDULE_CAMPAIGN",
+          "MAILCHIMP_SEND_CAMPAIGN",
+          "MAILCHIMP_SEND_TEST_EMAIL",
+          "MAILCHIMP_SET_CAMPAIGN_CONTENT",
+          "MAILCHIMP_UNSCHEDULE_CAMPAIGN",
+          "MAILCHIMP_UPDATE_CAMPAIGN_SETTINGS"
+        ]
+      },
+      {
+        "id": 36,
+        "app": "Klaviyo",
+        "covered": true,
+        "toolkits": [
+          "klaviyo"
+        ],
+        "n_tools": 9,
+        "tool_slugs": [
+          "KLAVIYO_ASSIGN_CAMPAIGN_MESSAGE_TEMPLATE",
+          "KLAVIYO_CANCEL_CAMPAIGN_SEND",
+          "KLAVIYO_CREATE_CAMPAIGN",
+          "KLAVIYO_CREATE_CAMPAIGN_SEND_JOB",
+          "KLAVIYO_CREATE_TEMPLATE",
+          "KLAVIYO_GET_CAMPAIGN_CAMPAIGN_MESSAGES",
+          "KLAVIYO_GET_CAMPAIGN_MESSAGE",
+          "KLAVIYO_GET_TEMPLATES",
+          "KLAVIYO_UPDATE_CAMPAIGN_MESSAGE"
+        ]
+      },
+      {
+        "id": 37,
+        "app": "systeme.io",
+        "covered": false,
+        "toolkits": [
+          "wix_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "WIX_MCP_CALL_WIX_SITE_API",
+          "WIX_MCP_GET_SITE_CONTEXT",
+          "WIX_MCP_SEARCH_WIX_REST_DOCUMENTATION"
+        ]
+      },
+      {
+        "id": 38,
+        "app": "Pinterest",
+        "covered": true,
+        "toolkits": [
+          "pinterest"
+        ],
+        "n_tools": 12,
+        "tool_slugs": [
+          "PINTEREST_CREATE_PIN",
+          "PINTEREST_GET_INSPIRATION_TRENDS",
+          "PINTEREST_GET_KEYWORD_TRENDS",
+          "PINTEREST_GET_PIN",
+          "PINTEREST_GET_PRODUCT_TRENDS",
+          "PINTEREST_GET_PROFILE",
+          "PINTEREST_GET_TOP_PINS",
+          "PINTEREST_LIST_BOARDS",
+          "PINTEREST_LIST_PINS",
+          "PINTEREST_LIST_PROFILE_RESOURCES",
+          "PINTEREST_REGISTER_MEDIA",
+          "PINTEREST_SEARCH_OWN_CONTENT"
+        ]
+      },
+      {
+        "id": 39,
+        "app": "Threads (Meta)",
+        "covered": false,
+        "toolkits": [
+          "apify",
+          "scrapecreators"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "APIFY_GET_RUN_DATASET_ITEMS",
+          "APIFY_RUN_ACTOR",
+          "APIFY_RUN_ACTOR_SYNC_GET_DATASET_ITEMS",
+          "APIFY_SCRAPE_FACEBOOK_ADS",
+          "SCRAPECREATORS_FIND_CREATOR_SOCIAL_PROFILES",
+          "SCRAPECREATORS_GET_THREADS_PROFILE",
+          "SCRAPECREATORS_LIST_THREADS_USER_POSTS"
+        ]
+      },
+      {
+        "id": 40,
+        "app": "SendGrid",
+        "covered": true,
+        "toolkits": [
+          "sendgrid"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "SENDGRID_CANCEL_OR_PAUSE_A_SCHEDULED_SEND",
+          "SENDGRID_CREATE_A_BATCH_ID",
+          "SENDGRID_RETRIEVE_A_SINGLE_TRANSACTIONAL_TEMPLATE",
+          "SENDGRID_RETRIEVE_PAGED_TRANSACTIONAL_TEMPLATES",
+          "SENDGRID_SEND_A_TEST_MARKETING_EMAIL",
+          "SENDGRID_SEND_EMAIL_WITH_TWILIO_SEND_GRID",
+          "SENDGRID_VALIDATE_A_BATCH_ID"
+        ]
+      },
+      {
+        "id": 41,
+        "app": "Shopify",
+        "covered": true,
+        "toolkits": [
+          "shopify"
+        ],
+        "n_tools": 5,
+        "tool_slugs": [
+          "SHOPIFY_GET_ACCESS_SCOPES",
+          "SHOPIFY_GET_SHOP_DETAILS",
+          "SHOPIFY_QUERY_CURRENT_APP_INSTALLATION",
+          "SHOPIFY_QUERY_ONLINE_STORE",
+          "SHOPIFY_QUERY_SHOP"
+        ]
+      },
+      {
+        "id": 42,
+        "app": "WooCommerce",
+        "covered": false,
+        "toolkits": [
+          "finerworks"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "FINERWORKS_DISCONNECT_VIRTUAL_INVENTORY",
+          "FINERWORKS_GET_USER",
+          "FINERWORKS_LIST_VIRTUAL_INVENTORY"
+        ]
+      },
+      {
+        "id": 43,
+        "app": "BigCommerce",
+        "covered": false,
+        "toolkits": [
+          "bigmailer"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "BIGMAILER_CREATE_BRAND_PROPERTY",
+          "BIGMAILER_LIST_ALL_BRANDS",
+          "BIGMAILER_LIST_BRAND_PROPERTIES",
+          "BIGMAILER_UPDATE_BRAND_PROPERTY"
+        ]
+      },
+      {
+        "id": 44,
+        "app": "Salesforce Commerce Cloud",
+        "covered": true,
+        "toolkits": [
+          "salesforce"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "SALESFORCE_CREATE_SOBJECT_TREE",
+          "SALESFORCE_CREATE_S_OBJECT_RECORD",
+          "SALESFORCE_POST_COMPOSITE_GRAPH",
+          "SALESFORCE_POST_COMPOSITE_SOBJECTS"
+        ]
+      },
+      {
+        "id": 45,
+        "app": "Magento (Adobe Commerce)",
+        "covered": false,
+        "toolkits": [
+          "benchmark_email"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "BENCHMARK_EMAIL_GET_MAGENTO_HTML_DROP",
+          "BENCHMARK_EMAIL_GET_MAGENTO_HTML_SELECTED",
+          "BENCHMARK_EMAIL_GET_SIGNUP_FORM_LIST"
+        ]
+      },
+      {
+        "id": 46,
+        "app": "Squarespace",
+        "covered": false,
+        "toolkits": [
+          "square"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "SQUARE_CREATE_LOCATION",
+          "SQUARE_GET_ONLINE_CHECKOUT_LOCATION_SETTINGS",
+          "SQUARE_LIST_LOCATIONS",
+          "SQUARE_RETRIEVE_LOCATION",
+          "SQUARE_UPDATE_LOCATION",
+          "SQUARE_UPDATE_ONLINE_CHECKOUT_LOCATION_SETTINGS"
+        ]
+      },
+      {
+        "id": 47,
+        "app": "Ecwid",
+        "covered": false,
+        "toolkits": [
+          "wix_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "WIX_MCP_CALL_WIX_SITE_API",
+          "WIX_MCP_GET_SITE_CONTEXT",
+          "WIX_MCP_SEARCH_WIX_REST_DOCUMENTATION"
+        ]
+      },
+      {
+        "id": 48,
+        "app": "Gumroad",
+        "covered": true,
+        "toolkits": [
+          "gumroad"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "GUMROAD_GET_RESOURCE_SUBSCRIPTIONS",
+          "GUMROAD_GET_SALES",
+          "GUMROAD_GET_USER",
+          "GUMROAD_LIST_PRODUCTS",
+          "GUMROAD_SUBSCRIBE_TO_RESOURCE",
+          "GUMROAD_UNSUBSCRIBE_FROM_RESOURCE",
+          "GUMROAD_VERIFY_LICENSE"
+        ]
+      },
+      {
+        "id": 49,
+        "app": "Amazon Selling Partner",
+        "covered": false,
+        "toolkits": [
+          "junglescout"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "JUNGLESCOUT_KEYWORD_HISTORICAL_VOLUME",
+          "JUNGLESCOUT_QUERY_THE_PRODUCT_DATABASE",
+          "JUNGLESCOUT_RETRIEVE_DATA_FOR_A_SPECIFIC_KEYWORD_QUERY",
+          "JUNGLESCOUT_RETRIEVE_KEYWORD_DATA_FOR_SPECIFIED_ASINS",
+          "JUNGLESCOUT_RETRIEVE_SALES_ESTIMATES_DATA",
+          "JUNGLESCOUT_RETRIEVE_SHARE_OF_VOICE_DATA"
+        ]
+      },
+      {
+        "id": 50,
+        "app": "fanbasis",
+        "covered": false,
+        "toolkits": [
+          "tik_hub"
+        ],
+        "n_tools": 4,
+        "tool_slugs": [
+          "TIK_HUB_DOUYIN_WEB_ENCRYPT_UID_TO_SEC_USER_ID",
+          "TIK_HUB_DOUYIN_WEB_FETCH_USER_FANS_LIST",
+          "TIK_HUB_DOUYIN_WEB_FETCH_USER_FOLLOWING_LIST",
+          "TIK_HUB_DOUYIN_WEB_GET_SEC_USER_ID"
+        ]
+      },
+      {
+        "id": 51,
+        "app": "DataForSEO",
+        "covered": true,
+        "toolkits": [
+          "dataforseo"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "DATAFORSEO_CREATE_ON_PAGE_TASK_POST",
+          "DATAFORSEO_FORCE_ON_PAGE_CRAWL",
+          "DATAFORSEO_GET_ON_PAGE_PAGES",
+          "DATAFORSEO_GET_ON_PAGE_SUMMARY_BY_ID",
+          "DATAFORSEO_LIST_ON_PAGE_TASKS_READY",
+          "DATAFORSEO_POST_ON_PAGE_SUMMARY"
+        ]
+      },
+      {
+        "id": 52,
+        "app": "SE Ranking",
+        "covered": false,
+        "toolkits": [
+          "keyword"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "KEYWORD_GET_KEYWORD",
+          "KEYWORD_GET_PROJECT",
+          "KEYWORD_GET_PROJECT_METRICS",
+          "KEYWORD_GET_RANKING_HISTORY",
+          "KEYWORD_GET_SOV_HISTORY",
+          "KEYWORD_GET_TOP_PAGES",
+          "KEYWORD_LIST_ACTIVE_PROJECTS",
+          "KEYWORD_LIST_KEYWORDS"
+        ]
+      },
+      {
+        "id": 53,
+        "app": "Ahrefs",
+        "covered": true,
+        "toolkits": [
+          "ahrefs"
+        ],
+        "n_tools": 9,
+        "tool_slugs": [
+          "AHREFS_DOMAIN_RATING_FOR_SITE_EXPLORER",
+          "AHREFS_EXPLORE_KEYWORDS_OVERVIEW",
+          "AHREFS_GET_SITE_EXPLORER_COUNTRY_METRICS",
+          "AHREFS_RETRIEVE_ORGANIC_KEYWORDS",
+          "AHREFS_RETRIEVE_SITE_EXPLORER_KEYWORDS_HISTORY",
+          "AHREFS_RETRIEVE_SITE_EXPLORER_METRICS",
+          "AHREFS_RETRIEVE_SUBSCRIPTION_LIMITS_AND_USAGE",
+          "AHREFS_RETRIEVE_TOP_PAGES_FROM_SITE_EXPLORER",
+          "AHREFS_SEARCH_SUGGESTIONS_EXPLORER"
+        ]
+      },
+      {
+        "id": 54,
+        "app": "MrScraper",
+        "covered": true,
+        "toolkits": [
+          "mrscraper"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "MRSCRAPER_BULK_RERUN_AI_SCRAPER",
+          "MRSCRAPER_BULK_RERUN_MANUAL_SCRAPER",
+          "MRSCRAPER_CREATE_AI_SCRAPER",
+          "MRSCRAPER_GET_RESULT",
+          "MRSCRAPER_LIST_RESULTS",
+          "MRSCRAPER_RERUN_AI_SCRAPER",
+          "MRSCRAPER_RERUN_MANUAL_SCRAPER"
+        ]
+      },
+      {
+        "id": 55,
+        "app": "Apify",
+        "covered": true,
+        "toolkits": [
+          "apify"
+        ],
+        "n_tools": 5,
+        "tool_slugs": [
+          "APIFY_ACTS_GET",
+          "APIFY_ACT_RUNS_LAST_GET",
+          "APIFY_USERS_ME_GET",
+          "APIFY_USERS_ME_LIMITS_GET",
+          "APIFY_USERS_ME_USAGE_MONTHLY_GET"
+        ]
+      },
+      {
+        "id": 56,
+        "app": "Firecrawl",
+        "covered": true,
+        "toolkits": [
+          "firecrawl"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "FIRECRAWL_BATCH_SCRAPE",
+          "FIRECRAWL_BATCH_SCRAPE_GET",
+          "FIRECRAWL_BATCH_SCRAPE_GET_ERRORS",
+          "FIRECRAWL_CRAWL_GET",
+          "FIRECRAWL_CRAWL_V2",
+          "FIRECRAWL_EXTRACT",
+          "FIRECRAWL_SCRAPE",
+          "FIRECRAWL_START_AGENT"
+        ]
+      },
+      {
+        "id": 57,
+        "app": "Bright Data",
+        "covered": true,
+        "toolkits": [
+          "brightdata"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "BRIGHTDATA_CRAWL_API",
+          "BRIGHTDATA_DATASET_LIST",
+          "BRIGHTDATA_GET_SNAPSHOT_STATUS",
+          "BRIGHTDATA_LIST_WEB_UNLOCKER_ZONES",
+          "BRIGHTDATA_SCRAPE_DATA_SYNC",
+          "BRIGHTDATA_WEB_UNLOCKER"
+        ]
+      },
+      {
+        "id": 58,
+        "app": "Sherlock",
+        "covered": false,
+        "toolkits": [
+          "malwarebytes_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "MALWAREBYTES_MCP_REPUTATION_CHECK_EMAIL",
+          "MALWAREBYTES_MCP_REPUTATION_CHECK_LINK",
+          "MALWAREBYTES_MCP_REPUTATION_WHOIS"
+        ]
+      },
+      {
+        "id": 59,
+        "app": "Waterfall.io",
+        "covered": false,
+        "toolkits": [
+          "clickhouse_mcp",
+          "honeycomb_mcp"
+        ],
+        "n_tools": 5,
+        "tool_slugs": [
+          "CLICKHOUSE_MCP_CLICKSTACK_DESCRIBE_SOURCE",
+          "CLICKHOUSE_MCP_CLICKSTACK_LIST_SOURCES",
+          "CLICKHOUSE_MCP_CLICKSTACK_TRACE_WATERFALL",
+          "HONEYCOMB_MCP_GET_TRACE",
+          "HONEYCOMB_MCP_RUN_QUERY"
+        ]
+      },
+      {
+        "id": 60,
+        "app": "Clay",
+        "covered": true,
+        "toolkits": [
+          "clay_mcp"
+        ],
+        "n_tools": 2,
+        "tool_slugs": [
+          "CLAY_MCP_ASK_QUESTION_ABOUT_ACCOUNTS",
+          "CLAY_MCP_QUERY_OBJECTS"
+        ]
+      },
+      {
+        "id": 61,
+        "app": "GitHub",
+        "covered": true,
+        "toolkits": [
+          "github"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "GITHUB_ADD_A_REPOSITORY_COLLABORATOR",
+          "GITHUB_CREATE_AN_ORGANIZATION_REPOSITORY",
+          "GITHUB_CREATE_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER",
+          "GITHUB_GET_A_REPOSITORY",
+          "GITHUB_GET_THE_AUTHENTICATED_USER",
+          "GITHUB_LIST_ORGANIZATIONS_FOR_THE_AUTHENTICATED_USER",
+          "GITHUB_LIST_REPOSITORIES_FOR_THE_AUTHENTICATED_USER",
+          "GITHUB_UPDATE_A_REPOSITORY"
+        ]
+      },
+      {
+        "id": 62,
+        "app": "Vercel",
+        "covered": true,
+        "toolkits": [
+          "vercel"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "VERCEL_GET_AUTH_USER",
+          "VERCEL_GET_DEPLOYMENT",
+          "VERCEL_GET_DEPLOYMENTS",
+          "VERCEL_GET_PROJECT2",
+          "VERCEL_GET_PROJECTS",
+          "VERCEL_GET_TEAMS",
+          "VERCEL_LIST_DEPLOYMENT_ALIASES",
+          "VERCEL_LIST_DEPLOYMENT_CHECKS"
+        ]
+      },
+      {
+        "id": 63,
+        "app": "Netlify",
+        "covered": false,
+        "toolkits": [
+          "excalidraw_mcp"
+        ],
+        "n_tools": 2,
+        "tool_slugs": [
+          "EXCALIDRAW_MCP_CREATE_VIEW",
+          "EXCALIDRAW_MCP_EXPORT_TO_EXCALIDRAW"
+        ]
+      },
+      {
+        "id": 64,
+        "app": "Cloudflare",
+        "covered": true,
+        "toolkits": [
+          "cloudflare",
+          "cloudflare_api_key",
+          "cloudflare_browser_rendering",
+          "cloudflare_mcp"
+        ],
+        "n_tools": 12,
+        "tool_slugs": [
+          "CLOUDFLARE_API_KEY_GET_CLOUDFLARE_IP_ADDRESSES",
+          "CLOUDFLARE_BROWSER_RENDERING_CAPTURE_SCREENSHOT",
+          "CLOUDFLARE_BROWSER_RENDERING_TAKE_WEBPAGE_SNAPSHOT",
+          "CLOUDFLARE_GET_LISTS",
+          "CLOUDFLARE_LIST_ACCOUNTS",
+          "CLOUDFLARE_LIST_ACCOUNT_MEMBERS",
+          "CLOUDFLARE_LIST_DNS_RECORDS",
+          "CLOUDFLARE_LIST_ZONES",
+          "CLOUDFLARE_MCP_DOCS",
+          "CLOUDFLARE_MCP_EXECUTE",
+          "CLOUDFLARE_MCP_SEARCH",
+          "CLOUDFLARE_UPDATE_ZONE"
+        ]
+      },
+      {
+        "id": 65,
+        "app": "Supabase",
+        "covered": true,
+        "toolkits": [
+          "supabase"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "SUPABASE_BETA_RUN_SQL_QUERY",
+          "SUPABASE_GET_PROJECT",
+          "SUPABASE_GET_TABLE_SCHEMAS",
+          "SUPABASE_LIST_ALL_PROJECTS",
+          "SUPABASE_LIST_TABLES",
+          "SUPABASE_RUN_READ_ONLY_QUERY",
+          "SUPABASE_SELECT_FROM_TABLE"
+        ]
+      },
+      {
+        "id": 66,
+        "app": "Neo4j",
+        "covered": true,
+        "toolkits": [
+          "neo4j"
+        ],
+        "n_tools": 10,
+        "tool_slugs": [
+          "NEO4J_AGGREGATE_DIRECTORS",
+          "NEO4J_CREATE_INSTANCE_BETA",
+          "NEO4J_CREATE_SNAPSHOT",
+          "NEO4J_GET_INSTANCE_BETA",
+          "NEO4J_GET_SNAPSHOT",
+          "NEO4J_LIST_INSTANCES_BETA",
+          "NEO4J_LIST_SNAPSHOTS",
+          "NEO4J_RESTORE_SNAPSHOT",
+          "NEO4J_UPDATE_INSTANCE",
+          "NEO4J_UPDATE_INSTANCE_BETA"
+        ]
+      },
+      {
+        "id": 67,
+        "app": "Snowflake",
+        "covered": true,
+        "toolkits": [
+          "snowflake",
+          "snowflake_basic"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "SNOWFLAKE_BASIC_DESCRIBE_TABLE",
+          "SNOWFLAKE_BASIC_EXPLORE_COLUMNS",
+          "SNOWFLAKE_BASIC_RUN_QUERY",
+          "SNOWFLAKE_CANCEL_STATEMENT_EXECUTION",
+          "SNOWFLAKE_CHECK_STATEMENT_STATUS",
+          "SNOWFLAKE_EXECUTE_SQL",
+          "SNOWFLAKE_SHOW_TABLES"
+        ]
+      },
+      {
+        "id": 68,
+        "app": "MongoDB Atlas",
+        "covered": false,
+        "toolkits": [
+          "needle"
+        ],
+        "n_tools": 2,
+        "tool_slugs": [
+          "NEEDLE_GET_COLLECTION_STATS",
+          "NEEDLE_LIST_COLLECTIONS"
+        ]
+      },
+      {
+        "id": 69,
+        "app": "Datadog",
+        "covered": true,
+        "toolkits": [
+          "datadog"
+        ],
+        "n_tools": 14,
+        "tool_slugs": [
+          "DATADOG_CREATE_DASHBOARD",
+          "DATADOG_CREATE_MONITOR",
+          "DATADOG_GET_MONITOR",
+          "DATADOG_LIST_APM_SERVICES",
+          "DATADOG_LIST_DASHBOARDS",
+          "DATADOG_LIST_HOSTS",
+          "DATADOG_LIST_METRICS",
+          "DATADOG_LIST_MONITORS",
+          "DATADOG_QUERY_METRICS",
+          "DATADOG_SEARCH_LOGS",
+          "DATADOG_SEARCH_SPANS_ANALYTICS",
+          "DATADOG_SEARCH_TRACES"
+        ]
+      },
+      {
+        "id": 70,
+        "app": "Sentry",
+        "covered": true,
+        "toolkits": [
+          "sentry"
+        ],
+        "n_tools": 2,
+        "tool_slugs": [
+          "SENTRY_LIST_ORGANIZATIONS",
+          "SENTRY_VALIDATE_CREDENTIAL"
+        ]
+      },
+      {
+        "id": 71,
+        "app": "Notion",
+        "covered": false,
+        "toolkits": [],
+        "n_tools": 0,
+        "tool_slugs": []
+      },
+      {
+        "id": 72,
+        "app": "Airtable",
+        "covered": true,
+        "toolkits": [
+          "airtable"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "AIRTABLE_CREATE_RECORDS",
+          "AIRTABLE_CREATE_RECORD_FROM_NATURAL_LANGUAGE",
+          "AIRTABLE_GET_BASE_SCHEMA",
+          "AIRTABLE_GET_RECORD",
+          "AIRTABLE_LIST_RECORDS",
+          "AIRTABLE_UPDATE_MULTIPLE_RECORDS"
+        ]
+      },
+      {
+        "id": 73,
+        "app": "Linear",
+        "covered": true,
+        "toolkits": [
+          "linear"
+        ],
+        "n_tools": 6,
+        "tool_slugs": [
+          "LINEAR_CREATE_LINEAR_ISSUE",
+          "LINEAR_GET_CURRENT_USER",
+          "LINEAR_LIST_LINEAR_ISSUES",
+          "LINEAR_LIST_LINEAR_PROJECTS",
+          "LINEAR_LIST_LINEAR_STATES",
+          "LINEAR_LIST_LINEAR_USERS"
+        ]
+      },
+      {
+        "id": 74,
+        "app": "Jira",
+        "covered": true,
+        "toolkits": [
+          "jira"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "JIRA_FETCH_BULK_ISSUES",
+          "JIRA_GET_ALL_PROJECTS",
+          "JIRA_GET_CURRENT_USER",
+          "JIRA_GET_ISSUE",
+          "JIRA_GET_PROJECT",
+          "JIRA_LIST_ISSUE_COMMENTS",
+          "JIRA_SEARCH_FOR_ISSUES_USING_JQL_GET",
+          "JIRA_SEARCH_ISSUES"
+        ]
+      },
+      {
+        "id": 75,
+        "app": "Asana",
+        "covered": true,
+        "toolkits": [
+          "asana"
+        ],
+        "n_tools": 14,
+        "tool_slugs": [
+          "ASANA_ADD_FOLLOWERS_TO_TASK",
+          "ASANA_ADD_PROJECT_FOR_TASK",
+          "ASANA_ADD_TAG_TO_TASK",
+          "ASANA_ADD_TASK_TO_SECTION",
+          "ASANA_CREATE_ATTACHMENT_FOR_TASK",
+          "ASANA_CREATE_A_TAG_IN_A_WORKSPACE",
+          "ASANA_CREATE_A_TASK",
+          "ASANA_CREATE_PROJECT_FOR_WORKSPACE",
+          "ASANA_CREATE_STATUS_FOR_OBJECT",
+          "ASANA_CREATE_TAG",
+          "ASANA_GET_A_TASK",
+          "ASANA_GET_SECTIONS_IN_PROJECT"
+        ]
+      },
+      {
+        "id": 76,
+        "app": "Monday.com",
+        "covered": false,
+        "toolkits": [
+          "monday_mcp"
+        ],
+        "n_tools": 14,
+        "tool_slugs": [
+          "MONDAY_MCP_ALL_API_READ",
+          "MONDAY_MCP_ALL_API_WRITE",
+          "MONDAY_MCP_ALL_MONDAY_API",
+          "MONDAY_MCP_CHANGE_ITEM_COLUMN_VALUES",
+          "MONDAY_MCP_CREATE_BOARD",
+          "MONDAY_MCP_CREATE_COLUMN",
+          "MONDAY_MCP_CREATE_UPDATE",
+          "MONDAY_MCP_EXECUTE_CODE",
+          "MONDAY_MCP_GET_COLUMN_TYPE_INFO",
+          "MONDAY_MCP_GET_GRAPHQL_SCHEMA",
+          "MONDAY_MCP_GET_MONDAY_KNOWLEDGE",
+          "MONDAY_MCP_GET_TYPE_DETAILS"
+        ]
+      },
+      {
+        "id": 77,
+        "app": "ClickUp",
+        "covered": true,
+        "toolkits": [
+          "clickup",
+          "clickup_mcp"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "CLICKUP_CREATE_TASK",
+          "CLICKUP_GET_ACCESSIBLE_CUSTOM_FIELDS",
+          "CLICKUP_GET_LIST",
+          "CLICKUP_MCP_CLICKUP_CREATE_TASK",
+          "CLICKUP_MCP_CLICKUP_GET_LIST",
+          "CLICKUP_MCP_CLICKUP_UPDATE_TASK",
+          "CLICKUP_UPDATE_TASK"
+        ]
+      },
+      {
+        "id": 78,
+        "app": "Coda",
+        "covered": true,
+        "toolkits": [
+          "coda"
+        ],
+        "n_tools": 5,
+        "tool_slugs": [
+          "CODA_GET_MUTATION_STATUS",
+          "CODA_LIST_PAGES",
+          "CODA_LIST_PAGE_CONTENT",
+          "CODA_RESOLVE_BROWSER_LINK",
+          "CODA_UPDATE_A_PAGE"
+        ]
+      },
+      {
+        "id": 79,
+        "app": "Smartsheet",
+        "covered": false,
+        "toolkits": [
+          "gmail",
+          "googledrive",
+          "googlesheets"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "GMAIL_FETCH_EMAILS",
+          "GMAIL_SEARCH_PEOPLE",
+          "GOOGLEDRIVE_ADD_FILE_SHARING_PREFERENCE",
+          "GOOGLESHEETS_BATCH_GET",
+          "GOOGLESHEETS_LOOKUP_SPREADSHEET_ROW",
+          "GOOGLESHEETS_VALUES_GET",
+          "GOOGLESHEETS_VALUES_UPDATE"
+        ]
+      },
+      {
+        "id": 80,
+        "app": "Harvest",
+        "covered": true,
+        "toolkits": [
+          "harvest"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "HARVEST_CREATE_TIME_ENTRY",
+          "HARVEST_GET_PROJECT",
+          "HARVEST_GET_TASK",
+          "HARVEST_GET_TIME_ENTRY",
+          "HARVEST_LIST_PROJECTS",
+          "HARVEST_LIST_TASKS",
+          "HARVEST_LIST_TIME_ENTRIES",
+          "HARVEST_UPDATE_TIME_ENTRY"
+        ]
+      },
+      {
+        "id": 81,
+        "app": "Stripe",
+        "covered": true,
+        "toolkits": [
+          "stripe_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "STRIPE_MCP_SEARCH_STRIPE_DOCUMENTATION",
+          "STRIPE_MCP_STRIPE_API_SEARCH",
+          "STRIPE_MCP_STRIPE_IMPLEMENTATION_PLANNER"
+        ]
+      },
+      {
+        "id": 82,
+        "app": "Plaid",
+        "covered": true,
+        "toolkits": [
+          "plaid_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "PLAID_MCP_PLAID_DEBUG_ITEM",
+          "PLAID_MCP_PLAID_GET_TOOLS_INTRODUCTION",
+          "PLAID_MCP_PLAID_LIST_TEAMS"
+        ]
+      },
+      {
+        "id": 83,
+        "app": "Binance",
+        "covered": false,
+        "toolkits": [
+          "composio_search"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "COMPOSIO_SEARCH_FINANCE",
+          "COMPOSIO_SEARCH_GROQ_CHAT",
+          "COMPOSIO_SEARCH_NEWS"
+        ]
+      },
+      {
+        "id": 84,
+        "app": "Paygent Connect",
+        "covered": false,
+        "toolkits": [
+          "payhere"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "PAYHERE_GET_CURRENT_COMPANY_STATS",
+          "PAYHERE_LIST_PAYMENTS",
+          "PAYHERE_LIST_SUBSCRIPTIONS"
+        ]
+      },
+      {
+        "id": 85,
+        "app": "iPayX",
+        "covered": false,
+        "toolkits": [
+          "ramp_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "RAMP_MCP_RAMP_FUND_X402_WALLET",
+          "RAMP_MCP_RAMP_PAY_WITH_X402",
+          "RAMP_MCP_RAMP_PROVISION_X402_WALLET"
+        ]
+      },
+      {
+        "id": 86,
+        "app": "QuickBooks",
+        "covered": true,
+        "toolkits": [
+          "quickbooks"
+        ],
+        "n_tools": 12,
+        "tool_slugs": [
+          "QUICKBOOKS_CREATE_ACCOUNT",
+          "QUICKBOOKS_CREATE_SALES_RECEIPT",
+          "QUICKBOOKS_GET_GENERAL_LEDGER_REPORT",
+          "QUICKBOOKS_GET_REPORTS",
+          "QUICKBOOKS_GET_TRANSACTION_LIST_REPORT",
+          "QUICKBOOKS_QUERY_ACCOUNT",
+          "QUICKBOOKS_QUERY_ACCOUNTS",
+          "QUICKBOOKS_QUERY_ENTITIES",
+          "QUICKBOOKS_QUERY_ITEMS",
+          "QUICKBOOKS_READ_ACCOUNT",
+          "QUICKBOOKS_READ_EMPLOYEE",
+          "QUICKBOOKS_READ_INVOICE"
+        ]
+      },
+      {
+        "id": 87,
+        "app": "Xero",
+        "covered": true,
+        "toolkits": [
+          "xero"
+        ],
+        "n_tools": 8,
+        "tool_slugs": [
+          "XERO_CREATE_CONTACT",
+          "XERO_CREATE_INVOICE",
+          "XERO_GET_CONNECTIONS",
+          "XERO_GET_CONTACTS",
+          "XERO_GET_INVOICE",
+          "XERO_LIST_ACCOUNTS",
+          "XERO_LIST_TAX_RATES",
+          "XERO_POST_INVOICE_UPDATE"
+        ]
+      },
+      {
+        "id": 88,
+        "app": "Brex",
+        "covered": true,
+        "toolkits": [
+          "brex"
+        ],
+        "n_tools": 5,
+        "tool_slugs": [
+          "BREX_GET_CARD_DETAILS",
+          "BREX_GET_TRANSACTIONS",
+          "BREX_LIST_CARDS",
+          "BREX_LIST_CARD_ACCOUNTS",
+          "BREX_LIST_CARD_STATEMENTS"
+        ]
+      },
+      {
+        "id": 89,
+        "app": "Ramp",
+        "covered": true,
+        "toolkits": [
+          "ramp",
+          "ramp_mcp"
+        ],
+        "n_tools": 9,
+        "tool_slugs": [
+          "RAMP_CREATE_DEPARTMENT",
+          "RAMP_GET_DEPARTMENT",
+          "RAMP_LIST_DEPARTMENTS",
+          "RAMP_MCP_RAMP_LIMIT_INCREASE",
+          "RAMP_MCP_RAMP_LIST_CARDS",
+          "RAMP_MCP_RAMP_MERCHANTS",
+          "RAMP_MCP_RAMP_SEARCH_MERCHANTS",
+          "RAMP_MCP_RAMP_UPDATE_MERCHANT_RESTRICTIONS",
+          "RAMP_UPDATE_DEPARTMENT"
+        ]
+      },
+      {
+        "id": 90,
+        "app": "PitchBook",
+        "covered": false,
+        "toolkits": [
+          "apollo",
+          "companyenrich",
+          "leadmagic",
+          "zoominfo"
+        ],
+        "n_tools": 10,
+        "tool_slugs": [
+          "APOLLO_ORGANIZATION_ENRICHMENT",
+          "APOLLO_ORGANIZATION_SEARCH",
+          "APOLLO_VIEW_API_USAGE_STATS",
+          "APOLLO_VIEW_CREDIT_USAGE_STATS",
+          "COMPANYENRICH_COUNT_COMPANIES",
+          "COMPANYENRICH_CREATE_SEARCH_EXPORT_JOB",
+          "COMPANYENRICH_SEARCH_COMPANIES",
+          "LEADMAGIC_ENRICH_COMPANY_V3_DOCS_ALIAS",
+          "LEADMAGIC_SEARCH_COMPANIES",
+          "ZOOMINFO_SEARCH_COMPANY"
+        ]
+      },
+      {
+        "id": 91,
+        "app": "NotebookLM",
+        "covered": false,
+        "toolkits": [
+          "googledocs",
+          "googledrive",
+          "notion"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "GOOGLEDOCS_CREATE_DOCUMENT_MARKDOWN",
+          "GOOGLEDOCS_GET_DOCUMENT_PLAINTEXT",
+          "GOOGLEDOCS_SEARCH_DOCUMENTS",
+          "GOOGLEDOCS_UPDATE_DOCUMENT_MARKDOWN",
+          "GOOGLEDOCS_UPDATE_DOCUMENT_SECTION_MARKDOWN",
+          "GOOGLEDRIVE_CREATE_PERMISSION",
+          "NOTION_CREATE_NOTION_PAGE"
+        ]
+      },
+      {
+        "id": 92,
+        "app": "Otter AI",
+        "covered": true,
+        "toolkits": [
+          "otter_ai_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "OTTER_AI_MCP_OTTER_FETCH",
+          "OTTER_AI_MCP_OTTER_GET_USER_INFO",
+          "OTTER_AI_MCP_OTTER_SEARCH"
+        ]
+      },
+      {
+        "id": 93,
+        "app": "Fathom",
+        "covered": true,
+        "toolkits": [
+          "fathom"
+        ],
+        "n_tools": 7,
+        "tool_slugs": [
+          "FATHOM_CREATE_WEBHOOK",
+          "FATHOM_DELETE_WEBHOOK",
+          "FATHOM_GET_RECORDING_SUMMARY",
+          "FATHOM_GET_RECORDING_TRANSCRIPT",
+          "FATHOM_LIST_MEETINGS",
+          "FATHOM_LIST_TEAMS",
+          "FATHOM_LIST_TEAM_MEMBERS"
+        ]
+      },
+      {
+        "id": 94,
+        "app": "Consensus",
+        "covered": true,
+        "toolkits": [
+          "consensus",
+          "consensus_mcp"
+        ],
+        "n_tools": 2,
+        "tool_slugs": [
+          "CONSENSUS_MCP_SEARCH",
+          "CONSENSUS_SEARCH_PAPERS"
+        ]
+      },
+      {
+        "id": 95,
+        "app": "Reducto",
+        "covered": false,
+        "toolkits": [
+          "gemini"
+        ],
+        "n_tools": 2,
+        "tool_slugs": [
+          "GEMINI_COUNT_TOKENS",
+          "GEMINI_LIST_MODELS"
+        ]
+      },
+      {
+        "id": 96,
+        "app": "Devin",
+        "covered": true,
+        "toolkits": [
+          "devin_mcp"
+        ],
+        "n_tools": 5,
+        "tool_slugs": [
+          "DEVIN_MCP_ASK_WIKI_QUESTION",
+          "DEVIN_MCP_GENERATE_WIKI",
+          "DEVIN_MCP_LIST_WIKI_REPOS",
+          "DEVIN_MCP_READ_WIKI_CONTENTS",
+          "DEVIN_MCP_READ_WIKI_STRUCTURE"
+        ]
+      },
+      {
+        "id": 97,
+        "app": "higgsfield",
+        "covered": true,
+        "toolkits": [
+          "higgsfield_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "HIGGSFIELD_MCP_GENERATE_IMAGE",
+          "HIGGSFIELD_MCP_GENERATE_VIDEO",
+          "HIGGSFIELD_MCP_MODELS_EXPLORE"
+        ]
+      },
+      {
+        "id": 98,
+        "app": "Mermaid CLI",
+        "covered": true,
+        "toolkits": [
+          "mermaid_chart_mcp"
+        ],
+        "n_tools": 1,
+        "tool_slugs": [
+          "MERMAID_CHART_MCP_VALIDATE_AND_RENDER_MERMAID_DIAGRAM"
+        ]
+      },
+      {
+        "id": 99,
+        "app": "YouTube Transcript",
+        "covered": true,
+        "toolkits": [
+          "apify",
+          "just_one_api",
+          "scrapecreators",
+          "serpapi",
+          "supadata",
+          "youtube",
+          "youtube_transcript"
+        ],
+        "n_tools": 12,
+        "tool_slugs": [
+          "APIFY_SCRAPE_YOUTUBE_VIDEO_TRANSCRIPTS",
+          "JUST_ONE_API_YOUTUBE_GET_VIDEO_CAPTIONS",
+          "SCRAPECREATORS_GET_YOUTUBE_VIDEO",
+          "SCRAPECREATORS_GET_YOUTUBE_VIDEO_TRANSCRIPT",
+          "SERPAPI_GET_YOUTUBE_VIDEO_TRANSCRIPT",
+          "SUPADATA_GET_MEDIA_METADATA",
+          "SUPADATA_GET_TRANSCRIPT",
+          "SUPADATA_GET_TRANSCRIPT_BY_JOB_ID",
+          "YOUTUBE_LOAD_CAPTIONS",
+          "YOUTUBE_TRANSCRIPT_GET_STORED_TRANSCRIPT",
+          "YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPT",
+          "YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPT_JOB_STATUS"
+        ]
+      },
+      {
+        "id": 100,
+        "app": "Grain",
+        "covered": false,
+        "toolkits": [
+          "granola_mcp"
+        ],
+        "n_tools": 3,
+        "tool_slugs": [
+          "GRANOLA_MCP_GET_MEETINGS",
+          "GRANOLA_MCP_LIST_MEETINGS",
+          "GRANOLA_MCP_QUERY_GRANOLA_MEETINGS"
+        ]
+      }
+    ],
+    "mcp_tools": 11,
+    "covered_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      15,
+      18,
+      19,
+      23,
+      25,
+      26,
+      27,
+      28,
+      31,
+      32,
+      33,
+      35,
+      36,
+      38,
+      40,
+      41,
+      44,
+      48,
+      51,
+      53,
+      54,
+      55,
+      56,
+      57,
+      60,
+      61,
+      62,
+      64,
+      65,
+      66,
+      67,
+      69,
+      70,
+      72,
+      73,
+      74,
+      75,
+      77,
+      78,
+      80,
+      81,
+      82,
+      86,
+      87,
+      88,
+      89,
+      92,
+      93,
+      94,
+      96,
+      97,
+      98,
+      99
+    ],
+    "n_covered": 64
   },
   "human_in_the_loop": {
     "proposals_file": "data/research_drafts.csv",

@@ -1,0 +1,1 @@
+{"id": 10, "app": "DealCloud", "covered": false, "toolkits": ["api_labz", "apollo"], "n_tools": 5, "tool_slugs": ["API_LABZ_INTEGRATE_DEAL", "API_LABZ_TRELLO_AI_SEARCH_ENGINE", "APOLLO_GET_DEAL", "APOLLO_LIST_DEALS", "APOLLO_UPDATE_DEALS"]}

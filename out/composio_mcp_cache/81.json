@@ -1,0 +1,1 @@
+{"id": 81, "app": "Stripe", "covered": true, "toolkits": ["stripe_mcp"], "n_tools": 3, "tool_slugs": ["STRIPE_MCP_SEARCH_STRIPE_DOCUMENTATION", "STRIPE_MCP_STRIPE_API_SEARCH", "STRIPE_MCP_STRIPE_IMPLEMENTATION_PLANNER"]}

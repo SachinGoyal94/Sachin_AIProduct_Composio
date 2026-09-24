@@ -1,0 +1,1 @@
+{"id": 58, "app": "Sherlock", "covered": false, "toolkits": ["malwarebytes_mcp"], "n_tools": 3, "tool_slugs": ["MALWAREBYTES_MCP_REPUTATION_CHECK_EMAIL", "MALWAREBYTES_MCP_REPUTATION_CHECK_LINK", "MALWAREBYTES_MCP_REPUTATION_WHOIS"]}

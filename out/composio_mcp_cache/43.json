@@ -1,0 +1,1 @@
+{"id": 43, "app": "BigCommerce", "covered": false, "toolkits": ["bigmailer"], "n_tools": 4, "tool_slugs": ["BIGMAILER_CREATE_BRAND_PROPERTY", "BIGMAILER_LIST_ALL_BRANDS", "BIGMAILER_LIST_BRAND_PROPERTIES", "BIGMAILER_UPDATE_BRAND_PROPERTY"]}

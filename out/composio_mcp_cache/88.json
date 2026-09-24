@@ -1,0 +1,1 @@
+{"id": 88, "app": "Brex", "covered": true, "toolkits": ["brex"], "n_tools": 5, "tool_slugs": ["BREX_GET_CARD_DETAILS", "BREX_GET_TRANSACTIONS", "BREX_LIST_CARDS", "BREX_LIST_CARD_ACCOUNTS", "BREX_LIST_CARD_STATEMENTS"]}

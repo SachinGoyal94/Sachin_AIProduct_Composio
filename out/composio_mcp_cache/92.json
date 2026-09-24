@@ -1,0 +1,1 @@
+{"id": 92, "app": "Otter AI", "covered": true, "toolkits": ["otter_ai_mcp"], "n_tools": 3, "tool_slugs": ["OTTER_AI_MCP_OTTER_FETCH", "OTTER_AI_MCP_OTTER_GET_USER_INFO", "OTTER_AI_MCP_OTTER_SEARCH"]}

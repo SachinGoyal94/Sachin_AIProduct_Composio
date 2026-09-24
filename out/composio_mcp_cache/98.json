@@ -1,0 +1,1 @@
+{"id": 98, "app": "Mermaid CLI", "covered": true, "toolkits": ["mermaid_chart_mcp"], "n_tools": 1, "tool_slugs": ["MERMAID_CHART_MCP_VALIDATE_AND_RENDER_MERMAID_DIAGRAM"]}

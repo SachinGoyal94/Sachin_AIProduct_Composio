@@ -1,0 +1,1 @@
+{"id": 17, "app": "Plain", "covered": false, "toolkits": ["box_mcp", "tisane", "zenrows"], "n_tools": 8, "tool_slugs": ["BOX_MCP_GET_FILE_CONTENT", "BOX_MCP_GET_FILE_DETAILS", "BOX_MCP_SEARCH_FILES_KEYWORD", "TISANE_ANALYZE_TEXT", "TISANE_DETECT_LANGUAGES", "TISANE_EXTRACT_TEXT", "ZENROWS_GET_PLAINTEXT", "ZENROWS_SCRAPE_URL_AUTOPARSE"]}

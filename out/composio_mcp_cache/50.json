@@ -1,0 +1,1 @@
+{"id": 50, "app": "fanbasis", "covered": false, "toolkits": ["tik_hub"], "n_tools": 4, "tool_slugs": ["TIK_HUB_DOUYIN_WEB_ENCRYPT_UID_TO_SEC_USER_ID", "TIK_HUB_DOUYIN_WEB_FETCH_USER_FANS_LIST", "TIK_HUB_DOUYIN_WEB_FETCH_USER_FOLLOWING_LIST", "TIK_HUB_DOUYIN_WEB_GET_SEC_USER_ID"]}

@@ -1,0 +1,1 @@
+{"id": 27, "app": "Telegram", "covered": true, "toolkits": ["telegram"], "n_tools": 8, "tool_slugs": ["TELEGRAM_ANSWER_CALLBACK_QUERY", "TELEGRAM_GET_CHAT", "TELEGRAM_GET_CHAT_HISTORY", "TELEGRAM_GET_CHAT_MEMBER", "TELEGRAM_GET_ME", "TELEGRAM_GET_UPDATES", "TELEGRAM_SEND_MESSAGE", "TELEGRAM_SET_MY_COMMANDS"]}

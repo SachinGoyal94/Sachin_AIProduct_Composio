@@ -1,0 +1,1 @@
+{"id": 96, "app": "Devin", "covered": true, "toolkits": ["devin_mcp"], "n_tools": 5, "tool_slugs": ["DEVIN_MCP_ASK_WIKI_QUESTION", "DEVIN_MCP_GENERATE_WIKI", "DEVIN_MCP_LIST_WIKI_REPOS", "DEVIN_MCP_READ_WIKI_CONTENTS", "DEVIN_MCP_READ_WIKI_STRUCTURE"]}

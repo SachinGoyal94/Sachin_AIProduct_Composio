@@ -218,20 +218,13 @@
   "oauth_total": 27,
   "oauth_self_serve": 22,
   "oauth_gated": 5,
+  "composio_covered": 64,
   "easy_wins": [
     {
       "id": 6,
       "name": "Podio",
       "category": "CRM & Sales",
       "gate": "Open self-serve",
-      "surface": "Documented REST",
-      "mcp": "No"
-    },
-    {
-      "id": 97,
-      "name": "higgsfield",
-      "category": "AI, Research & Media",
-      "gate": "Paid self-serve",
       "surface": "Documented REST",
       "mcp": "No"
     }
@@ -429,9 +422,9 @@
     },
     {
       "rank": 5,
-      "claim": "2 apps are easy wins - self-serve, documented REST/GraphQL, and still no official MCP",
-      "detail": "These are the highest-leverage toolkit builds: credentials in minutes, real API surface, and no incumbent MCP to compete with. Full list in the matrix.",
-      "metric": "2",
+      "claim": "1 apps are easy wins - self-serve, documented REST/GraphQL, no official MCP, and none of them are in Composio's catalog yet",
+      "detail": "These are the highest-leverage toolkit builds: credentials in minutes, real API surface, no incumbent MCP to compete with - and the Composio catalog cross-check (live MCP search) confirms 64 of the 100 are already covered, so these 1 are exactly what is left.",
+      "metric": "1",
       "metric_label": "build-shortlist apps"
     },
     {

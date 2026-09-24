@@ -1,0 +1,1 @@
+{"id": 77, "app": "ClickUp", "covered": true, "toolkits": ["clickup", "clickup_mcp"], "n_tools": 7, "tool_slugs": ["CLICKUP_CREATE_TASK", "CLICKUP_GET_ACCESSIBLE_CUSTOM_FIELDS", "CLICKUP_GET_LIST", "CLICKUP_MCP_CLICKUP_CREATE_TASK", "CLICKUP_MCP_CLICKUP_GET_LIST", "CLICKUP_MCP_CLICKUP_UPDATE_TASK", "CLICKUP_UPDATE_TASK"]}

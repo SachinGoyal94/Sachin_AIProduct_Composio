@@ -1,0 +1,1 @@
+{"id": 23, "app": "Zoho Cliq", "covered": true, "toolkits": ["zoho"], "n_tools": 4, "tool_slugs": ["ZOHO_CREATE_EVENT", "ZOHO_GET_MODULE_FIELDS", "ZOHO_SEARCH_EVENTS", "ZOHO_UPDATE_EVENT"]}

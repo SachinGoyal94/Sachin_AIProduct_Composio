@@ -1,0 +1,1 @@
+{"id": 82, "app": "Plaid", "covered": true, "toolkits": ["plaid_mcp"], "n_tools": 3, "tool_slugs": ["PLAID_MCP_PLAID_DEBUG_ITEM", "PLAID_MCP_PLAID_GET_TOOLS_INTRODUCTION", "PLAID_MCP_PLAID_LIST_TEAMS"]}

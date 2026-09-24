@@ -1,0 +1,1 @@
+{"id": 74, "app": "Jira", "covered": true, "toolkits": ["jira"], "n_tools": 8, "tool_slugs": ["JIRA_FETCH_BULK_ISSUES", "JIRA_GET_ALL_PROJECTS", "JIRA_GET_CURRENT_USER", "JIRA_GET_ISSUE", "JIRA_GET_PROJECT", "JIRA_LIST_ISSUE_COMMENTS", "JIRA_SEARCH_FOR_ISSUES_USING_JQL_GET", "JIRA_SEARCH_ISSUES"]}

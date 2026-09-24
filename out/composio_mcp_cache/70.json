@@ -1,0 +1,1 @@
+{"id": 70, "app": "Sentry", "covered": true, "toolkits": ["sentry"], "n_tools": 2, "tool_slugs": ["SENTRY_LIST_ORGANIZATIONS", "SENTRY_VALIDATE_CREDENTIAL"]}

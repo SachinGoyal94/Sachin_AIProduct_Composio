@@ -1,0 +1,1 @@
+{"id": 65, "app": "Supabase", "covered": true, "toolkits": ["supabase"], "n_tools": 7, "tool_slugs": ["SUPABASE_BETA_RUN_SQL_QUERY", "SUPABASE_GET_PROJECT", "SUPABASE_GET_TABLE_SCHEMAS", "SUPABASE_LIST_ALL_PROJECTS", "SUPABASE_LIST_TABLES", "SUPABASE_RUN_READ_ONLY_QUERY", "SUPABASE_SELECT_FROM_TABLE"]}

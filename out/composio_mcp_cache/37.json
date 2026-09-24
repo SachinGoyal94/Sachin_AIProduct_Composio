@@ -1,0 +1,1 @@
+{"id": 37, "app": "systeme.io", "covered": false, "toolkits": ["wix_mcp"], "n_tools": 3, "tool_slugs": ["WIX_MCP_CALL_WIX_SITE_API", "WIX_MCP_GET_SITE_CONTEXT", "WIX_MCP_SEARCH_WIX_REST_DOCUMENTATION"]}

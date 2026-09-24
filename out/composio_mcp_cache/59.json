@@ -1,0 +1,1 @@
+{"id": 59, "app": "Waterfall.io", "covered": false, "toolkits": ["clickhouse_mcp", "honeycomb_mcp"], "n_tools": 5, "tool_slugs": ["CLICKHOUSE_MCP_CLICKSTACK_DESCRIBE_SOURCE", "CLICKHOUSE_MCP_CLICKSTACK_LIST_SOURCES", "CLICKHOUSE_MCP_CLICKSTACK_TRACE_WATERFALL", "HONEYCOMB_MCP_GET_TRACE", "HONEYCOMB_MCP_RUN_QUERY"]}

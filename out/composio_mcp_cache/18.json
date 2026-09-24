@@ -1,0 +1,1 @@
+{"id": 18, "app": "Help Scout", "covered": true, "toolkits": ["help_scout"], "n_tools": 6, "tool_slugs": ["HELP_SCOUT_GET_CONVERSATION", "HELP_SCOUT_GET_CONVERSATIONS_DRILLDOWN", "HELP_SCOUT_LIST_CONVERSATIONS", "HELP_SCOUT_LIST_TAGS", "HELP_SCOUT_LIST_THREADS", "HELP_SCOUT_UPDATE_CONVERSATION"]}

@@ -1,0 +1,1 @@
+{"id": 79, "app": "Smartsheet", "covered": false, "toolkits": ["gmail", "googledrive", "googlesheets"], "n_tools": 7, "tool_slugs": ["GMAIL_FETCH_EMAILS", "GMAIL_SEARCH_PEOPLE", "GOOGLEDRIVE_ADD_FILE_SHARING_PREFERENCE", "GOOGLESHEETS_BATCH_GET", "GOOGLESHEETS_LOOKUP_SPREADSHEET_ROW", "GOOGLESHEETS_VALUES_GET", "GOOGLESHEETS_VALUES_UPDATE"]}

@@ -1,0 +1,1 @@
+{"id": 42, "app": "WooCommerce", "covered": false, "toolkits": ["finerworks"], "n_tools": 3, "tool_slugs": ["FINERWORKS_DISCONNECT_VIRTUAL_INVENTORY", "FINERWORKS_GET_USER", "FINERWORKS_LIST_VIRTUAL_INVENTORY"]}

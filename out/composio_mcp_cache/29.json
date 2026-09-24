@@ -1,0 +1,1 @@
+{"id": 29, "app": "Aircall", "covered": false, "toolkits": ["cal"], "n_tools": 4, "tool_slugs": ["CAL_CREATE_PHONE_CALL_EVENT", "CAL_CREATE_PHONE_CALL_FOR_EVENT_TYPE", "CAL_GET_TEAMS_LIST", "CAL_RETRIEVE_TEAM_EVENT_TYPES"]}

@@ -1,0 +1,1 @@
+{"id": 45, "app": "Magento (Adobe Commerce)", "covered": false, "toolkits": ["benchmark_email"], "n_tools": 3, "tool_slugs": ["BENCHMARK_EMAIL_GET_MAGENTO_HTML_DROP", "BENCHMARK_EMAIL_GET_MAGENTO_HTML_SELECTED", "BENCHMARK_EMAIL_GET_SIGNUP_FORM_LIST"]}

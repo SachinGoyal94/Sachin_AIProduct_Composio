@@ -93,7 +93,8 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
   <div class="tile"><div class="big">{official_mcp}</div>
     <div class="lab">official MCP servers found</div></div>
   <div class="tile"><div class="big">{len(easy_wins)}</div>
-    <div class="lab">easy wins - build-shortlist</div></div>
+    <div class="lab">{'easy wins - unbuilt in Composio' if composio.get('ok')
+                      else 'easy wins - build-shortlist'}</div></div>
 </div>"""
 
     hero = f"""
@@ -111,7 +112,7 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
   {tiles}
   <div class="verdict-strip"><span class="k">THE ANSWER</span>
     <span>Build now: <b>{self_serve} self-serve apps</b> (documented APIs, credentials
-    in minutes). <b>{len(easy_wins)} easy wins</b> still lack an official MCP server.
+    in minutes). <b>{len(easy_wins)} easy wins</b> {'are still unbuilt in Composio\u2019s catalog' if composio.get('ok') else 'still lack an official MCP server'}.
     <b>{sales} apps</b> need outreach first; <b>{admin_g}</b> need workspace-admin
     approval; <b>{no_api}</b> have no public API at all - a hard stop.</span></div>
   <div class="asof">Research window: September 2026 · draft model
@@ -200,9 +201,10 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
   </div>
   <div class="two-col">
     <div class="chart"><h4><span class="pill g">easy wins</span>&nbsp;
-      {len(easy_wins)} apps you can build against today - no official MCP yet</h4>
+      {len(easy_wins)} apps you can build against today - no official MCP, and
+      unbuilt in Composio</h4>
       <div class="csub">self-serve credentials + documented REST/GraphQL + MCP "No"
-        · click to open in the matrix</div>
+        + absent from Composio's live catalog · click to open in the matrix</div>
       <ul class="winlist">{wins_html}</ul></div>
     <div class="chart"><h4><span class="pill r">needs outreach</span>&nbsp;
       {sales} apps gated behind sales or partnerships</h4>
@@ -305,9 +307,13 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
         confirmed it is genuinely a dead end, not a parsing failure.</li>
       <li><b>Verdict judgment.</b> "Ready with caveats" is an opinion. The agent
         proposed; the human owned the final call.</li>
-      <li><b>Infra reality.</b> The provided Composio API key is rejected by the
-        current v3 API (HTTP 401 - the key predates the migration), so the
-        toolbelt cross-check degrades gracefully instead of guessing.</li>
+      <li><b>Auth archaeology.</b> The provided Composio key is rejected by the
+        v3 REST API (x-api-key vs x-consumer-api-key auth schemes). Rather than
+        stop there, the catalog cross-check was re-implemented over Composio's
+        live MCP server: COMPOSIO_SEARCH_TOOLS called once per app (100 calls,
+        cached), finding <b>{composio.get('n_covered', '?')} of 100 apps already
+        in Composio's catalog</b> - which is what defines the build-shortlist
+        above.</li>
     </ul></div>
 </div></section>"""
 
@@ -422,7 +428,7 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     <div class="callout amber" style="margin-top:0"><h4>Composio cross-check</h4>
       <p style="margin:0">{esc(composio.get('note') or 'not run')} -
       method: {esc(composio.get('method') or 'n/a')}
-      {f'· {composio["toolkits_seen"]} toolkits seen, {len(composio.get("apps_covered", []))} of our apps covered' if composio.get('ok') else ''}</p></div>
+      {f'· {composio.get("n_covered", 0)} of 100 apps already covered' if composio.get('ok') else ''}</p></div>
     <div class="callout" style="background:#eef6ff;border:1px solid #cfe1ff;margin-top:0">
       <b>Deploying the page:</b> index.html is a single static file with zero
       external dependencies - drop it on GitHub Pages / Netlify / any static

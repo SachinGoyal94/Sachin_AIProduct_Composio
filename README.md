@@ -85,8 +85,12 @@ index.html  the deliverable (single file, zero external deps, works offline)
 - MCP status is a snapshot (September 2026); vendors ship servers monthly.
 - LLM drafting is nondeterministic — the exact draft used for the published
   numbers is committed in `out/draft_pass1.csv`.
-- The provided `COMPOSIO_API_KEY` is rejected by the current v3 API (HTTP 401);
-  that stage reports the real error instead of pretending.
+- The Composio cross-check runs **live over Composio's MCP server**
+  (`connect.composio.dev/mcp`, `x-consumer-api-key` auth): `COMPOSIO_SEARCH_TOOLS`
+  is called once per app (100 calls, cached under `out/composio_mcp_cache/`) to
+  measure how many researched apps already ship as Composio toolkits. The same
+  key is rejected by the v3 REST API (`x-api-key` scheme) — documented in the
+  page's honesty notes.
 
 ## Author
 

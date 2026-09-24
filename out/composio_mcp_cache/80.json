@@ -1,0 +1,1 @@
+{"id": 80, "app": "Harvest", "covered": true, "toolkits": ["harvest"], "n_tools": 8, "tool_slugs": ["HARVEST_CREATE_TIME_ENTRY", "HARVEST_GET_PROJECT", "HARVEST_GET_TASK", "HARVEST_GET_TIME_ENTRY", "HARVEST_LIST_PROJECTS", "HARVEST_LIST_TASKS", "HARVEST_LIST_TIME_ENTRIES", "HARVEST_UPDATE_TIME_ENTRY"]}

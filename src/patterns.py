@@ -59,6 +59,15 @@ def compute() -> dict:
     rows = load_verified()
     n = len(rows)
 
+    # Composio catalog coverage (from the MCP cross-check, when it ran)
+    covered_ids: set[int] = set()
+    composio_path = PATTERNS_JSON.parent / "composio_toolbelt.json"
+    if composio_path.exists():
+        import json
+        comp = json.loads(composio_path.read_text(encoding="utf-8"))
+        if comp.get("ok"):
+            covered_ids = set(comp.get("covered_ids", []))
+
     def dist(attr, vocab=None):
         c = Counter(getattr(r, attr) for r in rows if getattr(r, attr, ""))
         if vocab:
@@ -96,7 +105,8 @@ def compute() -> dict:
     oauth_gated = sum(1 for r in rows if r.auth == "OAuth2"
                       and r.gate in ("Contact sales / partner", "Admin approval"))
 
-    # easy wins: self-serve + documented API + no official MCP yet
+    # easy wins: self-serve + documented API + no official MCP yet,
+    # and (when the Composio cross-check ran) not already in Composio's catalog
     easy_wins = [
         {"id": r.id, "name": r.name, "category": r.category, "gate": r.gate,
          "surface": r.surface, "mcp": r.mcp}
@@ -104,6 +114,7 @@ def compute() -> dict:
         if r.gate in ("Open self-serve", "Paid self-serve")
         and r.surface in ("Documented REST", "Documented GraphQL", "REST + GraphQL")
         and r.mcp == "No"
+        and (not covered_ids or r.id not in covered_ids)
     ]
     needs_outreach = [
         {"id": r.id, "name": r.name, "category": r.category, "gate": r.gate,
@@ -128,11 +139,13 @@ def compute() -> dict:
         "oauth_total": oauth,
         "oauth_self_serve": oauth_self_serve,
         "oauth_gated": oauth_gated,
+        "composio_covered": len(covered_ids),
         "easy_wins": easy_wins,
         "needs_outreach": needs_outreach,
         "tiers": {"counts": dict(tiers), "ids": tiered},
         "headline": _headline(rows, auth, gate_by_cat, mcp_by_cat,
-                              blocker_clusters(rows), easy_wins),
+                              blocker_clusters(rows), easy_wins,
+                              len(covered_ids)),
     }
     write_json(PATTERNS_JSON, patterns)
     print(f"patterns: {len(easy_wins)} easy wins, {len(needs_outreach)} "
@@ -140,7 +153,8 @@ def compute() -> dict:
     return patterns
 
 
-def _headline(rows, auth, gate_by_cat, mcp_by_cat, blockers, easy_wins) -> list[dict]:
+def _headline(rows, auth, gate_by_cat, mcp_by_cat, blockers, easy_wins,
+              composio_covered=0) -> list[dict]:
     """Six plain-language findings, each backed by a computed number."""
     n = len(rows)
     oauth = auth.get("OAuth2", 0)
@@ -195,10 +209,15 @@ def _headline(rows, auth, gate_by_cat, mcp_by_cat, blockers, easy_wins) -> list[
          "metric_label": "apps blocked by the top cause"},
         {"rank": 5,
          "claim": f"{len(easy_wins)} apps are easy wins - self-serve, documented "
-                  f"REST/GraphQL, and still no official MCP",
+                  f"REST/GraphQL, no official MCP"
+                  + (f", and none of them are in Composio's catalog yet"
+                     if composio_covered else ""),
          "detail": "These are the highest-leverage toolkit builds: credentials in "
-                   "minutes, real API surface, and no incumbent MCP to compete "
-                   "with. Full list in the matrix.",
+                   "minutes, real API surface, no incumbent MCP to compete with"
+                   + (f" - and the Composio catalog cross-check (live MCP search) "
+                      f"confirms {composio_covered} of the 100 are already covered, "
+                      f"so these {len(easy_wins)} are exactly what is left."
+                      if composio_covered else ". Full list in the matrix."),
          "metric": str(len(easy_wins)),
          "metric_label": "build-shortlist apps"},
         {"rank": 6,

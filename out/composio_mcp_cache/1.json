@@ -1,0 +1,1 @@
+{"id": 1, "app": "Salesforce", "covered": true, "toolkits": ["salesforce"], "n_tools": 2, "tool_slugs": ["SALESFORCE_EXECUTE_SOSL_SEARCH", "SALESFORCE_PARAMETERIZED_SEARCH"]}

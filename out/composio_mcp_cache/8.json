@@ -1,0 +1,1 @@
+{"id": 8, "app": "Close", "covered": true, "toolkits": ["close"], "n_tools": 6, "tool_slugs": ["CLOSE_CREATE_CALL", "CLOSE_CREATE_LEAD", "CLOSE_CREATE_SMS", "CLOSE_CREATE_TASK", "CLOSE_DELETE_CALL", "CLOSE_GET_NOTE"]}

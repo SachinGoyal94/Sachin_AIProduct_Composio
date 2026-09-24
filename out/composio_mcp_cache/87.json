@@ -1,0 +1,1 @@
+{"id": 87, "app": "Xero", "covered": true, "toolkits": ["xero"], "n_tools": 8, "tool_slugs": ["XERO_CREATE_CONTACT", "XERO_CREATE_INVOICE", "XERO_GET_CONNECTIONS", "XERO_GET_CONTACTS", "XERO_GET_INVOICE", "XERO_LIST_ACCOUNTS", "XERO_LIST_TAX_RATES", "XERO_POST_INVOICE_UPDATE"]}

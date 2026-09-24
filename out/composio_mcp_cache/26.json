@@ -1,0 +1,1 @@
+{"id": 26, "app": "Discord", "covered": true, "toolkits": ["discord"], "n_tools": 1, "tool_slugs": ["DISCORD_GET_GATEWAY"]}

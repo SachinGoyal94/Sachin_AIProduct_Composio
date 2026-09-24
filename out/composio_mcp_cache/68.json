@@ -1,0 +1,1 @@
+{"id": 68, "app": "MongoDB Atlas", "covered": false, "toolkits": ["needle"], "n_tools": 2, "tool_slugs": ["NEEDLE_GET_COLLECTION_STATS", "NEEDLE_LIST_COLLECTIONS"]}

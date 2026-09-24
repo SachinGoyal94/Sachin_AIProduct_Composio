@@ -1,0 +1,1 @@
+{"id": 41, "app": "Shopify", "covered": true, "toolkits": ["shopify"], "n_tools": 5, "tool_slugs": ["SHOPIFY_GET_ACCESS_SCOPES", "SHOPIFY_GET_SHOP_DETAILS", "SHOPIFY_QUERY_CURRENT_APP_INSTALLATION", "SHOPIFY_QUERY_ONLINE_STORE", "SHOPIFY_QUERY_SHOP"]}

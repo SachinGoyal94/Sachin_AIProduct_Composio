@@ -1,0 +1,1 @@
+{"id": 44, "app": "Salesforce Commerce Cloud", "covered": true, "toolkits": ["salesforce"], "n_tools": 4, "tool_slugs": ["SALESFORCE_CREATE_SOBJECT_TREE", "SALESFORCE_CREATE_S_OBJECT_RECORD", "SALESFORCE_POST_COMPOSITE_GRAPH", "SALESFORCE_POST_COMPOSITE_SOBJECTS"]}

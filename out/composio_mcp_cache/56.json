@@ -1,0 +1,1 @@
+{"id": 56, "app": "Firecrawl", "covered": true, "toolkits": ["firecrawl"], "n_tools": 8, "tool_slugs": ["FIRECRAWL_BATCH_SCRAPE", "FIRECRAWL_BATCH_SCRAPE_GET", "FIRECRAWL_BATCH_SCRAPE_GET_ERRORS", "FIRECRAWL_CRAWL_GET", "FIRECRAWL_CRAWL_V2", "FIRECRAWL_EXTRACT", "FIRECRAWL_SCRAPE", "FIRECRAWL_START_AGENT"]}

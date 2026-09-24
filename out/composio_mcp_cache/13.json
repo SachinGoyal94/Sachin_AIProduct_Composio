@@ -1,0 +1,1 @@
+{"id": 13, "app": "Freshdesk", "covered": true, "toolkits": ["freshdesk"], "n_tools": 4, "tool_slugs": ["FRESHDESK_GET_SEARCH", "FRESHDESK_GET_TICKETS", "FRESHDESK_LIST_TICKET_FIELDS", "FRESHDESK_VIEW_TICKET"]}
