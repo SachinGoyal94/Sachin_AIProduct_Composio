@@ -4,13 +4,15 @@ id,name,category,auth,gate,surface,mcp,verdict,source
 10,DealCloud,CRM & Sales,API key,Admin approval,Documented REST,Yes (official),Ready with caveats,https://api.docs.dealcloud.com/docs/apikeys
 13,Freshdesk,Support & Helpdesk,API key,Open self-serve,Documented REST,Yes (community),Ready,https://developers.freshdesk.com/api/
 17,Plain,Support & Helpdesk,API key,Open self-serve,Documented GraphQL,Yes (official),Ready,https://www.plain.com/docs/graphql/authentication
-22,Slack,Communications & Messaging,OAuth2,Open self-serve,Documented REST,Yes (official),Ready,https://api.slack.com/authentication
+21,Slack,Communications & Messaging,OAuth2,Open self-serve,Documented REST,Yes (official),Ready,https://api.slack.com/authentication
 27,Telegram,Communications & Messaging,Token,Open self-serve,Documented REST,Yes (community),Ready,https://core.telegram.org/bots/api
-33,LinkedIn Ads,Marketing & Ads,OAuth2,Admin approval,Documented REST,No,Ready with caveats,https://learn.microsoft.com/en-us/linkedin/marketing/
+33,LinkedIn Ads,Marketing & Ads,OAuth2,Admin approval,Documented REST,Yes (community),Ready with caveats,https://learn.microsoft.com/en-us/linkedin/marketing/
 37,systeme.io,Marketing & Ads,API key,Open self-serve,Documented REST,Yes (official),Ready with caveats,https://developer.systeme.io/reference
-43,BigCommerce,Ecommerce,Token,Open self-serve,REST + GraphQL,No,Ready,https://developer.bigcommerce.com/docs/rest-api
-58,Sherlock,Data, SEO & Scraping,None,N/A (no auth),No public API,No,Blocked,https://github.com/sherlock-project/sherlock
+43,BigCommerce,Ecommerce,Token,Open self-serve,REST + GraphQL,Yes (community),Ready,https://developer.bigcommerce.com/docs/rest-api
+47,Ecwid,Ecommerce,OAuth2,Open self-serve,Documented REST,Yes (community),Ready,https://docs.ecwid.com/
+52,SE Ranking,"Data, SEO & Scraping",API key,Paid self-serve,Documented REST,Yes (official),Ready,https://seranking.com/api.html
+58,Sherlock,"Data, SEO & Scraping",None,N/A (no auth),No public API,Yes (community),Blocked,https://github.com/sherlock-project/sherlock
 65,Supabase,Developer & Infra,API key,Open self-serve,Documented REST,Yes (official),Ready,https://supabase.com/docs/reference/api/introduction
 70,Sentry,Developer & Infra,Token,Open self-serve,Documented REST,Yes (official),Ready,https://docs.sentry.io/api/
 74,Jira,Productivity & PM,Basic,Open self-serve,Documented REST,Yes (official),Ready,https://developer.atlassian.com/cloud/jira/platform/rest/v3/
-96,Devin,AI, Research & Media,API key,Open self-serve,Documented REST,Yes (official),Ready,https://docs.devin.ai/
+96,Devin,"AI, Research & Media",API key,Open self-serve,Documented REST,Yes (official),Ready,https://docs.devin.ai/

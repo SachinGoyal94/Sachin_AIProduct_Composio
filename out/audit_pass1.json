@@ -1,0 +1,738 @@
+{
+  "pass": 1,
+  "sample_size": 17,
+  "fields_scored": 85,
+  "field_accuracy": 0.6353,
+  "row_accuracy": 0.0588,
+  "fields_correct": 54,
+  "rows_fully_correct": 1,
+  "per_app": [
+    {
+      "id": 3,
+      "name": "Pipedrive",
+      "category": "CRM & Sales",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "Token",
+          "actual": "API key",
+          "ok": false
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (community)",
+          "actual": "Yes (official)",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "auth",
+        "mcp"
+      ],
+      "source": "https://developers.pipedrive.com/docs/api/v1"
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "category": "CRM & Sales",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "REST + GraphQL",
+          "actual": "Documented REST",
+          "ok": false
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "surface",
+        "mcp"
+      ],
+      "source": "https://docs.twenty.com/llms.txt"
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "category": "CRM & Sales",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Admin approval",
+          "actual": "Contact sales / partner",
+          "ok": false
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready with caveats",
+          "actual": "Ready with caveats",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "gate",
+        "mcp"
+      ],
+      "source": "https://api.docs.dealcloud.com/docs/apikeys"
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "category": "Support & Helpdesk",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (community)",
+          "actual": "Yes (official)",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
+      "source": "https://developers.freshdesk.com/api/"
+    },
+    {
+      "id": 17,
+      "name": "Plain",
+      "category": "Support & Helpdesk",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented GraphQL",
+          "actual": "Documented REST",
+          "ok": false
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "surface",
+        "mcp"
+      ],
+      "source": "https://www.plain.com/docs/graphql/authentication"
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "category": "Communications & Messaging",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "OAuth2",
+          "actual": "OAuth2",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "Yes (official)",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": true,
+      "misses": [],
+      "source": "https://api.slack.com/authentication"
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "category": "Communications & Messaging",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "Token",
+          "actual": "Token",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (community)",
+          "actual": "Yes (official)",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
+      "source": "https://core.telegram.org/bots/api"
+    },
+    {
+      "id": 33,
+      "name": "LinkedIn Ads",
+      "category": "Marketing & Ads",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "OAuth2",
+          "actual": "OAuth2",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Admin approval",
+          "actual": "Open self-serve",
+          "ok": false
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (community)",
+          "actual": "Yes (official)",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready with caveats",
+          "actual": "Ready",
+          "ok": false
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "gate",
+        "mcp",
+        "verdict"
+      ],
+      "source": "https://learn.microsoft.com/en-us/linkedin/marketing/"
+    },
+    {
+      "id": 37,
+      "name": "systeme.io",
+      "category": "Marketing & Ads",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Paid self-serve",
+          "ok": false
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready with caveats",
+          "actual": "Ready",
+          "ok": false
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "gate",
+        "mcp",
+        "verdict"
+      ],
+      "source": "https://developer.systeme.io/reference"
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "Token",
+          "actual": "OAuth2",
+          "ok": false
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "REST + GraphQL",
+          "actual": "Documented REST + GraphQL",
+          "ok": false
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (community)",
+          "actual": "Yes (official)",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "auth",
+        "surface",
+        "mcp"
+      ],
+      "source": "https://developer.bigcommerce.com/docs/rest-api"
+    },
+    {
+      "id": 47,
+      "name": "Ecwid",
+      "category": "Ecommerce",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "OAuth2",
+          "actual": "Token",
+          "ok": false
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (community)",
+          "actual": "Yes (official)",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "auth",
+        "mcp"
+      ],
+      "source": "https://docs.ecwid.com/"
+    },
+    {
+      "id": 52,
+      "name": "SE Ranking",
+      "category": "Data, SEO & Scraping",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Paid self-serve",
+          "actual": "Paid self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
+      "source": "https://seranking.com/api.html"
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "category": "Data, SEO & Scraping",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "None",
+          "actual": "None",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "N/A (no auth)",
+          "actual": "N/A (no auth)",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "No public API",
+          "actual": "No public API",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (community)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Blocked",
+          "actual": "Blocked",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
+      "source": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+      "id": 65,
+      "name": "Supabase",
+      "category": "Developer & Infra",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
+      "source": "https://supabase.com/docs/reference/api/introduction"
+    },
+    {
+      "id": 70,
+      "name": "Sentry",
+      "category": "Developer & Infra",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "Token",
+          "actual": "API key",
+          "ok": false
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "Yes (official)",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "auth"
+      ],
+      "source": "https://docs.sentry.io/api/"
+    },
+    {
+      "id": 74,
+      "name": "Jira",
+      "category": "Productivity & PM",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "Basic",
+          "actual": "OAuth2",
+          "ok": false
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "Yes (official)",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "auth"
+      ],
+      "source": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
+    },
+    {
+      "id": 96,
+      "name": "Devin",
+      "category": "AI, Research & Media",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "Other",
+          "ok": false
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Contact sales / partner",
+          "ok": false
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "SDK/API limited",
+          "ok": false
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Blocked",
+          "ok": false
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "auth",
+        "gate",
+        "surface",
+        "mcp",
+        "verdict"
+      ],
+      "source": "https://docs.devin.ai/"
+    }
+  ]
+}

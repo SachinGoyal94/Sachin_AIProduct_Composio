@@ -614,3 +614,6 @@ MATRIX_JS = r"""
   render();
 })();
 """
+
+if __name__ == "__main__":
+    render()

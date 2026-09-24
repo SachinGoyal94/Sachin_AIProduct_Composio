@@ -60,7 +60,7 @@ def compute() -> dict:
     n = len(rows)
 
     def dist(attr, vocab=None):
-        c = Counter(getattr(r, attr) for r in rows)
+        c = Counter(getattr(r, attr) for r in rows if getattr(r, attr, ""))
         if vocab:
             c = Counter({v: c.get(v, 0) for v in vocab})
         return dict(c.most_common())

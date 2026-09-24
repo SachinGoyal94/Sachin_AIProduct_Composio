@@ -1,35 +1,35 @@
 {
   "n_apps": 100,
   "auth_dist": {
-    "": 30,
-    "API key": 29,
+    "API key": 32,
+    "OAuth2": 20,
     "Token": 20,
-    "OAuth2": 18,
-    "Basic": 2,
+    "Basic": 3,
+    "None": 2,
     "HMAC": 1
   },
   "gate_dist": {
-    "Open self-serve": 55,
-    "": 30,
+    "Open self-serve": 60,
     "Paid self-serve": 7,
     "Admin approval": 5,
-    "Contact sales / partner": 3
+    "Contact sales / partner": 4,
+    "N/A (no auth)": 2
   },
   "surface_dist": {
-    "Documented REST": 62,
-    "": 30,
+    "Documented REST": 68,
     "REST + GraphQL": 5,
-    "Documented GraphQL": 3
+    "Documented GraphQL": 3,
+    "No public API": 2
   },
   "verdict_dist": {
-    "Ready": 51,
-    "": 30,
-    "Ready with caveats": 19
+    "Ready": 56,
+    "Ready with caveats": 20,
+    "Blocked": 2
   },
   "mcp_dist": {
     "Yes (community)": 63,
-    "Unclear": 20,
-    "Yes (official)": 15,
+    "Yes (official)": 19,
+    "Unclear": 16,
     "No": 2
   },
   "gate_by_category": {
@@ -77,25 +77,26 @@
     },
     "Ecommerce": {
       "n": 10,
-      "self_serve": 6,
-      "gated": 4,
-      "self_serve_pct": 60,
+      "self_serve": 8,
+      "gated": 2,
+      "self_serve_pct": 80,
       "gates": {
-        "Open self-serve": 4,
-        "": 4,
-        "Paid self-serve": 2
+        "Open self-serve": 6,
+        "Paid self-serve": 2,
+        "": 1,
+        "N/A (no auth)": 1
       }
     },
     "Data, SEO & Scraping": {
       "n": 10,
-      "self_serve": 5,
-      "gated": 5,
-      "self_serve_pct": 50,
+      "self_serve": 7,
+      "gated": 3,
+      "self_serve_pct": 70,
       "gates": {
-        "": 4,
+        "Open self-serve": 4,
         "Paid self-serve": 3,
-        "Open self-serve": 2,
-        "Contact sales / partner": 1
+        "Contact sales / partner": 2,
+        "N/A (no auth)": 1
       }
     },
     "Developer & Infra": {
@@ -110,12 +111,12 @@
     },
     "Productivity & PM": {
       "n": 10,
-      "self_serve": 7,
-      "gated": 3,
-      "self_serve_pct": 70,
+      "self_serve": 8,
+      "gated": 2,
+      "self_serve_pct": 80,
       "gates": {
-        "Open self-serve": 7,
-        "": 3
+        "Open self-serve": 8,
+        "": 2
       }
     },
     "Finance & Fintech": {
@@ -165,15 +166,15 @@
     },
     "Ecommerce": {
       "n": 10,
-      "official": 0,
+      "official": 1,
       "community": 7,
-      "any": 7
+      "any": 8
     },
     "Data, SEO & Scraping": {
       "n": 10,
-      "official": 0,
+      "official": 3,
       "community": 6,
-      "any": 6
+      "any": 9
     },
     "Developer & Infra": {
       "n": 10,
@@ -200,9 +201,14 @@
       "any": 6
     }
   },
-  "blocker_clusters": [],
-  "oauth_total": 18,
-  "oauth_self_serve": 15,
+  "blocker_clusters": [
+    {
+      "blocker": "No public API",
+      "n": 2
+    }
+  ],
+  "oauth_total": 20,
+  "oauth_self_serve": 17,
   "oauth_gated": 3,
   "easy_wins": [
     {
@@ -235,14 +241,21 @@
       "category": "Data, SEO & Scraping",
       "gate": "Contact sales / partner",
       "blocker": "API access partner-gated; product plans do not include open API"
+    },
+    {
+      "id": 59,
+      "name": "Waterfall.io",
+      "category": "Data, SEO & Scraping",
+      "gate": "Contact sales / partner",
+      "blocker": "credentials are gated behind sales contact / access review (no self-serve)"
     }
   ],
   "tiers": {
     "counts": {
-      "S": 57,
+      "S": 62,
       "A": 11,
-      "B": 2,
-      "C": 30
+      "B": 3,
+      "C": 24
     },
     "ids": {
       "S": [
@@ -281,7 +294,11 @@
         42,
         43,
         45,
+        47,
+        48,
         51,
+        52,
+        54,
         55,
         56,
         57,
@@ -295,6 +312,7 @@
         71,
         72,
         73,
+        74,
         75,
         76,
         77,
@@ -319,21 +337,16 @@
       ],
       "B": [
         15,
-        53
+        53,
+        59
       ],
       "C": [
         44,
-        47,
-        48,
         50,
-        52,
-        54,
         58,
-        59,
         66,
         67,
         68,
-        74,
         79,
         80,
         84,
@@ -358,30 +371,30 @@
   "headline": [
     {
       "rank": 1,
-      "claim": " dominates - 30/100 apps (30%) authenticate with it",
-      "detail": "OAuth2 alone covers 18 apps, but only 15 of them let a developer self-serve credentials; 3 sit behind admin or sales gates.",
-      "metric": "30%",
-      "metric_label": "of apps use "
+      "claim": "API key dominates - 32/100 apps (32%) authenticate with it",
+      "detail": "OAuth2 alone covers 20 apps, but only 17 of them let a developer self-serve credentials; 3 sit behind admin or sales gates.",
+      "metric": "32%",
+      "metric_label": "of apps use API key"
     },
     {
       "rank": 2,
-      "claim": "62 of 100 apps (62%) are fully self-serve for a developer today",
-      "detail": "3 apps require contact-sales/partnership before you can write a line of integration code - these need outreach, not engineering.",
-      "metric": "62%",
+      "claim": "67 of 100 apps (67%) are fully self-serve for a developer today",
+      "detail": "4 apps require contact-sales/partnership before you can write a line of integration code - these need outreach, not engineering.",
+      "metric": "67%",
       "metric_label": "self-serve today"
     },
     {
       "rank": 3,
-      "claim": "15 apps already ship an official MCP server (78 with any MCP)",
+      "claim": "19 apps already ship an official MCP server (82 with any MCP)",
       "detail": "MCP coverage is highest where APIs are broad and self-serve - the pattern repeats: accessible API surface predicts agent ecosystem investment.",
-      "metric": "15/100",
+      "metric": "19/100",
       "metric_label": "official MCP servers"
     },
     {
       "rank": 4,
-      "claim": "Top blocker: - (0 apps)",
+      "claim": "Top blocker: No public API (2 apps)",
       "detail": "Blockers cluster into a few buckets - no public API, sales/partnership gates, enterprise admin approval, and OAuth app review - so one playbook per bucket covers most apps.",
-      "metric": "0",
+      "metric": "2",
       "metric_label": "apps blocked by the top cause"
     },
     {
@@ -393,9 +406,9 @@
     },
     {
       "rank": 6,
-      "claim": "0 apps have no public API at all - a hard stop",
+      "claim": "2 apps have no public API at all - a hard stop",
       "detail": "For these, the only paths are scraping, unofficial SDKs, or asking the vendor for an API; saying so with evidence beats pretending otherwise.",
-      "metric": "0/100",
+      "metric": "2/100",
       "metric_label": "apps with no public API"
     },
     {

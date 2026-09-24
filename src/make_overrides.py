@@ -17,7 +17,9 @@ from __future__ import annotations
 
 import json
 
-from config import (DRAFT_CSV, OVERRIDES_CSV, OUT, REPORTS, VERIFIED_CSV)
+from config import (DRAFT_CSV, OVERRIDES_CSV, OUT, VERIFIED_CSV)
+
+REPORTS = OUT / "agent_reports"
 from io_utils import read_csv, write_csv
 
 FIELDS = ("does", "auth", "auth_detail", "gate", "gate_detail", "surface",

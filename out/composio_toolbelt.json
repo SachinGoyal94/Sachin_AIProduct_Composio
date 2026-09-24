@@ -1,0 +1,10 @@
+{
+  "generated": "2026-09-25T00:00:17",
+  "attempted": true,
+  "ok": false,
+  "method": "",
+  "toolkits_seen": 0,
+  "apps_covered": [],
+  "error": "v3: RuntimeError: v3 /toolkits -> HTTP 401: {\"error\":{\"message\":\"Invalid API key: ck_**r8RT\",\"code\":801,\"slug\":\"APIKey_InvalidAPIKey\",\"status\":401,\"request_id\":\"abeccb1e-ce59-4cb8-8ffd-77d6dbc5bc0f\",\"sugg | legacy SDK: Unexpected error: HTTP 410",
+  "note": "Composio rejected the API key (the provided key predates the v3 API migration). Stage is optional; cross-check marked not-performed rather than guessed."
+}

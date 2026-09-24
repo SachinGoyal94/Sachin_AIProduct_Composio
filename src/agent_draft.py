@@ -73,6 +73,7 @@ def draft_all(fresh: bool) -> list[dict]:
             "auth_detail": d.get("auth_detail", ""), "gate": d.get("gate", ""),
             "gate_detail": d.get("gate_detail", ""), "surface": d.get("surface", ""),
             "breadth": d.get("breadth", ""), "mcp": d.get("mcp", ""),
+            "mcp_evidence": d.get("mcp_evidence", ""),
             "verdict": d.get("verdict", ""), "blocker": d.get("blocker", ""),
             "evidence": d.get("evidence", ""),
             "confidence": d.get("confidence", 1),
