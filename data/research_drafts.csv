@@ -1,0 +1,11 @@
+id,name,field,value,note,source_url,status,agrees_with_final,final_value
+10,DealCloud,auth,API key,agent draft: page text mentions API key auth | review: human had made the same fix independently (override row id=10 auth=API key),https://api.docs.dealcloud.com,confirmation,True,API key
+23,Zoho Cliq,mcp,Yes,"agent draft: official page documents an MCP server | review: platform-level MCP marketing on developers.zoho.com, not a Cliq-specific confirmation",https://developers.zoho.com,rejected,False,No
+25,Pumble,auth,OAuth2,"agent draft: page text mentions OAuth2 auth | review: matched the site's own login-flow JS (authconfig.type=='oauth'), not API docs; API uses workspace API keys",https://developers.pumble.com,rejected,False,API key
+54,MrScraper,auth,Bearer token,agent draft: page text mentions Bearer token auth | review: page mentions bearer generically in code samples; real auth is x-api-token header,https://docs.mrscraper.com,rejected,False,API key
+54,MrScraper,mcp,Yes,agent draft: official page documents an MCP server | review: HUMAN-VERIFIED: docs.mrscraper.com/docs/getting-started/mcp-server is live (200) - agent caught an MCP server the human pass missed,https://docs.mrscraper.com,promoted,False,No
+59,Waterfall,auth,API key,agent draft: page text mentions API key auth | review: human had made the same fix independently (override row id=59 auth=API key),https://waterfall.io,confirmation,True,API key
+92,Otter AI,auth,API key,"agent draft: page text mentions API key auth | review: matched an analytics SDK variable (amplitudeApiKey) in page JS, not API auth",https://help.otter.ai,rejected,False,OAuth2
+93,Fathom,gate,Self-serve,agent draft: official page shows self-serve key generation | review: human had made the same fix independently (override row id=93 gate=Self-serve),https://fathom.video,confirmation,True,Self-serve
+97,Higgsfield,auth,API key,agent draft: page text mentions API key auth | review: human had made the same fix independently (override row id=97 auth=API key),https://docs.higgsfield.ai,confirmation,True,API key
+100,Grain,auth,API key,agent draft: page text mentions API key auth | review: marketing site has no auth docs; developer docs use token auth,https://grain.com,rejected,False,Bearer token

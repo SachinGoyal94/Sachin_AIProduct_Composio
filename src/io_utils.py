@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 from config import DATA, OUT, AppRecord
-from knowledge import APPS
+from knowledge import APPS, validate
 
 
 def load_records() -> list[AppRecord]:
@@ -40,7 +40,9 @@ def apply_overrides(records: list[AppRecord], path: Path | None = None) -> tuple
             if row.get("note") and row["note"] not in rec.notes:
                 rec.notes = (rec.notes + " | " + row["note"]).strip(" |")
             n += 1
-    return list(out.values()), n
+    corrected = list(out.values())
+    validate(corrected)  # overrides are data too - re-check the contract
+    return corrected, n
 
 
 def save_json(obj, name: str) -> Path:

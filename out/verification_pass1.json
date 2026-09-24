@@ -15,9 +15,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "official-registry",
+        "provider": "smithery-registry",
         "query": "salesforce",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=salesforce"
+        "url": "https://registry.smithery.ai/servers?q=salesforce"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -93,9 +93,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "official-registry",
+        "provider": "smithery-registry",
         "query": "Pipedrive",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pipedrive"
+        "url": "https://registry.smithery.ai/servers?q=Pipedrive"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -137,7 +137,7 @@
       },
       "docs_probe": {
         "kind": "docs_probe",
-        "ok": false,
+        "ok": true,
         "probes": [
           {
             "url": "https://docs.attio.com/rest-api/how-to/authentication",
@@ -145,7 +145,7 @@
           },
           {
             "url": "https://docs.attio.com",
-            "status": 0
+            "status": 200
           },
           {
             "url": "https://docs.attio.com/openapi.json",
@@ -169,9 +169,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "official-registry",
+        "provider": "smithery-registry",
         "query": "Twenty",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Twenty"
+        "url": "https://registry.smithery.ai/servers?q=Twenty"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -209,8 +209,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -246,6 +246,7 @@
       "mcp": {
         "kind": "mcp",
         "ok": false,
+        "unconfirmed": true,
         "claimed": "Yes"
       },
       "docs_probe": {
@@ -359,8 +360,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -396,9 +397,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "official-registry",
+        "provider": "smithery-registry",
         "query": "Zendesk",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zendesk"
+        "url": "https://registry.smithery.ai/servers?q=Zendesk"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -433,10 +434,9 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "provider": "official-registry",
-        "query": "Intercom",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Intercom"
+        "ok": false,
+        "unconfirmed": true,
+        "claimed": "Yes"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -471,10 +471,9 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "provider": "official-registry",
-        "query": "Freshdesk",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Freshdesk"
+        "ok": false,
+        "unconfirmed": true,
+        "claimed": "Yes"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -551,9 +550,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "official-registry",
+        "provider": "smithery-registry",
         "query": "Pylon",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pylon"
+        "url": "https://registry.smithery.ai/servers?q=Pylon"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -588,8 +587,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -662,8 +661,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -736,8 +735,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -814,9 +813,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "official-registry",
+        "provider": "smithery-registry",
         "query": "Twilio",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Twilio"
+        "url": "https://registry.smithery.ai/servers?q=Twilio"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -851,8 +850,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -887,10 +886,9 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "provider": "official-registry",
-        "query": "Lark",
-        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=Lark"
+        "ok": false,
+        "unconfirmed": true,
+        "claimed": "Yes"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -925,8 +923,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -972,7 +970,7 @@
         "probes": [
           {
             "url": "https://discord.com/developers/docs/topics/oauth2",
-            "status": 0
+            "status": 200
           },
           {
             "url": "https://discord.com",
@@ -1038,9 +1036,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "smithery-registry",
+        "provider": "official-registry",
         "query": "whatsapp",
-        "url": "https://registry.smithery.ai/servers?q=whatsapp"
+        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=whatsapp"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1235,9 +1233,9 @@
       "mcp": {
         "kind": "mcp",
         "ok": true,
-        "provider": "smithery-registry",
+        "provider": "official-registry",
         "query": "linkedin",
-        "url": "https://registry.smithery.ai/servers?q=linkedin"
+        "url": "https://registry.modelcontextprotocol.io/v0/servers?search=linkedin"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1273,6 +1271,7 @@
       "mcp": {
         "kind": "mcp",
         "ok": false,
+        "unconfirmed": true,
         "claimed": "Yes"
       },
       "docs_probe": {
@@ -1386,8 +1385,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1623,7 +1622,7 @@
         "probes": [
           {
             "url": "https://developer.bigcommerce.com/docs/rest-management",
-            "status": 0
+            "status": 200
           },
           {
             "url": "https://developer.bigcommerce.com",
@@ -1631,7 +1630,7 @@
           },
           {
             "url": "https://developer.bigcommerce.com/openapi.json",
-            "status": 0
+            "status": 200
           }
         ]
       }
@@ -1650,8 +1649,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1680,8 +1679,7 @@
         "url": "https://developer.adobe.com/commerce/webapi/rest",
         "status": 200,
         "auth_terms_found": [
-          "bearer",
-          "access token"
+          "bearer"
         ],
         "auth_confirmed": true,
         "alive": true,
@@ -1689,8 +1687,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1755,10 +1753,10 @@
       "evidence": {
         "kind": "evidence",
         "url": "https://api-docs.ecwid.com",
-        "status": 0,
+        "status": 200,
         "auth_terms_found": [],
         "auth_confirmed": false,
-        "alive": false,
+        "alive": true,
         "ok": false
       },
       "mcp": {
@@ -1782,7 +1780,7 @@
           },
           {
             "url": "https://api-docs.ecwid.com/openapi.json",
-            "status": 0
+            "status": 200
           }
         ]
       }
@@ -1801,8 +1799,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1838,6 +1836,7 @@
       "mcp": {
         "kind": "mcp",
         "ok": false,
+        "unconfirmed": true,
         "claimed": "Yes"
       },
       "docs_probe": {
@@ -1873,8 +1872,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1909,8 +1908,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -1945,8 +1944,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -2022,8 +2021,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -2174,8 +2173,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -2210,8 +2209,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -2518,8 +2517,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -2555,6 +2554,7 @@
       "mcp": {
         "kind": "mcp",
         "ok": false,
+        "unconfirmed": true,
         "claimed": "Yes"
       },
       "docs_probe": {
@@ -2814,8 +2814,7 @@
         "url": "https://developers.asana.com/reference",
         "status": 200,
         "auth_terms_found": [
-          "personal access token",
-          "access token"
+          "personal access token"
         ],
         "auth_confirmed": true,
         "alive": true,
@@ -2969,10 +2968,10 @@
       "evidence": {
         "kind": "evidence",
         "url": "https://smartsheet.redoc.ly",
-        "status": 0,
+        "status": 200,
         "auth_terms_found": [],
         "auth_confirmed": false,
-        "alive": false,
+        "alive": true,
         "ok": false
       },
       "mcp": {
@@ -3129,8 +3128,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3165,8 +3164,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3201,8 +3200,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3237,8 +3236,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3273,8 +3272,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3309,8 +3308,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3345,8 +3344,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3381,8 +3380,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3417,8 +3416,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3454,6 +3453,7 @@
       "mcp": {
         "kind": "mcp",
         "ok": false,
+        "unconfirmed": true,
         "claimed": "Yes"
       },
       "docs_probe": {
@@ -3489,8 +3489,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3525,8 +3525,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3562,6 +3562,7 @@
       "mcp": {
         "kind": "mcp",
         "ok": false,
+        "unconfirmed": true,
         "claimed": "Yes"
       },
       "docs_probe": {
@@ -3635,8 +3636,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3671,8 +3672,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3747,8 +3748,8 @@
       },
       "mcp": {
         "kind": "mcp",
-        "ok": true,
-        "skipped": "no MCP claimed"
+        "ok": null,
+        "skipped": "MCP claimed 'No'; nothing to confirm"
       },
       "docs_probe": {
         "kind": "docs_probe",
@@ -3772,13 +3773,15 @@
   ],
   "summary": {
     "total": 100,
+    "n_http_requests": 493,
     "evidence_ok": 18,
     "evidence_pct": 18.0,
-    "evidence_alive": 77,
-    "evidence_alive_pct": 77.0,
-    "mcp_ok": 94,
-    "mcp_pct": 94.0,
-    "docs_probe_ok": 92,
-    "docs_probe_pct": 92.0
+    "evidence_alive": 79,
+    "evidence_alive_pct": 79.0,
+    "mcp_yes_total": 68,
+    "mcp_yes_confirmed": 59,
+    "mcp_yes_pct": 86.8,
+    "docs_probe_ok": 93,
+    "docs_probe_pct": 93.0
   }
 }

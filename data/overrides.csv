@@ -116,3 +116,4 @@ id,field,value,note
 94,blocker,,Pass2: stale blocker removed; free tier then paid API plans
 93,blocker,,Pass2: no blocker - clear toolkit candidate
 25,blocker,Small API surface (messaging-focused),Pass2: paid-workspace claim corrected; API keys on all plans
+54,mcp,Yes,Pass2: agent research loop drafted MCP=Yes (docs.mrscraper.com has an 'MCP Server' docs section); human verified the page (200 OK)

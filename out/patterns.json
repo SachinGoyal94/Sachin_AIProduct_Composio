@@ -1,6 +1,6 @@
 {
   "n_apps": 100,
-  "n_overrides_applied": 117,
+  "n_overrides_applied": 118,
   "auth_dist": [
     {
       "value": "Bearer token",
@@ -80,13 +80,13 @@
   "mcp_dist": [
     {
       "value": "Yes",
-      "count": 72,
-      "pct": 72.0
+      "count": 73,
+      "pct": 73.0
     },
     {
       "value": "No",
-      "count": 28,
-      "pct": 28.0
+      "count": 27,
+      "pct": 27.0
     }
   ],
   "surface_dist": [
@@ -219,8 +219,8 @@
       "No": 4
     },
     "Data, SEO and Scraping": {
-      "No": 5,
-      "Yes": 5
+      "No": 4,
+      "Yes": 6
     },
     "Developer, Infra and Data platforms": {
       "Yes": 9,
@@ -442,6 +442,12 @@
       "name": "Vonage",
       "category": "Communications and Messaging",
       "auth": "Basic"
+    },
+    {
+      "id": 54,
+      "name": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "auth": "API key"
     },
     {
       "id": 55,

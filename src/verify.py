@@ -2,39 +2,52 @@
 
 The verification loop works in three directions:
   1. evidence_check - does the cited evidence URL exist and mention the claimed auth?
-  2. mcp_check      - does the cited MCP claim hold up against public registries?
+  2. mcp_check      - do MCP 'Yes' claims hold up against public registries?
   3. docs_probe     - probe well-known docs/API paths for liveness (independent signal)
 
-Runs concurrently (ThreadPoolExecutor) - 100 apps x ~6 requests in well under a minute.
+Runs concurrently (ThreadPoolExecutor). Metrics are honest by construction:
+MCP confirmation is computed ONLY over apps that claim MCP = 'Yes' ('No' claims
+are not evidence of anything and are excluded, not auto-passed).
+
+Usage:  python verify.py [pass_no]
 """
 from __future__ import annotations
 
 import json
 import re
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse
 
 from config import AppRecord, http_get
 
 MAX_WORKERS = 12
+N_REQUESTS = 0  # total live HTTP requests made by this stage (reported in summary)
+
+
+def _get(url: str, timeout: float = 6.0) -> tuple[int, str]:
+    global N_REQUESTS
+    N_REQUESTS += 1
+    return http_get(url, timeout=timeout)
+
 
 # Terms that count as textual confirmation of each auth claim when found in
-# the fetched evidence page.
+# the fetched evidence page. Deliberately specific: a bare "access token" or
+# "signature" match is too loose (OAuth2 pages mention access tokens; webhook
+# docs mention signatures) and would inflate the confirmation rate.
 AUTH_TERM_MAP = {
     "OAuth2": [r"oauth\s*2", r"oauth2", r"oauth 2\.0"],
     "OAuth1": [r"oauth\s*1", r"oauth1", r"oauth 1\.0a"],
-    "API key": [r"api[_ -]?key", r"x-api-key", r"apikey"],
+    "API key": [r"api[_ -]?key", r"x-api-key", r"x-api-token", r"apikey"],
     "Bearer token": [
         r"bearer",
         r"personal access token",
-        r"access token",
-        r"session token",
         r"api token",
         r"integration token",
     ],
     "Basic": [r"basic auth", r"http basic", r"basic\s+auth", r"account sid"],
     "JWT": [r"\bjwt\b", r"json web token"],
-    "HMAC": [r"\bhmac\b", r"signature", r"signed request"],
+    "HMAC": [r"\bhmac\b", r"signed request"],
     "None": [r"no authentication", r"without authentication", r"no auth"],
 }
 
@@ -56,7 +69,7 @@ def _strip_html(body: str) -> str:
 
 def evidence_check(rec: AppRecord) -> dict:
     """Fetch the cited evidence URL; confirm it is alive and mentions the claim."""
-    status, body = http_get(rec.evidence, timeout=8)
+    status, body = _get(rec.evidence, timeout=8)
     text = _strip_html(body)
     hits: list[str] = []
     for term in AUTH_TERM_MAP.get(rec.auth, []):
@@ -77,7 +90,7 @@ def evidence_check(rec: AppRecord) -> dict:
     }
 
 
-def _mcp_listing_matches(body: str, name: str, query: str) -> bool:
+def _mcp_listing_matches(body: str, query: str) -> bool:
     b = _norm(body)
     tokens = [t for t in re.split(r"\s+", query.lower()) if len(t) > 2]
     if not tokens:
@@ -90,9 +103,13 @@ def _mcp_listing_matches(body: str, name: str, query: str) -> bool:
 
 
 def mcp_check(rec: AppRecord) -> dict:
-    """Confirm the MCP claim by querying public registries (PulseMCP, Smithery)."""
-    if rec.mcp == "No":
-        return {"kind": "mcp", "ok": True, "skipped": "no MCP claimed"}
+    """Confirm an MCP 'Yes' claim by querying public registries.
+
+    'No' claims are skipped (nothing to confirm); the summary therefore
+    reports confirmation over Yes-claiming apps only.
+    """
+    if rec.mcp != "Yes":
+        return {"kind": "mcp", "ok": None, "skipped": f"MCP claimed {rec.mcp!r}; nothing to confirm"}
     queries = [rec.name]
     special = {
         "Mermaid CLI": ["mermaid"],
@@ -112,12 +129,14 @@ def mcp_check(rec: AppRecord) -> dict:
     for provider, tpl in MCP_SEARCH_ENDPOINTS:
         for q in queries:
             url = tpl.format(q=q.replace(" ", "%20"))
-            status, body = http_get(url, timeout=10)
+            status, body = _get(url, timeout=10)
             if status != 200:
                 continue
-            if _mcp_listing_matches(body, rec.name, q):
+            if _mcp_listing_matches(body, q):
                 return {"kind": "mcp", "ok": True, "provider": provider, "query": q, "url": url}
-    return {"kind": "mcp", "ok": False, "claimed": rec.mcp}
+    # registry miss: the claim is UNCONFIRMED, not false - registry coverage is
+    # heuristic (name matching), so this is reported as its own outcome.
+    return {"kind": "mcp", "ok": False, "unconfirmed": True, "claimed": rec.mcp}
 
 
 def docs_probe(rec: AppRecord) -> dict:
@@ -127,7 +146,7 @@ def docs_probe(rec: AppRecord) -> dict:
     probes = [rec.evidence, root, root + "/openapi.json"]
     results = []
     for url in probes:
-        status, _ = http_get(url, timeout=6)
+        status, _ = _get(url, timeout=6)
         results.append({"url": url, "status": status})
     live = any(r["status"] == 200 for r in results)
     return {"kind": "docs_probe", "ok": live, "probes": results}
@@ -142,35 +161,42 @@ def _check_app(rec: AppRecord) -> dict:
 
 def run_verification(records: list[AppRecord], verbose: bool = True) -> dict:
     """Run the full verification loop over all records concurrently."""
+    global N_REQUESTS
+    N_REQUESTS = 0
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
         results = list(ex.map(_check_app, records))
 
+    total = len(results)
     n_ev = sum(1 for r in results if r["evidence"]["ok"])
     n_alive = sum(1 for r in results if r["evidence"]["alive"])
-    n_mcp = sum(1 for r in results if r["mcp"]["ok"])
+    yes_rows = [r for r in results if r["mcp"]["ok"] is not None]
+    yes_conf = sum(1 for r in yes_rows if r["mcp"]["ok"])
     n_probe = sum(1 for r in results if r["docs_probe"]["ok"])
-    total = len(results)
     report = {
         "results": results,
         "summary": {
             "total": total,
+            "n_http_requests": N_REQUESTS,
             "evidence_ok": n_ev,
             "evidence_pct": round(100 * n_ev / total, 1),
             "evidence_alive": n_alive,
             "evidence_alive_pct": round(100 * n_alive / total, 1),
-            "mcp_ok": n_mcp,
-            "mcp_pct": round(100 * n_mcp / total, 1),
+            "mcp_yes_total": len(yes_rows),
+            "mcp_yes_confirmed": yes_conf,
+            "mcp_yes_pct": round(100 * yes_conf / len(yes_rows), 1) if yes_rows else 0.0,
             "docs_probe_ok": n_probe,
             "docs_probe_pct": round(100 * n_probe / total, 1),
         },
     }
     if verbose:
         s = report["summary"]
+        print(f"  HTTP requests made:            {s['n_http_requests']}")
         print(f"  evidence URL alive:            {s['evidence_alive']}/{total} ({s['evidence_alive_pct']}%)")
         print(f"  evidence alive+auth-confirmed: {s['evidence_ok']}/{total} ({s['evidence_pct']}%)")
-        print(f"  MCP claims consistent:         {s['mcp_ok']}/{total} ({s['mcp_pct']}%)")
+        print(f"  MCP 'Yes' claims confirmed:    {s['mcp_yes_confirmed']}/{s['mcp_yes_total']} ({s['mcp_yes_pct']}%)")
         print(f"  docs probe reachable:          {s['docs_probe_ok']}/{total} ({s['docs_probe_pct']}%)")
-        fails = [r for r in results if not (r["evidence"]["ok"] and r["mcp"]["ok"])]
+        fails = [r for r in results
+                 if not (r["evidence"]["ok"] and (r["mcp"]["ok"] is None or r["mcp"]["ok"]))]
         print(f"  apps needing attention: {len(fails)}")
         for r in fails[:30]:
             print(f"    - #{r['id']:3d} {r['name']}: ev={r['evidence']['status']} "
@@ -179,8 +205,6 @@ def run_verification(records: list[AppRecord], verbose: bool = True) -> dict:
 
 
 if __name__ == "__main__":
-    import sys
-
     from io_utils import apply_overrides, load_records, save_json
 
     pass_no = sys.argv[1] if len(sys.argv) > 1 else "1"

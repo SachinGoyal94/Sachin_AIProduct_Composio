@@ -1,14 +1,24 @@
 {
-  "status": "ok: MCP gateway queried for 91 apps (63 matched)",
+  "status": "ok: MCP gateway queried for 100 apps (65 matched)",
   "transport": "MCP (connect.composio.dev/mcp) via COMPOSIO_SEARCH_TOOLS",
   "server": "mcp-typescript server on vercel",
-  "apps_searched": 91,
-  "overlaps_with_our_100": 63,
+  "apps_searched": 100,
+  "overlaps_with_our_100": 65,
   "overlaps": [
+    {
+      "name": "Linear",
+      "composio_prefix": "linear",
+      "n_tools": 18,
+      "sample_tools": [
+        "LINEAR_ARCHIVE_PROJECT",
+        "LINEAR_CREATE_ATTACHMENT",
+        "LINEAR_CREATE_LINEAR_ISSUE"
+      ]
+    },
     {
       "name": "Salesforce",
       "composio_prefix": "salesforce",
-      "n_tools": 19,
+      "n_tools": 17,
       "sample_tools": [
         "SALESFORCE_ADD_CONTACT_TO_CAMPAIGN",
         "SALESFORCE_ASSOCIATE_CONTACT_TO_ACCOUNT",
@@ -26,33 +36,23 @@
       ]
     },
     {
-      "name": "HubSpot",
-      "composio_prefix": "hubspot",
+      "name": "Asana",
+      "composio_prefix": "asana",
       "n_tools": 16,
       "sample_tools": [
-        "HUBSPOT_CREATE_BATCH_OF_QUOTES",
-        "HUBSPOT_CREATE_CAMPAIGN",
-        "HUBSPOT_CREATE_COMPANIES"
+        "ASANA_ADD_TASK_TO_SECTION",
+        "ASANA_CREATE_A_PROJECT",
+        "ASANA_CREATE_A_TASK"
       ]
     },
     {
-      "name": "Apify",
-      "composio_prefix": "apify",
+      "name": "Monday.com",
+      "composio_prefix": "monday",
       "n_tools": 15,
       "sample_tools": [
-        "APIFY_ACTOR_RUN_GET",
-        "APIFY_ACTOR_TASK_GET",
-        "APIFY_ACTOR_TASK_RUNS_LAST_GET"
-      ]
-    },
-    {
-      "name": "Datadog",
-      "composio_prefix": "datadog",
-      "n_tools": 15,
-      "sample_tools": [
-        "DATADOG_CREATE_DASHBOARD",
-        "DATADOG_CREATE_MONITOR",
-        "DATADOG_GET_MONITOR"
+        "MONDAY_MCP",
+        "MONDAY_MCP_ALL_API_READ",
+        "MONDAY_MCP_ALL_API_WRITE"
       ]
     },
     {
@@ -66,53 +66,63 @@
       ]
     },
     {
-      "name": "GoHighLevel",
-      "composio_prefix": "highlevel",
-      "n_tools": 14,
-      "sample_tools": [
-        "HIGHLEVEL_CREATE_CALENDAR",
-        "HIGHLEVEL_CREATE_CONTACT",
-        "HIGHLEVEL_CREATE_MEDIAS_FOLDER"
-      ]
-    },
-    {
-      "name": "Linear",
-      "composio_prefix": "linear",
+      "name": "Sentry",
+      "composio_prefix": "sentry",
       "n_tools": 13,
       "sample_tools": [
-        "LINEAR_CREATE_LINEAR_ISSUE",
-        "LINEAR_GET_ALL_LINEAR_TEAMS",
-        "LINEAR_GET_CURRENT_USER"
+        "SENTRY_ACCESS_PROJECT_INFORMATION",
+        "SENTRY_FETCH_ALERTS",
+        "SENTRY_FETCH_AN_ALERT"
       ]
     },
     {
-      "name": "Zoho CRM",
-      "composio_prefix": "zoho",
-      "n_tools": 12,
+      "name": "Airtable",
+      "composio_prefix": "airtable",
+      "n_tools": 13,
       "sample_tools": [
-        "ZOHO_CONVERT_ZOHO_LEAD",
-        "ZOHO_CREATE_CONTACT",
-        "ZOHO_CREATE_LEAD"
+        "AIRTABLE_CREATE_BASE",
+        "AIRTABLE_CREATE_COMMENT",
+        "AIRTABLE_CREATE_FIELD"
       ]
     },
     {
-      "name": "Klaviyo",
-      "composio_prefix": "klaviyo",
-      "n_tools": 12,
+      "name": "Jira",
+      "composio_prefix": "jira",
+      "n_tools": 13,
       "sample_tools": [
-        "KLAVIYO_ADD_PROFILE_TO_LIST",
-        "KLAVIYO_CREATE_CAMPAIGN",
-        "KLAVIYO_CREATE_OR_UPDATE_CLIENT_PROFILE"
+        "JIRA_ASSIGN_ISSUE",
+        "JIRA_BULK_CREATE_ISSUE",
+        "JIRA_CREATE_ISSUE"
       ]
     },
     {
-      "name": "Pinterest",
-      "composio_prefix": "pinterest",
+      "name": "HubSpot",
+      "composio_prefix": "hubspot",
       "n_tools": 12,
       "sample_tools": [
-        "PINTEREST_CREATE_PIN",
-        "PINTEREST_GET_INSPIRATION_TRENDS",
-        "PINTEREST_GET_KEYWORD_TRENDS"
+        "HUBSPOT_CREATE_CRM_OBJECT_FROM_NL",
+        "HUBSPOT_CREATE_CRM_OBJECT_WITH_PROPERTIES",
+        "HUBSPOT_DEFINED"
+      ]
+    },
+    {
+      "name": "Zendesk",
+      "composio_prefix": "zendesk",
+      "n_tools": 12,
+      "sample_tools": [
+        "ZENDESK_CREATE_MANY_TICKETS",
+        "ZENDESK_CREATE_ZENDESK_ORGANIZATION",
+        "ZENDESK_CREATE_ZENDESK_REQUEST"
+      ]
+    },
+    {
+      "name": "GoHighLevel",
+      "composio_prefix": "highlevel",
+      "n_tools": 11,
+      "sample_tools": [
+        "HIGHLEVEL_CREATE_CONTACT",
+        "HIGHLEVEL_CREATE_OPPORTUNITY",
+        "HIGHLEVEL_GET_CONTACT"
       ]
     },
     {
@@ -126,53 +136,43 @@
       ]
     },
     {
-      "name": "Sentry",
-      "composio_prefix": "sentry",
+      "name": "Vercel",
+      "composio_prefix": "vercel",
       "n_tools": 11,
       "sample_tools": [
-        "SENTRY_ACCESS_PROJECT_INFORMATION",
-        "SENTRY_FETCH_ALERTS",
-        "SENTRY_FETCH_AN_ALERT"
+        "VERCEL_CREATE_NEW_DEPLOYMENT",
+        "VERCEL_CREATE_PROJECT2",
+        "VERCEL_DELETE_DATA_CACHE_PURGE_ALL"
       ]
     },
     {
-      "name": "Monday.com",
-      "composio_prefix": "monday",
-      "n_tools": 11,
-      "sample_tools": [
-        "MONDAY_MCP",
-        "MONDAY_MCP_ALL_MONDAY_API",
-        "MONDAY_MCP_CHANGE_ITEM_COLUMN_VALUES"
-      ]
-    },
-    {
-      "name": "Gorgias",
-      "composio_prefix": "gorgias",
+      "name": "Pinterest",
+      "composio_prefix": "pinterest",
       "n_tools": 10,
       "sample_tools": [
-        "GORGIAS_CREATE_CUSTOMER",
-        "GORGIAS_CREATE_TICKET",
-        "GORGIAS_GET_ACCOUNT"
+        "PINTEREST_CREATE_PIN",
+        "PINTEREST_GET_BOARD",
+        "PINTEREST_GET_PIN"
       ]
     },
     {
-      "name": "Cloudflare",
-      "composio_prefix": "cloudflare",
+      "name": "SendGrid",
+      "composio_prefix": "sendgrid",
       "n_tools": 10,
       "sample_tools": [
-        "CLOUDFLARE_API_KEY",
-        "CLOUDFLARE_API_KEY_CREATE_DNS_RECORD",
-        "CLOUDFLARE_API_KEY_LIST_DNS_RECORDS"
+        "SENDGRID_CANCEL_OR_PAUSE_A_SCHEDULED_SEND",
+        "SENDGRID_CREATE_A_BATCH_ID",
+        "SENDGRID_CREATE_SINGLE_SEND"
       ]
     },
     {
-      "name": "Neo4j",
-      "composio_prefix": "neo4j",
+      "name": "Bright Data",
+      "composio_prefix": "brightdata",
       "n_tools": 10,
       "sample_tools": [
-        "NEO4J_AGGREGATE_DIRECTORS",
-        "NEO4J_CREATE_INSTANCE_BETA",
-        "NEO4J_CREATE_SNAPSHOT"
+        "BRIGHTDATA_CRAWL_API",
+        "BRIGHTDATA_FILTER_DATASET",
+        "BRIGHTDATA_GET_SERP_RESULTS"
       ]
     },
     {
@@ -186,23 +186,13 @@
       ]
     },
     {
-      "name": "Zendesk",
-      "composio_prefix": "zendesk",
+      "name": "Shopify",
+      "composio_prefix": "shopify",
       "n_tools": 9,
       "sample_tools": [
-        "ZENDESK_CREATE_ZENDESK_REQUEST",
-        "ZENDESK_CREATE_ZENDESK_TICKET",
-        "ZENDESK_CREATE_ZENDESK_TICKET_OR_VOICEMAIL_TICKET"
-      ]
-    },
-    {
-      "name": "Intercom",
-      "composio_prefix": "intercom",
-      "n_tools": 9,
-      "sample_tools": [
-        "INTERCOM_ADD_TAG_TO_CONTACT",
-        "INTERCOM_FIND_TAG",
-        "INTERCOM_GET_A_CONTACT"
+        "SHOPIFY_GET_ACCESS_SCOPES",
+        "SHOPIFY_GET_PRODUCT",
+        "SHOPIFY_GET_THEMES"
       ]
     },
     {
@@ -216,23 +206,23 @@
       ]
     },
     {
-      "name": "Bright Data",
-      "composio_prefix": "brightdata",
+      "name": "Cloudflare",
+      "composio_prefix": "cloudflare",
       "n_tools": 9,
       "sample_tools": [
-        "BRIGHTDATA_CRAWL_API",
-        "BRIGHTDATA_G",
-        "BRIGHTDATA_GET_SERP_RESULTS"
+        "CLOUDFLARE_GET_LISTS",
+        "CLOUDFLARE_LIST_ACCOUNTS",
+        "CLOUDFLARE_LIST_ACCOUNT_MEMBERS"
       ]
     },
     {
-      "name": "Netlify",
-      "composio_prefix": "netlify",
+      "name": "Datadog",
+      "composio_prefix": "datadog",
       "n_tools": 9,
       "sample_tools": [
-        "NETLIFY_MCP",
-        "NETLIFY_MCP_GET_NETLIFY_CODING_CONTEXT",
-        "NETLIFY_MCP_NETLIFY_DEPLOY_SERVICES_READER"
+        "DATADOG_CREATE_DASHBOARD",
+        "DATADOG_CREATE_MONITOR",
+        "DATADOG_GET_MONITOR"
       ]
     },
     {
@@ -250,9 +240,49 @@
       "composio_prefix": "quickbooks",
       "n_tools": 9,
       "sample_tools": [
-        "QUICKBOOKS_CREATE_CUSTOMER",
-        "QUICKBOOKS_CREATE_INVOICE",
-        "QUICKBOOKS_CREATE_ITEM"
+        "QUICKBOOKS_GET_BALANCE_SHEET_REPORT",
+        "QUICKBOOKS_GET_GENERAL_LEDGER_REPORT",
+        "QUICKBOOKS_GET_PROFIT_AND_LOSS_DETAIL_REPORT"
+      ]
+    },
+    {
+      "name": "Intercom",
+      "composio_prefix": "intercom",
+      "n_tools": 8,
+      "sample_tools": [
+        "INTERCOM_ADD_TAG_TO_CONTACT",
+        "INTERCOM_ATTACH_CONTACT_TO_CONVERSATION",
+        "INTERCOM_CREATE_CONTACT"
+      ]
+    },
+    {
+      "name": "Gorgias",
+      "composio_prefix": "gorgias",
+      "n_tools": 8,
+      "sample_tools": [
+        "GORGIAS_GET_ACCOUNT",
+        "GORGIAS_GET_TICKET_MESSAGE",
+        "GORGIAS_LIST_ACCOUNT_SETTINGS"
+      ]
+    },
+    {
+      "name": "Zoho Cliq",
+      "composio_prefix": "zoho",
+      "n_tools": 8,
+      "sample_tools": [
+        "ZOHO_CREATE_EVENT",
+        "ZOHO_CREATE_NOTE",
+        "ZOHO_GET_MODULE_FIELDS"
+      ]
+    },
+    {
+      "name": "WhatsApp Business",
+      "composio_prefix": "whatsapp",
+      "n_tools": 8,
+      "sample_tools": [
+        "WHATSAPP_CREATE_MESSAGE_TEMPLATE",
+        "WHATSAPP_GET_BUSINESS_PROFILE",
+        "WHATSAPP_GET_MESSAGE_TEMPLATES"
       ]
     },
     {
@@ -263,6 +293,26 @@
         "METAADS_GET_AD_ACCOUNTS",
         "METAADS_GET_INSIGHTS",
         "METAADS_GET_OBJECT"
+      ]
+    },
+    {
+      "name": "LinkedIn Ads",
+      "composio_prefix": "linkedin",
+      "n_tools": 8,
+      "sample_tools": [
+        "LINKEDIN_ADS",
+        "LINKEDIN_ADS_GET_AD_ANALYTICS",
+        "LINKEDIN_ADS_GET_AUDIENCE_COUNTS"
+      ]
+    },
+    {
+      "name": "Klaviyo",
+      "composio_prefix": "klaviyo",
+      "n_tools": 8,
+      "sample_tools": [
+        "KLAVIYO_ADD_PROFILE_TO_LIST",
+        "KLAVIYO_CREATE_OR_UPDATE_CLIENT_PROFILE",
+        "KLAVIYO_CREATE_OR_UPDATE_PROFILE"
       ]
     },
     {
@@ -286,53 +336,13 @@
       ]
     },
     {
-      "name": "Vercel",
-      "composio_prefix": "vercel",
+      "name": "Neo4j",
+      "composio_prefix": "neo4j",
       "n_tools": 8,
       "sample_tools": [
-        "VERCEL_GET_AUTH_USER",
-        "VERCEL_GET_DEPLOYMENT",
-        "VERCEL_GET_DEPLOYMENTS"
-      ]
-    },
-    {
-      "name": "Airtable",
-      "composio_prefix": "airtable",
-      "n_tools": 8,
-      "sample_tools": [
-        "AIRTABLE_CREATE_COMMENT",
-        "AIRTABLE_CREATE_RECORDS",
-        "AIRTABLE_CREATE_RECORD_FROM_NATURAL_LANGUAGE"
-      ]
-    },
-    {
-      "name": "Jira",
-      "composio_prefix": "jira",
-      "n_tools": 8,
-      "sample_tools": [
-        "JIRA_FETCH_BULK_ISSUES",
-        "JIRA_GET_ALL_PROJECTS",
-        "JIRA_GET_CURRENT_USER"
-      ]
-    },
-    {
-      "name": "Asana",
-      "composio_prefix": "asana",
-      "n_tools": 8,
-      "sample_tools": [
-        "ASANA_GET_A_TASK",
-        "ASANA_GET_MULTIPLE_TASKS",
-        "ASANA_GET_SECTIONS_IN_PROJECT"
-      ]
-    },
-    {
-      "name": "Harvest",
-      "composio_prefix": "harvest",
-      "n_tools": 8,
-      "sample_tools": [
-        "HARVEST_CREATE_TIME_ENTRY",
-        "HARVEST_GET_PROJECT",
-        "HARVEST_GET_TASK"
+        "NEO4J_CREATE_INSTANCE_BETA",
+        "NEO4J_CREATE_SNAPSHOT",
+        "NEO4J_GET_INSTANCE_BETA"
       ]
     },
     {
@@ -343,6 +353,16 @@
         "XERO_CREATE_CONTACT",
         "XERO_CREATE_INVOICE",
         "XERO_GET_CONNECTIONS"
+      ]
+    },
+    {
+      "name": "Zoho CRM",
+      "composio_prefix": "zoho",
+      "n_tools": 7,
+      "sample_tools": [
+        "ZOHO_CREATE_ZOHO_RECORD",
+        "ZOHO_GET_MODULE_FIELDS",
+        "ZOHO_GET_ZOHO_RECORDS"
       ]
     },
     {
@@ -366,6 +386,16 @@
       ]
     },
     {
+      "name": "Plain",
+      "composio_prefix": "plain",
+      "n_tools": 7,
+      "sample_tools": [
+        "PLAIN_ADD_CUSTOMER_TO_GROUP",
+        "PLAIN_CREATE_THREAD",
+        "PLAIN_GET_CUSTOMERS"
+      ]
+    },
+    {
       "name": "Help Scout",
       "composio_prefix": "help",
       "n_tools": 7,
@@ -376,33 +406,33 @@
       ]
     },
     {
-      "name": "SendGrid",
-      "composio_prefix": "sendgrid",
+      "name": "Pumble",
+      "composio_prefix": "pumble",
       "n_tools": 7,
       "sample_tools": [
-        "SENDGRID_CANCEL_OR_PAUSE_A_SCHEDULED_SEND",
-        "SENDGRID_CREATE_A_BATCH_ID",
-        "SENDGRID_RETRIEVE_A_SINGLE_TRANSACTIONAL_TEMPLATE"
+        "PUMBLE_DELETE_MESSAGE",
+        "PUMBLE_EDIT_MESSAGE",
+        "PUMBLE_GET_MESSAGE"
       ]
     },
     {
-      "name": "DataForSEO",
-      "composio_prefix": "dataforseo",
+      "name": "Gumroad",
+      "composio_prefix": "gumroad",
       "n_tools": 7,
       "sample_tools": [
-        "DATAFORSEO_CREATE_SERP_GOOGLE_ORGANIC_TASK_POST",
-        "DATAFORSEO_GET_DATAFORSEO_LABS_AVAILABLE_FILTERS",
-        "DATAFORSEO_GET_DATAFORSEO_LABS_GOOGLE_TOP_SEARCHES_LIVE"
+        "GUMROAD_GET_RESOURCE_SUBSCRIPTIONS",
+        "GUMROAD_GET_SALES",
+        "GUMROAD_GET_USER"
       ]
     },
     {
-      "name": "MrScraper",
-      "composio_prefix": "mrscraper",
+      "name": "Netlify",
+      "composio_prefix": "netlify",
       "n_tools": 7,
       "sample_tools": [
-        "MRSCRAPER_BULK_RERUN_AI_SCRAPER",
-        "MRSCRAPER_BULK_RERUN_MANUAL_SCRAPER",
-        "MRSCRAPER_CREATE_AI_SCRAPER"
+        "NETLIFY_MCP",
+        "NETLIFY_MCP_GET_NETLIFY_CODING_CONTEXT",
+        "NETLIFY_MCP_NETLIFY_DEPLOY_SERVICES_READER"
       ]
     },
     {
@@ -426,16 +456,6 @@
       ]
     },
     {
-      "name": "Higgsfield",
-      "composio_prefix": "higgsfield",
-      "n_tools": 7,
-      "sample_tools": [
-        "HIGGSFIELD_MCP",
-        "HIGGSFIELD_MCP_BALANCE",
-        "HIGGSFIELD_MCP_CANCEL_TRIAL_AUTO_RENEWAL"
-      ]
-    },
-    {
       "name": "Twenty",
       "composio_prefix": "twenty",
       "n_tools": 6,
@@ -456,43 +476,63 @@
       ]
     },
     {
-      "name": "Pumble",
-      "composio_prefix": "pumble",
+      "name": "Discord",
+      "composio_prefix": "discord",
       "n_tools": 6,
       "sample_tools": [
-        "PUMBLE_DELETE_MESSAGE",
-        "PUMBLE_EDIT_MESSAGE",
-        "PUMBLE_GET_MESSAGE"
+        "DISCORD_GET_GATEWAY",
+        "DISCORD_GET_MY_USER",
+        "DISCORD_GET_USER"
       ]
     },
     {
-      "name": "WhatsApp Business",
-      "composio_prefix": "whatsapp",
-      "n_tools": 5,
+      "name": "DataForSEO",
+      "composio_prefix": "dataforseo",
+      "n_tools": 6,
       "sample_tools": [
-        "WHATSAPP_GET_BUSINESS_PROFILE",
-        "WHATSAPP_GET_PHONE_NUMBER",
-        "WHATSAPP_GET_PHONE_NUMBERS"
+        "DATAFORSEO_CREATE_ON_PAGE_TASK_POST",
+        "DATAFORSEO_FORCE_ON_PAGE_CRAWL",
+        "DATAFORSEO_GET_ON_PAGE_PAGES"
       ]
     },
     {
-      "name": "LinkedIn Ads",
-      "composio_prefix": "linkedin",
-      "n_tools": 5,
+      "name": "Plaid",
+      "composio_prefix": "plaid",
+      "n_tools": 6,
       "sample_tools": [
-        "LINKEDIN_ADS",
-        "LINKEDIN_ADS_GET_TARGETING_ENTITIES",
-        "LINKEDIN_ADS_GET_TARGETING_FACETS"
+        "PLAID_MCP",
+        "PLAID_MCP_PLAID_DEBUG_ITEM",
+        "PLAID_MCP_PLAID_GET_LINK_ANALYTICS"
       ]
     },
     {
-      "name": "Shopify",
-      "composio_prefix": "shopify",
+      "name": "MrScraper",
+      "composio_prefix": "mrscraper",
       "n_tools": 5,
       "sample_tools": [
-        "SHOPIFY_GET_ACCESS_SCOPES",
-        "SHOPIFY_GRAPH_QL_SHOP",
-        "SHOPIFY_QUERY_CURRENT_APP_INSTALLATION"
+        "MRSCRAPER_BULK_RERUN_AI_SCRAPER",
+        "MRSCRAPER_CREATE_AI_SCRAPER",
+        "MRSCRAPER_GET_RESULT"
+      ]
+    },
+    {
+      "name": "Apify",
+      "composio_prefix": "apify",
+      "n_tools": 5,
+      "sample_tools": [
+        "APIFY_ACTS_GET",
+        "APIFY_ACT_RUNS_LAST_GET",
+        "APIFY_USERS_ME_GET"
+      ]
+    },
+    {
+      "name": "Clay",
+      "composio_prefix": "clay",
+      "n_tools": 5,
+      "sample_tools": [
+        "CLAY_MCP",
+        "CLAY_MCP_ASK_QUESTION_ABOUT_ACCOUNTS",
+        "CLAY_MCP_FIND_AND_ENRICH_CONTACTS_AT_COMPANY"
       ]
     },
     {
@@ -503,6 +543,16 @@
         "CODA_GET_MUTATION_STATUS",
         "CODA_LIST_PAGES",
         "CODA_LIST_PAGE_CONTENT"
+      ]
+    },
+    {
+      "name": "Harvest",
+      "composio_prefix": "harvest",
+      "n_tools": 5,
+      "sample_tools": [
+        "HARVEST_CREATE_TIME_ENTRY",
+        "HARVEST_LIST_PROJECTS",
+        "HARVEST_LIST_TASKS"
       ]
     },
     {
@@ -526,16 +576,6 @@
       ]
     },
     {
-      "name": "Zoho Cliq",
-      "composio_prefix": "zoho",
-      "n_tools": 4,
-      "sample_tools": [
-        "ZOHO_CREATE_EVENT",
-        "ZOHO_GET_MODULE_FIELDS",
-        "ZOHO_SEARCH_EVENTS"
-      ]
-    },
-    {
       "name": "Google Ads",
       "composio_prefix": "googleads",
       "n_tools": 4,
@@ -543,16 +583,6 @@
         "GOOGLEADS_GET_CAMPAIGN_BY_ID",
         "GOOGLEADS_GET_CAMPAIGN_BY_NAME",
         "GOOGLEADS_LIST_ACCESSIBLE_CUSTOMERS"
-      ]
-    },
-    {
-      "name": "Gumroad",
-      "composio_prefix": "gumroad",
-      "n_tools": 4,
-      "sample_tools": [
-        "GUMROAD_GET_SALES",
-        "GUMROAD_LIST_PRODUCTS",
-        "GUMROAD_SUBSCRIBE_TO_RESOURCE"
       ]
     },
     {
@@ -566,16 +596,6 @@
       ]
     },
     {
-      "name": "Plaid",
-      "composio_prefix": "plaid",
-      "n_tools": 4,
-      "sample_tools": [
-        "PLAID_MCP",
-        "PLAID_MCP_PLAID_DEBUG_ITEM",
-        "PLAID_MCP_PLAID_GET_TOOLS_INTRODUCTION"
-      ]
-    },
-    {
       "name": "Otter AI",
       "composio_prefix": "otter",
       "n_tools": 4,
@@ -583,6 +603,16 @@
         "OTTER_AI_MCP",
         "OTTER_AI_MCP_OTTER_FETCH",
         "OTTER_AI_MCP_OTTER_GET_USER_INFO"
+      ]
+    },
+    {
+      "name": "YouTube Transcript",
+      "composio_prefix": "youtube",
+      "n_tools": 4,
+      "sample_tools": [
+        "YOUTUBE_TRANSCRIPT",
+        "YOUTUBE_TRANSCRIPT_GET_STORED_TRANSCRIPT",
+        "YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPT"
       ]
     },
     {
@@ -596,26 +626,6 @@
       ]
     },
     {
-      "name": "Discord",
-      "composio_prefix": "discordbot",
-      "n_tools": 3,
-      "sample_tools": [
-        "DISCORDBOT_CREATE_MESSAGE",
-        "DISCORDBOT_TRIGGER_TYPING_INDICATOR",
-        "DISCORDBOT_UPDATE_MESSAGE"
-      ]
-    },
-    {
-      "name": "Clay",
-      "composio_prefix": "clay",
-      "n_tools": 3,
-      "sample_tools": [
-        "CLAY_MCP",
-        "CLAY_MCP_ASK_QUESTION_ABOUT_ACCOUNTS",
-        "CLAY_MCP_QUERY_OBJECTS"
-      ]
-    },
-    {
       "name": "Consensus",
       "composio_prefix": "consensus",
       "n_tools": 3,
@@ -626,12 +636,22 @@
       ]
     },
     {
-      "name": "YouTube Transcript",
-      "composio_prefix": "youtube",
+      "name": "Higgsfield",
+      "composio_prefix": "higgsfield",
+      "n_tools": 3,
+      "sample_tools": [
+        "HIGGSFIELD_MCP",
+        "HIGGSFIELD_MCP_CANCEL_TRIAL_AUTO_RENEWAL",
+        "HIGGSFIELD_MCP_CONFIRM_TRIAL_CANCEL"
+      ]
+    },
+    {
+      "name": "Mermaid CLI",
+      "composio_prefix": "mermaid",
       "n_tools": 2,
       "sample_tools": [
-        "YOUTUBE_TRANSCRIPT",
-        "YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPTS_BATCH"
+        "MERMAID_CHART_MCP",
+        "MERMAID_CHART_MCP_VALIDATE_AND_RENDER_MERMAID_DIAGRAM"
       ]
     }
   ]

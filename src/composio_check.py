@@ -36,6 +36,16 @@ CALL_GAP_S = 1.0   # polite spacing between MCP calls
 TOOL_TOKEN = re.compile(r"\b([A-Z][A-Z0-9]{1,20}(?:_[A-Z0-9]+)+)\b")
 
 SLUG_HINTS = {
+    # previously-missed apps (were silently skipped from the cross-check)
+    "DealCloud": ["dealcloud"],
+    "Salesforce Commerce Cloud": ["sfcc", "commercecloud", "salesforcecommerce"],
+    "Magento": ["magento", "adobecommerce"],
+    "Amazon SP-API": ["sellingpartner", "spapi", "amazonselling"],
+    "Fanbasis": ["fanbasis"],
+    "Sherlock": ["sherlock"],
+    "Paygent Connect": ["paygent", "nmi"],
+    "iPayX": ["ipayx"],
+    "Mermaid CLI": ["mermaid"],
     "Salesforce": ["salesforce"], "HubSpot": ["hubspot"], "Pipedrive": ["pipedrive"],
     "Attio": ["attio"], "Twenty": ["twenty"], "Zoho CRM": ["zoho"],
     "Close": ["close"], "Copper": ["copper"], "Podio": ["podio"],

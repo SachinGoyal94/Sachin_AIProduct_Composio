@@ -1,17 +1,19 @@
 """One-command orchestrator: rebuilds every artifact and the case-study page.
 
     python src/run_all.py            # full pipeline (network required)
-    python src/run_all.py --skip-net # skip live verification + Composio (offline demo)
+    python src/run_all.py --skip-net # skip live stages (offline demo)
 
 Stages:
   1. analyze.py 1      -> out/apps_pass1.csv, pass1 flags (pristine knowledge core)
   2. verify.py 1       -> out/verification_pass1.json (live HTTP loop)
-  3. analyze.py 2      -> out/apps_pass2.csv (after data/overrides.csv corrections)
-  4. verify.py 2       -> out/verification_pass2.json (live HTTP loop, corrected data)
-  5. composio_check.py -> out/composio_toolbelt.json (optional; needs COMPOSIO_API_KEY)
-  6. patterns.py       -> out/patterns.json (clusters, distributions, flips)
-  7. audit.py 1|2      -> out/audit_pass*.json (ground-truth accuracy per pass)
-  8. render.py         -> index.html (this repo root)
+  3. research.py       -> data/research_drafts.csv (agent search->fetch->extract->draft;
+                          drafts are proposals, human promotes them to overrides.csv)
+  4. analyze.py 2      -> out/apps_pass2.csv (after data/overrides.csv corrections)
+  5. verify.py 2       -> out/verification_pass2.json (live HTTP loop, corrected data)
+  6. composio_check.py -> out/composio_toolbelt.json (optional; needs COMPOSIO_API_KEY)
+  7. patterns.py       -> out/patterns.json (clusters, distributions, flips)
+  8. audit.py 1|2      -> out/audit_pass*.json (ground-truth accuracy per pass)
+  9. render.py         -> index.html (this repo root)
 """
 from __future__ import annotations
 
@@ -43,6 +45,7 @@ def main() -> None:
     run(["analyze.py", "1"])
     if not skip_net:
         run(["verify.py", "1"], allow_fail=True)
+        run(["research.py"], allow_fail=True)  # drafts a human later promotes
     run(["analyze.py", "2"])
     if not skip_net:
         run(["verify.py", "2"], allow_fail=True)
