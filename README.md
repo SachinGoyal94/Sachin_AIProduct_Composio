@@ -87,3 +87,7 @@ index.html  the deliverable (single file, zero external deps, works offline)
   numbers is committed in `out/draft_pass1.csv`.
 - The provided `COMPOSIO_API_KEY` is rejected by the current v3 API (HTTP 401);
   that stage reports the real error instead of pretending.
+
+## Author
+
+**Sachin Goyal** — [sachingoyal9274@gmail.com](mailto:sachingoyal9274@gmail.com) · [(+91) 6280034162](tel:+916280034162)
