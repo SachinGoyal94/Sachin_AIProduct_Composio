@@ -55,6 +55,8 @@ h1 .accent{color:var(--acc)}
   padding:16px 22px;font-size:15.5px;display:flex;gap:14px;align-items:baseline}
 .verdict-strip .k{color:#fdba74;font-weight:700;font-size:12px;letter-spacing:.14em}
 .asof{font-size:12.5px;color:var(--faint);margin-top:14px}
+.byline{margin-top:8px;font-size:13.5px;color:var(--mut)}
+.byline b{color:var(--ink)}
 
 /* ---------- sections ---------- */
 section{padding:64px 0;border-bottom:1px solid var(--line)}
