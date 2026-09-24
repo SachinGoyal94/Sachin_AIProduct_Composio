@@ -125,7 +125,7 @@ def svg_accuracy_bars(aud1: dict, aud2: dict) -> str:
                aud2["row_accuracy"],
                f'{aud1["rows_fully_correct"]}/{aud1["sample_size"]} apps',
                f'{aud2["rows_fully_correct"]}/{aud2["sample_size"]} apps')]
-    out = ['<svg viewBox="0 0 640 190" class="bars acc-bars" role="img">']
+    out = ['<svg viewBox="0 0 640 205" class="bars acc-bars" role="img">']
     y = 8
     for label, v1, v2, lab1, lab2 in groups:
         out.append(f'<text x="200" y="{y + 12}" text-anchor="end" class="bar-lab">'
@@ -141,10 +141,10 @@ def svg_accuracy_bars(aud1: dict, aud2: dict) -> str:
                        f'{v * 100:.0f}% <tspan class="bar-sub">({esc(lab)})</tspan>'
                        f'</text>')
         y += 60
-    out.append(f'<rect x="210" y="{y - 44}" width="12" height="12" rx="3" fill="{C["p1"]}"/>'
-               f'<text x="228" y="{y - 34}" class="legend">pass 1 - agent draft</text>'
-               f'<rect x="210" y="{y - 20}" width="12" height="12" rx="3" fill="{C["p2"]}"/>'
-               f'<text x="228" y="{y - 10}" class="legend">pass 2 - after verification loop + human</text>')
+    out.append(f'<rect x="210" y="160" width="12" height="12" rx="3" fill="{C["p1"]}"/>'
+               f'<text x="228" y="170" class="legend">pass 1 - agent draft</text>'
+               f'<rect x="210" y="182" width="12" height="12" rx="3" fill="{C["p2"]}"/>'
+               f'<text x="228" y="192" class="legend">pass 2 - after verification loop + human</text>')
     out.append("</svg>")
     return "".join(out)
 
@@ -187,11 +187,12 @@ def svg_pipeline(n_flag: int, n_prop: int, n_over: int) -> str:
     back = (f'<path d="M {xs[2] + w / 2} {y + 92} C {xs[2] + w / 2} {y + 72}, '
             f'{xs[3] + w / 2} {y + 86}, {xs[3] + w / 2} {y + 52}" fill="none" '
             f'stroke="#a8a29e" stroke-width="2" stroke-dasharray="4 3"/>')
-    legend = (f'<text x="4" y="{y + 152}" class="legend">{n_prop} deep-dive '
-              f'proposals were drafted; a human promoted {n_over} corrections into '
-              f'the final dataset. Pass 2 is re-verified and audited independently.'
-              f'</text>')
-    return ('<svg viewBox="0 0 712 210" class="pipe" role="img" aria-label="pipeline">'
+    legend = (f'<text x="4" y="{y + 148}" class="legend">{n_prop} deep-dive '
+              f'proposals were drafted; a human promoted {n_over} corrections'
+              f'</text>'
+              f'<text x="4" y="{y + 168}" class="legend">into the final dataset. '
+              f'Pass 2 is re-verified and audited independently.</text>')
+    return ('<svg viewBox="0 0 712 232" class="pipe" role="img" aria-label="pipeline">'
             '<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" '
             'refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#a8a29e"/>'
             "</marker></defs>" + "".join(nodes) + "".join(arrows) + path + back +
