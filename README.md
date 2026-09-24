@@ -1,15 +1,17 @@
 # app-research/100 — agent-researched API integration landscape
 
-One agent + one verification loop researched **100 SaaS apps across 10
-categories**: auth methods, self-serve vs gated credential access, API
-surface, MCP (Model Context Protocol) coverage, and a buildability verdict —
-with an evidence URL behind every row and an audited accuracy trail.
+> **Live case study: <https://ai-product-sachin.vercel.app>**
+>
+> One agent + one verification loop researched **100 SaaS apps across 10
+> categories**: auth methods, self-serve vs gated credential access, API
+> surface, MCP (Model Context Protocol) coverage, and a buildability verdict —
+> with an evidence URL behind every row and an audited accuracy trail.
 
 Built as a take-home case study for Composio's AI Product Ops role.
-**Open `index.html`** — the whole case study is one self-explanatory page
-(headline result: strict ground-truth audit accuracy moved from **70% to
-100%** between the untouched first pass and the verified dataset; every
-miss the auditor caught in pass 1 is listed on the page).
+**Open the live link, or `index.html` locally** — the whole case study is one
+self-explanatory page (headline result: strict ground-truth audit accuracy
+moved from **70% to 100%** between the untouched first pass and the verified
+dataset; every miss the auditor caught in pass 1 is listed on the page).
 
 ## How to run the research agent
 
