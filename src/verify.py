@@ -22,7 +22,8 @@ from urllib.parse import urlparse
 import requests
 
 from config import (DRAFT_CSV, HTTP_CONCURRENCY, HTTP_TIMEOUT,
-                    MAX_EVIDENCE_BYTES, PASS2_CSV, VERIFY_JSON)
+                    MAX_EVIDENCE_BYTES, PASS2_CSV, VERIFY_JSON,
+                    AUTH_METHODS, GATING, MCP, SURFACE, VERDICTS)
 from io_utils import read_csv, split_evidence, write_json
 
 DOCS_HINTS = ("docs", "developer", "developers", "api", "reference",
@@ -70,6 +71,11 @@ def rule_check(row: dict) -> list[str]:
         flags.append("no-evidence-url")
     elif not any(looks_like_docs(u) for u in ev):
         flags.append("evidence-not-docs-host")
+    # controlled-vocabulary compliance (first-pass drafts drift)
+    for f, vocab in (("auth", AUTH_METHODS), ("gate", GATING),
+                     ("surface", SURFACE), ("mcp", MCP), ("verdict", VERDICTS)):
+        if row.get(f) and row[f] not in vocab:
+            flags.append(f"vocab:{f}")
     if row.get("surface") == "No public API" and row.get("verdict") == "Ready":
         flags.append("contradiction:no-api-but-ready")
     if row.get("gate") == "N/A (no auth)" and row.get("surface") != "No public API":

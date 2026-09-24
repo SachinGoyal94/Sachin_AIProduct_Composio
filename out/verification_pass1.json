@@ -2,15 +2,18 @@
   "pass": 1,
   "rows": 100,
   "evidence_urls": 100,
-  "rows_with_live_evidence": 82,
-  "rows_with_dead_evidence": 18,
+  "rows_with_live_evidence": 83,
+  "rows_with_dead_evidence": 17,
   "flagged_rows": 48,
   "clean_rows": 52,
   "flag_counts": {
     "evidence-not-docs-host": 21,
-    "dead-evidence": 18,
+    "dead-evidence": 17,
     "evidence-not-doc-like": 16,
     "low-confidence": 4,
+    "vocab:surface": 2,
+    "vocab:auth": 1,
+    "vocab:gate": 1,
     "contradiction:gated-but-ready": 1
   },
   "per_row": [
@@ -54,17 +57,15 @@
       "evidence": [
         {
           "url": "https://developers.pipedrive.com/docs/api/v1",
-          "status": 0,
+          "status": 200,
           "final_url": "https://developers.pipedrive.com/docs/api/v1",
           "redirected": false,
-          "ok": false,
-          "docs_like": false,
-          "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+          "ok": true,
+          "docs_like": true,
+          "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 4,
@@ -515,11 +516,11 @@
       "evidence": [
         {
           "url": "https://developer.vonage.com/api-overview",
-          "status": 404,
-          "final_url": "https://developer.vonage.com/en/api-overview",
-          "redirected": true,
+          "status": 302,
+          "final_url": "https://developer.vonage.com/api-overview",
+          "redirected": false,
           "ok": false,
-          "docs_like": true,
+          "docs_like": false,
           "error": ""
         }
       ],
@@ -709,7 +710,8 @@
         }
       ],
       "flags": [
-        "evidence-not-docs-host"
+        "evidence-not-docs-host",
+        "vocab:surface"
       ]
     },
     {
@@ -742,7 +744,9 @@
           "error": ""
         }
       ],
-      "flags": []
+      "flags": [
+        "vocab:surface"
+      ]
     },
     {
       "id": 44,
@@ -862,6 +866,8 @@
       ],
       "flags": [
         "evidence-not-docs-host",
+        "vocab:auth",
+        "vocab:gate",
         "low-confidence",
         "evidence-not-doc-like"
       ]

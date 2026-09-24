@@ -604,6 +604,9 @@ MATRIX_JS = r"""
     var r=DATA.filter(function(x){return x.id===id;})[0];
     document.getElementById('fVerdict').value='';document.getElementById('fMcp').value='';
     document.getElementById('fTier').value='';state.verdict='';state.mcp='';state.tier='';
+    state.cat='';
+    document.querySelectorAll('#cats .chip').forEach(function(x){
+      x.classList.toggle('on',x.dataset.v==='');});
     document.getElementById('tbl').scrollIntoView({behavior:'smooth'});
     setTimeout(function(){
       var tr=document.querySelector('tr.row[data-id="'+id+'"]');
