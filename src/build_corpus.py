@@ -366,8 +366,8 @@ def main() -> None:
     n_agent = 0
     reported_ids: set[int] = set()
     for f in sorted(REPORTS.glob("*.json")):
-        if f.name.startswith("mcp_sweep"):
-            continue
+        if f.name.startswith("mcp_"):
+            continue  # mcp_sweep_raw / mcp_officials carry mcp fields only
         for rec in json.loads(f.read_text(encoding="utf-8")):
             rid = int(rec["id"])
             if rid not in rows:

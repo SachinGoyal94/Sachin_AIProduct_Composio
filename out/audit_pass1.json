@@ -2,10 +2,10 @@
   "pass": 1,
   "sample_size": 20,
   "fields_scored": 100,
-  "field_accuracy": 0.62,
-  "row_accuracy": 0.1,
-  "fields_correct": 62,
-  "rows_fully_correct": 2,
+  "field_accuracy": 0.71,
+  "row_accuracy": 0.15,
+  "fields_correct": 71,
+  "rows_fully_correct": 3,
   "per_app": [
     {
       "id": 3,
@@ -15,8 +15,8 @@
         {
           "field": "auth",
           "expected": "Token",
-          "actual": "API key",
-          "ok": false
+          "actual": "Token",
+          "ok": true
         },
         {
           "field": "gate",
@@ -33,8 +33,8 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (official)",
-          "ok": false
+          "actual": "Yes (community)",
+          "ok": true
         },
         {
           "field": "verdict",
@@ -43,11 +43,8 @@
           "ok": true
         }
       ],
-      "all_ok": false,
-      "misses": [
-        "auth",
-        "mcp"
-      ],
+      "all_ok": true,
+      "misses": [],
       "source": "https://developers.pipedrive.com/docs/api/v1"
     },
     {
@@ -58,8 +55,8 @@
         {
           "field": "auth",
           "expected": "API key",
-          "actual": "API key",
-          "ok": true
+          "actual": "OAuth2",
+          "ok": false
         },
         {
           "field": "gate",
@@ -70,8 +67,8 @@
         {
           "field": "surface",
           "expected": "REST + GraphQL",
-          "actual": "Documented REST",
-          "ok": false
+          "actual": "REST + GraphQL",
+          "ok": true
         },
         {
           "field": "mcp",
@@ -88,7 +85,7 @@
       ],
       "all_ok": false,
       "misses": [
-        "surface",
+        "auth",
         "mcp"
       ],
       "source": "https://docs.twenty.com/llms.txt"
@@ -162,7 +159,7 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (official)",
+          "actual": "No",
           "ok": false
         },
         {
@@ -198,8 +195,8 @@
         {
           "field": "surface",
           "expected": "Documented GraphQL",
-          "actual": "Documented REST",
-          "ok": false
+          "actual": "Documented GraphQL",
+          "ok": true
         },
         {
           "field": "mcp",
@@ -216,7 +213,6 @@
       ],
       "all_ok": false,
       "misses": [
-        "surface",
         "mcp"
       ],
       "source": "https://www.plain.com/docs/graphql/authentication"
@@ -287,8 +283,8 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (official)",
-          "ok": false
+          "actual": "Yes (community)",
+          "ok": true
         },
         {
           "field": "verdict",
@@ -297,10 +293,8 @@
           "ok": true
         }
       ],
-      "all_ok": false,
-      "misses": [
-        "mcp"
-      ],
+      "all_ok": true,
+      "misses": [],
       "source": "https://core.telegram.org/bots/api"
     },
     {
@@ -317,8 +311,8 @@
         {
           "field": "gate",
           "expected": "Admin approval",
-          "actual": "Open self-serve",
-          "ok": false
+          "actual": "Admin approval",
+          "ok": true
         },
         {
           "field": "surface",
@@ -329,21 +323,19 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (official)",
+          "actual": "No",
           "ok": false
         },
         {
           "field": "verdict",
           "expected": "Ready with caveats",
-          "actual": "Ready",
-          "ok": false
+          "actual": "Ready with caveats",
+          "ok": true
         }
       ],
       "all_ok": false,
       "misses": [
-        "gate",
-        "mcp",
-        "verdict"
+        "mcp"
       ],
       "source": "https://learn.microsoft.com/en-us/linkedin/marketing/"
     },
@@ -367,8 +359,8 @@
         {
           "field": "surface",
           "expected": "Documented REST",
-          "actual": "Documented REST",
-          "ok": true
+          "actual": "SDK/API limited",
+          "ok": false
         },
         {
           "field": "mcp",
@@ -379,15 +371,15 @@
         {
           "field": "verdict",
           "expected": "Ready with caveats",
-          "actual": "Ready",
-          "ok": false
+          "actual": "Ready with caveats",
+          "ok": true
         }
       ],
       "all_ok": false,
       "misses": [
         "gate",
-        "mcp",
-        "verdict"
+        "surface",
+        "mcp"
       ],
       "source": "https://developer.systeme.io/reference"
     },
@@ -399,8 +391,8 @@
         {
           "field": "auth",
           "expected": "Token",
-          "actual": "OAuth2",
-          "ok": false
+          "actual": "Token",
+          "ok": true
         },
         {
           "field": "gate",
@@ -411,13 +403,13 @@
         {
           "field": "surface",
           "expected": "REST + GraphQL",
-          "actual": "Documented REST + GraphQL",
+          "actual": "Documented REST",
           "ok": false
         },
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (official)",
+          "actual": "No",
           "ok": false
         },
         {
@@ -429,7 +421,6 @@
       ],
       "all_ok": false,
       "misses": [
-        "auth",
         "surface",
         "mcp"
       ],
@@ -461,7 +452,7 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (official)",
+          "actual": "No",
           "ok": false
         },
         {
@@ -540,8 +531,8 @@
         {
           "field": "surface",
           "expected": "No public API",
-          "actual": "No public API",
-          "ok": true
+          "actual": "SDK/API limited",
+          "ok": false
         },
         {
           "field": "mcp",
@@ -552,13 +543,15 @@
         {
           "field": "verdict",
           "expected": "Blocked",
-          "actual": "Blocked",
-          "ok": true
+          "actual": "Ready with caveats",
+          "ok": false
         }
       ],
       "all_ok": false,
       "misses": [
-        "mcp"
+        "surface",
+        "mcp",
+        "verdict"
       ],
       "source": "https://github.com/sherlock-project/sherlock"
     },
@@ -588,7 +581,7 @@
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "No",
+          "actual": "Yes (community)",
           "ok": false
         },
         {
@@ -612,8 +605,8 @@
         {
           "field": "auth",
           "expected": "Token",
-          "actual": "API key",
-          "ok": false
+          "actual": "Token",
+          "ok": true
         },
         {
           "field": "gate",
@@ -630,8 +623,8 @@
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "Yes (official)",
-          "ok": true
+          "actual": "No",
+          "ok": false
         },
         {
           "field": "verdict",
@@ -642,7 +635,7 @@
       ],
       "all_ok": false,
       "misses": [
-        "auth"
+        "mcp"
       ],
       "source": "https://docs.sentry.io/api/"
     },
@@ -672,8 +665,8 @@
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "Yes (official)",
-          "ok": true
+          "actual": "Yes (community)",
+          "ok": false
         },
         {
           "field": "verdict",
@@ -684,7 +677,8 @@
       ],
       "all_ok": false,
       "misses": [
-        "auth"
+        "auth",
+        "mcp"
       ],
       "source": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
     },
@@ -714,8 +708,8 @@
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "Yes (official)",
-          "ok": true
+          "actual": "No",
+          "ok": false
         },
         {
           "field": "verdict",
@@ -724,8 +718,10 @@
           "ok": true
         }
       ],
-      "all_ok": true,
-      "misses": [],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
       "source": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
     },
     {
@@ -736,8 +732,8 @@
         {
           "field": "auth",
           "expected": "API key",
-          "actual": "HMAC",
-          "ok": false
+          "actual": "API key",
+          "ok": true
         },
         {
           "field": "gate",
@@ -748,8 +744,8 @@
         {
           "field": "surface",
           "expected": "Documented REST",
-          "actual": "SDK/API limited",
-          "ok": false
+          "actual": "Documented REST",
+          "ok": true
         },
         {
           "field": "mcp",
@@ -760,17 +756,14 @@
         {
           "field": "verdict",
           "expected": "Ready with caveats",
-          "actual": "Blocked",
-          "ok": false
+          "actual": "Ready with caveats",
+          "ok": true
         }
       ],
       "all_ok": false,
       "misses": [
-        "auth",
         "gate",
-        "surface",
-        "mcp",
-        "verdict"
+        "mcp"
       ],
       "source": "https://docs.withpaygent.com/documentation/getting-started/quick-start"
     },
@@ -794,8 +787,8 @@
         {
           "field": "surface",
           "expected": "Documented REST",
-          "actual": "SDK/API limited",
-          "ok": false
+          "actual": "Documented REST",
+          "ok": true
         },
         {
           "field": "mcp",
@@ -812,7 +805,6 @@
       ],
       "all_ok": false,
       "misses": [
-        "surface",
         "verdict"
       ],
       "source": "https://pitchbook.com/help/PitchBook-api"
@@ -825,20 +817,20 @@
         {
           "field": "auth",
           "expected": "API key",
-          "actual": "Other",
-          "ok": false
+          "actual": "API key",
+          "ok": true
         },
         {
           "field": "gate",
-          "expected": "Open self-serve",
+          "expected": "Paid self-serve",
           "actual": "Contact sales / partner",
           "ok": false
         },
         {
           "field": "surface",
           "expected": "Documented REST",
-          "actual": "SDK/API limited",
-          "ok": false
+          "actual": "Documented REST",
+          "ok": true
         },
         {
           "field": "mcp",
@@ -849,15 +841,13 @@
         {
           "field": "verdict",
           "expected": "Ready",
-          "actual": "Blocked",
+          "actual": "Ready with caveats",
           "ok": false
         }
       ],
       "all_ok": false,
       "misses": [
-        "auth",
         "gate",
-        "surface",
         "mcp",
         "verdict"
       ],

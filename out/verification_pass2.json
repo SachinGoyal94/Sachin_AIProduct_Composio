@@ -1,17 +1,15 @@
 {
   "pass": 2,
   "rows": 100,
-  "evidence_urls": 106,
-  "rows_with_live_evidence": 68,
-  "rows_with_dead_evidence": 10,
-  "flagged_rows": 39,
-  "clean_rows": 61,
+  "evidence_urls": 152,
+  "rows_with_live_evidence": 89,
+  "rows_with_dead_evidence": 11,
+  "flagged_rows": 20,
+  "clean_rows": 80,
   "flag_counts": {
-    "no-evidence-url": 22,
-    "missing-description": 22,
-    "dead-evidence": 10,
+    "dead-evidence": 11,
     "evidence-not-doc-like": 5,
-    "evidence-not-docs-host": 3
+    "evidence-not-docs-host": 5
   },
   "per_row": [
     {
@@ -908,11 +906,27 @@
     {
       "id": 44,
       "name": "Salesforce Commerce Cloud",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://web.archive.org/web/20260519000818/https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+          "status": 200,
+          "final_url": "https://web.archive.org/web/20260519000818/https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+          "status": 403,
+          "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 45,
@@ -1329,29 +1343,86 @@
     {
       "id": 66,
       "name": "Neo4j",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://neo4j.com/docs/query-api/current/",
+          "status": 200,
+          "final_url": "https://neo4j.com/docs/query-api/current/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "status": 200,
+          "final_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://neo4j.com/docs/mcp/current/",
+          "status": 200,
+          "final_url": "https://neo4j.com/docs/mcp/current/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 67,
       "name": "Snowflake",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+          "status": 200,
+          "final_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+          "status": 200,
+          "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 68,
       "name": "MongoDB Atlas",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+          "status": 200,
+          "final_url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mongodb-js/mongodb-mcp-server/main/README.md",
+          "status": 0,
+          "final_url": "https://raw.githubusercontent.com/mongodb-js/mongodb-mcp-server/main/README.md",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+        }
+      ],
+      "flags": []
     },
     {
       "id": 69,
@@ -1518,20 +1589,52 @@
     {
       "id": 79,
       "name": "Smartsheet",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+          "status": 200,
+          "final_url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://smartsheet.redoc.ly/",
+          "status": 200,
+          "final_url": "https://smartsheet.redoc.ly/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 80,
       "name": "Harvest",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "status": 200,
+          "final_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+          "status": 200,
+          "final_url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 81,
@@ -1588,29 +1691,77 @@
     {
       "id": 84,
       "name": "Paygent Connect",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+          "status": 200,
+          "final_url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.withpaygent.com/llms.txt",
+          "status": 200,
+          "final_url": "https://docs.withpaygent.com/llms.txt",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 85,
       "name": "iPayX",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://www.ipayx.ai/llms.txt",
+          "status": 200,
+          "final_url": "https://www.ipayx.ai/llms.txt",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.ipayx.ai/docs",
+          "status": 200,
+          "final_url": "https://www.ipayx.ai/docs",
+          "redirected": false,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 86,
       "name": "QuickBooks",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+          "status": 200,
+          "final_url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+          "status": 0,
+          "final_url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+        }
+      ],
+      "flags": []
     },
     {
       "id": 87,
@@ -1633,119 +1784,342 @@
     {
       "id": 88,
       "name": "Brex",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://developer.brex.com/docs/authentication/",
+          "status": 200,
+          "final_url": "https://developer.brex.com/guides/authentication",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.brex.com/docs/mcp",
+          "status": 200,
+          "final_url": "https://developer.brex.com/docs/mcp",
+          "redirected": false,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 89,
       "name": "Ramp",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+          "status": 200,
+          "final_url": "https://docs.ramp.com/llms-guides/authorization.txt",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+          "status": 200,
+          "final_url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.ramp.com/llms.txt",
+          "status": 200,
+          "final_url": "https://docs.ramp.com/llms.txt",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 90,
       "name": "PitchBook",
-      "evidence": [],
+      "evidence": [
+        {
+          "url": "https://pitchbook.com/help/PitchBook-api",
+          "status": 403,
+          "final_url": "https://pitchbook.com/help/PitchBook-api",
+          "redirected": false,
+          "ok": false,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
       "flags": [
-        "no-evidence-url",
-        "missing-description"
+        "dead-evidence"
       ]
     },
     {
       "id": 91,
       "name": "NotebookLM",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "status": 200,
+          "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 92,
       "name": "Otter AI",
-      "evidence": [],
+      "evidence": [
+        {
+          "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+          "status": 200,
+          "final_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://help.otter.ai/",
+          "status": 200,
+          "final_url": "https://help.otter.ai/hc/en-us",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
       "flags": [
-        "no-evidence-url",
-        "missing-description"
+        "evidence-not-docs-host"
       ]
     },
     {
       "id": 93,
       "name": "Fathom",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://developers.fathom.ai/quickstart",
+          "status": 200,
+          "final_url": "https://developers.fathom.ai/quickstart",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.fathom.ai/llms.txt",
+          "status": 200,
+          "final_url": "https://developers.fathom.ai/llms.txt",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 94,
       "name": "Consensus",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.consensus.app/api-get-started",
+          "status": 200,
+          "final_url": "https://docs.consensus.app/api-get-started",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.consensus.app/api-plans-and-access",
+          "status": 200,
+          "final_url": "https://docs.consensus.app/api-plans-and-access",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://consensus.app/home/api/",
+          "status": 200,
+          "final_url": "https://consensus.app/home/api/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 95,
       "name": "Reducto",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.reducto.ai/quickstart",
+          "status": 200,
+          "final_url": "https://docs.reducto.ai/quickstart",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.reducto.ai/mcp-server",
+          "status": 200,
+          "final_url": "https://docs.reducto.ai/mcp-server",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 96,
       "name": "Devin",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+          "status": 200,
+          "final_url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.devin.ai/llms.txt",
+          "status": 200,
+          "final_url": "https://docs.devin.ai/llms.txt",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 97,
       "name": "higgsfield",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://docs.higgsfield.ai/docs/authentication.md",
+          "status": 200,
+          "final_url": "https://docs.higgsfield.ai/docs/authentication.md",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.higgsfield.ai",
+          "status": 200,
+          "final_url": "https://docs.higgsfield.ai/docs",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://open.higgsfield.ai",
+          "status": 200,
+          "final_url": "https://open.higgsfield.ai/explore",
+          "redirected": true,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 98,
       "name": "Mermaid CLI",
-      "evidence": [],
+      "evidence": [
+        {
+          "url": "https://github.com/mermaid-js/mermaid-cli",
+          "status": 200,
+          "final_url": "https://github.com/mermaid-js/mermaid-cli",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        }
+      ],
       "flags": [
-        "no-evidence-url",
-        "missing-description"
+        "evidence-not-docs-host"
       ]
     },
     {
       "id": 99,
       "name": "YouTube Transcript",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://transcriptapi.com/",
+          "status": 200,
+          "final_url": "https://transcriptapi.com/",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://transcriptapi.com/sitemap.xml",
+          "status": 200,
+          "final_url": "https://transcriptapi.com/sitemap.xml",
+          "redirected": false,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": []
     },
     {
       "id": 100,
       "name": "Grain",
-      "evidence": [],
-      "flags": [
-        "no-evidence-url",
-        "missing-description"
-      ]
+      "evidence": [
+        {
+          "url": "https://developers.grain.com/overview.html",
+          "status": 200,
+          "final_url": "https://developers.grain.com/overview.html",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.grain.com/authentication.html",
+          "status": 200,
+          "final_url": "https://developers.grain.com/authentication.html",
+          "redirected": false,
+          "ok": true,
+          "docs_like": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.grain.com/mcp/overview.html",
+          "status": 200,
+          "final_url": "https://developers.grain.com/mcp/overview.html",
+          "redirected": false,
+          "ok": true,
+          "docs_like": false,
+          "error": ""
+        }
+      ],
+      "flags": []
     }
   ]
 }

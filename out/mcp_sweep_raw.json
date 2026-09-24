@@ -183,14 +183,14 @@
           "desc": "Close CRM to manage your sales pipeline. Learn more at https://close.com or https://mcp.close.com"
         },
         {
+          "name": "com.disclosedby/record",
+          "repo": "",
+          "desc": "Dated quotes of GDPR art. 28 subprocessor lists: who lists whom, what changed, and when."
+        },
+        {
           "name": "io.github.Evozim/b2b-lead-closer-mcp",
           "repo": "",
           "desc": "Premium agentic endpoint for b2b-lead-closer-mcp."
-        },
-        {
-          "name": "io.github.Evozim/salescloser-ai",
-          "repo": "",
-          "desc": "Conversational sales call auditor grading pitch conversion rates."
         }
       ]
     },

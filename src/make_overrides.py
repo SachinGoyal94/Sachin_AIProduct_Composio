@@ -34,8 +34,8 @@ def main() -> None:
     # which apps were covered by a live agent report?
     agent_ids: set[int] = set()
     for f in REPORTS.glob("*.json"):
-        if f.name.startswith("mcp_sweep"):
-            continue
+        if f.name.startswith("mcp_"):
+            continue  # mcp files carry mcp fields only, not full app reports
         try:
             for rec in json.loads(f.read_text(encoding="utf-8")):
                 agent_ids.add(int(rec["id"]))

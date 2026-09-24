@@ -1,8 +1,8 @@
 {
-  "model": "gemini-2.5-flash",
+  "model": "gemini-3.5-flash-lite",
   "calls": 10,
   "rows": 100,
   "mode": "memory-only (no web access)",
-  "generated": "2026-09-24T23:17:01",
-  "fresh": true
+  "generated": "2026-09-25T01:10:26",
+  "fresh": false
 }

@@ -1,0 +1,272 @@
+[
+ {
+  "id": 1,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developer.salesforce.com",
+  "note": "Salesforce hosted MCP servers GA (Apr 2026)"
+ },
+ {
+  "id": 2,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.hubspot.com",
+  "note": "HubSpot remote MCP server, beta then GA"
+ },
+ {
+  "id": 3,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://www.pipedrive.com",
+  "note": "Pipedrive native MCP launched Jun 2026"
+ },
+ {
+  "id": 7,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://www.zoho.com/mcp/",
+  "note": "Zoho MCP platform covers Zoho CRM"
+ },
+ {
+  "id": 9,
+  "mcp": "Yes (community)",
+  "mcp_evidence": "https://mcp.pipedream.com",
+  "note": "No official Copper server; registry hit unrelated"
+ },
+ {
+  "id": 11,
+  "mcp": "Yes (community)",
+  "mcp_evidence": "https://github.com/reminia/zendesk-mcp-server",
+  "note": "Zendesk ships MCP client only; servers community"
+ },
+ {
+  "id": 12,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.intercom.com",
+  "note": "Official remote MCP at mcp.intercom.com/mcp"
+ },
+ {
+  "id": 13,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://support.freshdesk.com",
+  "note": "First-party Freshworks MCP server"
+ },
+ {
+  "id": 18,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://mcp.helpscout.net/mcp",
+  "note": "Help Scout MCP GA July 2026"
+ },
+ {
+  "id": 19,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://docs.gorgias.com",
+  "note": "First-party Gorgias MCP, open beta"
+ },
+ {
+  "id": 21,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://docs.slack.dev",
+  "note": "Official Slack remote MCP server; community too"
+ },
+ {
+  "id": 22,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://github.com/twilio-labs/mcp",
+  "note": "Official Twilio MCP monorepo"
+ },
+ {
+  "id": 26,
+  "mcp": "Yes (community)",
+  "mcp_evidence": "https://github.com/SaseQ/discord-mcp",
+  "note": "No official Discord MCP server"
+ },
+ {
+  "id": 27,
+  "mcp": "Yes (community)",
+  "mcp_evidence": "https://mcpservers.org",
+  "note": "No official Telegram server; Telethon-based community"
+ },
+ {
+  "id": 28,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.facebook.com",
+  "note": "Meta WhatsApp Business Tools MCP, Sep 2026"
+ },
+ {
+  "id": 31,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+  "note": "Official googleads/google-ads-mcp, Oct 2025"
+ },
+ {
+  "id": 32,
+  "mcp": "Yes (community)",
+  "mcp_evidence": "https://pypi.org/project/meta-ads-mcp/",
+  "note": "No official Meta Ads MCP; community wrappers"
+ },
+ {
+  "id": 33,
+  "mcp": "Yes (community)",
+  "mcp_evidence": "https://github.com/Dishant27/linkedin-mcp-server",
+  "note": "No official; registry hit is OpenAPI proxy"
+ },
+ {
+  "id": 35,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://mailchimp.com",
+  "note": "Mailchimp transactional (Mandrill) MCP; remote server too"
+ },
+ {
+  "id": 36,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.klaviyo.com",
+  "note": "Official MCP + remote server Aug 2025; registry hit aggregator"
+ },
+ {
+  "id": 38,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.pinterest.com",
+  "note": "Pinterest MCP Server on developer portal"
+ },
+ {
+  "id": 40,
+  "mcp": "Yes (community)",
+  "mcp_evidence": "https://github.com/Choppaaahh/sendgrid-mcp-secure",
+  "note": "No official SendGrid server; Twilio DIY tutorial only"
+ },
+ {
+  "id": 41,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://shopify.dev",
+  "note": "Shopify Dev MCP (docs/schemas); admin hit is community"
+ },
+ {
+  "id": 42,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developer.woocommerce.com",
+  "note": "Native MCP built into WooCommerce"
+ },
+ {
+  "id": 43,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://docs.bigcommerce.com",
+  "note": "Official Storefront MCP + docs MCP endpoint"
+ },
+ {
+  "id": 45,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://experienceleague.adobe.com",
+  "note": "Adobe Commerce MCP official; marketplace hits community"
+ },
+ {
+  "id": 46,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers-preview.squarespace.com",
+  "note": "Official MCP server in developer preview"
+ },
+ {
+  "id": 49,
+  "mcp": "Unclear",
+  "mcp_evidence": "",
+  "note": "curator: amazon-sp-api-tools/local-mcp is not a vendor-owned org; could not confirm official"
+ },
+ {
+  "id": 51,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://dataforseo.com",
+  "note": "Official remote + npm MCP server; scalably hit is agency"
+ },
+ {
+  "id": 53,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://docs.ahrefs.com",
+  "note": "Ahrefs hosted MCP server, Lite plan and up"
+ },
+ {
+  "id": 60,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://www.clay.com",
+  "note": "Official MCP at api.clay.com/v3/mcp"
+ },
+ {
+  "id": 61,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://docs.github.com",
+  "note": "github/github-mcp-server; remote api.githubcopilot.com/mcp"
+ },
+ {
+  "id": 62,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://vercel.com",
+  "note": "Official Vercel MCP (mcp.vercel.com), Aug 2025"
+ },
+ {
+  "id": 63,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://docs.netlify.com",
+  "note": "Official Netlify MCP server since Jun 2025"
+ },
+ {
+  "id": 65,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://supabase.com/docs/guides/getting-started/mcp",
+  "note": "Official remote MCP at supabase.com/mcp"
+ },
+ {
+  "id": 69,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://docs.datadoghq.com",
+  "note": "Datadog managed MCP server; aggregator hit community"
+ },
+ {
+  "id": 70,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://github.com/getsentry/sentry-mcp",
+  "note": "Official remote MCP at mcp.sentry.dev"
+ },
+ {
+  "id": 71,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.notion.com",
+  "note": "makenotion/notion-mcp-server; mcp.notion.com"
+ },
+ {
+  "id": 74,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://support.atlassian.com/rovo/docs/atlassian-remote-mcp-server-tools/",
+  "note": "curator: Atlassian Remote MCP Server (announced May 2025, mcp.atlassian.com) is first-party"
+ },
+ {
+  "id": 75,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.asana.com",
+  "note": "Official Asana MCP server with OAuth"
+ },
+ {
+  "id": 77,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developer.clickup.com",
+  "note": "Official ClickUp hosted MCP, public beta"
+ },
+ {
+  "id": 78,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://coda.io",
+  "note": "Superhuman Docs (ex-Coda) first-party MCP server"
+ },
+ {
+  "id": 82,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://github.com/plaid/ai-coding-toolkit",
+  "note": "Plaid remote MCP (diagnostics); registry hit unrelated"
+ },
+ {
+  "id": 83,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://developers.binance.com",
+  "note": "Official Binance MCP server docs"
+ },
+ {
+  "id": 87,
+  "mcp": "Yes (official)",
+  "mcp_evidence": "https://devblog.xero.com",
+  "note": "Official XeroAPI/xero-mcp-server, self-hosted"
+ }
+]

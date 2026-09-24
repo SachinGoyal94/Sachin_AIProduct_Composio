@@ -2,10 +2,10 @@
   "pass": 2,
   "sample_size": 20,
   "fields_scored": 100,
-  "field_accuracy": 0.95,
-  "row_accuracy": 0.75,
-  "fields_correct": 95,
-  "rows_fully_correct": 15,
+  "field_accuracy": 0.96,
+  "row_accuracy": 0.8,
+  "fields_correct": 96,
+  "rows_fully_correct": 16,
   "per_app": [
     {
       "id": 3,
@@ -33,8 +33,8 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (community)",
-          "ok": true
+          "actual": "Yes (official)",
+          "ok": false
         },
         {
           "field": "verdict",
@@ -43,8 +43,10 @@
           "ok": true
         }
       ],
-      "all_ok": true,
-      "misses": [],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
       "source": "https://developers.pipedrive.com/docs/api/v1"
     },
     {
@@ -153,8 +155,8 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (community)",
-          "ok": true
+          "actual": "Yes (official)",
+          "ok": false
         },
         {
           "field": "verdict",
@@ -163,8 +165,10 @@
           "ok": true
         }
       ],
-      "all_ok": true,
-      "misses": [],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
       "source": "https://developers.freshdesk.com/api/"
     },
     {
@@ -233,8 +237,8 @@
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "Yes (community)",
-          "ok": false
+          "actual": "Yes (official)",
+          "ok": true
         },
         {
           "field": "verdict",
@@ -243,10 +247,8 @@
           "ok": true
         }
       ],
-      "all_ok": false,
-      "misses": [
-        "mcp"
-      ],
+      "all_ok": true,
+      "misses": [],
       "source": "https://api.slack.com/authentication"
     },
     {
@@ -395,8 +397,8 @@
         {
           "field": "mcp",
           "expected": "Yes (community)",
-          "actual": "Yes (community)",
-          "ok": true
+          "actual": "Yes (official)",
+          "ok": false
         },
         {
           "field": "verdict",
@@ -405,8 +407,10 @@
           "ok": true
         }
       ],
-      "all_ok": true,
-      "misses": [],
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
       "source": "https://developer.bigcommerce.com/docs/rest-api"
     },
     {
@@ -555,8 +559,8 @@
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "Yes (community)",
-          "ok": false
+          "actual": "Yes (official)",
+          "ok": true
         },
         {
           "field": "verdict",
@@ -565,10 +569,8 @@
           "ok": true
         }
       ],
-      "all_ok": false,
-      "misses": [
-        "mcp"
-      ],
+      "all_ok": true,
+      "misses": [],
       "source": "https://supabase.com/docs/reference/api/introduction"
     },
     {
@@ -597,8 +599,8 @@
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "Yes (community)",
-          "ok": false
+          "actual": "Yes (official)",
+          "ok": true
         },
         {
           "field": "verdict",
@@ -607,10 +609,8 @@
           "ok": true
         }
       ],
-      "all_ok": false,
-      "misses": [
-        "mcp"
-      ],
+      "all_ok": true,
+      "misses": [],
       "source": "https://docs.sentry.io/api/"
     },
     {
@@ -788,9 +788,9 @@
         },
         {
           "field": "gate",
-          "expected": "Open self-serve",
+          "expected": "Paid self-serve",
           "actual": "Paid self-serve",
-          "ok": false
+          "ok": true
         },
         {
           "field": "surface",
@@ -811,10 +811,8 @@
           "ok": true
         }
       ],
-      "all_ok": false,
-      "misses": [
-        "gate"
-      ],
+      "all_ok": true,
+      "misses": [],
       "source": "https://docs.devin.ai/"
     }
   ]

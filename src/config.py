@@ -5,6 +5,7 @@ overrides, auditing and rendering can compare fields mechanically.
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -47,7 +48,7 @@ SCORED_FIELDS = ("auth", "gate", "surface", "mcp", "verdict")
 HTTP_TIMEOUT = 25            # seconds per evidence fetch
 HTTP_CONCURRENCY = 12        # evidence checks run in a thread pool
 MAX_EVIDENCE_BYTES = 400_000  # truncate fetched docs before sniffing
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 GEMINI_BATCH = 10            # apps per draft call
 GEMINI_TIMEOUT = 120         # seconds per call
 GEMINI_RETRIES = 2

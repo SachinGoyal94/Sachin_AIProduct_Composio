@@ -1,36 +1,37 @@
 {
   "n_apps": 100,
   "auth_dist": {
-    "API key": 32,
-    "OAuth2": 20,
-    "Token": 20,
-    "Basic": 3,
-    "None": 2,
+    "API key": 41,
+    "OAuth2": 27,
+    "Token": 24,
+    "Basic": 4,
+    "None": 3,
     "HMAC": 1
   },
   "gate_dist": {
-    "Open self-serve": 60,
-    "Paid self-serve": 7,
-    "Admin approval": 5,
-    "Contact sales / partner": 4,
-    "N/A (no auth)": 2
+    "Open self-serve": 72,
+    "Paid self-serve": 13,
+    "Admin approval": 6,
+    "Contact sales / partner": 6,
+    "N/A (no auth)": 3
   },
   "surface_dist": {
-    "Documented REST": 68,
+    "Documented REST": 88,
     "REST + GraphQL": 5,
     "Documented GraphQL": 3,
-    "No public API": 2
+    "No public API": 3,
+    "SDK/API limited": 1
   },
   "verdict_dist": {
-    "Ready": 56,
-    "Ready with caveats": 20,
-    "Blocked": 2
+    "Ready": 69,
+    "Ready with caveats": 27,
+    "Blocked": 4
   },
   "mcp_dist": {
-    "Yes (community)": 63,
-    "Yes (official)": 19,
-    "Unclear": 16,
-    "No": 2
+    "Yes (official)": 71,
+    "Yes (community)": 19,
+    "No": 6,
+    "Unclear": 4
   },
   "gate_by_category": {
     "CRM & Sales": {
@@ -83,7 +84,7 @@
       "gates": {
         "Open self-serve": 6,
         "Paid self-serve": 2,
-        "": 1,
+        "Contact sales / partner": 1,
         "N/A (no auth)": 1
       }
     },
@@ -101,121 +102,136 @@
     },
     "Developer & Infra": {
       "n": 10,
-      "self_serve": 7,
-      "gated": 3,
-      "self_serve_pct": 70,
+      "self_serve": 10,
+      "gated": 0,
+      "self_serve_pct": 100,
       "gates": {
-        "Open self-serve": 7,
-        "": 3
+        "Open self-serve": 10
       }
     },
     "Productivity & PM": {
+      "n": 10,
+      "self_serve": 10,
+      "gated": 0,
+      "self_serve_pct": 100,
+      "gates": {
+        "Open self-serve": 9,
+        "Paid self-serve": 1
+      }
+    },
+    "Finance & Fintech": {
+      "n": 10,
+      "self_serve": 9,
+      "gated": 1,
+      "self_serve_pct": 90,
+      "gates": {
+        "Open self-serve": 6,
+        "Paid self-serve": 3,
+        "Contact sales / partner": 1
+      }
+    },
+    "AI, Research & Media": {
       "n": 10,
       "self_serve": 8,
       "gated": 2,
       "self_serve_pct": 80,
       "gates": {
-        "Open self-serve": 8,
-        "": 2
-      }
-    },
-    "Finance & Fintech": {
-      "n": 10,
-      "self_serve": 4,
-      "gated": 6,
-      "self_serve_pct": 40,
-      "gates": {
-        "": 6,
-        "Open self-serve": 4
-      }
-    },
-    "AI, Research & Media": {
-      "n": 10,
-      "self_serve": 0,
-      "gated": 10,
-      "self_serve_pct": 0,
-      "gates": {
-        "": 10
+        "Open self-serve": 6,
+        "Paid self-serve": 2,
+        "Admin approval": 1,
+        "N/A (no auth)": 1
       }
     }
   },
   "mcp_by_category": {
     "CRM & Sales": {
       "n": 10,
-      "official": 4,
-      "community": 3,
-      "any": 7
+      "official": 8,
+      "community": 1,
+      "any": 9
     },
     "Support & Helpdesk": {
       "n": 10,
-      "official": 4,
-      "community": 3,
-      "any": 7
+      "official": 8,
+      "community": 1,
+      "any": 9
     },
     "Communications & Messaging": {
       "n": 10,
-      "official": 5,
-      "community": 5,
+      "official": 8,
+      "community": 2,
       "any": 10
     },
     "Marketing & Ads": {
       "n": 10,
-      "official": 2,
-      "community": 6,
-      "any": 8
+      "official": 6,
+      "community": 4,
+      "any": 10
     },
     "Ecommerce": {
       "n": 10,
-      "official": 1,
-      "community": 7,
+      "official": 6,
+      "community": 2,
       "any": 8
     },
     "Data, SEO & Scraping": {
       "n": 10,
-      "official": 3,
-      "community": 6,
+      "official": 6,
+      "community": 3,
       "any": 9
     },
     "Developer & Infra": {
       "n": 10,
-      "official": 0,
-      "community": 10,
+      "official": 9,
+      "community": 1,
       "any": 10
     },
     "Productivity & PM": {
       "n": 10,
-      "official": 0,
-      "community": 9,
+      "official": 5,
+      "community": 4,
       "any": 9
     },
     "Finance & Fintech": {
       "n": 10,
-      "official": 0,
-      "community": 8,
-      "any": 8
+      "official": 8,
+      "community": 1,
+      "any": 9
     },
     "AI, Research & Media": {
       "n": 10,
-      "official": 0,
-      "community": 6,
-      "any": 6
+      "official": 7,
+      "community": 0,
+      "any": 7
     }
   },
   "blocker_clusters": [
     {
       "blocker": "No public API",
-      "n": 2
+      "n": 3
+    },
+    {
+      "blocker": "Contact sales / partnership gate",
+      "n": 1
     }
   ],
-  "oauth_total": 20,
-  "oauth_self_serve": 17,
-  "oauth_gated": 3,
+  "oauth_total": 27,
+  "oauth_self_serve": 22,
+  "oauth_gated": 5,
   "easy_wins": [
     {
       "id": 6,
       "name": "Podio",
       "category": "CRM & Sales",
       "gate": "Open self-serve",
+      "surface": "Documented REST",
+      "mcp": "No"
+    },
+    {
+      "id": 97,
+      "name": "higgsfield",
+      "category": "AI, Research & Media",
+      "gate": "Paid self-serve",
       "surface": "Documented REST",
       "mcp": "No"
     }
@@ -236,6 +252,13 @@
       "blocker": "Sales-led access plus admin-granted API User permission"
     },
     {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "gate": "Contact sales / partner",
+      "blocker": "No self-serve credentials: requires a licensed B2C Commerce instance and admin-provisioned SLAS clients (Account Manager + SLAS Org Admin role); live developer.salesforce.com docs also aggressively bot-block (HTTP 403)."
+    },
+    {
       "id": 53,
       "name": "Ahrefs",
       "category": "Data, SEO & Scraping",
@@ -248,14 +271,21 @@
       "category": "Data, SEO & Scraping",
       "gate": "Contact sales / partner",
       "blocker": "credentials are gated behind sales contact / access review (no self-serve)"
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "category": "Finance & Fintech",
+      "gate": "Contact sales / partner",
+      "blocker": "No self-serve credentials: API access requires going through PitchBook's Direct Data sales/enterprise process; no MCP and no public sandbox."
     }
   ],
   "tiers": {
     "counts": {
-      "S": 62,
-      "A": 11,
-      "B": 3,
-      "C": 24
+      "S": 76,
+      "A": 17,
+      "B": 4,
+      "C": 3
     },
     "ids": {
       "S": [
@@ -307,6 +337,9 @@
         63,
         64,
         65,
+        66,
+        67,
+        68,
         69,
         70,
         71,
@@ -317,10 +350,21 @@
         76,
         77,
         78,
+        80,
         81,
         82,
         83,
-        87
+        84,
+        85,
+        86,
+        87,
+        93,
+        94,
+        95,
+        96,
+        97,
+        99,
+        100
       ],
       "A": [
         10,
@@ -333,90 +377,76 @@
         34,
         46,
         49,
-        60
-      ],
-      "B": [
-        15,
-        53,
-        59
-      ],
-      "C": [
-        44,
-        50,
-        58,
-        66,
-        67,
-        68,
+        60,
         79,
-        80,
-        84,
-        85,
-        86,
         88,
         89,
         90,
         91,
-        92,
-        93,
-        94,
-        95,
-        96,
-        97,
-        98,
-        99,
-        100
+        92
+      ],
+      "B": [
+        15,
+        44,
+        53,
+        59
+      ],
+      "C": [
+        50,
+        58,
+        98
       ]
     }
   },
   "headline": [
     {
       "rank": 1,
-      "claim": "API key dominates - 32/100 apps (32%) authenticate with it",
-      "detail": "OAuth2 alone covers 20 apps, but only 17 of them let a developer self-serve credentials; 3 sit behind admin or sales gates.",
-      "metric": "32%",
+      "claim": "API key dominates - 41/100 apps (41%) authenticate with it",
+      "detail": "OAuth2 alone covers 27 apps, but only 22 of them let a developer self-serve credentials; 5 sit behind admin or sales gates.",
+      "metric": "41%",
       "metric_label": "of apps use API key"
     },
     {
       "rank": 2,
-      "claim": "67 of 100 apps (67%) are fully self-serve for a developer today",
-      "detail": "4 apps require contact-sales/partnership before you can write a line of integration code - these need outreach, not engineering.",
-      "metric": "67%",
+      "claim": "85 of 100 apps (85%) are fully self-serve for a developer today",
+      "detail": "6 apps require contact-sales/partnership before you can write a line of integration code - these need outreach, not engineering.",
+      "metric": "85%",
       "metric_label": "self-serve today"
     },
     {
       "rank": 3,
-      "claim": "19 apps already ship an official MCP server (82 with any MCP)",
+      "claim": "71 apps already ship an official MCP server (90 with any MCP)",
       "detail": "MCP coverage is highest where APIs are broad and self-serve - the pattern repeats: accessible API surface predicts agent ecosystem investment.",
-      "metric": "19/100",
+      "metric": "71/100",
       "metric_label": "official MCP servers"
     },
     {
       "rank": 4,
-      "claim": "Top blocker: No public API (2 apps)",
+      "claim": "Top blocker: No public API (3 apps)",
       "detail": "Blockers cluster into a few buckets - no public API, sales/partnership gates, enterprise admin approval, and OAuth app review - so one playbook per bucket covers most apps.",
-      "metric": "2",
+      "metric": "3",
       "metric_label": "apps blocked by the top cause"
     },
     {
       "rank": 5,
-      "claim": "1 apps are easy wins - self-serve, documented REST/GraphQL, and still no official MCP",
+      "claim": "2 apps are easy wins - self-serve, documented REST/GraphQL, and still no official MCP",
       "detail": "These are the highest-leverage toolkit builds: credentials in minutes, real API surface, and no incumbent MCP to compete with. Full list in the matrix.",
-      "metric": "1",
+      "metric": "2",
       "metric_label": "build-shortlist apps"
     },
     {
       "rank": 6,
-      "claim": "2 apps have no public API at all - a hard stop",
+      "claim": "3 apps have no public API at all - a hard stop",
       "detail": "For these, the only paths are scraping, unofficial SDKs, or asking the vendor for an API; saying so with evidence beats pretending otherwise.",
-      "metric": "2/100",
+      "metric": "3/100",
       "metric_label": "apps with no public API"
     },
     {
       "rank": 7,
-      "claim": "AI, Research & Media is the hardest category - only 0% self-serve",
-      "detail": "CRM & Sales is the friendliest (90% self-serve). Category correlates with gating: consumer-adjacent categories self-serve, enterprise categories gate.",
-      "metric": "0%",
-      "metric_label": "self-serve in AI, Research & Media"
+      "claim": "Marketing & Ads is the hardest category - only 70% self-serve",
+      "detail": "Developer & Infra is the friendliest (100% self-serve). Category correlates with gating: consumer-adjacent categories self-serve, enterprise categories gate.",
+      "metric": "70%",
+      "metric_label": "self-serve in Marketing & Ads"
     }
   ]
 }
