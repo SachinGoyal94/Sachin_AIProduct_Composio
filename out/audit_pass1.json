@@ -1,11 +1,11 @@
 {
   "pass": 1,
-  "sample_size": 17,
-  "fields_scored": 85,
-  "field_accuracy": 0.6353,
-  "row_accuracy": 0.0588,
-  "fields_correct": 54,
-  "rows_fully_correct": 1,
+  "sample_size": 20,
+  "fields_scored": 100,
+  "field_accuracy": 0.62,
+  "row_accuracy": 0.1,
+  "fields_correct": 62,
+  "rows_fully_correct": 2,
   "per_app": [
     {
       "id": 3,
@@ -687,6 +687,135 @@
         "auth"
       ],
       "source": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "category": "Productivity & PM",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "OAuth2",
+          "actual": "OAuth2",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "Yes (official)",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": true,
+      "misses": [],
+      "source": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "category": "Finance & Fintech",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "HMAC",
+          "ok": false
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Contact sales / partner",
+          "ok": false
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "SDK/API limited",
+          "ok": false
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "No",
+          "ok": false
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready with caveats",
+          "actual": "Blocked",
+          "ok": false
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "auth",
+        "gate",
+        "surface",
+        "mcp",
+        "verdict"
+      ],
+      "source": "https://docs.withpaygent.com/documentation/getting-started/quick-start"
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "category": "Finance & Fintech",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Contact sales / partner",
+          "actual": "Contact sales / partner",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "SDK/API limited",
+          "ok": false
+        },
+        {
+          "field": "mcp",
+          "expected": "No",
+          "actual": "No",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready with caveats",
+          "actual": "Blocked",
+          "ok": false
+        }
+      ],
+      "all_ok": false,
+      "misses": [
+        "surface",
+        "verdict"
+      ],
+      "source": "https://pitchbook.com/help/PitchBook-api"
     },
     {
       "id": 96,

@@ -1,11 +1,11 @@
 {
   "pass": 2,
-  "sample_size": 17,
-  "fields_scored": 85,
-  "field_accuracy": 0.8941,
-  "row_accuracy": 0.7059,
-  "fields_correct": 76,
-  "rows_fully_correct": 12,
+  "sample_size": 20,
+  "fields_scored": 100,
+  "field_accuracy": 0.95,
+  "row_accuracy": 0.75,
+  "fields_correct": 95,
+  "rows_fully_correct": 15,
   "per_app": [
     {
       "id": 3,
@@ -656,6 +656,126 @@
       "source": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
     },
     {
+      "id": 80,
+      "name": "Harvest",
+      "category": "Productivity & PM",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "OAuth2",
+          "actual": "OAuth2",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "Yes (official)",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready",
+          "actual": "Ready",
+          "ok": true
+        }
+      ],
+      "all_ok": true,
+      "misses": [],
+      "source": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "category": "Finance & Fintech",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Open self-serve",
+          "actual": "Open self-serve",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "Yes (official)",
+          "actual": "Yes (official)",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready with caveats",
+          "actual": "Ready with caveats",
+          "ok": true
+        }
+      ],
+      "all_ok": true,
+      "misses": [],
+      "source": "https://docs.withpaygent.com/documentation/getting-started/quick-start"
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "category": "Finance & Fintech",
+      "fields": [
+        {
+          "field": "auth",
+          "expected": "API key",
+          "actual": "API key",
+          "ok": true
+        },
+        {
+          "field": "gate",
+          "expected": "Contact sales / partner",
+          "actual": "Contact sales / partner",
+          "ok": true
+        },
+        {
+          "field": "surface",
+          "expected": "Documented REST",
+          "actual": "Documented REST",
+          "ok": true
+        },
+        {
+          "field": "mcp",
+          "expected": "No",
+          "actual": "No",
+          "ok": true
+        },
+        {
+          "field": "verdict",
+          "expected": "Ready with caveats",
+          "actual": "Ready with caveats",
+          "ok": true
+        }
+      ],
+      "all_ok": true,
+      "misses": [],
+      "source": "https://pitchbook.com/help/PitchBook-api"
+    },
+    {
       "id": 96,
       "name": "Devin",
       "category": "AI, Research & Media",
@@ -663,41 +783,37 @@
         {
           "field": "auth",
           "expected": "API key",
-          "actual": "",
-          "ok": false
+          "actual": "API key",
+          "ok": true
         },
         {
           "field": "gate",
           "expected": "Open self-serve",
-          "actual": "",
+          "actual": "Paid self-serve",
           "ok": false
         },
         {
           "field": "surface",
           "expected": "Documented REST",
-          "actual": "",
-          "ok": false
+          "actual": "Documented REST",
+          "ok": true
         },
         {
           "field": "mcp",
           "expected": "Yes (official)",
-          "actual": "Unclear",
-          "ok": false
+          "actual": "Yes (official)",
+          "ok": true
         },
         {
           "field": "verdict",
           "expected": "Ready",
-          "actual": "",
-          "ok": false
+          "actual": "Ready",
+          "ok": true
         }
       ],
       "all_ok": false,
       "misses": [
-        "auth",
-        "gate",
-        "surface",
-        "mcp",
-        "verdict"
+        "gate"
       ],
       "source": "https://docs.devin.ai/"
     }

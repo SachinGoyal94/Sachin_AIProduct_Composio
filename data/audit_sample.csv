@@ -15,6 +15,7 @@ id,name,category,auth,gate,surface,mcp,verdict,source
 65,Supabase,Developer & Infra,API key,Open self-serve,Documented REST,Yes (official),Ready,https://supabase.com/docs/reference/api/introduction
 70,Sentry,Developer & Infra,Token,Open self-serve,Documented REST,Yes (official),Ready,https://docs.sentry.io/api/
 74,Jira,Productivity & PM,Basic,Open self-serve,Documented REST,Yes (official),Ready,https://developer.atlassian.com/cloud/jira/platform/rest/v3/
+80,Harvest,Productivity & PM,OAuth2,Open self-serve,Documented REST,Yes (official),Ready,https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/
 84,Paygent Connect,Finance & Fintech,API key,Open self-serve,Documented REST,Yes (official),Ready with caveats,https://docs.withpaygent.com/documentation/getting-started/quick-start
 90,PitchBook,Finance & Fintech,API key,Contact sales / partner,Documented REST,No,Ready with caveats,https://pitchbook.com/help/PitchBook-api
 96,Devin,"AI, Research & Media",API key,Open self-serve,Documented REST,Yes (official),Ready,https://docs.devin.ai/
