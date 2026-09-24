@@ -38,14 +38,28 @@ class App:
         return [f.name for f in fields(cls)]
 
 
+def _coerce(r: dict) -> dict:
+    """CSV gives strings; coerce the typed fields."""
+    r = dict(r)
+    try:
+        r["id"] = int(r["id"])
+    except (KeyError, ValueError):
+        pass
+    try:
+        r["confidence"] = int(r["confidence"])
+    except (KeyError, ValueError, TypeError):
+        r["confidence"] = 3
+    return r
+
+
 def load_apps() -> list[App]:
-    apps = [App(**r) for r in read_csv(APPS_CSV)]
+    apps = [App(**_coerce(r)) for r in read_csv(APPS_CSV)]
     apps.sort(key=lambda a: a.id)
     return apps
 
 
 def load_verified() -> list[App]:
-    return [App(**r) for r in read_csv(VERIFIED_CSV)]
+    return [App(**_coerce(r)) for r in read_csv(VERIFIED_CSV)]
 
 
 def load_overrides() -> list[dict]:

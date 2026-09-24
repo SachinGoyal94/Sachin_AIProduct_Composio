@@ -144,6 +144,10 @@ def _headline(rows, auth, gate_by_cat, mcp_by_cat, blockers, easy_wins) -> list[
     """Six plain-language findings, each backed by a computed number."""
     n = len(rows)
     oauth = auth.get("OAuth2", 0)
+    oauth_self_serve = sum(1 for r in rows if r.auth == "OAuth2"
+                           and r.gate in ("Open self-serve", "Paid self-serve"))
+    oauth_gated = sum(1 for r in rows if r.auth == "OAuth2"
+                      and r.gate in ("Contact sales / partner", "Admin approval"))
     keys = list(auth.items())
     top_auth, top_auth_n = keys[0] if keys else ("-", 0)
     self_serve = sum(v["self_serve"] for v in gate_by_cat.values())

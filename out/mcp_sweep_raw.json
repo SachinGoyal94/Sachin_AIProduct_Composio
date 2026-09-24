@@ -2,7 +2,7 @@
   "generated_by": "registry.modelcontextprotocol.io",
   "results": [
     {
-      "id": "1",
+      "id": 1,
       "hits": [
         {
           "name": "ai.cirra/salesforce-mcp",
@@ -37,238 +37,7 @@
       ]
     },
     {
-      "id": "10",
-      "hits": []
-    },
-    {
-      "id": "100",
-      "hits": [
-        {
-          "name": "com.purplegrain/api",
-          "repo": "https://github.com/purplegrain/api",
-          "desc": "Search and book agricultural contracting services on the Purple Grain marketplace."
-        },
-        {
-          "name": "io.github.Evozim/chicago-grain-prices-mcp",
-          "repo": "",
-          "desc": "Premium agentic endpoint for chicago-grain-prices-mcp."
-        },
-        {
-          "name": "io.github.pattrnlabs/grain",
-          "repo": "https://github.com/pattrnlabs/grain",
-          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
-        },
-        {
-          "name": "io.github.pattrnlabs/grain",
-          "repo": "https://github.com/pattrnlabs/grain",
-          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
-        },
-        {
-          "name": "io.github.pattrnlabs/grain",
-          "repo": "https://github.com/pattrnlabs/grain",
-          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
-        },
-        {
-          "name": "io.github.pattrnlabs/grain",
-          "repo": "https://github.com/pattrnlabs/grain",
-          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
-        }
-      ]
-    },
-    {
-      "id": "11",
-      "hits": [
-        {
-          "name": "io.github.fruggr/zendesk-mcp-server",
-          "repo": "https://github.com/fruggr/zendesk-mcp-server",
-          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
-        },
-        {
-          "name": "io.github.fruggr/zendesk-mcp-server",
-          "repo": "https://github.com/fruggr/zendesk-mcp-server",
-          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
-        },
-        {
-          "name": "io.github.fruggr/zendesk-mcp-server",
-          "repo": "https://github.com/fruggr/zendesk-mcp-server",
-          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
-        },
-        {
-          "name": "io.github.fruggr/zendesk-mcp-server",
-          "repo": "https://github.com/fruggr/zendesk-mcp-server",
-          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
-        },
-        {
-          "name": "io.github.fruggr/zendesk-mcp-server",
-          "repo": "https://github.com/fruggr/zendesk-mcp-server",
-          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
-        },
-        {
-          "name": "io.github.fruggr/zendesk-mcp-server",
-          "repo": "https://github.com/fruggr/zendesk-mcp-server",
-          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
-        }
-      ]
-    },
-    {
-      "id": "12",
-      "hits": [
-        {
-          "name": "io.github.MuhammadTalhaMT/intercom",
-          "repo": "https://github.com/MuhammadTalhaMT/claude-intercom",
-          "desc": "Relays messages between two Claude Code sessions on different machines using the Channels API"
-        },
-        {
-          "name": "io.github.MuhammadTalhaMT/intercom",
-          "repo": "https://github.com/MuhammadTalhaMT/claude-intercom",
-          "desc": "Relays messages between two Claude Code sessions on different machines using the Channels API"
-        },
-        {
-          "name": "io.github.pipeworx-io/intercom",
-          "repo": "https://github.com/pipeworx-io/mcp-intercom",
-          "desc": "Intercom MCP Pack — contacts, conversations, companies via OAuth."
-        }
-      ]
-    },
-    {
-      "id": "13",
-      "hits": [
-        {
-          "name": "io.github.WYRE-AI/freshdesk-mcp",
-          "repo": "https://github.com/WYRE-AI/freshdesk-mcp",
-          "desc": "MCP server for Freshdesk — tickets, contacts, companies, agents, groups, and knowledge base."
-        },
-        {
-          "name": "io.github.mindstone/mcp-server-freshdesk",
-          "repo": "https://github.com/mindstone/mcp-servers",
-          "desc": "Freshdesk Support MCP server for Model Context Protocol hosts"
-        },
-        {
-          "name": "io.github.mindstone/mcp-server-freshdesk",
-          "repo": "https://github.com/mindstone/mcp-servers",
-          "desc": "Freshdesk Support MCP server for Model Context Protocol hosts"
-        },
-        {
-          "name": "io.github.mindstone/mcp-server-freshdesk",
-          "repo": "https://github.com/mindstone/mcp-servers",
-          "desc": "Freshdesk Support MCP server for Model Context Protocol hosts"
-        },
-        {
-          "name": "io.github.pipeworx-io/freshdesk",
-          "repo": "https://github.com/pipeworx-io/mcp-freshdesk",
-          "desc": "Freshdesk MCP Pack — helpdesk ticket and contact management via Freshdesk API v2."
-        },
-        {
-          "name": "io.github.pipeworx-io/freshdesk",
-          "repo": "https://github.com/pipeworx-io/mcp-freshdesk",
-          "desc": "Freshdesk MCP Pack — helpdesk ticket and contact management via Freshdesk API v2."
-        }
-      ]
-    },
-    {
-      "id": "14",
-      "hits": [
-        {
-          "name": "ai.clize/storefront",
-          "repo": "https://github.com/cooldk/clize-cli",
-          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
-        },
-        {
-          "name": "ai.clize/storefront",
-          "repo": "https://github.com/cooldk/clize-cli",
-          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
-        },
-        {
-          "name": "ai.clize/storefront",
-          "repo": "https://github.com/cooldk/clize-cli",
-          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
-        },
-        {
-          "name": "ai.clize/storefront",
-          "repo": "https://github.com/cooldk/clize-cli",
-          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
-        },
-        {
-          "name": "ai.clize/storefront",
-          "repo": "https://github.com/cooldk/clize-cli",
-          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
-        },
-        {
-          "name": "ai.clize/storefront",
-          "repo": "https://github.com/cooldk/clize-cli",
-          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
-        }
-      ]
-    },
-    {
-      "id": "15",
-      "hits": [
-        {
-          "name": "io.github.JustinBeckwith/pylon-mcp",
-          "repo": "https://github.com/JustinBeckwith/pylon-mcp",
-          "desc": "MCP server for Pylon customer support platform"
-        },
-        {
-          "name": "io.github.JustinBeckwith/pylon-mcp",
-          "repo": "https://github.com/JustinBeckwith/pylon-mcp",
-          "desc": "MCP server for Pylon customer support platform"
-        },
-        {
-          "name": "io.github.JustinBeckwith/pylon-mcp",
-          "repo": "https://github.com/JustinBeckwith/pylon-mcp",
-          "desc": "MCP server for Pylon customer support platform"
-        }
-      ]
-    },
-    {
-      "id": "16",
-      "hits": []
-    },
-    {
-      "id": "17",
-      "hits": [
-        {
-          "name": "ai.smithery/plainyogurt21-clintrials-mcp",
-          "repo": "",
-          "desc": "Provide structured access to ClinicalTrials.gov data for searching, retrieving, and analyzing clin…"
-        },
-        {
-          "name": "ai.smithery/plainyogurt21-sec-edgar-mcp",
-          "repo": "https://github.com/plainyogurt21/sec-edgar-mcp",
-          "desc": "Provide AI assistants with real-time access to official SEC EDGAR filings and financial data. Enab…"
-        },
-        {
-          "name": "com.gumballtools/regex-explainer",
-          "repo": "https://github.com/bwalvoord/gumball",
-          "desc": "Explain a regex in plain English and detect catastrophic backtracking risk."
-        },
-        {
-          "name": "com.plainfreight/quotes",
-          "repo": "https://github.com/plainfreight-com/plainfreight-mcp",
-          "desc": "All-in DDP quotes for China to USA shipments, 100 g to 2,000 kg, from a live rate card"
-        },
-        {
-          "name": "com.plainrouter/mcp",
-          "repo": "",
-          "desc": "Inspect an approved ad account and first-party signal health, then propose policy-gated actions."
-        },
-        {
-          "name": "com.plainrouter/mcp",
-          "repo": "",
-          "desc": "Inspect an approved ad account and first-party signal health, then propose policy-gated actions."
-        }
-      ]
-    },
-    {
-      "id": "18",
-      "hits": []
-    },
-    {
-      "id": "19",
-      "hits": []
-    },
-    {
-      "id": "2",
+      "id": 2,
       "hits": [
         {
           "name": "com.edgethirteen.www/hubspot-dbv",
@@ -303,172 +72,7 @@
       ]
     },
     {
-      "id": "20",
-      "hits": []
-    },
-    {
-      "id": "21",
-      "hits": [
-        {
-          "name": "ai.smithery/smithery-ai-slack",
-          "repo": "https://github.com/smithery-ai/mcp-servers",
-          "desc": "Enable interaction with Slack workspaces. Supports subscribing to Slack events through Resources."
-        },
-        {
-          "name": "ai.waystation/slack",
-          "repo": "https://github.com/waystation-ai/mcp",
-          "desc": "Send messages, access channels, and manage files in your Slack workspace."
-        },
-        {
-          "name": "com.mcparmory/slack",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage channels, conversations, users, and workspace apps programmatically"
-        },
-        {
-          "name": "com.mcparmory/slack",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage channels, conversations, users, and workspace apps programmatically"
-        },
-        {
-          "name": "com.pulsemcp/slack",
-          "repo": "https://github.com/pulsemcp/mcp-servers",
-          "desc": "MCP server for Slack — read/write messages, manage threads, and react to messages."
-        },
-        {
-          "name": "com.pulsemcp/slack",
-          "repo": "https://github.com/pulsemcp/mcp-servers",
-          "desc": "MCP server for Slack — read/write messages, manage threads, and react to messages."
-        }
-      ]
-    },
-    {
-      "id": "22",
-      "hits": [
-        {
-          "name": "io.github.codespar/mcp-twilio",
-          "repo": "https://github.com/codespar/mcp-dev-latam",
-          "desc": "MCP server for Twilio — global SMS, WhatsApp, Voice, Verify, and Lookup across 180+ countries"
-        },
-        {
-          "name": "io.github.codespar/mcp-twilio",
-          "repo": "https://github.com/codespar/mcp-dev-latam",
-          "desc": "MCP server for Twilio — global SMS, WhatsApp, Voice, Verify, and Lookup across 180+ countries"
-        },
-        {
-          "name": "io.github.mrfentmen/twilio-mcp-server",
-          "repo": "https://github.com/mrfentmen/twilio-mcp",
-          "desc": "Send SMS, MMS, WhatsApp messages, make voice calls, and manage Twilio phone numbers."
-        },
-        {
-          "name": "io.github.mrfentmen/twilio-mcp-server",
-          "repo": "https://github.com/mrfentmen/twilio-mcp",
-          "desc": "Send SMS, MMS, WhatsApp messages, make voice calls, and manage Twilio phone numbers."
-        },
-        {
-          "name": "io.github.pipeworx-io/twilio",
-          "repo": "https://github.com/pipeworx-io/mcp-twilio",
-          "desc": "Twilio MCP Pack — send SMS, list messages, make calls via Twilio REST API."
-        }
-      ]
-    },
-    {
-      "id": "23",
-      "hits": []
-    },
-    {
-      "id": "24",
-      "hits": []
-    },
-    {
-      "id": "25",
-      "hits": []
-    },
-    {
-      "id": "26",
-      "hits": [
-        {
-          "name": "ai.smithery/Danushkumar-V-mcp-discord",
-          "repo": "https://github.com/Danushkumar-V/mcp-discord",
-          "desc": "An MCP server that integrates with Discord to provide AI-powered features."
-        },
-        {
-          "name": "ai.smithery/sachicali-discordmcp-suite",
-          "repo": "",
-          "desc": "Control your Discord community: send/read messages, manage channels and forums, and handle webhook…"
-        },
-        {
-          "name": "app.lasers.guildcontrol/discord",
-          "repo": "https://github.com/j-256/guildcontrol",
-          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
-        },
-        {
-          "name": "app.lasers.guildcontrol/discord",
-          "repo": "https://github.com/j-256/guildcontrol",
-          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
-        },
-        {
-          "name": "app.lasers.guildcontrol/discord",
-          "repo": "https://github.com/j-256/guildcontrol",
-          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
-        },
-        {
-          "name": "app.lasers.guildcontrol/discord",
-          "repo": "https://github.com/j-256/guildcontrol",
-          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
-        }
-      ]
-    },
-    {
-      "id": "27",
-      "hits": [
-        {
-          "name": "ai.awraiter/telegram",
-          "repo": "https://github.com/MediaZione/AwrAiter",
-          "desc": "Telegram channels you administer: analytics, content plans, scheduled publishing. No userbot"
-        },
-        {
-          "name": "co.civai.nova/telegram-agent",
-          "repo": "",
-          "desc": "I use your linked Telegram MTProto session (Integrations → Telegram) to list groups, members, and s…"
-        },
-        {
-          "name": "com.jojapi/telegram",
-          "repo": "",
-          "desc": "Telegram: FASTEST real time Telegram API. Retrieve channel's info and messages in milliseconds.."
-        },
-        {
-          "name": "com.limzo/telegram-group-stats",
-          "repo": "",
-          "desc": "Live, verifiable stats for public Telegram groups tracked by Limzo. Read-only, no auth needed."
-        },
-        {
-          "name": "com.limzo/telegram-group-stats",
-          "repo": "https://github.com/LimzoCom/limzo-mcp",
-          "desc": "Read-only public Telegram group stats from Limzo: leaderboards, activity, levels. No API key."
-        },
-        {
-          "name": "com.limzo/telegram-group-stats",
-          "repo": "https://github.com/LimzoCom/limzo-mcp",
-          "desc": "Read-only public Telegram group stats from Limzo: leaderboards, activity, levels. No API key."
-        }
-      ]
-    },
-    {
-      "id": "28",
-      "hits": []
-    },
-    {
-      "id": "29",
-      "hits": [
-        {
-          "name": "io.usefulapi/aircall",
-          "repo": "https://github.com/m190/usefulapi-mcp",
-          "desc": "Read calls, contacts, users, teams and numbers; tag calls and create or update contacts."
-        }
-      ]
-    },
-    {
-      "id": "3",
+      "id": 3,
       "hits": [
         {
           "name": "io.github.Servosity/pipedrive-mcp",
@@ -503,136 +107,7 @@
       ]
     },
     {
-      "id": "30",
-      "hits": [
-        {
-          "name": "io.github.Vonage/vonage-documentation-mcp",
-          "repo": "https://github.com/Vonage/vonage-mcp-server-documentation",
-          "desc": "MCP server for Vonage API documentation, code snippets, tutorials, and troubleshooting."
-        }
-      ]
-    },
-    {
-      "id": "31",
-      "hits": []
-    },
-    {
-      "id": "32",
-      "hits": []
-    },
-    {
-      "id": "33",
-      "hits": []
-    },
-    {
-      "id": "34",
-      "hits": []
-    },
-    {
-      "id": "35",
-      "hits": [
-        {
-          "name": "io.github.asklokesh/mailchimp-mcp-server",
-          "repo": "https://github.com/asklokesh/mailchimp-mcp-server",
-          "desc": "MCP server for Mailchimp API integration"
-        },
-        {
-          "name": "io.github.cyanheads/mailchimp-mcp-server",
-          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
-          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
-        },
-        {
-          "name": "io.github.cyanheads/mailchimp-mcp-server",
-          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
-          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
-        },
-        {
-          "name": "io.github.cyanheads/mailchimp-mcp-server",
-          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
-          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
-        },
-        {
-          "name": "io.github.cyanheads/mailchimp-mcp-server",
-          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
-          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
-        },
-        {
-          "name": "io.github.cyanheads/mailchimp-mcp-server",
-          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
-          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
-        }
-      ]
-    },
-    {
-      "id": "36",
-      "hits": [
-        {
-          "name": "com.mcparmory/klaviyo",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create and manage email campaigns, lists, and marketing automation"
-        },
-        {
-          "name": "com.mcparmory/klaviyo",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create and manage email campaigns, lists, and marketing automation"
-        },
-        {
-          "name": "io.github.pipeworx-io/klaviyo",
-          "repo": "https://github.com/pipeworx-io/mcp-klaviyo",
-          "desc": "Klaviyo MCP Pack — wraps the Klaviyo API for email marketing"
-        },
-        {
-          "name": "io.scalably/klaviyo-mcp",
-          "repo": "https://github.com/scalably-io/klaviyo-mcp",
-          "desc": "Klaviyo MCP: campaigns, flows, segments, metrics, reports, profiles across many accounts. 24 tools."
-        }
-      ]
-    },
-    {
-      "id": "37",
-      "hits": []
-    },
-    {
-      "id": "38",
-      "hits": [
-        {
-          "name": "com.getmcpads/pinterest-ads",
-          "repo": "https://github.com/getmcpads-com/pinterest-ads-mcp-server",
-          "desc": "Pinterest Ads: 26 read tools and 5 write tools that preview before they apply."
-        },
-        {
-          "name": "com.getmcpads/pinterest-ads",
-          "repo": "https://github.com/getmcpads-com/pinterest-ads-mcp-server",
-          "desc": "Pinterest Ads: 26 read tools and 5 write tools that preview before they apply."
-        },
-        {
-          "name": "com.getmcpads/pinterest-ads",
-          "repo": "https://github.com/get-mcp-ads/pinterest-ads-mcp-server",
-          "desc": "Pinterest Ads MCP server: 28 read tools, 25 opt-in preview-first writes."
-        },
-        {
-          "name": "com.mambabuilt/mcp-pinterest-brand-presence-mapper",
-          "repo": "https://github.com/mambalabsdev/mcp-pinterest-brand-presence-mapper",
-          "desc": "Resolve a company domain to its Pinterest account with exact follower and pin counts."
-        },
-        {
-          "name": "io.github.cesteral/pinterest-mcp",
-          "repo": "https://github.com/cesteral/mcp-open-advertising",
-          "desc": "Pinterest Ads management — CRUD, async reports, targeting, and audience estimates"
-        },
-        {
-          "name": "io.github.cesteral/pinterest-mcp",
-          "repo": "https://github.com/cesteral/mcp-open-advertising",
-          "desc": "Pinterest Ads management — CRUD, async reports, targeting, and audience estimates"
-        }
-      ]
-    },
-    {
-      "id": "39",
-      "hits": []
-    },
-    {
-      "id": "4",
+      "id": 4,
       "hits": [
         {
           "name": "ai.smithery/kaszek-kaszek-attio-mcp",
@@ -667,159 +142,7 @@
       ]
     },
     {
-      "id": "40",
-      "hits": [
-        {
-          "name": "io.github.Choppaaahh/sendgrid-mcp-secure",
-          "repo": "https://github.com/Choppaaahh/sendgrid-mcp-secure",
-          "desc": "Security-first SendGrid MCP server: dry-run default, recipient allowlists, rate caps, audit log."
-        },
-        {
-          "name": "io.github.codespar/mcp-sendgrid",
-          "repo": "https://github.com/codespar/mcp-dev-latam",
-          "desc": "MCP server for SendGrid — global transactional + marketing email (Twilio-owned)"
-        },
-        {
-          "name": "io.github.codespar/mcp-sendgrid",
-          "repo": "https://github.com/codespar/mcp-dev-latam",
-          "desc": "MCP server for SendGrid — global transactional + marketing email (Twilio-owned)"
-        },
-        {
-          "name": "io.github.deyikong/sendgrid-mcp",
-          "repo": "https://github.com/deyikong/sendgrid-mcp",
-          "desc": "MCP server for SendGrid's v3 API: email marketing, transactional mail, templates, and analytics."
-        },
-        {
-          "name": "io.github.deyikong/sendgrid-mcp",
-          "repo": "https://github.com/deyikong/sendgrid-mcp",
-          "desc": "MCP server for SendGrid's v3 API: email marketing, transactional mail, templates, and analytics."
-        },
-        {
-          "name": "io.github.deyikong/sendgrid-mcp",
-          "repo": "https://github.com/deyikong/sendgrid-mcp",
-          "desc": "MCP server for SendGrid's v3 API: email marketing, transactional mail, templates, and analytics."
-        }
-      ]
-    },
-    {
-      "id": "41",
-      "hits": [
-        {
-          "name": "ai.gossiper/shopify-admin-mcp",
-          "repo": "",
-          "desc": "Control Shopify Admin tasks with agents or via prompt. Ultra slim integration, fast and secure."
-        },
-        {
-          "name": "app.bestappify/shopify-app-store",
-          "repo": "",
-          "desc": "Shopify App Store intelligence: keyword ranks, competitors, reviews, revenue. Free tier."
-        },
-        {
-          "name": "com.hasdata/shopify",
-          "repo": "https://github.com/HasData/shopify-mcp",
-          "desc": "The public product catalogue and collections of any Shopify storefront, as structured JSON."
-        },
-        {
-          "name": "com.hasdata/shopify",
-          "repo": "https://github.com/HasData/shopify-mcp",
-          "desc": "The public product catalogue and collections of any Shopify storefront, as structured JSON."
-        },
-        {
-          "name": "com.hasdata/shopify",
-          "repo": "https://github.com/HasData/shopify-mcp",
-          "desc": "The public product catalogue and collections of any Shopify storefront, as structured JSON."
-        },
-        {
-          "name": "com.mcparmory/shopify-admin",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage products, orders, customers, inventory, and store configuration"
-        }
-      ]
-    },
-    {
-      "id": "42",
-      "hits": [
-        {
-          "name": "io.github.AmitGurbani/mcp-server-woocommerce",
-          "repo": "https://github.com/AmitGurbani/mcp-server-woocommerce",
-          "desc": "82 MCP tools for WooCommerce — products, orders, customers, coupons, shipping, taxes, and more."
-        },
-        {
-          "name": "io.github.AmitGurbani/mcp-server-woocommerce",
-          "repo": "https://github.com/AmitGurbani/mcp-server-woocommerce",
-          "desc": "101 tools for WooCommerce store management with field filtering and guided prompts."
-        },
-        {
-          "name": "io.github.pipeworx-io/woocommerce",
-          "repo": "https://github.com/pipeworx-io/mcp-woocommerce",
-          "desc": "WooCommerce MCP Pack — wraps the WooCommerce REST API v3"
-        },
-        {
-          "name": "io.github.wppoland/woocommerce-mcp",
-          "repo": "https://github.com/wppoland/woocommerce-mcp",
-          "desc": "Read-only MCP server for WordPress + WooCommerce products, orders, sales, and posts."
-        }
-      ]
-    },
-    {
-      "id": "43",
-      "hits": [
-        {
-          "name": "io.github.mrfentmen/bigcommerce-mcp",
-          "repo": "https://github.com/mrfentmen/awesome-mcps",
-          "desc": "MCP server for BigCommerce: products, orders. Needs store API credentials."
-        },
-        {
-          "name": "io.github.mrfentmen/bigcommerce-mcp",
-          "repo": "https://github.com/mrfentmen/awesome-mcps",
-          "desc": "MCP server for BigCommerce: products, orders. Needs store API credentials."
-        }
-      ]
-    },
-    {
-      "id": "44",
-      "hits": []
-    },
-    {
-      "id": "45",
-      "hits": []
-    },
-    {
-      "id": "46",
-      "hits": [
-        {
-          "name": "io.github.mrfentmen/squarespace-mcp",
-          "repo": "https://github.com/mrfentmen/awesome-mcps",
-          "desc": "MCP server for Squarespace Commerce: products, orders, inventory. Needs an API key."
-        }
-      ]
-    },
-    {
-      "id": "47",
-      "hits": [
-        {
-          "name": "io.usefulapi/ecwid",
-          "repo": "https://github.com/m190/usefulapi-mcp",
-          "desc": "Read store products, orders, customers, categories and coupons; adjust inventory and update orders."
-        }
-      ]
-    },
-    {
-      "id": "48",
-      "hits": [
-        {
-          "name": "io.usefulapi/gumroad",
-          "repo": "https://github.com/m190/usefulapi-mcp",
-          "desc": "Read products, sales, subscribers and offer codes; verify, enable and disable product licenses."
-        }
-      ]
-    },
-    {
-      "id": "49",
-      "hits": []
-    },
-    {
-      "id": "5",
+      "id": 5,
       "hits": [
         {
           "name": "io.usefulapi/twenty",
@@ -829,819 +152,15 @@
       ]
     },
     {
-      "id": "50",
+      "id": 6,
       "hits": []
     },
     {
-      "id": "51",
-      "hits": [
-        {
-          "name": "io.scalably/dataforseo-mcp",
-          "repo": "https://github.com/scalably-io/dataforseo-mcp",
-          "desc": "DataForSEO MCP wrapper: searchable API docs plus normalized calls to the official server. 4 tools."
-        },
-        {
-          "name": "io.scalably/dataforseo-mcp",
-          "repo": "https://github.com/scalably-io/dataforseo-mcp",
-          "desc": "DataForSEO MCP wrapper: searchable API docs plus normalized calls to the official server. 4 tools."
-        }
-      ]
-    },
-    {
-      "id": "52",
+      "id": 7,
       "hits": []
     },
     {
-      "id": "53",
-      "hits": [
-        {
-          "name": "com.jojapi/ahrefs",
-          "repo": "",
-          "desc": "Ahrefs: Ahrefs API: SEO powerhouse featuring keyword research, backlink analysis, and SERP tracking."
-        },
-        {
-          "name": "com.mcparmory/ahrefs",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Analyze domain authority, backlinks, traffic, and keyword rankings for SEO intelligence"
-        },
-        {
-          "name": "com.mcparmory/ahrefs",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Analyze domain authority, backlinks, traffic, and keyword rankings for SEO intelligence"
-        }
-      ]
-    },
-    {
-      "id": "54",
-      "hits": []
-    },
-    {
-      "id": "55",
-      "hits": [
-        {
-          "name": "com.apify/apify-mcp-server",
-          "repo": "https://github.com/apify/apify-mcp-server",
-          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
-        },
-        {
-          "name": "com.apify/apify-mcp-server",
-          "repo": "https://github.com/apify/apify-mcp-server",
-          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
-        },
-        {
-          "name": "com.apify/apify-mcp-server",
-          "repo": "https://github.com/apify/apify-mcp-server",
-          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
-        },
-        {
-          "name": "com.apify/apify-mcp-server",
-          "repo": "https://github.com/apify/apify-mcp-server",
-          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
-        },
-        {
-          "name": "com.apify/apify-mcp-server",
-          "repo": "https://github.com/apify/apify-mcp-server",
-          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
-        },
-        {
-          "name": "com.apify/apify-mcp-server",
-          "repo": "https://github.com/apify/apify-mcp-server",
-          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
-        }
-      ]
-    },
-    {
-      "id": "56",
-      "hits": [
-        {
-          "name": "com.mcparmory/firecrawl",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Scrape, crawl, and extract structured data from websites at scale"
-        },
-        {
-          "name": "com.mcparmory/firecrawl",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Scrape, crawl, and extract structured data from websites at scale"
-        },
-        {
-          "name": "io.github.Ansarii/firecrawl-stealth-mcp",
-          "repo": "https://github.com/Ansarii/neon-stealth-web-scraper",
-          "desc": "WAF-bypass web scraper and passive URL mapper for AI agents with zero pay-on-fail."
-        },
-        {
-          "name": "io.github.firecrawl/firecrawl-mcp-server",
-          "repo": "https://github.com/firecrawl/firecrawl-mcp-server.git",
-          "desc": "MCP server for Firecrawl — search, scrape, and interact with the web."
-        },
-        {
-          "name": "io.github.firecrawl/firecrawl-mcp-server",
-          "repo": "https://github.com/firecrawl/firecrawl-mcp-server.git",
-          "desc": "MCP server for Firecrawl — search, scrape, and interact with the web."
-        },
-        {
-          "name": "io.github.firecrawl/firecrawl-mcp-server",
-          "repo": "https://github.com/firecrawl/firecrawl-mcp-server.git",
-          "desc": "MCP server for Firecrawl — search, scrape, and interact with the web."
-        }
-      ]
-    },
-    {
-      "id": "57",
-      "hits": []
-    },
-    {
-      "id": "58",
-      "hits": [
-        {
-          "name": "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
-          "repo": "https://github.com/FGC-Shreyansh-Chachaundiya/CodeSherlock-MCP-Server",
-          "desc": "AI-powered static and contextual code analysis MCP server"
-        },
-        {
-          "name": "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
-          "repo": "https://github.com/FGC-Shreyansh-Chachaundiya/CodeSherlock-MCP-Server",
-          "desc": "AI-powered static and contextual code analysis MCP server"
-        },
-        {
-          "name": "io.github.jcucci/dotnet-sherlock-mcp",
-          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
-          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
-        },
-        {
-          "name": "io.github.jcucci/dotnet-sherlock-mcp",
-          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
-          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
-        },
-        {
-          "name": "io.github.jcucci/dotnet-sherlock-mcp",
-          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
-          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
-        },
-        {
-          "name": "io.github.jcucci/dotnet-sherlock-mcp",
-          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
-          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
-        }
-      ]
-    },
-    {
-      "id": "59",
-      "hits": []
-    },
-    {
-      "id": "6",
-      "hits": []
-    },
-    {
-      "id": "60",
-      "hits": [
-        {
-          "name": "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
-          "repo": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push",
-          "desc": "Push enriched leads into an Instantly or Smartlead campaign, with ICP gating and dedupe."
-        },
-        {
-          "name": "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
-          "repo": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push",
-          "desc": "Push enriched leads into an Instantly or Smartlead campaign, with ICP gating and dedupe."
-        },
-        {
-          "name": "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
-          "repo": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push",
-          "desc": "Push enriched leads into an Instantly or Smartlead campaign, with ICP gating and dedupe."
-        },
-        {
-          "name": "io.github.clay-swartz/pennyrail",
-          "repo": "https://github.com/clay-swartz/pennyrail",
-          "desc": "Find and quote agent capabilities, then pay only the selected x402 execution URL."
-        },
-        {
-          "name": "io.github.claymore666/ccu-mcp",
-          "repo": "https://github.com/claymore666/ccu-mcp",
-          "desc": "MCP server for controlling HomeMatic smart home devices via the CCU JSON-RPC API"
-        },
-        {
-          "name": "io.github.claymore666/ccu-mcp",
-          "repo": "https://github.com/claymore666/ccu-mcp",
-          "desc": "MCP server for controlling HomeMatic smart home devices via the CCU JSON-RPC API"
-        }
-      ]
-    },
-    {
-      "id": "61",
-      "hits": [
-        {
-          "name": "ai.smithery/Hint-Services-obsidian-github-mcp",
-          "repo": "https://github.com/Hint-Services/obsidian-github-mcp",
-          "desc": "Connect AI assistants to your GitHub-hosted Obsidian vault to seamlessly access, search, and analy…"
-        },
-        {
-          "name": "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
-          "repo": "https://github.com/saidsef/mcp-github-pr-issue-analyser",
-          "desc": "A Model Context Protocol (MCP) application for automated GitHub PR analysis and issue management.…"
-        },
-        {
-          "name": "ai.smithery/smithery-ai-github",
-          "repo": "https://github.com/smithery-ai/mcp-servers",
-          "desc": "Access the GitHub API, enabling file operations, repository management, search functionality, and…"
-        },
-        {
-          "name": "com.a2awire/data-github-changelog-platform-change-announcement",
-          "repo": "https://github.com/ee324/a2awire",
-          "desc": "GitHub platform changelog feed. $0.01/query. Register in-session — free testnet funds."
-        },
-        {
-          "name": "com.a2awire/data-trending-repository-new-github-repo-discovery",
-          "repo": "https://github.com/ee324/a2awire",
-          "desc": "Fastest-growing new GitHub repos: stars, forks, language, topics, owners. Hourly. ($0.01/q)"
-        },
-        {
-          "name": "com.a2awire/data-trending-repository-new-github-repo-discovery",
-          "repo": "https://github.com/ee324/a2awire",
-          "desc": "Trending GitHub repos: new & rising daily. $0.01/query. Register in-session — free testnet funds."
-        }
-      ]
-    },
-    {
-      "id": "62",
-      "hits": [
-        {
-          "name": "app.vercel.agent-svg-registry/mcp",
-          "repo": "",
-          "desc": "Search SVG metadata and buy licensed commercial SVG exports for coding agents."
-        },
-        {
-          "name": "app.vercel.agentready-rho/agentready",
-          "repo": "",
-          "desc": "Scan any website or MCP server for agent readiness: 0-100 score, a fix per failing check. Free."
-        },
-        {
-          "name": "app.vercel.auditflag-lac/auditflag",
-          "repo": "",
-          "desc": "Search SEC EDGAR for going-concern auditor opinions in real 10-K/10-Q filings."
-        },
-        {
-          "name": "app.vercel.cloakcheck-wheat/cloakcheck",
-          "repo": "",
-          "desc": "Scan a page for hidden prompt-injection payloads targeting AI agents."
-        },
-        {
-          "name": "app.vercel.exploitwatch-kappa/exploitwatch",
-          "repo": "",
-          "desc": "Check dependencies against CISA's real Known Exploited Vulnerabilities feed."
-        },
-        {
-          "name": "app.vercel.filingcheck-bot/filingcheck",
-          "repo": "",
-          "desc": "Real SEC EDGAR filing metrics: margin-of-safety, EPS growth, going-concern flags."
-        }
-      ]
-    },
-    {
-      "id": "63",
-      "hits": [
-        {
-          "name": "app.netlify.agent-rescue-desk/production-triage",
-          "repo": "",
-          "desc": "Read-only triage for n8n, MCP, webhook, and AI agent workflow production failures."
-        },
-        {
-          "name": "app.netlify.gleaming-cassata-d41682/lion-mcp",
-          "repo": "",
-          "desc": "x402-paid MCP data: trend feed + visibility audit. USDC/Base. No API key. No PII."
-        },
-        {
-          "name": "app.netlify.gleaming-cassata-d41682/lion-mcp",
-          "repo": "",
-          "desc": "x402-paid MCP data: trend feed + visibility audit. USDC/Base. No API key. No PII."
-        },
-        {
-          "name": "app.netlify.japan-data-mcp/japan-data-mcp",
-          "repo": "",
-          "desc": "Japanese law, corporation & statistics data as MCP, normalized to English with source attribution."
-        },
-        {
-          "name": "app.netlify.meinlem/nexo",
-          "repo": "",
-          "desc": "Fórum persistente para agentes, assembleias, jogos multiagente e universo literário Meinlem."
-        },
-        {
-          "name": "app.netlify.meinlem/nexo",
-          "repo": "",
-          "desc": "Fórum persistente com conversa MCP, assembleias, jogos multiagente e universo Meinlem."
-        }
-      ]
-    },
-    {
-      "id": "64",
-      "hits": [
-        {
-          "name": "com.cloudflare.mcp/mcp",
-          "repo": "https://github.com/cloudflare/mcp-server-cloudflare",
-          "desc": "Cloudflare MCP servers"
-        },
-        {
-          "name": "com.jojapi/bypass-cloudflare-api",
-          "repo": "",
-          "desc": "Bypass Cloudflare API: A powerful scraping API designed to bypass Cloudflare protection."
-        },
-        {
-          "name": "com.jojapi/cloudflare-solver",
-          "repo": "",
-          "desc": "Cloudflare Solver: Scraping API designed to bypass Cloudflare protection."
-        },
-        {
-          "name": "com.trycloudflare.annotated-lot-operational-tourism/kai-agi",
-          "repo": "",
-          "desc": "AI predictions, model comparison, research briefs and web search from an autonomous AI"
-        },
-        {
-          "name": "com.trycloudflare.candy-josh-writers-balance/yultrace-audit",
-          "repo": "",
-          "desc": "Audit a verified EVM contract with Slither (via Blockscout)."
-        },
-        {
-          "name": "com.trycloudflare.candy-josh-writers-balance/yultrace-audit",
-          "repo": "",
-          "desc": "Audit a verified EVM contract with Slither (via Blockscout). Remote + pip install variants."
-        }
-      ]
-    },
-    {
-      "id": "65",
-      "hits": [
-        {
-          "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
-          "repo": "https://github.com/MisterSandFR/Supabase-MCP-SelfHosted",
-          "desc": "Query and manage your Supabase database directly from your workspace. Execute SQL statements, brow…"
-        },
-        {
-          "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
-          "repo": "https://github.com/MisterSandFR/Supabase-MCP-SelfHosted",
-          "desc": "Manage Supabase projects end to end across database, auth, storage, realtime, and migrations. Moni…"
-        },
-        {
-          "name": "ai.smithery/pinion05-supabase-mcp-lite",
-          "repo": "https://github.com/pinion05/supabase-mcp-lite",
-          "desc": "Same functionality, consuming only 1/20 of the context window tokens."
-        },
-        {
-          "name": "ai.smithery/pinion05-supabase-mcp-lite",
-          "repo": "https://github.com/pinion05/supabase-mcp-lite",
-          "desc": "Same functionality, consuming only 1/20 of the context window tokens."
-        },
-        {
-          "name": "ai.waystation/supabase",
-          "repo": "https://github.com/waystation-ai/mcp",
-          "desc": "Connect to your Supabase database to query data and schemas."
-        },
-        {
-          "name": "com.supabase/mcp",
-          "repo": "https://github.com/supabase/mcp",
-          "desc": "MCP server for interacting with the Supabase platform"
-        }
-      ]
-    },
-    {
-      "id": "66",
-      "hits": [
-        {
-          "name": "io.github.neo4j-contrib/gds-agent",
-          "repo": "https://github.com/neo4j-contrib/gds-agent",
-          "desc": "Neo4j Graph Data Science MCP server"
-        },
-        {
-          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
-          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
-          "desc": "MCP server for Neo4j Aura Database Instance Manager."
-        },
-        {
-          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
-          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
-          "desc": "MCP server for Neo4j Aura Database Instance Manager."
-        },
-        {
-          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
-          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
-          "desc": "MCP server for Neo4j Aura Database Instance Manager."
-        },
-        {
-          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
-          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
-          "desc": "MCP server for Neo4j Aura Database Instance Manager."
-        },
-        {
-          "name": "io.github.neo4j-contrib/mcp-neo4j-cypher",
-          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
-          "desc": "A simple Neo4j MCP server that allows you to run Cypher queries against a Neo4j database."
-        }
-      ]
-    },
-    {
-      "id": "67",
-      "hits": [
-        {
-          "name": "io.github.Snowflake-Labs/mcp",
-          "repo": "https://github.com/Snowflake-Labs/mcp",
-          "desc": "MCP Server for Snowflake from Snowflake Labs"
-        },
-        {
-          "name": "io.github.Snowflake-Labs/mcp",
-          "repo": "https://github.com/Snowflake-Labs/mcp",
-          "desc": "MCP Server for Snowflake from Snowflake Labs"
-        },
-        {
-          "name": "io.github.nsphung/mcp-snowflake-server",
-          "repo": "https://github.com/nsphung/mcp-snowflake-server",
-          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
-        },
-        {
-          "name": "io.github.nsphung/mcp-snowflake-server",
-          "repo": "https://github.com/nsphung/mcp-snowflake-server",
-          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
-        },
-        {
-          "name": "io.github.nsphung/mcp-snowflake-server",
-          "repo": "https://github.com/nsphung/mcp-snowflake-server",
-          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
-        },
-        {
-          "name": "io.github.nsphung/mcp-snowflake-server",
-          "repo": "https://github.com/nsphung/mcp-snowflake-server",
-          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
-        }
-      ]
-    },
-    {
-      "id": "68",
-      "hits": []
-    },
-    {
-      "id": "69",
-      "hits": [
-        {
-          "name": "com.mcparmory/datadog",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Monitor infrastructure, manage agents and deployments, track metrics, logs, and events"
-        },
-        {
-          "name": "com.mcparmory/datadog",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Monitor infrastructure, manage agents and deployments, track metrics, logs, and events"
-        },
-        {
-          "name": "io.github.TANTIOPE/datadog-mcp",
-          "repo": "https://github.com/tantiope/datadog-mcp-server",
-          "desc": "Full Datadog API access: monitors, logs, metrics, traces, dashboards, and observability tools"
-        },
-        {
-          "name": "io.github.us-all/datadog",
-          "repo": "https://github.com/us-all/datadog-mcp-server",
-          "desc": "Datadog MCP — 165 tools for metrics, monitors, logs, APM, RUM, incidents, CI/CD, fleet"
-        },
-        {
-          "name": "io.github.us-all/datadog",
-          "repo": "https://github.com/us-all/datadog-mcp-server",
-          "desc": "Datadog MCP — 165 tools for metrics, monitors, logs, APM, RUM, incidents, CI/CD, fleet"
-        },
-        {
-          "name": "io.github.us-all/datadog",
-          "repo": "https://github.com/us-all/datadog-mcp-server",
-          "desc": "Datadog MCP — 165 tools for metrics, monitors, logs, APM, RUM, incidents, CI/CD, fleet"
-        }
-      ]
-    },
-    {
-      "id": "7",
-      "hits": []
-    },
-    {
-      "id": "70",
-      "hits": [
-        {
-          "name": "com.0xpi.sdsentry/sds-lookup",
-          "repo": "",
-          "desc": "Free safety data sheet (SDS) lookup by product name, plus an OSHA HazCom readiness check."
-        },
-        {
-          "name": "com.mcparmory/sentry",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Track errors, manage performance alerts, and configure dashboards and monitors"
-        },
-        {
-          "name": "com.mcparmory/sentry",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Track errors, manage performance alerts, and configure dashboards and monitors"
-        },
-        {
-          "name": "com.mcparmory/sentry",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Track errors, manage performance alerts, and configure dashboards and monitors"
-        },
-        {
-          "name": "com.regsentry/tracking-inspector",
-          "repo": "",
-          "desc": "Inspect a public site's tracking signals, grade consent evidence, and get remediation playbooks."
-        },
-        {
-          "name": "io.github.Jackxiaozhiren/datasentry",
-          "repo": "https://github.com/Jackxiaozhiren/datasentry",
-          "desc": "Local-first MCP server for data-quality discovery, evidence, drift, and controlled repair."
-        }
-      ]
-    },
-    {
-      "id": "71",
-      "hits": [
-        {
-          "name": "ai.smithery/smithery-notion",
-          "repo": "https://github.com/smithery-ai/mcp-servers",
-          "desc": "A Notion workspace is a collaborative environment where teams can organize work, manage projects,…"
-        },
-        {
-          "name": "com.mcparmory/notion",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create, update, and manage pages, databases, and workspace users"
-        },
-        {
-          "name": "com.mcparmory/notion",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create, update, and manage pages, databases, and workspace users"
-        },
-        {
-          "name": "com.notion/mcp",
-          "repo": "https://github.com/makenotion/notion-next",
-          "desc": "Official Notion MCP server"
-        },
-        {
-          "name": "com.notion/mcp",
-          "repo": "",
-          "desc": "Official Notion MCP server"
-        },
-        {
-          "name": "io.github.ai-aviate/better-notion",
-          "repo": "https://github.com/ai-aviate/better-mcp-notion",
-          "desc": "Operate Notion with a single Markdown document — read, create, and update pages in one call."
-        }
-      ]
-    },
-    {
-      "id": "72",
-      "hits": [
-        {
-          "name": "ai.waystation/airtable",
-          "repo": "https://github.com/waystation-ai/mcp",
-          "desc": "Access and manage your Airtable bases, tables, and records seamlessly"
-        },
-        {
-          "name": "com.airtable/mcp",
-          "repo": "",
-          "desc": "Official Airtable MCP server — database and operations layer for agents."
-        },
-        {
-          "name": "com.mcparmory/airtable",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create, read, update, and delete records in Airtable bases and tables"
-        },
-        {
-          "name": "com.mcparmory/airtable",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create, read, update, and delete records in Airtable bases and tables"
-        },
-        {
-          "name": "io.github.Automations-Project/airtable-user-mcp",
-          "repo": "https://github.com/Automations-Project/VSCode-Airtable-Formula",
-          "desc": "Manage Airtable bases: schema, field CRUD, views, formula validation, extensions"
-        },
-        {
-          "name": "io.github.domdomegg/airtable-mcp-server",
-          "repo": "https://github.com/domdomegg/airtable-mcp-server.git",
-          "desc": "Read and write access to Airtable database schemas, tables, and records."
-        }
-      ]
-    },
-    {
-      "id": "73",
-      "hits": [
-        {
-          "name": "app.linear/linear",
-          "repo": "",
-          "desc": "MCP server for Linear project management and issue tracking"
-        },
-        {
-          "name": "app.linear/linear",
-          "repo": "",
-          "desc": "MCP server for Linear project management and issue tracking"
-        },
-        {
-          "name": "io.github.Evozim/linear-broker",
-          "repo": "",
-          "desc": "Integrates agents with Linear software development workflows."
-        },
-        {
-          "name": "io.github.adelaidasofia/linear-mcp",
-          "repo": "https://github.com/adelaidasofia/linear-mcp",
-          "desc": "Multi-workspace Linear MCP — PAT auth, 57 tools + 3 prompts, substrate enforcement, drop-in."
-        },
-        {
-          "name": "io.github.pipeworx-io/linear",
-          "repo": "https://github.com/pipeworx-io/mcp-linear",
-          "desc": "Linear MCP — wraps the Linear GraphQL API (OAuth)"
-        },
-        {
-          "name": "io.github.sadri-dridi/linear-id-ok",
-          "repo": "https://github.com/sadri-dridi/named-mcp-utilities",
-          "desc": "LIN-123 identifier shape, value discarded"
-        }
-      ]
-    },
-    {
-      "id": "74",
-      "hits": [
-        {
-          "name": "ai.waystation/jira",
-          "repo": "https://github.com/waystation-ai/mcp",
-          "desc": "Track issues, manage projects, and streamline workflows in Jira."
-        },
-        {
-          "name": "com.mcparmory/atlassian-jira",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create, search, and manage issues, projects, and team workflows"
-        },
-        {
-          "name": "com.mcparmory/atlassian-jira",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Create, search, and manage issues, projects, and team workflows"
-        },
-        {
-          "name": "io.github.Kujirafu/agentlore",
-          "repo": "https://github.com/Kujirafu/agentlore",
-          "desc": "AI-verified knowledge base with trust scoring, temporal facts, and skill cards."
-        },
-        {
-          "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
-          "repo": "https://github.com/MrRefactoring/atlassian-dc-mcp",
-          "desc": "MCP server for Atlassian Jira Data Center - search, view, and create issues"
-        },
-        {
-          "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
-          "repo": "https://github.com/MrRefactoring/atlassian-dc-mcp",
-          "desc": "MCP server for Atlassian Jira Data Center - search, view, and create issues"
-        }
-      ]
-    },
-    {
-      "id": "75",
-      "hits": [
-        {
-          "name": "com.mcparmory/asana",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage tasks, projects, portfolios, and team workflows"
-        },
-        {
-          "name": "com.mcparmory/asana",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage tasks, projects, portfolios, and team workflows"
-        },
-        {
-          "name": "io.github.asanabrial/leteo",
-          "repo": "https://github.com/asanabrial/leteo",
-          "desc": "Persistent memory for AI coding agents: one Rust binary, one local SQLite database."
-        },
-        {
-          "name": "io.github.asanabrial/leteo",
-          "repo": "https://github.com/asanabrial/leteo",
-          "desc": "Persistent memory for AI coding agents: one Rust binary, one local SQLite database."
-        },
-        {
-          "name": "io.github.asanabrial/leteo",
-          "repo": "https://github.com/asanabrial/leteo",
-          "desc": "Persistent memory for AI coding agents: one Rust binary, one local SQLite database."
-        },
-        {
-          "name": "io.github.hasanaydin7/neuralng",
-          "repo": "https://github.com/hasanaydin7/NeuralTech",
-          "desc": "Read-only discovery for NeuralNg Angular components, APIs, packages, icons and theme recipes."
-        }
-      ]
-    },
-    {
-      "id": "76",
-      "hits": [
-        {
-          "name": "com.monday/monday.com",
-          "repo": "https://github.com/mondaycom/mcp",
-          "desc": "MCP server for monday.com integration."
-        }
-      ]
-    },
-    {
-      "id": "77",
-      "hits": [
-        {
-          "name": "ai.smithery/skr-cloudify-clickup-mcp-server-new",
-          "repo": "https://github.com/skr-cloudify/clickup-mcp-server-new",
-          "desc": "Manage your ClickUp workspace by creating, updating, and organizing tasks, lists, folders, and tag…"
-        },
-        {
-          "name": "com.mcparmory/clickup",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage tasks, lists, checklists, comments, and project workflows"
-        },
-        {
-          "name": "com.mcparmory/clickup",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage tasks, lists, checklists, comments, and project workflows"
-        },
-        {
-          "name": "io.github.cvrt-jh/clickup-mcp",
-          "repo": "https://github.com/cvrt-jh/clickup-mcp",
-          "desc": "Lightweight ClickUp MCP server - 35 tools, token-optimized (95% smaller responses)"
-        },
-        {
-          "name": "io.github.cvrt-jh/clickup-mcp",
-          "repo": "https://github.com/cvrt-jh/clickup-mcp",
-          "desc": "Lightweight ClickUp MCP server - 37 tools, token-optimized (95% smaller responses)"
-        },
-        {
-          "name": "io.github.helbertparanhos/clickup-mcp-pro",
-          "repo": "https://github.com/helbertparanhos/clickup-mcp-pro",
-          "desc": "The most complete ClickUp MCP server — 161 tools + clickup_raw for the full v2/v3 API."
-        }
-      ]
-    },
-    {
-      "id": "78",
-      "hits": [
-        {
-          "name": "com.iterruptivo.ecodashboard/ecoplaza-mcp",
-          "repo": "",
-          "desc": "Read-only MCP for EcoPlaza, Peruvian commercial real estate: projects, units, advisor contact."
-        },
-        {
-          "name": "com.mcparmory/codacy",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Analyze code quality, security issues, and coverage across repositories"
-        },
-        {
-          "name": "com.mcparmory/codacy",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Analyze code quality, security issues, and coverage across repositories"
-        },
-        {
-          "name": "io.github.ChocoData-com/amazon-scraper-api-mcp",
-          "repo": "https://github.com/ChocoData-com/amazon-scraper-api-mcp",
-          "desc": "Scrape Amazon products, search, and async batch ASIN lookups across 20 marketplaces"
-        },
-        {
-          "name": "io.github.ajemba/codasms-mcp",
-          "repo": "https://github.com/ajemba/codasms-mcp",
-          "desc": "Receive one-time SMS/OTP verification codes via the CODASMS API: get a number, wait, release."
-        },
-        {
-          "name": "io.github.harshitAgr/codabench-mcp",
-          "repo": "https://github.com/harshitAgr/codabench-mcp",
-          "desc": "MCP server for the Codabench REST API — drives a full ML-benchmark participant workflow."
-        }
-      ]
-    },
-    {
-      "id": "79",
-      "hits": [
-        {
-          "name": "io.github.christianclaudio/smartsheet-rm",
-          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
-          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
-        },
-        {
-          "name": "io.github.christianclaudio/smartsheet-rm",
-          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
-          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
-        },
-        {
-          "name": "io.github.christianclaudio/smartsheet-rm",
-          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
-          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
-        },
-        {
-          "name": "io.github.christianclaudio/smartsheet-rm",
-          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
-          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
-        },
-        {
-          "name": "io.github.christianclaudio/smartsheet-rm",
-          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
-          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
-        },
-        {
-          "name": "io.github.christianclaudio/smartsheet-rm",
-          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
-          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
-        }
-      ]
-    },
-    {
-      "id": "8",
+      "id": 8,
       "hits": [
         {
           "name": "city.close/close-api",
@@ -1676,261 +195,7 @@
       ]
     },
     {
-      "id": "80",
-      "hits": [
-        {
-          "name": "io.github.AnshumanAtrey/linkedin-harvester",
-          "repo": "https://github.com/AnshumanAtrey/linkedin-harvester",
-          "desc": "LinkedIn Profile Finder - Email to LinkedIn URL Lookup"
-        },
-        {
-          "name": "io.github.AnshumanAtrey/theharvester-osint",
-          "repo": "https://github.com/AnshumanAtrey/theharvester-osint",
-          "desc": "theHarvester Cloud - Email & Subdomain Finder"
-        },
-        {
-          "name": "io.github.Evozim/crypto-tax-loss-harvester-mcp",
-          "repo": "",
-          "desc": "Premium agentic endpoint for crypto-tax-loss-harvester-mcp."
-        },
-        {
-          "name": "io.github.hulin42/keynote-harvest-mcp",
-          "repo": "https://github.com/hulin42/keynote-harvest-mcp",
-          "desc": "Harvest Keynote and PDF slide decks into previews, text, image assets, and a manifest for agents."
-        },
-        {
-          "name": "io.github.virgilvox/vue-harvest",
-          "repo": "https://github.com/virgilvox/vue-harvest",
-          "desc": "Extract reusable component libraries and design tokens from Vue applications"
-        },
-        {
-          "name": "io.github.virgilvox/vue-harvest",
-          "repo": "https://github.com/virgilvox/vue-harvest",
-          "desc": "Extract reusable component libraries and design tokens from Vue applications"
-        }
-      ]
-    },
-    {
-      "id": "81",
-      "hits": [
-        {
-          "name": "app.vercel.stripecheckup/stripecheckup",
-          "repo": "",
-          "desc": "Scan pasted Stripe webhook/checkout code for common integration bugs."
-        },
-        {
-          "name": "com.stripe/mcp",
-          "repo": "https://github.com/stripe/agent-toolkit",
-          "desc": "MCP server integrating with Stripe - tools for customers, products, payments, and more."
-        },
-        {
-          "name": "eu.nordicmcp/stripe",
-          "repo": "https://github.com/pefman/nordicmcp.eu",
-          "desc": "Hosted Stripe MCP server: 18 tools for payments, subscriptions, invoicing, customers, and reporting."
-        },
-        {
-          "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
-          "repo": "https://github.com/CSOAI-ORG/meok-stripe-acp-checkout-mcp",
-          "desc": "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic"
-        },
-        {
-          "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
-          "repo": "https://github.com/CSOAI-ORG/meok-stripe-acp-checkout-mcp",
-          "desc": "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic"
-        },
-        {
-          "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
-          "repo": "https://github.com/CSOAI-ORG/stripe-billing-mcp",
-          "desc": "Stripe Billing automation via MCP. Includes create customer, search customers, create subscr..."
-        }
-      ]
-    },
-    {
-      "id": "82",
-      "hits": [
-        {
-          "name": "io.github.pipeworx-io/plaid",
-          "repo": "https://github.com/pipeworx-io/mcp-plaid",
-          "desc": "Plaid MCP — wraps Plaid Sandbox API (sandbox.plaid.com)"
-        }
-      ]
-    },
-    {
-      "id": "83",
-      "hits": [
-        {
-          "name": "io.github.Alejandrehl/kainext-binance-mcp",
-          "repo": "",
-          "desc": "Security-first Binance Spot MCP + honest crypto analyst. 25 tools, 5 prompts, human-gated orders."
-        },
-        {
-          "name": "io.github.Evozim/binance-orderbook-mcp",
-          "repo": "",
-          "desc": "Premium agentic endpoint for binance-orderbook-mcp."
-        },
-        {
-          "name": "io.github.junct-bot/binance-mcp",
-          "repo": "https://github.com/junct-bot/binance-mcp",
-          "desc": "Binance MCP server — 340 tools for AI agent integration. Hosted by Junct."
-        },
-        {
-          "name": "io.github.junct-bot/binance-mcp",
-          "repo": "https://github.com/junct-bot/binance-mcp",
-          "desc": "Binance exchange data - 340 tools for market data, trading pairs, order books"
-        },
-        {
-          "name": "io.github.junct-bot/binance-mcp",
-          "repo": "https://github.com/junct-bot/binance-mcp",
-          "desc": "Binance - 340 tools for market data, order books, and trading pairs"
-        },
-        {
-          "name": "io.github.mrfentmen/binance-market-mcp",
-          "repo": "https://github.com/mrfentmen/binance-market-mcp",
-          "desc": "Live crypto prices, tickers, and candlestick charts from Binance public data. No key required."
-        }
-      ]
-    },
-    {
-      "id": "84",
-      "hits": []
-    },
-    {
-      "id": "85",
-      "hits": [
-        {
-          "name": "io.github.Ipayx-stellar/fx-audit",
-          "repo": "",
-          "desc": "Forensic FX audit. Detects hidden bank markups in real time. Returns spread bps + audit score 1-10."
-        },
-        {
-          "name": "io.github.iPAYX-Technologies/mcp-fx-audit",
-          "repo": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
-          "desc": "FX forensic audit MCP. Detects hidden bank markups on cross-border payments. FINTRAC MSB."
-        },
-        {
-          "name": "io.github.iPAYX-Technologies/mcp-fx-audit",
-          "repo": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
-          "desc": "FX forensic audit MCP. Detects hidden bank markups on cross-border payments. FINTRAC MSB."
-        }
-      ]
-    },
-    {
-      "id": "86",
-      "hits": [
-        {
-          "name": "com.caribooks/quickbooks",
-          "repo": "",
-          "desc": "QuickBooks Online in Claude and ChatGPT: 161 tools, full ledger, multi-company, Canada + US, FR/EN."
-        },
-        {
-          "name": "com.caribooks/quickbooks",
-          "repo": "",
-          "desc": "QuickBooks Online in Claude and ChatGPT: 209 tools, full ledger, multi-company, Canada + US, FR/EN."
-        },
-        {
-          "name": "com.caribooks/quickbooks",
-          "repo": "",
-          "desc": "QuickBooks Online in Claude and ChatGPT: 211 tools, full ledger, multi-company, Canada + US, FR/EN."
-        },
-        {
-          "name": "com.caribooks/quickbooks",
-          "repo": "",
-          "desc": "QuickBooks Online in Claude and ChatGPT: 221 tools, full ledger, multi-company, Canada + US, FR/EN."
-        },
-        {
-          "name": "com.devart/mcp-quickbooks",
-          "repo": "https://github.com/devart-ai-connectivity/devart-mcp-server-quickbooks-online",
-          "desc": "Schema-aware read/write access to QuickBooks Online through Devart dotConnect ADO.NET data provider."
-        },
-        {
-          "name": "io.github.NyxToolsDev/quickbooks-mcp-server",
-          "repo": "https://github.com/NyxToolsDev/quickbooks-mcp-server",
-          "desc": "Connect Claude to QuickBooks Online — query finances, create invoices, run reports"
-        }
-      ]
-    },
-    {
-      "id": "87",
-      "hits": [
-        {
-          "name": "com.getboxkite/xero-backup-export",
-          "repo": "",
-          "desc": "Complete read-only backup and export of Xero accounting data as a ZIP plus a manifest."
-        },
-        {
-          "name": "com.getboxkite/xero-backup-export",
-          "repo": "",
-          "desc": "Complete read-only backup and export of Xero accounting data as a ZIP plus a manifest."
-        },
-        {
-          "name": "com.pilot.meridian/xero-connector",
-          "repo": "",
-          "desc": "Connect Xero to AI agents with secure read or write access across multiple organisations."
-        },
-        {
-          "name": "io.github.Servosity/xero-mcp",
-          "repo": "https://github.com/servosity/msp-skills",
-          "desc": "Every Xero Accounting read plus a local SQLite ledger  -  aging, reconciliation, and GL tie-out"
-        },
-        {
-          "name": "io.github.Servosity/xero-mcp",
-          "repo": "https://github.com/servosity/msp-skills",
-          "desc": "Every Xero Accounting read plus a local SQLite ledger  -  aging, reconciliation, and GL tie-out"
-        },
-        {
-          "name": "io.github.Servosity/xero-mcp",
-          "repo": "https://github.com/servosity/msp-skills",
-          "desc": "Every Xero Accounting read plus a local SQLite ledger  -  aging, reconciliation, and GL tie-out"
-        }
-      ]
-    },
-    {
-      "id": "88",
-      "hits": [
-        {
-          "name": "io.github.PalabreX/runpay",
-          "repo": "https://github.com/PalabreX/runpay-mcp",
-          "desc": "Stripe-native marketplace where AI agents discover and pay per call for API services."
-        }
-      ]
-    },
-    {
-      "id": "89",
-      "hits": [
-        {
-          "name": "ai.adramp/google-ads",
-          "repo": "https://github.com/stylemi-co/adramp",
-          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
-        },
-        {
-          "name": "ai.adramp/google-ads",
-          "repo": "https://github.com/stylemi-co/adramp",
-          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
-        },
-        {
-          "name": "ai.adramp/google-ads",
-          "repo": "",
-          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
-        },
-        {
-          "name": "ai.adramp/google-ads",
-          "repo": "",
-          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
-        },
-        {
-          "name": "com.mcparmory/ramp",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage expenses, corporate cards, accounts payable, and accounting integrations"
-        },
-        {
-          "name": "com.mcparmory/ramp",
-          "repo": "https://github.com/mcparmory/registry",
-          "desc": "Manage expenses, corporate cards, accounts payable, and accounting integrations"
-        }
-      ]
-    },
-    {
-      "id": "9",
+      "id": 9,
       "hits": [
         {
           "name": "io.github.copperline-labs/rendex-mcp",
@@ -1965,11 +230,1913 @@
       ]
     },
     {
-      "id": "90",
+      "id": 10,
       "hits": []
     },
     {
-      "id": "91",
+      "id": 11,
+      "hits": [
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "repo": "https://github.com/fruggr/zendesk-mcp-server",
+          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "repo": "https://github.com/fruggr/zendesk-mcp-server",
+          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "repo": "https://github.com/fruggr/zendesk-mcp-server",
+          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "repo": "https://github.com/fruggr/zendesk-mcp-server",
+          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "repo": "https://github.com/fruggr/zendesk-mcp-server",
+          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "repo": "https://github.com/fruggr/zendesk-mcp-server",
+          "desc": "Draft, translate and update Help Center articles and manage Zendesk tickets from your AI assistant."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "hits": [
+        {
+          "name": "io.github.MuhammadTalhaMT/intercom",
+          "repo": "https://github.com/MuhammadTalhaMT/claude-intercom",
+          "desc": "Relays messages between two Claude Code sessions on different machines using the Channels API"
+        },
+        {
+          "name": "io.github.MuhammadTalhaMT/intercom",
+          "repo": "https://github.com/MuhammadTalhaMT/claude-intercom",
+          "desc": "Relays messages between two Claude Code sessions on different machines using the Channels API"
+        },
+        {
+          "name": "io.github.pipeworx-io/intercom",
+          "repo": "https://github.com/pipeworx-io/mcp-intercom",
+          "desc": "Intercom MCP Pack — contacts, conversations, companies via OAuth."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "hits": [
+        {
+          "name": "io.github.WYRE-AI/freshdesk-mcp",
+          "repo": "https://github.com/WYRE-AI/freshdesk-mcp",
+          "desc": "MCP server for Freshdesk — tickets, contacts, companies, agents, groups, and knowledge base."
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-freshdesk",
+          "repo": "https://github.com/mindstone/mcp-servers",
+          "desc": "Freshdesk Support MCP server for Model Context Protocol hosts"
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-freshdesk",
+          "repo": "https://github.com/mindstone/mcp-servers",
+          "desc": "Freshdesk Support MCP server for Model Context Protocol hosts"
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-freshdesk",
+          "repo": "https://github.com/mindstone/mcp-servers",
+          "desc": "Freshdesk Support MCP server for Model Context Protocol hosts"
+        },
+        {
+          "name": "io.github.pipeworx-io/freshdesk",
+          "repo": "https://github.com/pipeworx-io/mcp-freshdesk",
+          "desc": "Freshdesk MCP Pack — helpdesk ticket and contact management via Freshdesk API v2."
+        },
+        {
+          "name": "io.github.pipeworx-io/freshdesk",
+          "repo": "https://github.com/pipeworx-io/mcp-freshdesk",
+          "desc": "Freshdesk MCP Pack — helpdesk ticket and contact management via Freshdesk API v2."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "hits": [
+        {
+          "name": "ai.clize/storefront",
+          "repo": "https://github.com/cooldk/clize-cli",
+          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
+        },
+        {
+          "name": "ai.clize/storefront",
+          "repo": "https://github.com/cooldk/clize-cli",
+          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
+        },
+        {
+          "name": "ai.clize/storefront",
+          "repo": "https://github.com/cooldk/clize-cli",
+          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
+        },
+        {
+          "name": "ai.clize/storefront",
+          "repo": "https://github.com/cooldk/clize-cli",
+          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
+        },
+        {
+          "name": "ai.clize/storefront",
+          "repo": "https://github.com/cooldk/clize-cli",
+          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
+        },
+        {
+          "name": "ai.clize/storefront",
+          "repo": "https://github.com/cooldk/clize-cli",
+          "desc": "Let your AI agent run a real store: checkout, orders, refunds, shipping and support."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "hits": [
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "repo": "https://github.com/JustinBeckwith/pylon-mcp",
+          "desc": "MCP server for Pylon customer support platform"
+        },
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "repo": "https://github.com/JustinBeckwith/pylon-mcp",
+          "desc": "MCP server for Pylon customer support platform"
+        },
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "repo": "https://github.com/JustinBeckwith/pylon-mcp",
+          "desc": "MCP server for Pylon customer support platform"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "hits": []
+    },
+    {
+      "id": 17,
+      "hits": [
+        {
+          "name": "ai.smithery/plainyogurt21-clintrials-mcp",
+          "repo": "",
+          "desc": "Provide structured access to ClinicalTrials.gov data for searching, retrieving, and analyzing clin…"
+        },
+        {
+          "name": "ai.smithery/plainyogurt21-sec-edgar-mcp",
+          "repo": "https://github.com/plainyogurt21/sec-edgar-mcp",
+          "desc": "Provide AI assistants with real-time access to official SEC EDGAR filings and financial data. Enab…"
+        },
+        {
+          "name": "com.gumballtools/regex-explainer",
+          "repo": "https://github.com/bwalvoord/gumball",
+          "desc": "Explain a regex in plain English and detect catastrophic backtracking risk."
+        },
+        {
+          "name": "com.plainfreight/quotes",
+          "repo": "https://github.com/plainfreight-com/plainfreight-mcp",
+          "desc": "All-in DDP quotes for China to USA shipments, 100 g to 2,000 kg, from a live rate card"
+        },
+        {
+          "name": "com.plainrouter/mcp",
+          "repo": "",
+          "desc": "Inspect an approved ad account and first-party signal health, then propose policy-gated actions."
+        },
+        {
+          "name": "com.plainrouter/mcp",
+          "repo": "",
+          "desc": "Inspect an approved ad account and first-party signal health, then propose policy-gated actions."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "hits": []
+    },
+    {
+      "id": 19,
+      "hits": []
+    },
+    {
+      "id": 20,
+      "hits": []
+    },
+    {
+      "id": 21,
+      "hits": [
+        {
+          "name": "ai.smithery/smithery-ai-slack",
+          "repo": "https://github.com/smithery-ai/mcp-servers",
+          "desc": "Enable interaction with Slack workspaces. Supports subscribing to Slack events through Resources."
+        },
+        {
+          "name": "ai.waystation/slack",
+          "repo": "https://github.com/waystation-ai/mcp",
+          "desc": "Send messages, access channels, and manage files in your Slack workspace."
+        },
+        {
+          "name": "com.mcparmory/slack",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage channels, conversations, users, and workspace apps programmatically"
+        },
+        {
+          "name": "com.mcparmory/slack",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage channels, conversations, users, and workspace apps programmatically"
+        },
+        {
+          "name": "com.pulsemcp/slack",
+          "repo": "https://github.com/pulsemcp/mcp-servers",
+          "desc": "MCP server for Slack — read/write messages, manage threads, and react to messages."
+        },
+        {
+          "name": "com.pulsemcp/slack",
+          "repo": "https://github.com/pulsemcp/mcp-servers",
+          "desc": "MCP server for Slack — read/write messages, manage threads, and react to messages."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "hits": [
+        {
+          "name": "io.github.codespar/mcp-twilio",
+          "repo": "https://github.com/codespar/mcp-dev-latam",
+          "desc": "MCP server for Twilio — global SMS, WhatsApp, Voice, Verify, and Lookup across 180+ countries"
+        },
+        {
+          "name": "io.github.codespar/mcp-twilio",
+          "repo": "https://github.com/codespar/mcp-dev-latam",
+          "desc": "MCP server for Twilio — global SMS, WhatsApp, Voice, Verify, and Lookup across 180+ countries"
+        },
+        {
+          "name": "io.github.mrfentmen/twilio-mcp-server",
+          "repo": "https://github.com/mrfentmen/twilio-mcp",
+          "desc": "Send SMS, MMS, WhatsApp messages, make voice calls, and manage Twilio phone numbers."
+        },
+        {
+          "name": "io.github.mrfentmen/twilio-mcp-server",
+          "repo": "https://github.com/mrfentmen/twilio-mcp",
+          "desc": "Send SMS, MMS, WhatsApp messages, make voice calls, and manage Twilio phone numbers."
+        },
+        {
+          "name": "io.github.pipeworx-io/twilio",
+          "repo": "https://github.com/pipeworx-io/mcp-twilio",
+          "desc": "Twilio MCP Pack — send SMS, list messages, make calls via Twilio REST API."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "hits": []
+    },
+    {
+      "id": 24,
+      "hits": [
+        {
+          "name": "ai.meetlark/mcp-server",
+          "repo": "",
+          "desc": "Agent-first meeting schedule polls for humans and agents. Create polls, vote, find times."
+        },
+        {
+          "name": "ai.meetlark/mcp-server",
+          "repo": "",
+          "desc": "Agent-first meeting schedule polls for humans and agents. Create polls, vote, find times."
+        },
+        {
+          "name": "com.splark/splark",
+          "repo": "",
+          "desc": "Async video interviews: send a link, get short video answers with transcripts and AI captions."
+        },
+        {
+          "name": "com.splark/splark",
+          "repo": "",
+          "desc": "The ask-and-answer video format: send a question, get a short one-take video answer, captioned."
+        },
+        {
+          "name": "com.splark/splark",
+          "repo": "",
+          "desc": "The ask-and-answer video format: send a question, get a short one-take video answer, captioned."
+        },
+        {
+          "name": "io.github.brandonclark1996-design/toolrank",
+          "repo": "https://github.com/brandonclark1996-design/toolrank",
+          "desc": "Rank MCP servers/APIs for a job. Lexical ranking, 36 curated tools, no Stripe."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "hits": []
+    },
+    {
+      "id": 26,
+      "hits": [
+        {
+          "name": "ai.smithery/Danushkumar-V-mcp-discord",
+          "repo": "https://github.com/Danushkumar-V/mcp-discord",
+          "desc": "An MCP server that integrates with Discord to provide AI-powered features."
+        },
+        {
+          "name": "ai.smithery/sachicali-discordmcp-suite",
+          "repo": "",
+          "desc": "Control your Discord community: send/read messages, manage channels and forums, and handle webhook…"
+        },
+        {
+          "name": "app.lasers.guildcontrol/discord",
+          "repo": "https://github.com/j-256/guildcontrol",
+          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
+        },
+        {
+          "name": "app.lasers.guildcontrol/discord",
+          "repo": "https://github.com/j-256/guildcontrol",
+          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
+        },
+        {
+          "name": "app.lasers.guildcontrol/discord",
+          "repo": "https://github.com/j-256/guildcontrol",
+          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
+        },
+        {
+          "name": "app.lasers.guildcontrol/discord",
+          "repo": "https://github.com/j-256/guildcontrol",
+          "desc": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "hits": [
+        {
+          "name": "ai.awraiter/telegram",
+          "repo": "https://github.com/MediaZione/AwrAiter",
+          "desc": "Telegram channels you administer: analytics, content plans, scheduled publishing. No userbot"
+        },
+        {
+          "name": "co.civai.nova/telegram-agent",
+          "repo": "",
+          "desc": "I use your linked Telegram MTProto session (Integrations → Telegram) to list groups, members, and s…"
+        },
+        {
+          "name": "com.jojapi/telegram",
+          "repo": "",
+          "desc": "Telegram: FASTEST real time Telegram API. Retrieve channel's info and messages in milliseconds.."
+        },
+        {
+          "name": "com.limzo/telegram-group-stats",
+          "repo": "",
+          "desc": "Live, verifiable stats for public Telegram groups tracked by Limzo. Read-only, no auth needed."
+        },
+        {
+          "name": "com.limzo/telegram-group-stats",
+          "repo": "https://github.com/LimzoCom/limzo-mcp",
+          "desc": "Read-only public Telegram group stats from Limzo: leaderboards, activity, levels. No API key."
+        },
+        {
+          "name": "com.limzo/telegram-group-stats",
+          "repo": "https://github.com/LimzoCom/limzo-mcp",
+          "desc": "Read-only public Telegram group stats from Limzo: leaderboards, activity, levels. No API key."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "hits": [
+        {
+          "name": "ai.darkfunnels/whatsapp-sales-agent",
+          "repo": "https://github.com/darkfunnels-ai/darkfunnels-mcp",
+          "desc": "Operate a WhatsApp AI sales agent: audit conversations, edit the playbook, read orders and metrics."
+        },
+        {
+          "name": "ai.darkfunnels/whatsapp-sales-agent",
+          "repo": "https://github.com/darkfunnels-ai/darkfunnels-mcp",
+          "desc": "WhatsApp AI sales agent on your own number via QR, no Meta API: audit chats, edit playbook, orders."
+        },
+        {
+          "name": "ai.izap/whatsapp",
+          "repo": "",
+          "desc": "WhatsApp assistants, messaging, broadcasts, and analytics for your iZap account, over OAuth."
+        },
+        {
+          "name": "ai.izap/whatsapp",
+          "repo": "",
+          "desc": "WhatsApp assistants, messaging, broadcasts, and analytics for your iZap account, over OAuth."
+        },
+        {
+          "name": "ai.izap/whatsapp",
+          "repo": "",
+          "desc": "WhatsApp assistants, messaging, broadcasts, and analytics for your iZap account, over OAuth."
+        },
+        {
+          "name": "ai.izap/whatsapp",
+          "repo": "",
+          "desc": "WhatsApp assistants, messaging, broadcasts, and analytics for your iZap account, over OAuth."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "hits": [
+        {
+          "name": "io.usefulapi/aircall",
+          "repo": "https://github.com/m190/usefulapi-mcp",
+          "desc": "Read calls, contacts, users, teams and numbers; tag calls and create or update contacts."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "hits": [
+        {
+          "name": "io.github.Vonage/vonage-documentation-mcp",
+          "repo": "https://github.com/Vonage/vonage-mcp-server-documentation",
+          "desc": "MCP server for Vonage API documentation, code snippets, tutorials, and troubleshooting."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "hits": []
+    },
+    {
+      "id": 32,
+      "hits": []
+    },
+    {
+      "id": 33,
+      "hits": [
+        {
+          "name": "ai.com.mcp/linkedin",
+          "repo": "https://github.com/la-rebelion/hapimcp",
+          "desc": "LinkedIn API as MCP tools to retrieve profile data and publish content. Powered by HAPI MCP."
+        },
+        {
+          "name": "ai.com.mcp/linkedin",
+          "repo": "https://github.com/la-rebelion/hapimcp",
+          "desc": "LinkedIn API as MCP tools to retrieve profile data and publish content. Powered by HAPI MCP."
+        },
+        {
+          "name": "app.theona/linkedin-content-planner",
+          "repo": "https://github.com/theonaai/linkedin-content-planner-mcp",
+          "desc": "Draft, revise and review LinkedIn posts; a human approves each one before it goes live."
+        },
+        {
+          "name": "co.quibbly/linkedin-inbox",
+          "repo": "",
+          "desc": "Connect Claude or ChatGPT to your LinkedIn inbox. Research contacts and draft replies for review."
+        },
+        {
+          "name": "com.adpeekly/linkedin-ads-library",
+          "repo": "",
+          "desc": "Unofficial read-only search over LinkedIn's public Ad Library: 253,610 B2B ads with durations."
+        },
+        {
+          "name": "com.adpeekly/linkedin-ads-library",
+          "repo": "",
+          "desc": "Unofficial read-only search over LinkedIn's public Ad Library: 253,610 B2B ads with durations."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "hits": []
+    },
+    {
+      "id": 35,
+      "hits": [
+        {
+          "name": "io.github.asklokesh/mailchimp-mcp-server",
+          "repo": "https://github.com/asklokesh/mailchimp-mcp-server",
+          "desc": "MCP server for Mailchimp API integration"
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
+          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
+          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
+          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
+          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "repo": "https://github.com/cyanheads/mailchimp-mcp-server",
+          "desc": "Mailchimp via MCP: draft, test, and send campaigns; manage audiences and subscribers; pull reports."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "hits": [
+        {
+          "name": "com.mcparmory/klaviyo",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create and manage email campaigns, lists, and marketing automation"
+        },
+        {
+          "name": "com.mcparmory/klaviyo",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create and manage email campaigns, lists, and marketing automation"
+        },
+        {
+          "name": "io.github.pipeworx-io/klaviyo",
+          "repo": "https://github.com/pipeworx-io/mcp-klaviyo",
+          "desc": "Klaviyo MCP Pack — wraps the Klaviyo API for email marketing"
+        },
+        {
+          "name": "io.scalably/klaviyo-mcp",
+          "repo": "https://github.com/scalably-io/klaviyo-mcp",
+          "desc": "Klaviyo MCP: campaigns, flows, segments, metrics, reports, profiles across many accounts. 24 tools."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "hits": []
+    },
+    {
+      "id": 38,
+      "hits": [
+        {
+          "name": "com.getmcpads/pinterest-ads",
+          "repo": "https://github.com/getmcpads-com/pinterest-ads-mcp-server",
+          "desc": "Pinterest Ads: 26 read tools and 5 write tools that preview before they apply."
+        },
+        {
+          "name": "com.getmcpads/pinterest-ads",
+          "repo": "https://github.com/getmcpads-com/pinterest-ads-mcp-server",
+          "desc": "Pinterest Ads: 26 read tools and 5 write tools that preview before they apply."
+        },
+        {
+          "name": "com.getmcpads/pinterest-ads",
+          "repo": "https://github.com/get-mcp-ads/pinterest-ads-mcp-server",
+          "desc": "Pinterest Ads MCP server: 28 read tools, 25 opt-in preview-first writes."
+        },
+        {
+          "name": "com.mambabuilt/mcp-pinterest-brand-presence-mapper",
+          "repo": "https://github.com/mambalabsdev/mcp-pinterest-brand-presence-mapper",
+          "desc": "Resolve a company domain to its Pinterest account with exact follower and pin counts."
+        },
+        {
+          "name": "io.github.cesteral/pinterest-mcp",
+          "repo": "https://github.com/cesteral/mcp-open-advertising",
+          "desc": "Pinterest Ads management — CRUD, async reports, targeting, and audience estimates"
+        },
+        {
+          "name": "io.github.cesteral/pinterest-mcp",
+          "repo": "https://github.com/cesteral/mcp-open-advertising",
+          "desc": "Pinterest Ads management — CRUD, async reports, targeting, and audience estimates"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "hits": []
+    },
+    {
+      "id": 40,
+      "hits": [
+        {
+          "name": "io.github.Choppaaahh/sendgrid-mcp-secure",
+          "repo": "https://github.com/Choppaaahh/sendgrid-mcp-secure",
+          "desc": "Security-first SendGrid MCP server: dry-run default, recipient allowlists, rate caps, audit log."
+        },
+        {
+          "name": "io.github.codespar/mcp-sendgrid",
+          "repo": "https://github.com/codespar/mcp-dev-latam",
+          "desc": "MCP server for SendGrid — global transactional + marketing email (Twilio-owned)"
+        },
+        {
+          "name": "io.github.codespar/mcp-sendgrid",
+          "repo": "https://github.com/codespar/mcp-dev-latam",
+          "desc": "MCP server for SendGrid — global transactional + marketing email (Twilio-owned)"
+        },
+        {
+          "name": "io.github.deyikong/sendgrid-mcp",
+          "repo": "https://github.com/deyikong/sendgrid-mcp",
+          "desc": "MCP server for SendGrid's v3 API: email marketing, transactional mail, templates, and analytics."
+        },
+        {
+          "name": "io.github.deyikong/sendgrid-mcp",
+          "repo": "https://github.com/deyikong/sendgrid-mcp",
+          "desc": "MCP server for SendGrid's v3 API: email marketing, transactional mail, templates, and analytics."
+        },
+        {
+          "name": "io.github.deyikong/sendgrid-mcp",
+          "repo": "https://github.com/deyikong/sendgrid-mcp",
+          "desc": "MCP server for SendGrid's v3 API: email marketing, transactional mail, templates, and analytics."
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "hits": [
+        {
+          "name": "ai.gossiper/shopify-admin-mcp",
+          "repo": "",
+          "desc": "Control Shopify Admin tasks with agents or via prompt. Ultra slim integration, fast and secure."
+        },
+        {
+          "name": "app.bestappify/shopify-app-store",
+          "repo": "",
+          "desc": "Shopify App Store intelligence: keyword ranks, competitors, reviews, revenue. Free tier."
+        },
+        {
+          "name": "com.hasdata/shopify",
+          "repo": "https://github.com/HasData/shopify-mcp",
+          "desc": "The public product catalogue and collections of any Shopify storefront, as structured JSON."
+        },
+        {
+          "name": "com.hasdata/shopify",
+          "repo": "https://github.com/HasData/shopify-mcp",
+          "desc": "The public product catalogue and collections of any Shopify storefront, as structured JSON."
+        },
+        {
+          "name": "com.hasdata/shopify",
+          "repo": "https://github.com/HasData/shopify-mcp",
+          "desc": "The public product catalogue and collections of any Shopify storefront, as structured JSON."
+        },
+        {
+          "name": "com.mcparmory/shopify-admin",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage products, orders, customers, inventory, and store configuration"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "hits": [
+        {
+          "name": "io.github.AmitGurbani/mcp-server-woocommerce",
+          "repo": "https://github.com/AmitGurbani/mcp-server-woocommerce",
+          "desc": "82 MCP tools for WooCommerce — products, orders, customers, coupons, shipping, taxes, and more."
+        },
+        {
+          "name": "io.github.AmitGurbani/mcp-server-woocommerce",
+          "repo": "https://github.com/AmitGurbani/mcp-server-woocommerce",
+          "desc": "101 tools for WooCommerce store management with field filtering and guided prompts."
+        },
+        {
+          "name": "io.github.pipeworx-io/woocommerce",
+          "repo": "https://github.com/pipeworx-io/mcp-woocommerce",
+          "desc": "WooCommerce MCP Pack — wraps the WooCommerce REST API v3"
+        },
+        {
+          "name": "io.github.wppoland/woocommerce-mcp",
+          "repo": "https://github.com/wppoland/woocommerce-mcp",
+          "desc": "Read-only MCP server for WordPress + WooCommerce products, orders, sales, and posts."
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "hits": [
+        {
+          "name": "io.github.mrfentmen/bigcommerce-mcp",
+          "repo": "https://github.com/mrfentmen/awesome-mcps",
+          "desc": "MCP server for BigCommerce: products, orders. Needs store API credentials."
+        },
+        {
+          "name": "io.github.mrfentmen/bigcommerce-mcp",
+          "repo": "https://github.com/mrfentmen/awesome-mcps",
+          "desc": "MCP server for BigCommerce: products, orders. Needs store API credentials."
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "hits": []
+    },
+    {
+      "id": 45,
+      "hits": [
+        {
+          "name": "io.github.juan-cinto-infracommerce/magento-cloud",
+          "repo": "https://github.com/juan-cinto-infracommerce/mcp-magento-cloud",
+          "desc": "MCP server wrapping the magento-cloud CLI for database queries, logs, and environment management"
+        },
+        {
+          "name": "io.github.juan-cinto-infracommerce/magento-cloud",
+          "repo": "https://github.com/juan-cinto-infracommerce/mcp-magento-cloud",
+          "desc": "MCP server wrapping the magento-cloud CLI for database queries, logs, and environment management"
+        },
+        {
+          "name": "io.github.juan-cinto-infracommerce/magento-cloud",
+          "repo": "https://github.com/juan-cinto-infracommerce/mcp-magento-cloud",
+          "desc": "MCP server wrapping the magento-cloud CLI for database queries, logs, and environment management"
+        },
+        {
+          "name": "io.github.juan-cinto-infracommerce/magento-cloud",
+          "repo": "https://github.com/juan-cinto-infracommerce/mcp-magento-cloud",
+          "desc": "MCP server for Adobe Commerce Cloud — REST API + SSH, no PHP CLI required"
+        },
+        {
+          "name": "io.github.juan-cinto-infracommerce/magento-cloud",
+          "repo": "https://github.com/juan-cinto-infracommerce/mcp-magento-cloud",
+          "desc": "MCP server for Adobe Commerce Cloud — REST API + SSH, no PHP CLI required"
+        },
+        {
+          "name": "io.github.juan-cinto-infracommerce/magento-cloud",
+          "repo": "https://github.com/juan-cinto-infracommerce/mcp-magento-cloud",
+          "desc": "MCP server for Adobe Commerce Cloud — REST API + SSH, no PHP CLI required"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "hits": [
+        {
+          "name": "io.github.mrfentmen/squarespace-mcp",
+          "repo": "https://github.com/mrfentmen/awesome-mcps",
+          "desc": "MCP server for Squarespace Commerce: products, orders, inventory. Needs an API key."
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "hits": [
+        {
+          "name": "io.usefulapi/ecwid",
+          "repo": "https://github.com/m190/usefulapi-mcp",
+          "desc": "Read store products, orders, customers, categories and coupons; adjust inventory and update orders."
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "hits": [
+        {
+          "name": "io.usefulapi/gumroad",
+          "repo": "https://github.com/m190/usefulapi-mcp",
+          "desc": "Read products, sales, subscribers and offer codes; verify, enable and disable product licenses."
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "hits": []
+    },
+    {
+      "id": 50,
+      "hits": []
+    },
+    {
+      "id": 51,
+      "hits": [
+        {
+          "name": "io.scalably/dataforseo-mcp",
+          "repo": "https://github.com/scalably-io/dataforseo-mcp",
+          "desc": "DataForSEO MCP wrapper: searchable API docs plus normalized calls to the official server. 4 tools."
+        },
+        {
+          "name": "io.scalably/dataforseo-mcp",
+          "repo": "https://github.com/scalably-io/dataforseo-mcp",
+          "desc": "DataForSEO MCP wrapper: searchable API docs plus normalized calls to the official server. 4 tools."
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "hits": []
+    },
+    {
+      "id": 53,
+      "hits": [
+        {
+          "name": "com.jojapi/ahrefs",
+          "repo": "",
+          "desc": "Ahrefs: Ahrefs API: SEO powerhouse featuring keyword research, backlink analysis, and SERP tracking."
+        },
+        {
+          "name": "com.mcparmory/ahrefs",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Analyze domain authority, backlinks, traffic, and keyword rankings for SEO intelligence"
+        },
+        {
+          "name": "com.mcparmory/ahrefs",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Analyze domain authority, backlinks, traffic, and keyword rankings for SEO intelligence"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "hits": []
+    },
+    {
+      "id": 55,
+      "hits": [
+        {
+          "name": "com.apify/apify-mcp-server",
+          "repo": "https://github.com/apify/apify-mcp-server",
+          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "repo": "https://github.com/apify/apify-mcp-server",
+          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "repo": "https://github.com/apify/apify-mcp-server",
+          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "repo": "https://github.com/apify/apify-mcp-server",
+          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "repo": "https://github.com/apify/apify-mcp-server",
+          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "repo": "https://github.com/apify/apify-mcp-server",
+          "desc": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "hits": [
+        {
+          "name": "com.mcparmory/firecrawl",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Scrape, crawl, and extract structured data from websites at scale"
+        },
+        {
+          "name": "com.mcparmory/firecrawl",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Scrape, crawl, and extract structured data from websites at scale"
+        },
+        {
+          "name": "io.github.Ansarii/firecrawl-stealth-mcp",
+          "repo": "https://github.com/Ansarii/neon-stealth-web-scraper",
+          "desc": "WAF-bypass web scraper and passive URL mapper for AI agents with zero pay-on-fail."
+        },
+        {
+          "name": "io.github.firecrawl/firecrawl-mcp-server",
+          "repo": "https://github.com/firecrawl/firecrawl-mcp-server.git",
+          "desc": "MCP server for Firecrawl — search, scrape, and interact with the web."
+        },
+        {
+          "name": "io.github.firecrawl/firecrawl-mcp-server",
+          "repo": "https://github.com/firecrawl/firecrawl-mcp-server.git",
+          "desc": "MCP server for Firecrawl — search, scrape, and interact with the web."
+        },
+        {
+          "name": "io.github.firecrawl/firecrawl-mcp-server",
+          "repo": "https://github.com/firecrawl/firecrawl-mcp-server.git",
+          "desc": "MCP server for Firecrawl — search, scrape, and interact with the web."
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "hits": []
+    },
+    {
+      "id": 58,
+      "hits": [
+        {
+          "name": "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
+          "repo": "https://github.com/FGC-Shreyansh-Chachaundiya/CodeSherlock-MCP-Server",
+          "desc": "AI-powered static and contextual code analysis MCP server"
+        },
+        {
+          "name": "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
+          "repo": "https://github.com/FGC-Shreyansh-Chachaundiya/CodeSherlock-MCP-Server",
+          "desc": "AI-powered static and contextual code analysis MCP server"
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
+          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
+          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
+          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "repo": "https://github.com/jcucci/dotnet-sherlock-mcp",
+          "desc": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "hits": [
+        {
+          "name": "com.mambabuilt/mcp-email-waterfall-orchestrator",
+          "repo": "https://github.com/mambalabsdev/mcp-email-waterfall-orchestrator",
+          "desc": "Finds and verifies work emails on your own provider keys, with real per-provider spend."
+        },
+        {
+          "name": "com.mambabuilt/mcp-email-waterfall-orchestrator",
+          "repo": "https://github.com/mambalabsdev/mcp-email-waterfall-orchestrator",
+          "desc": "Finds and verifies work emails on your own provider keys, with real per-provider spend."
+        },
+        {
+          "name": "io.github.waterfallbridge/mcp",
+          "repo": "https://github.com/Icelemon27/Bridge",
+          "desc": "Run waterfall/bridge variance analysis on the WaterfallBridge web app via browser automation."
+        },
+        {
+          "name": "io.github.waterfallbridge/mcp",
+          "repo": "https://github.com/Icelemon27/Bridge",
+          "desc": "Explain why any KPI or rate metric changed: bridge/variance analysis by driver, from CSV/Excel."
+        },
+        {
+          "name": "io.github.waterfallbridge/mcp",
+          "repo": "https://github.com/Icelemon27/Bridge",
+          "desc": "Explain why any KPI or rate metric changed: bridge/variance analysis by driver, from CSV/Excel."
+        },
+        {
+          "name": "io.github.waterfallbridge/mcp",
+          "repo": "https://github.com/Icelemon27/Bridge",
+          "desc": "Explain why any KPI or rate metric changed: bridge/variance analysis by driver, from CSV/Excel."
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "hits": [
+        {
+          "name": "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+          "repo": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push",
+          "desc": "Push enriched leads into an Instantly or Smartlead campaign, with ICP gating and dedupe."
+        },
+        {
+          "name": "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+          "repo": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push",
+          "desc": "Push enriched leads into an Instantly or Smartlead campaign, with ICP gating and dedupe."
+        },
+        {
+          "name": "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+          "repo": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push",
+          "desc": "Push enriched leads into an Instantly or Smartlead campaign, with ICP gating and dedupe."
+        },
+        {
+          "name": "io.github.clay-swartz/pennyrail",
+          "repo": "https://github.com/clay-swartz/pennyrail",
+          "desc": "Find and quote agent capabilities, then pay only the selected x402 execution URL."
+        },
+        {
+          "name": "io.github.claymore666/ccu-mcp",
+          "repo": "https://github.com/claymore666/ccu-mcp",
+          "desc": "MCP server for controlling HomeMatic smart home devices via the CCU JSON-RPC API"
+        },
+        {
+          "name": "io.github.claymore666/ccu-mcp",
+          "repo": "https://github.com/claymore666/ccu-mcp",
+          "desc": "MCP server for controlling HomeMatic smart home devices via the CCU JSON-RPC API"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "hits": [
+        {
+          "name": "ai.smithery/Hint-Services-obsidian-github-mcp",
+          "repo": "https://github.com/Hint-Services/obsidian-github-mcp",
+          "desc": "Connect AI assistants to your GitHub-hosted Obsidian vault to seamlessly access, search, and analy…"
+        },
+        {
+          "name": "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
+          "repo": "https://github.com/saidsef/mcp-github-pr-issue-analyser",
+          "desc": "A Model Context Protocol (MCP) application for automated GitHub PR analysis and issue management.…"
+        },
+        {
+          "name": "ai.smithery/smithery-ai-github",
+          "repo": "https://github.com/smithery-ai/mcp-servers",
+          "desc": "Access the GitHub API, enabling file operations, repository management, search functionality, and…"
+        },
+        {
+          "name": "com.a2awire/data-github-changelog-platform-change-announcement",
+          "repo": "https://github.com/ee324/a2awire",
+          "desc": "GitHub platform changelog feed. $0.01/query. Register in-session — free testnet funds."
+        },
+        {
+          "name": "com.a2awire/data-trending-repository-new-github-repo-discovery",
+          "repo": "https://github.com/ee324/a2awire",
+          "desc": "Fastest-growing new GitHub repos: stars, forks, language, topics, owners. Hourly. ($0.01/q)"
+        },
+        {
+          "name": "com.a2awire/data-trending-repository-new-github-repo-discovery",
+          "repo": "https://github.com/ee324/a2awire",
+          "desc": "Trending GitHub repos: new & rising daily. $0.01/query. Register in-session — free testnet funds."
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "hits": [
+        {
+          "name": "app.vercel.agent-svg-registry/mcp",
+          "repo": "",
+          "desc": "Search SVG metadata and buy licensed commercial SVG exports for coding agents."
+        },
+        {
+          "name": "app.vercel.agentready-rho/agentready",
+          "repo": "",
+          "desc": "Scan any website or MCP server for agent readiness: 0-100 score, a fix per failing check. Free."
+        },
+        {
+          "name": "app.vercel.auditflag-lac/auditflag",
+          "repo": "",
+          "desc": "Search SEC EDGAR for going-concern auditor opinions in real 10-K/10-Q filings."
+        },
+        {
+          "name": "app.vercel.cloakcheck-wheat/cloakcheck",
+          "repo": "",
+          "desc": "Scan a page for hidden prompt-injection payloads targeting AI agents."
+        },
+        {
+          "name": "app.vercel.exploitwatch-kappa/exploitwatch",
+          "repo": "",
+          "desc": "Check dependencies against CISA's real Known Exploited Vulnerabilities feed."
+        },
+        {
+          "name": "app.vercel.filingcheck-bot/filingcheck",
+          "repo": "",
+          "desc": "Real SEC EDGAR filing metrics: margin-of-safety, EPS growth, going-concern flags."
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "hits": [
+        {
+          "name": "app.netlify.agent-rescue-desk/production-triage",
+          "repo": "",
+          "desc": "Read-only triage for n8n, MCP, webhook, and AI agent workflow production failures."
+        },
+        {
+          "name": "app.netlify.gleaming-cassata-d41682/lion-mcp",
+          "repo": "",
+          "desc": "x402-paid MCP data: trend feed + visibility audit. USDC/Base. No API key. No PII."
+        },
+        {
+          "name": "app.netlify.gleaming-cassata-d41682/lion-mcp",
+          "repo": "",
+          "desc": "x402-paid MCP data: trend feed + visibility audit. USDC/Base. No API key. No PII."
+        },
+        {
+          "name": "app.netlify.japan-data-mcp/japan-data-mcp",
+          "repo": "",
+          "desc": "Japanese law, corporation & statistics data as MCP, normalized to English with source attribution."
+        },
+        {
+          "name": "app.netlify.meinlem/nexo",
+          "repo": "",
+          "desc": "Fórum persistente para agentes, assembleias, jogos multiagente e universo literário Meinlem."
+        },
+        {
+          "name": "app.netlify.meinlem/nexo",
+          "repo": "",
+          "desc": "Fórum persistente com conversa MCP, assembleias, jogos multiagente e universo Meinlem."
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "hits": [
+        {
+          "name": "com.cloudflare.mcp/mcp",
+          "repo": "https://github.com/cloudflare/mcp-server-cloudflare",
+          "desc": "Cloudflare MCP servers"
+        },
+        {
+          "name": "com.jojapi/bypass-cloudflare-api",
+          "repo": "",
+          "desc": "Bypass Cloudflare API: A powerful scraping API designed to bypass Cloudflare protection."
+        },
+        {
+          "name": "com.jojapi/cloudflare-solver",
+          "repo": "",
+          "desc": "Cloudflare Solver: Scraping API designed to bypass Cloudflare protection."
+        },
+        {
+          "name": "com.trycloudflare.annotated-lot-operational-tourism/kai-agi",
+          "repo": "",
+          "desc": "AI predictions, model comparison, research briefs and web search from an autonomous AI"
+        },
+        {
+          "name": "com.trycloudflare.candy-josh-writers-balance/yultrace-audit",
+          "repo": "",
+          "desc": "Audit a verified EVM contract with Slither (via Blockscout)."
+        },
+        {
+          "name": "com.trycloudflare.candy-josh-writers-balance/yultrace-audit",
+          "repo": "",
+          "desc": "Audit a verified EVM contract with Slither (via Blockscout). Remote + pip install variants."
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "hits": [
+        {
+          "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+          "repo": "https://github.com/MisterSandFR/Supabase-MCP-SelfHosted",
+          "desc": "Query and manage your Supabase database directly from your workspace. Execute SQL statements, brow…"
+        },
+        {
+          "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+          "repo": "https://github.com/MisterSandFR/Supabase-MCP-SelfHosted",
+          "desc": "Manage Supabase projects end to end across database, auth, storage, realtime, and migrations. Moni…"
+        },
+        {
+          "name": "ai.smithery/pinion05-supabase-mcp-lite",
+          "repo": "https://github.com/pinion05/supabase-mcp-lite",
+          "desc": "Same functionality, consuming only 1/20 of the context window tokens."
+        },
+        {
+          "name": "ai.smithery/pinion05-supabase-mcp-lite",
+          "repo": "https://github.com/pinion05/supabase-mcp-lite",
+          "desc": "Same functionality, consuming only 1/20 of the context window tokens."
+        },
+        {
+          "name": "ai.waystation/supabase",
+          "repo": "https://github.com/waystation-ai/mcp",
+          "desc": "Connect to your Supabase database to query data and schemas."
+        },
+        {
+          "name": "com.supabase/mcp",
+          "repo": "https://github.com/supabase/mcp",
+          "desc": "MCP server for interacting with the Supabase platform"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "hits": [
+        {
+          "name": "io.github.neo4j-contrib/gds-agent",
+          "repo": "https://github.com/neo4j-contrib/gds-agent",
+          "desc": "Neo4j Graph Data Science MCP server"
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
+          "desc": "MCP server for Neo4j Aura Database Instance Manager."
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
+          "desc": "MCP server for Neo4j Aura Database Instance Manager."
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
+          "desc": "MCP server for Neo4j Aura Database Instance Manager."
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
+          "desc": "MCP server for Neo4j Aura Database Instance Manager."
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-cypher",
+          "repo": "https://github.com/neo4j-contrib/mcp-neo4j",
+          "desc": "A simple Neo4j MCP server that allows you to run Cypher queries against a Neo4j database."
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "hits": [
+        {
+          "name": "io.github.Snowflake-Labs/mcp",
+          "repo": "https://github.com/Snowflake-Labs/mcp",
+          "desc": "MCP Server for Snowflake from Snowflake Labs"
+        },
+        {
+          "name": "io.github.Snowflake-Labs/mcp",
+          "repo": "https://github.com/Snowflake-Labs/mcp",
+          "desc": "MCP Server for Snowflake from Snowflake Labs"
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "repo": "https://github.com/nsphung/mcp-snowflake-server",
+          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "repo": "https://github.com/nsphung/mcp-snowflake-server",
+          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "repo": "https://github.com/nsphung/mcp-snowflake-server",
+          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "repo": "https://github.com/nsphung/mcp-snowflake-server",
+          "desc": "A Snowflake MCP server — SQL queries, schema exploration, and data insights for AI assistants"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "hits": [
+        {
+          "name": "ai.getvda/elasticsearch-mongodb-redis-stack-generator-elasticsearch-elasticsearch",
+          "repo": "",
+          "desc": "Elasticsearch + MongoDB + Redis Stack Generator (Elasticsearch/Elasticsearch)"
+        },
+        {
+          "name": "ai.getvda/memcached-mongodb-redis-compose-generator",
+          "repo": "",
+          "desc": "Memcached + MongoDB + Redis Compose Generator"
+        },
+        {
+          "name": "ai.getvda/rabbitmq-elasticsearch-mongodb-stack-generator",
+          "repo": "",
+          "desc": "RabbitMQ + Elasticsearch + MongoDB Stack Generator"
+        },
+        {
+          "name": "ai.getvda/rabbitmq-postgres-mongodb-stack-generator",
+          "repo": "",
+          "desc": "RabbitMQ + Postgres + MongoDB Stack Generator"
+        },
+        {
+          "name": "io.github.infoinlet-marketplace/mcp-mongodb",
+          "repo": "https://github.com/infoinlet-marketplace/marketplace",
+          "desc": "Read-only MongoDB for AI agents — find, aggregate (no write stages), count, stats."
+        },
+        {
+          "name": "io.github.mongodb-js/mongodb-mcp-server",
+          "repo": "https://github.com/mongodb-js/mongodb-mcp-server",
+          "desc": "MongoDB Model Context Protocol Server"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "hits": [
+        {
+          "name": "com.mcparmory/datadog",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Monitor infrastructure, manage agents and deployments, track metrics, logs, and events"
+        },
+        {
+          "name": "com.mcparmory/datadog",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Monitor infrastructure, manage agents and deployments, track metrics, logs, and events"
+        },
+        {
+          "name": "io.github.TANTIOPE/datadog-mcp",
+          "repo": "https://github.com/tantiope/datadog-mcp-server",
+          "desc": "Full Datadog API access: monitors, logs, metrics, traces, dashboards, and observability tools"
+        },
+        {
+          "name": "io.github.us-all/datadog",
+          "repo": "https://github.com/us-all/datadog-mcp-server",
+          "desc": "Datadog MCP — 165 tools for metrics, monitors, logs, APM, RUM, incidents, CI/CD, fleet"
+        },
+        {
+          "name": "io.github.us-all/datadog",
+          "repo": "https://github.com/us-all/datadog-mcp-server",
+          "desc": "Datadog MCP — 165 tools for metrics, monitors, logs, APM, RUM, incidents, CI/CD, fleet"
+        },
+        {
+          "name": "io.github.us-all/datadog",
+          "repo": "https://github.com/us-all/datadog-mcp-server",
+          "desc": "Datadog MCP — 165 tools for metrics, monitors, logs, APM, RUM, incidents, CI/CD, fleet"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "hits": [
+        {
+          "name": "com.0xpi.sdsentry/sds-lookup",
+          "repo": "",
+          "desc": "Free safety data sheet (SDS) lookup by product name, plus an OSHA HazCom readiness check."
+        },
+        {
+          "name": "com.mcparmory/sentry",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Track errors, manage performance alerts, and configure dashboards and monitors"
+        },
+        {
+          "name": "com.mcparmory/sentry",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Track errors, manage performance alerts, and configure dashboards and monitors"
+        },
+        {
+          "name": "com.mcparmory/sentry",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Track errors, manage performance alerts, and configure dashboards and monitors"
+        },
+        {
+          "name": "com.regsentry/tracking-inspector",
+          "repo": "",
+          "desc": "Inspect a public site's tracking signals, grade consent evidence, and get remediation playbooks."
+        },
+        {
+          "name": "io.github.Jackxiaozhiren/datasentry",
+          "repo": "https://github.com/Jackxiaozhiren/datasentry",
+          "desc": "Local-first MCP server for data-quality discovery, evidence, drift, and controlled repair."
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "hits": [
+        {
+          "name": "ai.smithery/smithery-notion",
+          "repo": "https://github.com/smithery-ai/mcp-servers",
+          "desc": "A Notion workspace is a collaborative environment where teams can organize work, manage projects,…"
+        },
+        {
+          "name": "com.mcparmory/notion",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create, update, and manage pages, databases, and workspace users"
+        },
+        {
+          "name": "com.mcparmory/notion",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create, update, and manage pages, databases, and workspace users"
+        },
+        {
+          "name": "com.notion/mcp",
+          "repo": "https://github.com/makenotion/notion-next",
+          "desc": "Official Notion MCP server"
+        },
+        {
+          "name": "com.notion/mcp",
+          "repo": "",
+          "desc": "Official Notion MCP server"
+        },
+        {
+          "name": "io.github.ai-aviate/better-notion",
+          "repo": "https://github.com/ai-aviate/better-mcp-notion",
+          "desc": "Operate Notion with a single Markdown document — read, create, and update pages in one call."
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "hits": [
+        {
+          "name": "ai.waystation/airtable",
+          "repo": "https://github.com/waystation-ai/mcp",
+          "desc": "Access and manage your Airtable bases, tables, and records seamlessly"
+        },
+        {
+          "name": "com.airtable/mcp",
+          "repo": "",
+          "desc": "Official Airtable MCP server — database and operations layer for agents."
+        },
+        {
+          "name": "com.mcparmory/airtable",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create, read, update, and delete records in Airtable bases and tables"
+        },
+        {
+          "name": "com.mcparmory/airtable",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create, read, update, and delete records in Airtable bases and tables"
+        },
+        {
+          "name": "io.github.Automations-Project/airtable-user-mcp",
+          "repo": "https://github.com/Automations-Project/VSCode-Airtable-Formula",
+          "desc": "Manage Airtable bases: schema, field CRUD, views, formula validation, extensions"
+        },
+        {
+          "name": "io.github.domdomegg/airtable-mcp-server",
+          "repo": "https://github.com/domdomegg/airtable-mcp-server.git",
+          "desc": "Read and write access to Airtable database schemas, tables, and records."
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "hits": [
+        {
+          "name": "app.linear/linear",
+          "repo": "",
+          "desc": "MCP server for Linear project management and issue tracking"
+        },
+        {
+          "name": "app.linear/linear",
+          "repo": "",
+          "desc": "MCP server for Linear project management and issue tracking"
+        },
+        {
+          "name": "io.github.Evozim/linear-broker",
+          "repo": "",
+          "desc": "Integrates agents with Linear software development workflows."
+        },
+        {
+          "name": "io.github.adelaidasofia/linear-mcp",
+          "repo": "https://github.com/adelaidasofia/linear-mcp",
+          "desc": "Multi-workspace Linear MCP — PAT auth, 57 tools + 3 prompts, substrate enforcement, drop-in."
+        },
+        {
+          "name": "io.github.pipeworx-io/linear",
+          "repo": "https://github.com/pipeworx-io/mcp-linear",
+          "desc": "Linear MCP — wraps the Linear GraphQL API (OAuth)"
+        },
+        {
+          "name": "io.github.sadri-dridi/linear-id-ok",
+          "repo": "https://github.com/sadri-dridi/named-mcp-utilities",
+          "desc": "LIN-123 identifier shape, value discarded"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "hits": [
+        {
+          "name": "ai.waystation/jira",
+          "repo": "https://github.com/waystation-ai/mcp",
+          "desc": "Track issues, manage projects, and streamline workflows in Jira."
+        },
+        {
+          "name": "com.mcparmory/atlassian-jira",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create, search, and manage issues, projects, and team workflows"
+        },
+        {
+          "name": "com.mcparmory/atlassian-jira",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Create, search, and manage issues, projects, and team workflows"
+        },
+        {
+          "name": "io.github.Kujirafu/agentlore",
+          "repo": "https://github.com/Kujirafu/agentlore",
+          "desc": "AI-verified knowledge base with trust scoring, temporal facts, and skill cards."
+        },
+        {
+          "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
+          "repo": "https://github.com/MrRefactoring/atlassian-dc-mcp",
+          "desc": "MCP server for Atlassian Jira Data Center - search, view, and create issues"
+        },
+        {
+          "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
+          "repo": "https://github.com/MrRefactoring/atlassian-dc-mcp",
+          "desc": "MCP server for Atlassian Jira Data Center - search, view, and create issues"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "hits": [
+        {
+          "name": "com.mcparmory/asana",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage tasks, projects, portfolios, and team workflows"
+        },
+        {
+          "name": "com.mcparmory/asana",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage tasks, projects, portfolios, and team workflows"
+        },
+        {
+          "name": "io.github.asanabrial/leteo",
+          "repo": "https://github.com/asanabrial/leteo",
+          "desc": "Persistent memory for AI coding agents: one Rust binary, one local SQLite database."
+        },
+        {
+          "name": "io.github.asanabrial/leteo",
+          "repo": "https://github.com/asanabrial/leteo",
+          "desc": "Persistent memory for AI coding agents: one Rust binary, one local SQLite database."
+        },
+        {
+          "name": "io.github.asanabrial/leteo",
+          "repo": "https://github.com/asanabrial/leteo",
+          "desc": "Persistent memory for AI coding agents: one Rust binary, one local SQLite database."
+        },
+        {
+          "name": "io.github.hasanaydin7/neuralng",
+          "repo": "https://github.com/hasanaydin7/NeuralTech",
+          "desc": "Read-only discovery for NeuralNg Angular components, APIs, packages, icons and theme recipes."
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "hits": [
+        {
+          "name": "com.monday/monday.com",
+          "repo": "https://github.com/mondaycom/mcp",
+          "desc": "MCP server for monday.com integration."
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "hits": [
+        {
+          "name": "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+          "repo": "https://github.com/skr-cloudify/clickup-mcp-server-new",
+          "desc": "Manage your ClickUp workspace by creating, updating, and organizing tasks, lists, folders, and tag…"
+        },
+        {
+          "name": "com.mcparmory/clickup",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage tasks, lists, checklists, comments, and project workflows"
+        },
+        {
+          "name": "com.mcparmory/clickup",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage tasks, lists, checklists, comments, and project workflows"
+        },
+        {
+          "name": "io.github.cvrt-jh/clickup-mcp",
+          "repo": "https://github.com/cvrt-jh/clickup-mcp",
+          "desc": "Lightweight ClickUp MCP server - 35 tools, token-optimized (95% smaller responses)"
+        },
+        {
+          "name": "io.github.cvrt-jh/clickup-mcp",
+          "repo": "https://github.com/cvrt-jh/clickup-mcp",
+          "desc": "Lightweight ClickUp MCP server - 37 tools, token-optimized (95% smaller responses)"
+        },
+        {
+          "name": "io.github.helbertparanhos/clickup-mcp-pro",
+          "repo": "https://github.com/helbertparanhos/clickup-mcp-pro",
+          "desc": "The most complete ClickUp MCP server — 161 tools + clickup_raw for the full v2/v3 API."
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "hits": [
+        {
+          "name": "com.iterruptivo.ecodashboard/ecoplaza-mcp",
+          "repo": "",
+          "desc": "Read-only MCP for EcoPlaza, Peruvian commercial real estate: projects, units, advisor contact."
+        },
+        {
+          "name": "com.mcparmory/codacy",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Analyze code quality, security issues, and coverage across repositories"
+        },
+        {
+          "name": "com.mcparmory/codacy",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Analyze code quality, security issues, and coverage across repositories"
+        },
+        {
+          "name": "io.github.ChocoData-com/amazon-scraper-api-mcp",
+          "repo": "https://github.com/ChocoData-com/amazon-scraper-api-mcp",
+          "desc": "Scrape Amazon products, search, and async batch ASIN lookups across 20 marketplaces"
+        },
+        {
+          "name": "io.github.ajemba/codasms-mcp",
+          "repo": "https://github.com/ajemba/codasms-mcp",
+          "desc": "Receive one-time SMS/OTP verification codes via the CODASMS API: get a number, wait, release."
+        },
+        {
+          "name": "io.github.harshitAgr/codabench-mcp",
+          "repo": "https://github.com/harshitAgr/codabench-mcp",
+          "desc": "MCP server for the Codabench REST API — drives a full ML-benchmark participant workflow."
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "hits": [
+        {
+          "name": "io.github.christianclaudio/smartsheet-rm",
+          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
+          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
+        },
+        {
+          "name": "io.github.christianclaudio/smartsheet-rm",
+          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
+          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
+        },
+        {
+          "name": "io.github.christianclaudio/smartsheet-rm",
+          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
+          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
+        },
+        {
+          "name": "io.github.christianclaudio/smartsheet-rm",
+          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
+          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
+        },
+        {
+          "name": "io.github.christianclaudio/smartsheet-rm",
+          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
+          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
+        },
+        {
+          "name": "io.github.christianclaudio/smartsheet-rm",
+          "repo": "https://github.com/christianclaudio/mcp-server-smartsheet-rm",
+          "desc": "MCP server for Smartsheet Resource Management (10,000ft API) time tracking and scheduling."
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "hits": [
+        {
+          "name": "io.github.AnshumanAtrey/linkedin-harvester",
+          "repo": "https://github.com/AnshumanAtrey/linkedin-harvester",
+          "desc": "LinkedIn Profile Finder - Email to LinkedIn URL Lookup"
+        },
+        {
+          "name": "io.github.AnshumanAtrey/theharvester-osint",
+          "repo": "https://github.com/AnshumanAtrey/theharvester-osint",
+          "desc": "theHarvester Cloud - Email & Subdomain Finder"
+        },
+        {
+          "name": "io.github.Evozim/crypto-tax-loss-harvester-mcp",
+          "repo": "",
+          "desc": "Premium agentic endpoint for crypto-tax-loss-harvester-mcp."
+        },
+        {
+          "name": "io.github.hulin42/keynote-harvest-mcp",
+          "repo": "https://github.com/hulin42/keynote-harvest-mcp",
+          "desc": "Harvest Keynote and PDF slide decks into previews, text, image assets, and a manifest for agents."
+        },
+        {
+          "name": "io.github.virgilvox/vue-harvest",
+          "repo": "https://github.com/virgilvox/vue-harvest",
+          "desc": "Extract reusable component libraries and design tokens from Vue applications"
+        },
+        {
+          "name": "io.github.virgilvox/vue-harvest",
+          "repo": "https://github.com/virgilvox/vue-harvest",
+          "desc": "Extract reusable component libraries and design tokens from Vue applications"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "hits": [
+        {
+          "name": "app.vercel.stripecheckup/stripecheckup",
+          "repo": "",
+          "desc": "Scan pasted Stripe webhook/checkout code for common integration bugs."
+        },
+        {
+          "name": "com.stripe/mcp",
+          "repo": "https://github.com/stripe/agent-toolkit",
+          "desc": "MCP server integrating with Stripe - tools for customers, products, payments, and more."
+        },
+        {
+          "name": "eu.nordicmcp/stripe",
+          "repo": "https://github.com/pefman/nordicmcp.eu",
+          "desc": "Hosted Stripe MCP server: 18 tools for payments, subscriptions, invoicing, customers, and reporting."
+        },
+        {
+          "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+          "repo": "https://github.com/CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+          "desc": "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic"
+        },
+        {
+          "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+          "repo": "https://github.com/CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+          "desc": "MEOK Stripe ACP Checkout MCP — ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic"
+        },
+        {
+          "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+          "repo": "https://github.com/CSOAI-ORG/stripe-billing-mcp",
+          "desc": "Stripe Billing automation via MCP. Includes create customer, search customers, create subscr..."
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "hits": [
+        {
+          "name": "io.github.pipeworx-io/plaid",
+          "repo": "https://github.com/pipeworx-io/mcp-plaid",
+          "desc": "Plaid MCP — wraps Plaid Sandbox API (sandbox.plaid.com)"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "hits": [
+        {
+          "name": "io.github.Alejandrehl/kainext-binance-mcp",
+          "repo": "",
+          "desc": "Security-first Binance Spot MCP + honest crypto analyst. 25 tools, 5 prompts, human-gated orders."
+        },
+        {
+          "name": "io.github.Evozim/binance-orderbook-mcp",
+          "repo": "",
+          "desc": "Premium agentic endpoint for binance-orderbook-mcp."
+        },
+        {
+          "name": "io.github.junct-bot/binance-mcp",
+          "repo": "https://github.com/junct-bot/binance-mcp",
+          "desc": "Binance MCP server — 340 tools for AI agent integration. Hosted by Junct."
+        },
+        {
+          "name": "io.github.junct-bot/binance-mcp",
+          "repo": "https://github.com/junct-bot/binance-mcp",
+          "desc": "Binance exchange data - 340 tools for market data, trading pairs, order books"
+        },
+        {
+          "name": "io.github.junct-bot/binance-mcp",
+          "repo": "https://github.com/junct-bot/binance-mcp",
+          "desc": "Binance - 340 tools for market data, order books, and trading pairs"
+        },
+        {
+          "name": "io.github.mrfentmen/binance-market-mcp",
+          "repo": "https://github.com/mrfentmen/binance-market-mcp",
+          "desc": "Live crypto prices, tickers, and candlestick charts from Binance public data. No key required."
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "hits": [
+        {
+          "name": "com.obsmetrics.paygent/agents",
+          "repo": "",
+          "desc": "Pay-per-call safety guards for AI agents: injection, tool-call, signing, secret, x402-trust."
+        },
+        {
+          "name": "io.github.djautomd-lab/aipaygent",
+          "repo": "",
+          "desc": "Claude-powered AI tools: research, write, code, analyze, translate, debate, pitch, score, and more."
+        },
+        {
+          "name": "io.github.djautomd-lab/aipaygent",
+          "repo": "",
+          "desc": "Claude-powered AI tools: research, write, code, analyze, translate, debate, pitch, score, and more."
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "hits": [
+        {
+          "name": "io.github.Ipayx-stellar/fx-audit",
+          "repo": "",
+          "desc": "Forensic FX audit. Detects hidden bank markups in real time. Returns spread bps + audit score 1-10."
+        },
+        {
+          "name": "io.github.iPAYX-Technologies/mcp-fx-audit",
+          "repo": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+          "desc": "FX forensic audit MCP. Detects hidden bank markups on cross-border payments. FINTRAC MSB."
+        },
+        {
+          "name": "io.github.iPAYX-Technologies/mcp-fx-audit",
+          "repo": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+          "desc": "FX forensic audit MCP. Detects hidden bank markups on cross-border payments. FINTRAC MSB."
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "hits": [
+        {
+          "name": "com.caribooks/quickbooks",
+          "repo": "",
+          "desc": "QuickBooks Online in Claude and ChatGPT: 161 tools, full ledger, multi-company, Canada + US, FR/EN."
+        },
+        {
+          "name": "com.caribooks/quickbooks",
+          "repo": "",
+          "desc": "QuickBooks Online in Claude and ChatGPT: 209 tools, full ledger, multi-company, Canada + US, FR/EN."
+        },
+        {
+          "name": "com.caribooks/quickbooks",
+          "repo": "",
+          "desc": "QuickBooks Online in Claude and ChatGPT: 211 tools, full ledger, multi-company, Canada + US, FR/EN."
+        },
+        {
+          "name": "com.caribooks/quickbooks",
+          "repo": "",
+          "desc": "QuickBooks Online in Claude and ChatGPT: 221 tools, full ledger, multi-company, Canada + US, FR/EN."
+        },
+        {
+          "name": "com.devart/mcp-quickbooks",
+          "repo": "https://github.com/devart-ai-connectivity/devart-mcp-server-quickbooks-online",
+          "desc": "Schema-aware read/write access to QuickBooks Online through Devart dotConnect ADO.NET data provider."
+        },
+        {
+          "name": "io.github.NyxToolsDev/quickbooks-mcp-server",
+          "repo": "https://github.com/NyxToolsDev/quickbooks-mcp-server",
+          "desc": "Connect Claude to QuickBooks Online — query finances, create invoices, run reports"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "hits": [
+        {
+          "name": "com.getboxkite/xero-backup-export",
+          "repo": "",
+          "desc": "Complete read-only backup and export of Xero accounting data as a ZIP plus a manifest."
+        },
+        {
+          "name": "com.getboxkite/xero-backup-export",
+          "repo": "",
+          "desc": "Complete read-only backup and export of Xero accounting data as a ZIP plus a manifest."
+        },
+        {
+          "name": "com.pilot.meridian/xero-connector",
+          "repo": "",
+          "desc": "Connect Xero to AI agents with secure read or write access across multiple organisations."
+        },
+        {
+          "name": "io.github.Servosity/xero-mcp",
+          "repo": "https://github.com/servosity/msp-skills",
+          "desc": "Every Xero Accounting read plus a local SQLite ledger  -  aging, reconciliation, and GL tie-out"
+        },
+        {
+          "name": "io.github.Servosity/xero-mcp",
+          "repo": "https://github.com/servosity/msp-skills",
+          "desc": "Every Xero Accounting read plus a local SQLite ledger  -  aging, reconciliation, and GL tie-out"
+        },
+        {
+          "name": "io.github.Servosity/xero-mcp",
+          "repo": "https://github.com/servosity/msp-skills",
+          "desc": "Every Xero Accounting read plus a local SQLite ledger  -  aging, reconciliation, and GL tie-out"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "hits": [
+        {
+          "name": "io.github.PalabreX/runpay",
+          "repo": "https://github.com/PalabreX/runpay-mcp",
+          "desc": "Stripe-native marketplace where AI agents discover and pay per call for API services."
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "hits": [
+        {
+          "name": "ai.adramp/google-ads",
+          "repo": "https://github.com/stylemi-co/adramp",
+          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
+        },
+        {
+          "name": "ai.adramp/google-ads",
+          "repo": "https://github.com/stylemi-co/adramp",
+          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
+        },
+        {
+          "name": "ai.adramp/google-ads",
+          "repo": "",
+          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
+        },
+        {
+          "name": "ai.adramp/google-ads",
+          "repo": "",
+          "desc": "Google Ads MCP server — manage campaigns, keywords, and metrics."
+        },
+        {
+          "name": "com.mcparmory/ramp",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage expenses, corporate cards, accounts payable, and accounting integrations"
+        },
+        {
+          "name": "com.mcparmory/ramp",
+          "repo": "https://github.com/mcparmory/registry",
+          "desc": "Manage expenses, corporate cards, accounts payable, and accounting integrations"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "hits": []
+    },
+    {
+      "id": 91,
       "hits": [
         {
           "name": "io.github.Pantheon-Security/notebooklm-mcp-secure",
@@ -2004,11 +2171,42 @@
       ]
     },
     {
-      "id": "92",
-      "hits": []
+      "id": 92,
+      "hits": [
+        {
+          "name": "ai.painspotter/painspotter",
+          "repo": "https://github.com/archoor/reddit-insight",
+          "desc": "AI-analyzed startup opportunities from Reddit, Hacker News & Product Hunt, with commercial scores."
+        },
+        {
+          "name": "ai.seaotter/otterscore",
+          "repo": "",
+          "desc": "Hostile-by-default critic that grades AI agent output against your acceptance policy."
+        },
+        {
+          "name": "ai.seaotter/otterscore",
+          "repo": "",
+          "desc": "SeaOtter dispatches work to a Superteam and checks the delivered outcome before money moves."
+        },
+        {
+          "name": "ai.seaotter/otterscore",
+          "repo": "",
+          "desc": "SeaOtter dispatches work to a Superteam and checks the delivered outcome before money moves."
+        },
+        {
+          "name": "ai.seaotter/otterscore",
+          "repo": "",
+          "desc": "SeaOtter dispatches work to a Superteam and checks the delivered outcome before money moves."
+        },
+        {
+          "name": "ai.seaotter/otterscore",
+          "repo": "",
+          "desc": "SeaOtter dispatches work to a Superteam and checks the delivered outcome before money moves."
+        }
+      ]
     },
     {
-      "id": "93",
+      "id": 93,
       "hits": [
         {
           "name": "ai.fathom.api/mcp",
@@ -2043,7 +2241,7 @@
       ]
     },
     {
-      "id": "94",
+      "id": 94,
       "hits": [
         {
           "name": "com.consensus-analytics/mcp",
@@ -2078,11 +2276,11 @@
       ]
     },
     {
-      "id": "95",
+      "id": 95,
       "hits": []
     },
     {
-      "id": "96",
+      "id": 96,
       "hits": [
         {
           "name": "io.devinbox/devinbox",
@@ -2117,7 +2315,7 @@
       ]
     },
     {
-      "id": "97",
+      "id": 97,
       "hits": [
         {
           "name": "app.higgsfield.mizan-bazar/mizan",
@@ -2127,12 +2325,78 @@
       ]
     },
     {
-      "id": "98",
+      "id": 98,
+      "hits": [
+        {
+          "name": "ai.smithery/hustcc-mcp-mermaid",
+          "repo": "https://github.com/hustcc/mcp-mermaid",
+          "desc": "Generate dynamic Mermaid diagrams and charts with AI assistance. Customize styles and export diagr…"
+        },
+        {
+          "name": "com.mermaidchart/mermaid-mcp",
+          "repo": "https://github.com/Mermaid-Chart/mermaid-mcp",
+          "desc": "MCP server for Mermaid diagram validation and rendering"
+        },
+        {
+          "name": "io.github.adewale/agentic-mermaid",
+          "repo": "https://github.com/adewale/agentic-mermaid",
+          "desc": "Render, verify, describe, and safely edit Mermaid diagrams through MCP."
+        },
+        {
+          "name": "io.github.adewale/agentic-mermaid",
+          "repo": "https://github.com/adewale/agentic-mermaid",
+          "desc": "Render, verify, describe, and safely edit Mermaid diagrams through MCP."
+        },
+        {
+          "name": "io.github.adewale/agentic-mermaid",
+          "repo": "https://github.com/adewale/agentic-mermaid",
+          "desc": "Render, verify, describe, and safely edit Mermaid diagrams through MCP."
+        },
+        {
+          "name": "io.github.adewale/agentic-mermaid",
+          "repo": "https://github.com/adewale/agentic-mermaid",
+          "desc": "Render, verify, describe, and safely edit Mermaid diagrams through MCP."
+        }
+      ]
+    },
+    {
+      "id": 99,
       "hits": []
     },
     {
-      "id": "99",
-      "hits": []
+      "id": 100,
+      "hits": [
+        {
+          "name": "com.purplegrain/api",
+          "repo": "https://github.com/purplegrain/api",
+          "desc": "Search and book agricultural contracting services on the Purple Grain marketplace."
+        },
+        {
+          "name": "io.github.Evozim/chicago-grain-prices-mcp",
+          "repo": "",
+          "desc": "Premium agentic endpoint for chicago-grain-prices-mcp."
+        },
+        {
+          "name": "io.github.pattrnlabs/grain",
+          "repo": "https://github.com/pattrnlabs/grain",
+          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
+        },
+        {
+          "name": "io.github.pattrnlabs/grain",
+          "repo": "https://github.com/pattrnlabs/grain",
+          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
+        },
+        {
+          "name": "io.github.pattrnlabs/grain",
+          "repo": "https://github.com/pattrnlabs/grain",
+          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
+        },
+        {
+          "name": "io.github.pattrnlabs/grain",
+          "repo": "https://github.com/pattrnlabs/grain",
+          "desc": "Run SQL queries and inspect database schemas through safe, visible MCP tools."
+        }
+      ]
     }
   ]
 }

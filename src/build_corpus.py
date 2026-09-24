@@ -358,6 +358,7 @@ def main() -> None:
 
     # 2. agent reports (live-verified rows win wholesale)
     n_agent = 0
+    reported_ids: set[int] = set()
     for f in sorted(REPORTS.glob("*.json")):
         if f.name.startswith("mcp_sweep"):
             continue
@@ -365,6 +366,9 @@ def main() -> None:
             rid = int(rec["id"])
             if rid not in rows:
                 continue
+            reported_ids.add(rid)
+            ev = rec.get("evidence", [])
+            ev_str = ev if isinstance(ev, str) else ",".join(ev)
             rows[rid].update({
                 "does": rec.get("does", rows[rid]["does"]),
                 "auth": rec.get("auth", rows[rid]["auth"]),
@@ -373,23 +377,46 @@ def main() -> None:
                 "gate_detail": rec.get("gate_detail", ""),
                 "surface": rec.get("surface", rows[rid]["surface"]),
                 "breadth": rec.get("breadth", ""),
+                "mcp": rec.get("mcp", rows[rid].get("mcp", "")),
+                "mcp_evidence": rec.get("mcp_evidence", ""),
                 "verdict": rec.get("verdict", rows[rid]["verdict"]),
                 "blocker": rec.get("blocker") or "",
-                "evidence": ",".join(rec.get("evidence", [])),
+                "evidence": ev_str,
                 "notes": rec.get("notes", ""),
                 "confidence": rec.get("confidence", 3),
             })
             n_agent += 1
 
-    # 3. MCP sweep wins for the mcp field everywhere
+    # 3. MCP registry sweep: mechanical community floor for unreported apps.
+    #    A hit means SOMEONE published an MCP server; official-vs-community
+    #    is settled later by the verification report (step 4).
     n_mcp = 0
-    for f in sorted(REPORTS.glob("mcp_sweep_*.json")):
-        for rec in json.loads(f.read_text(encoding="utf-8")):
+    sweep_file = OUT / "mcp_sweep_raw.json"
+    if sweep_file.exists():
+        import re
+        raw = json.loads(sweep_file.read_text(encoding="utf-8"))
+        for res in raw.get("results", []):
+            rid = int(res["id"])
+            if rid not in rows or rid in reported_ids or not res.get("hits"):
+                continue
+            token = rows[rid]["name"].split()[0].split("(")[0].lower()
+            if len(token) < 3:
+                continue
+            if any(re.search(rf"\b{re.escape(token)}\b", h["name"].lower())
+                   for h in res["hits"]):
+                rows[rid]["mcp"] = "Yes (community)"
+                rows[rid]["mcp_evidence"] = res["hits"][0].get("repo") or \
+                    res["hits"][0].get("name", "")
+                n_mcp += 1
+
+    # 4. official-MCP verification (vendor-docs evidence) outranks the sweep
+    off_file = REPORTS / "mcp_officials.json"
+    if off_file.exists():
+        for rec in json.loads(off_file.read_text(encoding="utf-8")):
             rid = int(rec["id"])
             if rid in rows and rec.get("mcp"):
                 rows[rid]["mcp"] = rec["mcp"]
-                if rec.get("mcp_evidence"):
-                    rows[rid]["mcp_evidence"] = rec["mcp_evidence"]
+                rows[rid]["mcp_evidence"] = rec.get("mcp_evidence", "")
                 n_mcp += 1
 
     # fill mcp defaults where nothing verified
