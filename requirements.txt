@@ -1,0 +1,6 @@
+requests>=2.31
+beautifulsoup4>=4.12
+python-dotenv>=1.0
+rich>=13.7
+# Optional: Composio SDK for the toolbelt cross-check stage.
+# composio>=3.0
