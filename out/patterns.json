@@ -28,8 +28,8 @@
     "Blocked": 4
   },
   "mcp_dist": {
-    "Yes (official)": 71,
-    "Yes (community)": 19,
+    "Yes (official)": 72,
+    "Yes (community)": 18,
     "No": 6,
     "Unclear": 4
   },
@@ -188,8 +188,8 @@
     },
     "Productivity & PM": {
       "n": 10,
-      "official": 5,
-      "community": 4,
+      "official": 6,
+      "community": 3,
       "any": 9
     },
     "Finance & Fintech": {
@@ -415,9 +415,9 @@
     },
     {
       "rank": 3,
-      "claim": "71 apps already ship an official MCP server (90 with any MCP)",
+      "claim": "72 apps already ship an official MCP server (90 with any MCP)",
       "detail": "MCP coverage is highest where APIs are broad and self-serve - the pattern repeats: accessible API surface predicts agent ecosystem investment.",
-      "metric": "71/100",
+      "metric": "72/100",
       "metric_label": "official MCP servers"
     },
     {

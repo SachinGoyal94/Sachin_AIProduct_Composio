@@ -2,10 +2,10 @@
   "pass": 1,
   "sample_size": 20,
   "fields_scored": 100,
-  "field_accuracy": 0.71,
-  "row_accuracy": 0.15,
-  "fields_correct": 71,
-  "rows_fully_correct": 3,
+  "field_accuracy": 0.7,
+  "row_accuracy": 0.1,
+  "fields_correct": 70,
+  "rows_fully_correct": 2,
   "per_app": [
     {
       "id": 3,
@@ -32,9 +32,9 @@
         },
         {
           "field": "mcp",
-          "expected": "Yes (community)",
+          "expected": "Yes (official)",
           "actual": "Yes (community)",
-          "ok": true
+          "ok": false
         },
         {
           "field": "verdict",
@@ -43,9 +43,11 @@
           "ok": true
         }
       ],
-      "all_ok": true,
-      "misses": [],
-      "source": "https://developers.pipedrive.com/docs/api/v1"
+      "all_ok": false,
+      "misses": [
+        "mcp"
+      ],
+      "source": "https://www.pipedrive.com/en/mcp"
     },
     {
       "id": 5,
@@ -158,7 +160,7 @@
         },
         {
           "field": "mcp",
-          "expected": "Yes (community)",
+          "expected": "Yes (official)",
           "actual": "No",
           "ok": false
         },
@@ -173,7 +175,7 @@
       "misses": [
         "mcp"
       ],
-      "source": "https://developers.freshdesk.com/api/"
+      "source": "https://support.freshdesk.com"
     },
     {
       "id": 17,
@@ -408,7 +410,7 @@
         },
         {
           "field": "mcp",
-          "expected": "Yes (community)",
+          "expected": "Yes (official)",
           "actual": "No",
           "ok": false
         },

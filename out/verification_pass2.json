@@ -2,14 +2,14 @@
   "pass": 2,
   "rows": 100,
   "evidence_urls": 152,
-  "rows_with_live_evidence": 89,
-  "rows_with_dead_evidence": 11,
-  "flagged_rows": 20,
-  "clean_rows": 80,
+  "rows_with_live_evidence": 98,
+  "rows_with_dead_evidence": 2,
+  "flagged_rows": 13,
+  "clean_rows": 87,
   "flag_counts": {
-    "dead-evidence": 11,
-    "evidence-not-doc-like": 5,
-    "evidence-not-docs-host": 5
+    "evidence-not-doc-like": 7,
+    "evidence-not-docs-host": 5,
+    "dead-evidence": 2
   },
   "per_row": [
     {
@@ -183,18 +183,16 @@
       "name": "Copper",
       "evidence": [
         {
-          "url": "https://developers.copper.com/",
-          "status": 0,
-          "final_url": "https://developers.copper.com/",
+          "url": "https://developer.copper.com/",
+          "status": 200,
+          "final_url": "https://developer.copper.com/",
           "redirected": false,
-          "ok": false,
-          "docs_like": false,
-          "error": "ConnectionError: HTTPSConnectionPool(host='developers.copper.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(h"
+          "ok": true,
+          "docs_like": true,
+          "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 10,
@@ -674,18 +672,16 @@
       "name": "Meta Ads",
       "evidence": [
         {
-          "url": "https://developers.facebook.com/docs/marketing-apis/overview/authentication",
-          "status": 404,
-          "final_url": "https://developers.facebook.com/docs/marketing-apis/overview/authentication",
-          "redirected": false,
-          "ok": false,
+          "url": "https://developers.facebook.com/docs/marketing-apis/",
+          "status": 200,
+          "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+          "redirected": true,
+          "ok": true,
           "docs_like": true,
           "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 33,
@@ -890,18 +886,16 @@
       "name": "BigCommerce",
       "evidence": [
         {
-          "url": "https://developer.bigcommerce.com/docs/rest-api",
-          "status": 404,
-          "final_url": "https://docs.bigcommerce.com/docs/rest-api",
+          "url": "https://developer.bigcommerce.com/docs/",
+          "status": 200,
+          "final_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
           "redirected": true,
-          "ok": false,
-          "docs_like": false,
+          "ok": true,
+          "docs_like": true,
           "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 44,
@@ -949,18 +943,16 @@
       "name": "Squarespace",
       "evidence": [
         {
-          "url": "https://developers.squarespace.com/commerce-api",
-          "status": 404,
-          "final_url": "https://developers.squarespace.com/commerce-api",
+          "url": "https://developers.squarespace.com/",
+          "status": 200,
+          "final_url": "https://developers.squarespace.com/",
           "redirected": false,
-          "ok": false,
+          "ok": true,
           "docs_like": true,
           "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 47,
@@ -1061,18 +1053,16 @@
       "name": "DataForSEO",
       "evidence": [
         {
-          "url": "https://docs.dataforseo.com/v3/overview/",
-          "status": 404,
-          "final_url": "https://docs.dataforseo.com/v3/overview/",
-          "redirected": false,
-          "ok": false,
+          "url": "https://docs.dataforseo.com/",
+          "status": 200,
+          "final_url": "https://docs.dataforseo.com/v3/",
+          "redirected": true,
+          "ok": true,
           "docs_like": true,
           "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 52,
@@ -1247,17 +1237,17 @@
       "name": "Clay",
       "evidence": [
         {
-          "url": "https://docs.clay.com/reference/quickstart-guide",
-          "status": 404,
-          "final_url": "https://university.clay.com/reference/quickstart-guide",
+          "url": "https://docs.clay.com/",
+          "status": 200,
+          "final_url": "https://university.clay.com/",
           "redirected": true,
-          "ok": false,
-          "docs_like": true,
+          "ok": true,
+          "docs_like": false,
           "error": ""
         }
       ],
       "flags": [
-        "dead-evidence"
+        "evidence-not-doc-like"
       ]
     },
     {
@@ -1414,12 +1404,12 @@
         },
         {
           "url": "https://raw.githubusercontent.com/mongodb-js/mongodb-mcp-server/main/README.md",
-          "status": 0,
+          "status": 200,
           "final_url": "https://raw.githubusercontent.com/mongodb-js/mongodb-mcp-server/main/README.md",
           "redirected": false,
-          "ok": false,
-          "docs_like": false,
-          "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+          "ok": true,
+          "docs_like": true,
+          "error": ""
         }
       ],
       "flags": []
@@ -1461,18 +1451,16 @@
       "name": "Notion",
       "evidence": [
         {
-          "url": "https://developers.notion.com/reference/introduction",
-          "status": 404,
-          "final_url": "https://developers.notion.com/reference/introduction",
-          "redirected": false,
-          "ok": false,
+          "url": "https://developers.notion.com/",
+          "status": 200,
+          "final_url": "https://developers.notion.com/guides/get-started/overview",
+          "redirected": true,
+          "ok": true,
           "docs_like": true,
           "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 72,
@@ -1657,18 +1645,16 @@
       "name": "Plaid",
       "evidence": [
         {
-          "url": "https://plaid.com/docs/api/products/",
-          "status": 404,
-          "final_url": "https://plaid.com/docs/api/products/",
+          "url": "https://plaid.com/docs/api/",
+          "status": 200,
+          "final_url": "https://plaid.com/docs/api/",
           "redirected": false,
-          "ok": false,
+          "ok": true,
           "docs_like": true,
           "error": ""
         }
       ],
-      "flags": [
-        "dead-evidence"
-      ]
+      "flags": []
     },
     {
       "id": 83,
@@ -1679,13 +1665,13 @@
           "status": 202,
           "final_url": "https://developers.binance.com/en/docs/products/spot/rest-api",
           "redirected": true,
-          "ok": false,
+          "ok": true,
           "docs_like": false,
           "error": ""
         }
       ],
       "flags": [
-        "dead-evidence"
+        "evidence-not-doc-like"
       ]
     },
     {
@@ -1753,12 +1739,12 @@
         },
         {
           "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
-          "status": 0,
+          "status": 200,
           "final_url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
           "redirected": false,
-          "ok": false,
-          "docs_like": false,
-          "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+          "ok": true,
+          "docs_like": true,
+          "error": ""
         }
       ],
       "flags": []

@@ -51,7 +51,7 @@ def check_url(url: str) -> dict:
             if len(text) >= MAX_EVIDENCE_BYTES:
                 break
         r.close()
-        out["ok"] = r.status_code == 200
+        out["ok"] = 200 <= r.status_code < 300
         body = text.decode("utf-8", "ignore")
         out["docs_like"] = bool(API_WORDS.search(body[:200_000]))
     except requests.RequestException as e:

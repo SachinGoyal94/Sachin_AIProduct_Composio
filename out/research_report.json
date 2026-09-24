@@ -1,6 +1,6 @@
 {
   "schema": "composio-case-study/1.0",
-  "generated": "2026-09-25T01:12:54",
+  "generated": "2026-09-25T01:27:12",
   "meta": {
     "apps": 100,
     "categories": 10,
@@ -9,10 +9,10 @@
       "calls": 10,
       "rows": 100,
       "mode": "memory-only (no web access)",
-      "generated": "2026-09-25T01:10:26",
+      "generated": "2026-09-25T01:23:17",
       "fresh": false
     },
-    "overrides_promoted": 913,
+    "overrides_promoted": 911,
     "research_proposals": 38,
     "claim": "Every number on the page is computed from the pipeline artifacts; this JSON mirrors the page for agents."
   },
@@ -39,14 +39,14 @@
       "pass": 2,
       "rows": 100,
       "evidence_urls": 152,
-      "rows_with_live_evidence": 89,
-      "rows_with_dead_evidence": 11,
-      "flagged_rows": 20,
-      "clean_rows": 80,
+      "rows_with_live_evidence": 98,
+      "rows_with_dead_evidence": 2,
+      "flagged_rows": 13,
+      "clean_rows": 87,
       "flag_counts": {
-        "dead-evidence": 11,
-        "evidence-not-doc-like": 5,
-        "evidence-not-docs-host": 5
+        "evidence-not-doc-like": 7,
+        "evidence-not-docs-host": 5,
+        "dead-evidence": 2
       }
     }
   ],
@@ -55,9 +55,21 @@
       "pass": 1,
       "sample_size": 20,
       "fields_scored": 100,
-      "field_accuracy": 0.71,
-      "row_accuracy": 0.15,
+      "field_accuracy": 0.7,
+      "row_accuracy": 0.1,
       "misses": [
+        {
+          "id": 3,
+          "name": "Pipedrive",
+          "category": "CRM & Sales",
+          "misses": [
+            {
+              "field": "mcp",
+              "expected": "Yes (official)",
+              "actual": "Yes (community)"
+            }
+          ]
+        },
         {
           "id": 5,
           "name": "Twenty",
@@ -99,7 +111,7 @@
           "misses": [
             {
               "field": "mcp",
-              "expected": "Yes (community)",
+              "expected": "Yes (official)",
               "actual": "No"
             }
           ]
@@ -162,7 +174,7 @@
             },
             {
               "field": "mcp",
-              "expected": "Yes (community)",
+              "expected": "Yes (official)",
               "actual": "No"
             }
           ]
@@ -328,58 +340,9 @@
       "pass": 2,
       "sample_size": 20,
       "fields_scored": 100,
-      "field_accuracy": 0.96,
-      "row_accuracy": 0.8,
-      "misses": [
-        {
-          "id": 3,
-          "name": "Pipedrive",
-          "category": "CRM & Sales",
-          "misses": [
-            {
-              "field": "mcp",
-              "expected": "Yes (community)",
-              "actual": "Yes (official)"
-            }
-          ]
-        },
-        {
-          "id": 13,
-          "name": "Freshdesk",
-          "category": "Support & Helpdesk",
-          "misses": [
-            {
-              "field": "mcp",
-              "expected": "Yes (community)",
-              "actual": "Yes (official)"
-            }
-          ]
-        },
-        {
-          "id": 43,
-          "name": "BigCommerce",
-          "category": "Ecommerce",
-          "misses": [
-            {
-              "field": "mcp",
-              "expected": "Yes (community)",
-              "actual": "Yes (official)"
-            }
-          ]
-        },
-        {
-          "id": 74,
-          "name": "Jira",
-          "category": "Productivity & PM",
-          "misses": [
-            {
-              "field": "mcp",
-              "expected": "Yes (official)",
-              "actual": "Yes (community)"
-            }
-          ]
-        }
-      ]
+      "field_accuracy": 1.0,
+      "row_accuracy": 1.0,
+      "misses": []
     }
   ],
   "patterns": {
@@ -412,8 +375,8 @@
       "Blocked": 4
     },
     "mcp_dist": {
-      "Yes (official)": 71,
-      "Yes (community)": 19,
+      "Yes (official)": 72,
+      "Yes (community)": 18,
       "No": 6,
       "Unclear": 4
     },
@@ -572,8 +535,8 @@
       },
       "Productivity & PM": {
         "n": 10,
-        "official": 5,
-        "community": 4,
+        "official": 6,
+        "community": 3,
         "any": 9
       },
       "Finance & Fintech": {
@@ -799,9 +762,9 @@
       },
       {
         "rank": 3,
-        "claim": "71 apps already ship an official MCP server (90 with any MCP)",
+        "claim": "72 apps already ship an official MCP server (90 with any MCP)",
         "detail": "MCP coverage is highest where APIs are broad and self-serve - the pattern repeats: accessible API surface predicts agent ecosystem investment.",
-        "metric": "71/100",
+        "metric": "72/100",
         "metric_label": "official MCP servers"
       },
       {
@@ -835,13 +798,13 @@
     ]
   },
   "composio": {
-    "generated": "2026-09-25T01:12:50",
+    "generated": "2026-09-25T01:27:05",
     "attempted": true,
     "ok": false,
     "method": "",
     "toolkits_seen": 0,
     "apps_covered": [],
-    "error": "v3: RuntimeError: v3 /toolkits -> HTTP 401: {\"error\":{\"message\":\"Invalid API key: ck_**r8RT\",\"code\":801,\"slug\":\"APIKey_InvalidAPIKey\",\"status\":401,\"request_id\":\"eef52aad-ad3b-4516-9b6c-25acfd00119b\",\"sugg | legacy SDK: Unexpected error: HTTP 410",
+    "error": "v3: RuntimeError: v3 /toolkits -> HTTP 401: {\"error\":{\"message\":\"Invalid API key: ck_**r8RT\",\"code\":801,\"slug\":\"APIKey_InvalidAPIKey\",\"status\":401,\"request_id\":\"36e6796e-72f1-46d9-a3c6-8fed5241129e\",\"sugg | legacy SDK: Unexpected error: HTTP 410",
     "note": "Composio rejected the API key (the provided key predates the v3 API migration). Stage is optional; cross-check marked not-performed rather than guessed."
   },
   "human_in_the_loop": {
@@ -1026,7 +989,7 @@
       "mcp_evidence": "https://mcp.pipedream.com",
       "verdict": "Ready",
       "blocker": "",
-      "evidence": "https://developers.copper.com/",
+      "evidence": "https://developer.copper.com/",
       "confidence": "3",
       "notes": ""
     },
@@ -1486,7 +1449,7 @@
       "mcp_evidence": "https://pypi.org/project/meta-ads-mcp/",
       "verdict": "Ready with caveats",
       "blocker": "App review + business verification for advanced access",
-      "evidence": "https://developers.facebook.com/docs/marketing-apis/overview/authentication",
+      "evidence": "https://developers.facebook.com/docs/marketing-apis/",
       "confidence": "3",
       "notes": ""
     },
@@ -1706,7 +1669,7 @@
       "mcp_evidence": "https://docs.bigcommerce.com",
       "verdict": "Ready",
       "blocker": "",
-      "evidence": "https://developer.bigcommerce.com/docs/rest-api",
+      "evidence": "https://developer.bigcommerce.com/docs/",
       "confidence": "3",
       "notes": ""
     },
@@ -1766,7 +1729,7 @@
       "mcp_evidence": "https://developers-preview.squarespace.com",
       "verdict": "Ready with caveats",
       "blocker": "Narrow API scope, paid plan required",
-      "evidence": "https://developers.squarespace.com/commerce-api",
+      "evidence": "https://developers.squarespace.com/",
       "confidence": "3",
       "notes": ""
     },
@@ -1866,7 +1829,7 @@
       "mcp_evidence": "https://dataforseo.com",
       "verdict": "Ready",
       "blocker": "",
-      "evidence": "https://docs.dataforseo.com/v3/overview/",
+      "evidence": "https://docs.dataforseo.com/",
       "confidence": "3",
       "notes": ""
     },
@@ -2046,7 +2009,7 @@
       "mcp_evidence": "https://www.clay.com",
       "verdict": "Ready with caveats",
       "blocker": "API subset of a heavy product; plan-gated usage",
-      "evidence": "https://docs.clay.com/reference/quickstart-guide",
+      "evidence": "https://docs.clay.com/",
       "confidence": "3",
       "notes": ""
     },
@@ -2266,7 +2229,7 @@
       "mcp_evidence": "https://developers.notion.com",
       "verdict": "Ready",
       "blocker": "",
-      "evidence": "https://developers.notion.com/reference/introduction",
+      "evidence": "https://developers.notion.com/",
       "confidence": "3",
       "notes": ""
     },
@@ -2322,8 +2285,8 @@
       "gate_detail": "Free Cloud plan self-serve; each user creates an API token at id.atlassian.com instantly. Admins can gate personal access tokens, but the default path is open.",
       "surface": "Documented REST",
       "breadth": "Huge: issues, projects, boards, sprints, users, workflows, JQL search + webhooks",
-      "mcp": "Yes (community)",
-      "mcp_evidence": "https://github.com/waystation-ai/mcp",
+      "mcp": "Yes (official)",
+      "mcp_evidence": "https://support.atlassian.com/rovo/docs/atlassian-remote-mcp-server-tools/",
       "verdict": "Ready",
       "blocker": "",
       "evidence": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
@@ -2486,7 +2449,7 @@
       "mcp_evidence": "https://github.com/plaid/ai-coding-toolkit",
       "verdict": "Ready with caveats",
       "blocker": "Production requires company verification; sandbox is instant",
-      "evidence": "https://plaid.com/docs/api/products/",
+      "evidence": "https://plaid.com/docs/api/",
       "confidence": "3",
       "notes": ""
     },

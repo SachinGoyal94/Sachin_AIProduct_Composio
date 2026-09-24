@@ -73,7 +73,6 @@ id,app,field,draft_value,value,source,note
 9,Copper,breadth,"Covers people, companies, opportunities, projects, tasks, and activities.","Broad CRUD: leads, opportunities, activities, users, webhooks",human-review,reviewer reconciliation (stable docs knowledge)
 9,Copper,mcp,No,Yes (community),human-review,reviewer reconciliation (stable docs knowledge)
 9,Copper,mcp_evidence,,https://mcp.pipedream.com,human-review,reviewer reconciliation (stable docs knowledge)
-9,Copper,evidence,https://developer.copper.com/,https://developers.copper.com/,human-review,reviewer reconciliation (stable docs knowledge)
 9,Copper,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 10,DealCloud,does,"Deal management and CRM platform tailored for private equity, investment banking, and professional services.","Intapp DealCloud - financial-services CRM/deal and relationship-management platform for capital markets, PE and advisory firms.",agent-report,app-research agent verified live (docs fetched)
 10,DealCloud,auth_detail,API key or token authentication supplied by DealCloud administrators.,"API key generated from a user's profile, plus a separate 'Authorization Token' mechanism; legacy C#/Python SDKs document their own auth. No OAuth2 found.",agent-report,app-research agent verified live (docs fetched)
@@ -279,7 +278,7 @@ id,app,field,draft_value,value,source,note
 32,Meta Ads,mcp_evidence,,https://pypi.org/project/meta-ads-mcp/,human-review,reviewer reconciliation (stable docs knowledge)
 32,Meta Ads,verdict,Ready,Ready with caveats,human-review,reviewer reconciliation (stable docs knowledge)
 32,Meta Ads,blocker,,App review + business verification for advanced access,human-review,reviewer reconciliation (stable docs knowledge)
-32,Meta Ads,evidence,https://developers.facebook.com/docs/marketing-apis,https://developers.facebook.com/docs/marketing-apis/overview/authentication,human-review,reviewer reconciliation (stable docs knowledge)
+32,Meta Ads,evidence,https://developers.facebook.com/docs/marketing-apis,https://developers.facebook.com/docs/marketing-apis/,human-review,reviewer reconciliation (stable docs knowledge)
 32,Meta Ads,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 33,LinkedIn Ads,does,"Manages advertising campaigns, ad accounts, and analytics on the LinkedIn professional network.","LinkedIn's paid-campaigns API (sponsored content, audiences, reporting).",agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
 33,LinkedIn Ads,auth_detail,LinkedIn OAuth 2.0 authorization code flow.,OAuth 2.0 3-legged; member + app permissions on top.,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
@@ -382,7 +381,7 @@ id,app,field,draft_value,value,source,note
 43,BigCommerce,breadth,"Deep coverage of catalog, customers, orders, pricing, and checkout APIs.","Broad: catalog (v3 REST + GraphQL), orders, customers, themes, webhooks",human-review,reviewer reconciliation (stable docs knowledge)
 43,BigCommerce,mcp,No,Yes (official),human-review,reviewer reconciliation (stable docs knowledge)
 43,BigCommerce,mcp_evidence,,https://docs.bigcommerce.com,human-review,reviewer reconciliation (stable docs knowledge)
-43,BigCommerce,evidence,https://developer.bigcommerce.com/,https://developer.bigcommerce.com/docs/rest-api,human-review,reviewer reconciliation (stable docs knowledge)
+43,BigCommerce,evidence,https://developer.bigcommerce.com/,https://developer.bigcommerce.com/docs/,human-review,reviewer reconciliation (stable docs knowledge)
 43,BigCommerce,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 44,Salesforce Commerce Cloud,does,Enterprise cloud-based e-commerce solution for B2C and B2B brands.,"B2C e-commerce platform; Commerce APIs (B2C Commerce API/SCAPI, OCAPI) for storefront/shopper and admin operations.",agent-report,app-research agent verified live (docs fetched)
 44,Salesforce Commerce Cloud,auth_detail,Uses Salesforce Account Manager (SAM) and OAuth 2.0 token exchange.,"SLAS (Shopper Login and API Access Service) issues ShopperToken JWTs (30-min access + refresh) using OAuth 2.1 grants: authorization_code_pkce for registered/guest public clients, client_credentials for private guests, getTrustedSystemAccessToken for trusted systems; SLAS admin tools use Salesforce Account Manager.",agent-report,app-research agent verified live (docs fetched)
@@ -410,7 +409,6 @@ id,app,field,draft_value,value,source,note
 46,Squarespace,mcp_evidence,,https://developers-preview.squarespace.com,human-review,reviewer reconciliation (stable docs knowledge)
 46,Squarespace,verdict,Ready,Ready with caveats,human-review,reviewer reconciliation (stable docs knowledge)
 46,Squarespace,blocker,,"Narrow API scope, paid plan required",human-review,reviewer reconciliation (stable docs knowledge)
-46,Squarespace,evidence,https://developers.squarespace.com/,https://developers.squarespace.com/commerce-api,human-review,reviewer reconciliation (stable docs knowledge)
 46,Squarespace,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 47,Ecwid,does,E-commerce widget platform that embeds easily into existing websites and blogs.,"Hosted e-commerce platform (online store/shopping cart) with a REST API covering store catalog, orders, customers, payments and shipping.",agent-report,app-research agent verified live (docs fetched)
 47,Ecwid,auth,Token,OAuth2,agent-report,app-research agent verified live (docs fetched)
@@ -458,7 +456,6 @@ id,app,field,draft_value,value,source,note
 51,DataForSEO,breadth,"Broad coverage of SERP, keywords, backlinks, and domain analytics","Very broad: SERP API, Keywords, DataForSEO Labs, Backlinks, Domain Analytics, On-Page, Content Analysis",human-review,reviewer reconciliation (stable docs knowledge)
 51,DataForSEO,mcp,No,Yes (official),human-review,reviewer reconciliation (stable docs knowledge)
 51,DataForSEO,mcp_evidence,,https://dataforseo.com,human-review,reviewer reconciliation (stable docs knowledge)
-51,DataForSEO,evidence,https://docs.dataforseo.com/,https://docs.dataforseo.com/v3/overview/,human-review,reviewer reconciliation (stable docs knowledge)
 51,DataForSEO,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 52,SE Ranking,does,"Offers rank tracking, competitor analysis, and SEO reporting via API","SEO/AEO platform (rank tracking, backlinks, keyword research, site audits, AI-search visibility) exposing a Data API and Project API returning JSON.",agent-report,app-research agent verified live (docs fetched)
 52,SE Ranking,auth_detail,API key passed via request parameters,"'Log in to your SE Ranking account, navigate to the API tab under the Settings section, and retrieve your unique API key.' Structured JSON responses; default rate limit 10 req/s (raisable via support).",agent-report,app-research agent verified live (docs fetched)
@@ -543,7 +540,7 @@ id,app,field,draft_value,value,source,note
 60,Clay,mcp_evidence,,https://www.clay.com,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
 60,Clay,verdict,Ready,Ready with caveats,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
 60,Clay,blocker,,API subset of a heavy product; plan-gated usage,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
-60,Clay,evidence,https://clay.com,https://docs.clay.com/reference/quickstart-guide,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
+60,Clay,evidence,https://clay.com,https://docs.clay.com/,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
 60,Clay,confidence,4,3,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
 61,GitHub,does,"Developer platform for version control, collaboration, and CI/CD automation.","Code hosting + collaboration platform (repos, PRs, issues, actions).",human-review,reviewer reconciliation (stable docs knowledge)
 61,GitHub,auth,OAuth2,Token,human-review,reviewer reconciliation (stable docs knowledge)
@@ -634,7 +631,7 @@ id,app,field,draft_value,value,source,note
 71,Notion,breadth,"High breadth covering pages, databases, blocks, and users.","Broad: pages, databases, blocks, users, comments + webhooks",human-review,reviewer reconciliation (stable docs knowledge)
 71,Notion,mcp,Yes (community),Yes (official),human-review,reviewer reconciliation (stable docs knowledge)
 71,Notion,mcp_evidence,,https://developers.notion.com,human-review,reviewer reconciliation (stable docs knowledge)
-71,Notion,evidence,https://developers.notion.com/reference/intro,https://developers.notion.com/reference/introduction,human-review,reviewer reconciliation (stable docs knowledge)
+71,Notion,evidence,https://developers.notion.com/reference/intro,https://developers.notion.com/,human-review,reviewer reconciliation (stable docs knowledge)
 71,Notion,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 72,Airtable,does,Cloud collaboration platform combining database and spreadsheet capabilities.,"Airtable low-code database/spreadsheet platform (bases, tables, records).",human-review,reviewer reconciliation (stable docs knowledge)
 72,Airtable,auth,OAuth2,Token,human-review,reviewer reconciliation (stable docs knowledge)
@@ -656,7 +653,8 @@ id,app,field,draft_value,value,source,note
 74,Jira,auth_detail,"Basic auth (email + API token) for REST, or OAuth2 for apps.","Basic with email + API token, or OAuth 2.0 (3LO) for user-context apps; PATs for Data Center.",human-review,reviewer reconciliation (stable docs knowledge)
 74,Jira,gate_detail,Generate Atlassian account API tokens instantly.,"Free Cloud plan self-serve; each user creates an API token at id.atlassian.com instantly. Admins can gate personal access tokens, but the default path is open.",human-review,reviewer reconciliation (stable docs knowledge)
 74,Jira,breadth,"Extensive enterprise breadth covering issues, projects, workflows, and boards.","Huge: issues, projects, boards, sprints, users, workflows, JQL search + webhooks",human-review,reviewer reconciliation (stable docs knowledge)
-74,Jira,mcp_evidence,,https://github.com/waystation-ai/mcp,human-review,reviewer reconciliation (stable docs knowledge)
+74,Jira,mcp,Yes (community),Yes (official),human-review,reviewer reconciliation (stable docs knowledge)
+74,Jira,mcp_evidence,,https://support.atlassian.com/rovo/docs/atlassian-remote-mcp-server-tools/,human-review,reviewer reconciliation (stable docs knowledge)
 74,Jira,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 75,Asana,does,Work management platform helping teams orchestrate work from daily tasks to strategic initiatives.,"Work-management platform (tasks, projects, portfolios, goals).",human-review,reviewer reconciliation (stable docs knowledge)
 75,Asana,auth,OAuth2,Token,human-review,reviewer reconciliation (stable docs knowledge)
@@ -725,7 +723,7 @@ id,app,field,draft_value,value,source,note
 82,Plaid,mcp_evidence,,https://github.com/plaid/ai-coding-toolkit,human-review,reviewer reconciliation (stable docs knowledge)
 82,Plaid,verdict,Ready,Ready with caveats,human-review,reviewer reconciliation (stable docs knowledge)
 82,Plaid,blocker,,Production requires company verification; sandbox is instant,human-review,reviewer reconciliation (stable docs knowledge)
-82,Plaid,evidence,https://plaid.com/docs/,https://plaid.com/docs/api/products/,human-review,reviewer reconciliation (stable docs knowledge)
+82,Plaid,evidence,https://plaid.com/docs/,https://plaid.com/docs/api/,human-review,reviewer reconciliation (stable docs knowledge)
 82,Plaid,confidence,5,3,human-review,reviewer reconciliation (stable docs knowledge)
 83,Binance,does,Cryptocurrency exchange providing spot and futures trading APIs.,"Crypto exchange (spot, futures, wallet) with public + signed trading APIs.",agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
 83,Binance,auth,API key,HMAC,agent-deep-dive,"deep-dive extraction, confirmed by reviewer"
