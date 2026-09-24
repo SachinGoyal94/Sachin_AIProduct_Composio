@@ -3,13 +3,15 @@
   "rows": 100,
   "evidence_urls": 100,
   "rows_with_live_evidence": 89,
-  "rows_with_dead_evidence": 11,
+  "rows_bot_blocked": 3,
+  "rows_with_dead_evidence": 8,
   "flagged_rows": 38,
   "clean_rows": 62,
   "flag_counts": {
     "evidence-not-docs-host": 21,
     "evidence-not-doc-like": 16,
-    "dead-evidence": 11,
+    "dead-evidence": 8,
+    "evidence-bot-blocked": 3,
     "contradiction:no-auth-but-api": 2,
     "contradiction:auth-none-but-api": 2,
     "low-confidence": 1,
@@ -26,12 +28,13 @@
           "final_url": "https://developer.salesforce.com/docs/",
           "redirected": false,
           "ok": false,
+          "blocked": true,
           "docs_like": false,
           "error": ""
         }
       ],
       "flags": [
-        "dead-evidence"
+        "evidence-bot-blocked"
       ]
     },
     {
@@ -44,6 +47,7 @@
           "final_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -60,6 +64,7 @@
           "final_url": "https://developers.pipedrive.com/docs/api/v1",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -76,6 +81,7 @@
           "final_url": "https://docs.attio.com/docs/overview",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -92,6 +98,7 @@
           "final_url": "https://docs.twenty.com/developers/introduction",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -108,6 +115,7 @@
           "final_url": "https://developers.podio.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -124,6 +132,7 @@
           "final_url": "https://www.zoho.com/crm/developer/docs/api/v2/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -140,6 +149,7 @@
           "final_url": "https://developer.close.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -156,6 +166,7 @@
           "final_url": "https://developer.copper.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -172,6 +183,7 @@
           "final_url": "https://api.docs.dealcloud.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -188,6 +200,7 @@
           "final_url": "https://developer.zendesk.com/api-reference/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -204,6 +217,7 @@
           "final_url": "https://developers.intercom.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -222,6 +236,7 @@
           "final_url": "https://developers.freshdesk.com/api/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -238,6 +253,7 @@
           "final_url": "https://dev.frontapp.com/docs/welcome",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -254,6 +270,7 @@
           "final_url": "https://docs.usepylon.com/pylon-docs",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -270,6 +287,7 @@
           "final_url": "https://www.liveagent.com/api/",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -288,6 +306,7 @@
           "final_url": "https://www.plain.com/docs/product/what-is-plain",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -304,6 +323,7 @@
           "final_url": "https://developer.helpscout.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -322,6 +342,7 @@
           "final_url": "https://developers.gorgias.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -338,6 +359,7 @@
           "final_url": "https://developer.gladly.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -354,6 +376,7 @@
           "final_url": "https://docs.slack.dev/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -370,6 +393,7 @@
           "final_url": "https://www.twilio.com/docs",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -386,6 +410,7 @@
           "final_url": "https://www.zoho.com/cliq/help/rest-api/",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -404,6 +429,7 @@
           "final_url": "https://open.larksuite.com/document/home/index",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -423,6 +449,7 @@
           "final_url": "https://pumble.com/help/integrations/pumble-api",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -441,6 +468,7 @@
           "final_url": "https://docs.discord.com/developers/intro",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -457,6 +485,7 @@
           "final_url": "https://core.telegram.org/bots/api",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -473,6 +502,7 @@
           "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -489,6 +519,7 @@
           "final_url": "https://developer.aircall.io/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -505,6 +536,7 @@
           "final_url": "https://developer.vonage.com/",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -523,6 +555,7 @@
           "final_url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -539,6 +572,7 @@
           "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -555,6 +589,7 @@
           "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-09",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -573,6 +608,7 @@
           "final_url": "https://highlevel.stoplight.io/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -592,6 +628,7 @@
           "final_url": "https://mailchimp.com/developer/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -608,6 +645,7 @@
           "final_url": "https://developers.klaviyo.com/en",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -624,6 +662,7 @@
           "final_url": "https://systeme.io/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -642,6 +681,7 @@
           "final_url": "https://developers.pinterest.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -658,6 +698,7 @@
           "final_url": "https://developers.facebook.com/documentation/threads",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -674,6 +715,7 @@
           "final_url": "https://www.twilio.com:443/docs/sendgrid/api-reference",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -690,6 +732,7 @@
           "final_url": "https://shopify.dev/docs/api",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -706,6 +749,7 @@
           "final_url": "https://woocommerce.com/document/woocommerce-rest-api/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -722,6 +766,7 @@
           "final_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -738,12 +783,13 @@
           "final_url": "https://developer.salesforce.com/docs/commerce",
           "redirected": false,
           "ok": false,
+          "blocked": true,
           "docs_like": false,
           "error": ""
         }
       ],
       "flags": [
-        "dead-evidence"
+        "evidence-bot-blocked"
       ]
     },
     {
@@ -756,6 +802,7 @@
           "final_url": "https://developer.adobe.com/commerce/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -774,6 +821,7 @@
           "final_url": "https://developers.squarespace.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -790,6 +838,7 @@
           "final_url": "https://docs.ecwid.com",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -806,6 +855,7 @@
           "final_url": "https://gumroad.com/api",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -824,6 +874,7 @@
           "final_url": "https://developer-docs.amazon/sp-api/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -840,6 +891,7 @@
           "final_url": "https://commas.com/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -860,6 +912,7 @@
           "final_url": "https://docs.dataforseo.com/v3/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -876,6 +929,7 @@
           "final_url": "https://seranking.com/api.html",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -894,6 +948,7 @@
           "final_url": "https://docs.ahrefs.com",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -910,6 +965,7 @@
           "final_url": "https://docs.mrscraper.com/docs/getting-started/overview",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -926,6 +982,7 @@
           "final_url": "https://docs.apify.com/api/v2",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -942,6 +999,7 @@
           "final_url": "https://www.firecrawl.dev/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -960,6 +1018,7 @@
           "final_url": "https://brightdata.com/integration/api",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -978,6 +1037,7 @@
           "final_url": "https://github.com/sherlock-project/sherlock",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -998,6 +1058,7 @@
           "final_url": "https://www.waterfall.io/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1016,6 +1077,7 @@
           "final_url": "https://www.clay.com/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1035,6 +1097,7 @@
           "final_url": "https://docs.github.com/en/rest",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1051,6 +1114,7 @@
           "final_url": "https://vercel.com/docs/rest-api",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1067,6 +1131,7 @@
           "final_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1083,6 +1148,7 @@
           "final_url": "https://developers.cloudflare.com/api/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1099,6 +1165,7 @@
           "final_url": "https://supabase.com/docs",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1115,6 +1182,7 @@
           "final_url": "https://neo4j.com/docs/rest-docs/current/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1131,6 +1199,7 @@
           "final_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1147,6 +1216,7 @@
           "final_url": "https://www.mongodb.com/docs/atlas/api/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1166,6 +1236,7 @@
           "final_url": "https://docs.datadoghq.com/api/latest/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1182,6 +1253,7 @@
           "final_url": "https://docs.sentry.io/api/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1198,6 +1270,7 @@
           "final_url": "https://developers.notion.com/reference/intro",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1214,6 +1287,7 @@
           "final_url": "https://airtable.com/developers/web/api/introduction",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1230,6 +1304,7 @@
           "final_url": "https://linear.app/developers",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1246,6 +1321,7 @@
           "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1262,6 +1338,7 @@
           "final_url": "https://developers.asana.com/docs/overview",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1278,6 +1355,7 @@
           "final_url": "https://developer.monday.com/api-reference/docs/introduction",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1296,6 +1374,7 @@
           "final_url": "https://developer.clickup.com",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1312,6 +1391,7 @@
           "final_url": "https://docs.superhuman.com/developers/apis/v1",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1328,6 +1408,7 @@
           "final_url": "https://smartsheet.platform.redoc.ly/",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": false,
           "error": "SSLError: HTTPSConnectionPool(host='smartsheet.platform.redoc.ly', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \""
         }
@@ -1347,6 +1428,7 @@
           "final_url": "https://help.getharvest.com/api-v2/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1363,6 +1445,7 @@
           "final_url": "https://docs.stripe.com/api",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1379,6 +1462,7 @@
           "final_url": "https://plaid.com/docs/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1395,6 +1479,7 @@
           "final_url": "https://binance-docs.github.io/apidocs/",
           "redirected": false,
           "ok": false,
+          "blocked": false,
           "docs_like": false,
           "error": "SSLError: HTTPSConnectionPool(host='binance-docs.github.io', port=443): Max retries exceeded with url: /apidocs/ (Caused by SSLError(SSLCertVerificationError(1,"
         }
@@ -1413,6 +1498,7 @@
           "final_url": "https://www.paygent.co.jp/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1432,6 +1518,7 @@
           "final_url": "https://www.ipayx.ai/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1451,6 +1538,7 @@
           "final_url": "https://developer.intuit.com/app/developer/homepage",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1467,6 +1555,7 @@
           "final_url": "https://developer.xero.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1483,6 +1572,7 @@
           "final_url": "https://developer.brex.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1501,6 +1591,7 @@
           "final_url": "https://docs.ramp.com/",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1519,13 +1610,14 @@
           "final_url": "https://pitchbook.com/",
           "redirected": false,
           "ok": false,
+          "blocked": true,
           "docs_like": false,
           "error": ""
         }
       ],
       "flags": [
         "evidence-not-docs-host",
-        "dead-evidence"
+        "evidence-bot-blocked"
       ]
     },
     {
@@ -1538,6 +1630,7 @@
           "final_url": "https://cloud.google.com/ai/gemini",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1557,6 +1650,7 @@
           "final_url": "https://help.otter.ai/hc/en-us",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1575,6 +1669,7 @@
           "final_url": "https://www.fathom.ai/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1593,6 +1688,7 @@
           "final_url": "https://consensus.app/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": false,
           "error": ""
         }
@@ -1612,6 +1708,7 @@
           "final_url": "https://reducto.ai/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1630,6 +1727,7 @@
           "final_url": "https://docs.devin.ai/get-started/devin-intro",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1646,6 +1744,7 @@
           "final_url": "https://higgsfield.ai/cli",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1664,6 +1763,7 @@
           "final_url": "https://github.com/mermaid-js/mermaid-cli",
           "redirected": false,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1684,6 +1784,7 @@
           "final_url": "https://transcriptapi.com/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }
@@ -1700,6 +1801,7 @@
           "final_url": "https://grain.com/",
           "redirected": true,
           "ok": true,
+          "blocked": false,
           "docs_like": true,
           "error": ""
         }

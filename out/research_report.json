@@ -1,6 +1,6 @@
 {
   "schema": "composio-case-study/1.0",
-  "generated": "2026-09-25T02:49:36",
+  "generated": "2026-09-25T03:15:57",
   "meta": {
     "apps": 100,
     "categories": 10,
@@ -9,7 +9,7 @@
       "calls": 10,
       "rows": 100,
       "mode": "memory-only (no web access)",
-      "generated": "2026-09-25T01:23:17",
+      "generated": "2026-09-25T03:01:35",
       "fresh": false
     },
     "overrides_promoted": 911,
@@ -22,13 +22,14 @@
       "rows": 100,
       "evidence_urls": 100,
       "rows_with_live_evidence": 89,
-      "rows_with_dead_evidence": 11,
+      "rows_with_dead_evidence": 8,
       "flagged_rows": 38,
       "clean_rows": 62,
       "flag_counts": {
         "evidence-not-docs-host": 21,
         "evidence-not-doc-like": 16,
-        "dead-evidence": 11,
+        "dead-evidence": 8,
+        "evidence-bot-blocked": 3,
         "contradiction:no-auth-but-api": 2,
         "contradiction:auth-none-but-api": 2,
         "low-confidence": 1,
@@ -40,13 +41,13 @@
       "rows": 100,
       "evidence_urls": 152,
       "rows_with_live_evidence": 98,
-      "rows_with_dead_evidence": 2,
+      "rows_with_dead_evidence": 0,
       "flagged_rows": 13,
       "clean_rows": 87,
       "flag_counts": {
         "evidence-not-doc-like": 7,
         "evidence-not-docs-host": 5,
-        "dead-evidence": 2
+        "evidence-bot-blocked": 2
       }
     }
   ],
@@ -791,7 +792,7 @@
     ]
   },
   "composio": {
-    "generated": "2026-09-25T02:39:40",
+    "generated": "2026-09-25T03:03:35",
     "ok": true,
     "method": "Composio MCP (connect.composio.dev/mcp) - COMPOSIO_SEARCH_TOOLS x100",
     "error": "",

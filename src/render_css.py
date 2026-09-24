@@ -42,14 +42,14 @@ h1{font-family:var(--serif);font-size:clamp(34px,5vw,58px);line-height:1.08;
 h1 .accent{color:var(--acc)}
 .sub{max-width:780px;font-size:18px;color:#44403c;margin:0 0 34px}
 .sub b{color:var(--ink)}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));
   gap:12px;margin:26px 0 8px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:14px;
-  padding:16px 18px}
-.tile .big{font-family:var(--serif);font-size:30px;line-height:1.05;
+  padding:16px 15px}
+.tile .big{font-family:var(--serif);font-size:27px;line-height:1.05;
   letter-spacing:-.01em}
-.tile .big .to{color:var(--faint);font-size:22px}
-.tile .lab{font-size:12.5px;color:var(--mut);margin-top:6px}
+.tile .big .to{color:var(--faint);font-size:20px}
+.tile .lab{font-size:11.5px;color:var(--mut);margin-top:6px;line-height:1.45}
 .tile.hero-acc{border-color:#f5c9ac;background:linear-gradient(160deg,#fff,#fdf1e7)}
 .verdict-strip{margin-top:22px;background:#111827;color:#f9fafb;border-radius:14px;
   padding:16px 22px;font-size:15.5px;display:flex;gap:14px;align-items:baseline}

@@ -18,6 +18,7 @@ Stages
  11. audit.py 1|2     strict ground-truth scoring of pass 1 and pass 2
  12. render.py        index.html (single-file case study)
  13. report.py        out/research_report.json (machine-readable mirror)
+ 14. smoke_test.py    re-verify every invariant behind the page (fails loudly)
 """
 from __future__ import annotations
 
@@ -44,6 +45,7 @@ STAGES = [
     (["audit.py", "2"], "audit pass 2 vs ground truth"),
     (["render.py"], "render index.html"),
     (["report.py"], "machine-readable report JSON"),
+    (["smoke_test.py"], "self-verify every invariant"),
 ]
 
 OFFLINE = [
@@ -53,6 +55,7 @@ OFFLINE = [
     (["audit.py", "2"], "audit pass 2 vs ground truth"),
     (["render.py"], "render index.html"),
     (["report.py"], "machine-readable report JSON"),
+    (["smoke_test.py"], "self-verify every invariant"),
 ]
 
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+from urllib.parse import urlparse
 
 from render_charts import (C, GATE_COLORS, GATE_SHORT, AUTH_COLORS,
                            VERDICT_COLORS, esc, svg_accuracy_bars,
@@ -12,7 +13,7 @@ from render_css import CSS
 from config import (AUDIT_JSON, COMPOSIO_JSON, DRAFT_CSV, DRAFT_META,
                     INDEX_HTML, OVERRIDES_CSV, PASS2_CSV, PATTERNS_JSON,
                     RESEARCH_DRAFTS, VERIFY_JSON)
-from io_utils import read_csv, read_json
+from io_utils import read_csv, read_json, split_evidence
 
 NAV = [("patterns", "Patterns"), ("matrix", "The 100 apps"),
        ("agent", "The agent"), ("verification", "Verification"),
@@ -30,9 +31,29 @@ def build_rows(pass2, patterns) -> list[dict]:
             tier_map[i] = t
     ver2 = read_json(VERIFY_JSON[2])
     ev_status = {p["id"]: p["evidence"] for p in ver2["per_row"]}
+    # verbatim docs quotes captured by the deep-dive stage (where it ran).
+    # A quote is only surfaced if its source URL still shares a host with the
+    # row's final evidence - deep-dive proposals based on sources the final
+    # dataset no longer cites are suppressed (e.g. paygent.co.jp).
+    quotes_map: dict[int, str] = {}
+    try:
+        for d in read_csv(RESEARCH_DRAFTS):
+            if not d.get("quotes"):
+                continue
+            src_host = urlparse(d.get("source", "")).netloc.lower()
+            quotes_map[int(d["id"])] = (d["quotes"], src_host)
+    except FileNotFoundError:
+        pass
     rows = []
     for r in pass2:
         rid = int(r["id"])
+        quote = ""
+        if rid in quotes_map:
+            q, src_host = quotes_map[rid]
+            ev_hosts = {urlparse(u).netloc.lower() for u in split_evidence(r)}
+            if src_host and any(h == src_host or h.endswith("." + src_host)
+                                or src_host.endswith("." + h) for h in ev_hosts):
+                quote = q
         rows.append({
             "id": rid, "name": r["name"], "category": r["category"],
             "website": r["website"], "does": r["does"], "auth": r["auth"],
@@ -43,6 +64,7 @@ def build_rows(pass2, patterns) -> list[dict]:
             "verdict": r["verdict"], "blocker": r["blocker"],
             "evidence": r["evidence"], "confidence": int(r["confidence"] or 3),
             "notes": r.get("notes", ""), "tier": tier_map.get(rid, "C"),
+            "quotes": quote,
             "ev_status": [c.get("status", 0) for c in ev_status.get(rid, [])],
         })
     return rows
@@ -66,6 +88,9 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     today = dt.date.today().isoformat()
 
     # ------------------------------------------------------------ derived
+    reachable = ver2["rows_with_live_evidence"] + ver2.get("rows_bot_blocked", 0)
+    reachable_detail = (f"{ver2['rows_with_live_evidence']} live · "
+                        f"{ver2.get('rows_bot_blocked', 0)} bot-blocked")
     self_serve = sum(1 for r in pass2
                      if r["gate"] in ("Open self-serve", "Paid self-serve"))
     sales = sum(1 for r in pass2 if r["gate"] == "Contact sales / partner")
@@ -86,12 +111,14 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
   <div class="tile hero-acc"><div class="big">{pct(aud1['field_accuracy'])}
     <span class="to">→</span> {pct(aud2['field_accuracy'])}</div>
     <div class="lab">audit accuracy, pass 1 → pass 2 (+{delta:.0f} pts)</div></div>
-  <div class="tile"><div class="big">{ver2['rows_with_live_evidence']}/{ver2['rows']}</div>
-    <div class="lab">rows with live evidence (HTTP 200)</div></div>
+  <div class="tile"><div class="big">{reachable}/100</div>
+    <div class="lab">rows with reachable evidence ({reachable_detail})</div></div>
   <div class="tile"><div class="big">{self_serve}<span class="to">/</span>100</div>
     <div class="lab">self-serve for a developer today</div></div>
   <div class="tile"><div class="big">{official_mcp}</div>
     <div class="lab">official MCP servers found</div></div>
+  <div class="tile"><div class="big">{composio.get('n_covered', '—')}<span class="to">/</span>100</div>
+    <div class="lab">already in Composio's catalog (live MCP check)</div></div>
   <div class="tile"><div class="big">{len(easy_wins)}</div>
     <div class="lab">{'easy wins - unbuilt in Composio' if composio.get('ok')
                       else 'easy wins - build-shortlist'}</div></div>
@@ -255,6 +282,12 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     n_prop = len(proposals)
     n_over = len(overrides)
     pipe_svg = svg_pipeline(n_flag, n_prop, n_over)
+    from collections import Counter
+    by_source = Counter(o["source"] for o in overrides)
+    src_line = (f"<b>{by_source.get('agent-report', 0)}</b> fixed from live agent reports · "
+                f"<b>{by_source.get('agent-deep-dive', 0)}</b> from the deep-dive agent's "
+                f"fetched-docs extractions · <b>{by_source.get('human-review', 0)}</b> from "
+                f"reviewer reconciliation")
     calls = draft_meta.get("calls", "?")
     stages = [
         ("1", "Pass 1 — the draft agent", "LLM drafts all 100 apps from its own "
@@ -296,6 +329,9 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
       Total runtime on a laptop: minutes, fully re-runnable.</p>
   </div>
   {pipe_svg}
+  <p style="max-width:840px;margin:14px auto 0;text-align:center;font-size:14px;color:#57534e">
+    The {n_over} corrections in data/overrides.csv, by origin: {src_line}.
+    Every row of the ledger carries its own label - open it and check.</p>
   <div class="stages">{stages_html}</div>
   <div class="callout amber"><h4>Where a human was needed - said plainly</h4>
     <ul>
@@ -337,10 +373,14 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     miss_html = ("".join(miss_rows) or
                  '<tr><td colspan="5">no misses on the audit sample</td></tr>')
 
-    liveness = (f"Pass 1: {ver1['rows_with_live_evidence']}/{ver1['rows']} rows had "
-                f"live evidence, {ver1['rows_with_dead_evidence']} dead · "
-                f"Pass 2: {ver2['rows_with_live_evidence']}/{ver2['rows']} live, "
-                f"{ver2['rows_with_dead_evidence']} dead")
+    liveness = (f"Pass 1: {ver1['rows_with_live_evidence']} live + "
+                f"{ver1.get('rows_bot_blocked', 0)} bot-blocked, "
+                f"{ver1['rows_with_dead_evidence']} dead · "
+                f"Pass 2: {ver2['rows_with_live_evidence']} live + "
+                f"{ver2.get('rows_bot_blocked', 0)} bot-blocked, "
+                f"{ver2['rows_with_dead_evidence']} dead. Bot-blocked = the real "
+                f"source returns 403 to automated fetchers (Salesforce, PitchBook); "
+                f"open the links in a browser and they work.")
 
     ver_sec = f"""
 <section id="verification"><div class="wrap">
@@ -537,10 +577,8 @@ MATRIX_JS = r"""
     }).join(' ');
   }
   function rowHtml(r){
-    var mcpT=r.mcp==='Yes (official)'?'MCP':(r.mcp==='Yes (community)'?'mcp':'none');
     var mcpTxt=r.mcp==='Yes (official)'?'MCP':(r.mcp==='Yes (community)'?'mcp':'—');
-    return '<tr class="row" data-id="'+r.id+'">'+
-    '<td class="num">'+r.id+'</td>'+
+    return '<td class="num">'+r.id+'</td>'+
     '<td><span class="app-nm">'+esc(r.name)+'</span><br><span class="app-ct">'+
       esc(r.category)+'</span></td>'+
     '<td class="does">'+esc(r.does)+'</td>'+
@@ -553,11 +591,11 @@ MATRIX_JS = r"""
     '<td>'+chip({t:r.verdict,c:V_C[r.verdict]||'#999'})+
       (r.blocker?'<div class="breadth">'+esc(r.blocker)+'</div>':'')+'</td>'+
     '<td class="ev">'+ev(r)+'</td>'+
-    '<td class="conf" title="confidence '+r.confidence+'/5">'+conf(r.confidence)+'</td></tr>';
+    '<td class="conf" title="confidence '+r.confidence+'/5">'+conf(r.confidence)+'</td>';
   }
   function detailHtml(r){
     function cell(k,v){return v?'<div><b>'+k+'</b>'+esc(v)+'</div>':'';}
-    return '<tr class="detail"><td colspan="11"><div class="dgrid">'+
+    return '<td colspan="11"><div class="dgrid">'+
       cell('Auth detail',r.auth_detail)+cell('Gating detail',r.gate_detail)+
       cell('API breadth',r.breadth)+cell('Blocker',r.blocker)+
       '<div><b>Evidence</b><span class="evlinks">'+((r.evidence||'').split(',').
@@ -566,7 +604,10 @@ MATRIX_JS = r"""
         ((r.mcp_evidence)?'<a href="'+esc(r.mcp_evidence)+'" target="_blank">MCP: '+
         esc(r.mcp_evidence)+'</a>':'')+'</span></div>'+
       (r.notes?'<div><b>Notes</b><span class="note">'+esc(r.notes)+'</span></div>':'')+
-      '</div></td></tr>';
+      (r.quotes?'<div><b>Quotes from the docs (verbatim)</b><span class="note">'+
+        esc(r.quotes.split(' || ').map(function(q){return '\u201c'+q+'\u201d';}).join(' '))+
+        '</span></div>':'')+
+      '</div></td>';
   }
   var open=null;
   function render(){
@@ -585,11 +626,14 @@ MATRIX_JS = r"""
       return String(va).localeCompare(String(vb))*state.dir;});
     var tb=document.getElementById('tbody'); tb.innerHTML='';
     rows.forEach(function(r){
-      var tr=document.createElement('tr'); tr.innerHTML=rowHtml(r);
+      var tr=document.createElement('tr'); tr.className='row';
+      tr.setAttribute('data-id', r.id);
+      tr.innerHTML=rowHtml(r);
       tr.onclick=function(){var id=r.id;
         if(open){var prev=tb.querySelector('tr.detail');if(prev&&prev.dataset.for==id){
           prev.remove();open=null;return;}prev&&prev.remove();}
-        var d=document.createElement('tr');d.className='detail';d.dataset.for=id;
+        var d=document.createElement('tr');d.className='detail';
+        d.setAttribute('data-for', id);
         d.innerHTML=detailHtml(r);tr.after(d);open=id;};
       tb.appendChild(tr);});
     document.getElementById('count').textContent='showing '+rows.length+' of '+DATA.length;

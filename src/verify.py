@@ -37,7 +37,7 @@ def check_url(url: str) -> dict:
     if not urlparse(url).scheme:
         url = "https://" + url.lstrip("/")
     out = {"url": url, "status": 0, "final_url": url, "redirected": False,
-           "ok": False, "docs_like": False, "error": ""}
+           "ok": False, "blocked": False, "docs_like": False, "error": ""}
     try:
         r = requests.get(url, timeout=HTTP_TIMEOUT, stream=True,
                          headers={"User-Agent": "Mozilla/5.0 (research-bot; "
@@ -52,6 +52,9 @@ def check_url(url: str) -> dict:
                 break
         r.close()
         out["ok"] = 200 <= r.status_code < 300
+        # 401/403/429 = a real endpoint that refuses automated fetches;
+        # tracked separately from dead links, not treated as a broken source.
+        out["blocked"] = r.status_code in (401, 403, 429)
         body = text.decode("utf-8", "ignore")
         out["docs_like"] = bool(API_WORDS.search(body[:200_000]))
     except requests.RequestException as e:
@@ -106,16 +109,22 @@ def verify_pass(n: int, csv_path) -> dict:
     with cf.ThreadPoolExecutor(HTTP_CONCURRENCY) as ex:
         checks = dict(zip(urls, ex.map(check_url, urls)))
 
-    per_row, n_live, n_dead = [], 0, 0
+    per_row, n_live, n_dead, n_blocked = [], 0, 0, 0
     for r in rows:
         evs = [dict(checks[u]) for u in split_evidence(r)]
-        live = [c for c in evs if c["ok"]]
         if evs:
-            n_live += 1 if any(c["ok"] for c in evs) else 0
-            n_dead += 0 if any(c["ok"] for c in evs) else 1
+            if any(c["ok"] for c in evs):
+                n_live += 1
+            elif any(c.get("blocked") for c in evs):
+                n_blocked += 1
+            else:
+                n_dead += 1
         r_flags = rule_check(r)
         if evs and not any(c["ok"] for c in evs):
-            r_flags.append("dead-evidence")
+            if any(c.get("blocked") for c in evs):
+                r_flags.append("evidence-bot-blocked")
+            else:
+                r_flags.append("dead-evidence")
         elif evs and not any(c["docs_like"] and c["ok"] for c in evs):
             r_flags.append("evidence-not-doc-like")
         per_row.append({"id": int(r["id"]), "name": r["name"],
@@ -127,6 +136,7 @@ def verify_pass(n: int, csv_path) -> dict:
         "rows": len(rows),
         "evidence_urls": len(urls),
         "rows_with_live_evidence": n_live,
+        "rows_bot_blocked": n_blocked,
         "rows_with_dead_evidence": n_dead,
         "flagged_rows": len(flagged),
         "clean_rows": len(rows) - len(flagged),
@@ -134,8 +144,8 @@ def verify_pass(n: int, csv_path) -> dict:
         "per_row": per_row,
     }
     write_json(VERIFY_JSON[n], result)
-    print(f"  live evidence: {n_live}/{len(rows)} rows | dead: {n_dead} | "
-          f"flagged: {len(flagged)} -> {VERIFY_JSON[n].name}")
+    print(f"  live evidence: {n_live}/{len(rows)} rows | bot-blocked: {n_blocked} "
+          f"| dead: {n_dead} | flagged: {len(flagged)} -> {VERIFY_JSON[n].name}")
     return result
 
 

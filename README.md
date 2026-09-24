@@ -75,6 +75,29 @@ out/    every intermediate artifact — draft, both verification passes,
 index.html  the deliverable (single file, zero external deps, works offline)
 ```
 
+## Two-minute walkthrough (for interviewers and the curious)
+
+1. **The ask.** Research 100 apps - auth, gating, API surface, MCP, verdict -
+   find the patterns, do it with an agent, and *prove* the accuracy.
+2. **The pipeline.** One command (`python src/run_all.py`) runs 14 stages: an
+   LLM drafts all 100 apps **from memory only** (the deliberately unverified
+   first pass), live HTTP checks + a rule engine verify every evidence URL, a
+   deep-dive agent fetches the real docs for flagged rows and extracts facts
+   with verbatim quotes, a human promotes corrections, and the whole pass is
+   re-verified and audited against a fixed 20-app ground truth.
+3. **The numbers.** First pass: **70%** field accuracy. After the loop:
+   **100%** on the same strict scorer. 911 corrections, each labeled with its
+   origin. 98/100 evidence links live (2 are real sources that 403 our
+   automated fetcher). 64/100 apps already in Composio's catalog - measured
+   live over Composio's MCP, which is why the build-shortlist is exactly 1 app.
+4. **The honesty.** The page shows every miss the auditor caught, states the
+   audit's limits (20 apps field-by-field, reviewer and auditor share
+   sources), and marks low-confidence rows instead of inventing answers.
+5. **Prove it yourself.** `python src/run_all.py --offline` rebuilds the page
+   from committed artifacts; `python src/smoke_test.py` re-checks every
+   invariant on this page; open `out/research_report.json` for the
+   machine-readable mirror.
+
 ## Honesty notes
 
 - Audit covers 20 apps field-by-field; the other 80 rows are verified by
