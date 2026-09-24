@@ -338,9 +338,11 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
       <li><b>Conflict resolution.</b> Docs, pricing pages and changelogs sometimes
         disagree (auth "deprecated but still working", MCP "announced but
         unreleased"). The agent flagged; the human decided.</li>
-      <li><b>The unreadable tail.</b> A few apps ({esc("Paygent Connect, iPayX, fanbasis")})
-        publish no usable public docs at all. The agent said so; the human
-        confirmed it is genuinely a dead end, not a parsing failure.</li>
+      <li><b>The unreadable tail.</b> fanbasis (now Commas) publishes no public
+        API docs at all - only a beta MCP mention on its homepage - and several
+        vendors (Lark, GoHighLevel) serve docs as client-rendered SPAs that
+        fetchers cannot read past. Those rows carry low confidence and a note
+        instead of invented answers.</li>
       <li><b>Verdict judgment.</b> "Ready with caveats" is an opinion. The agent
         proposed; the human owned the final call.</li>
       <li><b>Auth archaeology.</b> The provided Composio key is rejected by the
