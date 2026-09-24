@@ -59,26 +59,41 @@ OFFLINE = [
 ]
 
 
-def run(stage: list[str], allow_fail: bool = False) -> bool:
+def run(stage: list[str], allow_fail: bool = False, timings: list | None = None) -> bool:
     print(f"\n=== {' '.join(stage)} ===", flush=True)
     t0 = time.time()
     r = subprocess.run([PY, *stage], cwd=SRC)
-    print(f"--- {'OK' if r.returncode == 0 else 'FAILED'} "
-          f"in {time.time() - t0:.1f}s ---", flush=True)
+    dt = time.time() - t0
+    print(f"--- {'OK' if r.returncode == 0 else 'FAILED'} in {dt:.1f}s ---", flush=True)
+    if timings is not None:
+        timings.append({"stage": " ".join(stage), "seconds": round(dt, 1),
+                        "ok": r.returncode == 0})
     if r.returncode != 0 and not allow_fail:
         sys.exit(r.returncode)
     return r.returncode == 0
 
 
 def main() -> None:
+    import datetime as dt
+    import json
+
+    from config import OUT
     offline = "--offline" in sys.argv
     t0 = time.time()
     plan = OFFLINE if offline else STAGES
     print(f"research pipeline - {'OFFLINE (committed artifacts)' if offline else 'FULL'} "
           f"run, {len(plan)} stages")
+    timings = []
     for stage, _ in plan:
         allow = any(s in stage[0] for s in ("composio_check.py", "research.py"))
-        run(stage, allow_fail=allow)
+        run(stage, allow_fail=allow, timings=timings)
+    OUT.mkdir(exist_ok=True)
+    (OUT / "run_meta.json").write_text(json.dumps({
+        "mode": "offline" if offline else "full",
+        "finished": dt.datetime.now().isoformat(timespec="seconds"),
+        "duration_seconds": round(time.time() - t0, 1),
+        "stages": timings,
+    }, indent=2), encoding="utf-8")
     print(f"\nDone in {time.time() - t0:.1f}s -> index.html + out/* + data/*")
 
 

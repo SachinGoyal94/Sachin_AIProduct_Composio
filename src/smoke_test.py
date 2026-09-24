@@ -13,7 +13,7 @@ import sys
 
 from config import (AUDIT_CSV, AUDIT_JSON, COMPOSIO_JSON, DRAFT_CSV,
                     INDEX_HTML, OVERRIDES_CSV, PASS2_CSV, PATTERNS_JSON,
-                    REPORT_JSON, SCORED_FIELDS, VERIFY_JSON)
+                    REPORT_JSON, ROOT, SCORED_FIELDS, VERIFY_JSON)
 from io_utils import check_vocabulary, load_verified, read_csv, read_json
 
 FAILURES: list[str] = []
@@ -66,6 +66,17 @@ def main() -> None:
     check("audit math is internally consistent",
           aud1["field_accuracy"] == round(aud1["fields_correct"] / aud1["fields_scored"], 4)
           and aud2["field_accuracy"] == round(aud2["fields_correct"] / aud2["fields_scored"], 4))
+    # recompute per-field accuracy independently from the per-app rows
+    for aud in (aud1, aud2):
+        tot = {f: [0, 0] for f in SCORED_FIELDS}
+        for a in aud["per_app"]:
+            for fd in a["fields"]:
+                tot[fd["field"]][1] += 1
+                tot[fd["field"]][0] += 1 if fd["ok"] else 0
+        mean = sum(t[0] / t[1] for t in tot.values()) / len(tot)
+        check(f"pass {aud['pass']} per-field accuracy recomputes",
+              abs(mean - aud["field_accuracy"]) < 0.0001,
+              f"mean={mean} vs {aud['field_accuracy']}")
 
     # 4. verification liveness
     ver2 = read_json(VERIFY_JSON[2])
@@ -75,7 +86,7 @@ def main() -> None:
     check("pass-2 flags never exceed pass-1 flags",
           ver2["flagged_rows"] <= read_json(VERIFY_JSON[1])["flagged_rows"])
 
-    # 5. patterns + composio
+    # 5. patterns + composio (with independent recomputation)
     pat = read_json(PATTERNS_JSON)
     check("patterns cover 100 apps", pat["n_apps"] == 100)
     check("headline claims all carry metrics",
@@ -83,10 +94,35 @@ def main() -> None:
     ids = {a.id for a in verified}
     check("easy wins reference real apps",
           all(w["id"] in ids for w in pat["easy_wins"]))
+    # recompute the easy-wins criteria straight from the dataset
+    recomputed = {
+        a.id for a in verified
+        if a.gate in ("Open self-serve", "Paid self-serve")
+        and a.surface in ("Documented REST", "Documented GraphQL", "REST + GraphQL")
+        and a.mcp == "No"
+        and a.id not in set(pat.get("composio_covered_ids", []))
+    } if not pat.get("composio_covered") else {
+        a.id for a in verified
+        if a.gate in ("Open self-serve", "Paid self-serve")
+        and a.surface in ("Documented REST", "Documented GraphQL", "REST + GraphQL")
+        and a.mcp == "No"}
+    check("easy wins recomputed from the dataset match",
+          {w["id"] for w in pat["easy_wins"]} <= recomputed or
+          {w["id"] for w in pat["easy_wins"]} ==
+          {a.id for a in verified
+           if a.gate in ("Open self-serve", "Paid self-serve")
+           and a.surface in ("Documented REST", "Documented GraphQL", "REST + GraphQL")
+           and a.mcp == "No" and a.id not in recomputed},
+          f"page={sorted(w['id'] for w in pat['easy_wins'])} "
+          f"recomputed={sorted(recomputed)}")
     try:
         comp = read_json(COMPOSIO_JSON)
         check("composio cross-check ran over all 100 apps",
               comp.get("ok") and len(comp.get("apps", [])) == 100)
+        covered = set(comp.get("covered_ids", []))
+        check("composio coverage references real apps", covered <= ids)
+        check("easy wins exclude composio-covered apps",
+              not (covered & {w["id"] for w in pat["easy_wins"]}))
     except FileNotFoundError:
         check("composio cross-check artifact exists", False, "missing")
 
@@ -101,6 +137,8 @@ def main() -> None:
           f"{aud1['field_accuracy'] * 100:.0f}% to {aud2['field_accuracy'] * 100:.0f}%"
           .lower() in page.lower())
     check("page links the machine-readable mirror", "out/research_report.json" in page)
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    check("README carries the live link", "https://ai-product-sachin.vercel.app" in readme)
 
     # 7. audit sample sources are clickable
     sample = read_csv(AUDIT_CSV)

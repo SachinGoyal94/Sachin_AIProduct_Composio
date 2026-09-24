@@ -1203,13 +1203,13 @@
         },
         {
           "url": "https://docs.mrscraper.com/docs/api/authentication",
-          "status": 200,
+          "status": 0,
           "final_url": "https://docs.mrscraper.com/docs/api/authentication",
           "redirected": false,
-          "ok": true,
+          "ok": false,
           "blocked": false,
-          "docs_like": true,
-          "error": ""
+          "docs_like": false,
+          "error": "SSLError: HTTPSConnectionPool(host='docs.mrscraper.com', port=443): Max retries exceeded with url: /docs/api/authentication (Caused by SSLError(SSLEOFError(8, '"
         }
       ],
       "flags": []

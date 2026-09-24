@@ -1,6 +1,6 @@
 {
   "schema": "composio-case-study/1.0",
-  "generated": "2026-09-25T03:17:54",
+  "generated": "2026-09-25T03:31:05",
   "meta": {
     "apps": 100,
     "categories": 10,
@@ -9,11 +9,11 @@
       "calls": 10,
       "rows": 100,
       "mode": "memory-only (no web access)",
-      "generated": "2026-09-25T03:01:35",
+      "generated": "2026-09-25T03:28:47",
       "fresh": false
     },
     "overrides_promoted": 911,
-    "research_proposals": 38,
+    "research_proposals": 39,
     "claim": "Every number on the page is computed from the pipeline artifacts; this JSON mirrors the page for agents."
   },
   "verification": [
@@ -21,14 +21,14 @@
       "pass": 1,
       "rows": 100,
       "evidence_urls": 100,
-      "rows_with_live_evidence": 89,
-      "rows_with_dead_evidence": 8,
-      "flagged_rows": 38,
-      "clean_rows": 62,
+      "rows_with_live_evidence": 87,
+      "rows_with_dead_evidence": 10,
+      "flagged_rows": 39,
+      "clean_rows": 61,
       "flag_counts": {
         "evidence-not-docs-host": 21,
         "evidence-not-doc-like": 16,
-        "dead-evidence": 8,
+        "dead-evidence": 10,
         "evidence-bot-blocked": 3,
         "contradiction:no-auth-but-api": 2,
         "contradiction:auth-none-but-api": 2,
@@ -792,7 +792,7 @@
     ]
   },
   "composio": {
-    "generated": "2026-09-25T03:03:35",
+    "generated": "2026-09-25T03:31:01",
     "ok": true,
     "method": "Composio MCP (connect.composio.dev/mcp) - COMPOSIO_SEARCH_TOOLS x100",
     "error": "",

@@ -2,15 +2,15 @@
   "pass": 1,
   "rows": 100,
   "evidence_urls": 100,
-  "rows_with_live_evidence": 89,
+  "rows_with_live_evidence": 87,
   "rows_bot_blocked": 3,
-  "rows_with_dead_evidence": 8,
-  "flagged_rows": 38,
-  "clean_rows": 62,
+  "rows_with_dead_evidence": 10,
+  "flagged_rows": 39,
+  "clean_rows": 61,
   "flag_counts": {
     "evidence-not-docs-host": 21,
     "evidence-not-doc-like": 16,
-    "dead-evidence": 8,
+    "dead-evidence": 10,
     "evidence-bot-blocked": 3,
     "contradiction:no-auth-but-api": 2,
     "contradiction:auth-none-but-api": 2,
@@ -961,16 +961,18 @@
       "evidence": [
         {
           "url": "https://docs.mrscraper.com/",
-          "status": 200,
-          "final_url": "https://docs.mrscraper.com/docs/getting-started/overview",
-          "redirected": true,
-          "ok": true,
+          "status": 0,
+          "final_url": "https://docs.mrscraper.com/",
+          "redirected": false,
+          "ok": false,
           "blocked": false,
-          "docs_like": true,
-          "error": ""
+          "docs_like": false,
+          "error": "SSLError: HTTPSConnectionPool(host='docs.mrscraper.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WH"
         }
       ],
-      "flags": []
+      "flags": [
+        "dead-evidence"
+      ]
     },
     {
       "id": 55,
@@ -1797,17 +1799,18 @@
       "evidence": [
         {
           "url": "https://grain.com",
-          "status": 200,
-          "final_url": "https://grain.com/",
-          "redirected": true,
-          "ok": true,
+          "status": 0,
+          "final_url": "https://grain.com",
+          "redirected": false,
+          "ok": false,
           "blocked": false,
-          "docs_like": true,
-          "error": ""
+          "docs_like": false,
+          "error": "SSLError: HTTPSConnectionPool(host='grain.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READI"
         }
       ],
       "flags": [
-        "evidence-not-docs-host"
+        "evidence-not-docs-host",
+        "dead-evidence"
       ]
     }
   ]

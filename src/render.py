@@ -12,7 +12,7 @@ from render_charts import (C, GATE_COLORS, GATE_SHORT, AUTH_COLORS,
 from render_css import CSS
 from config import (AUDIT_JSON, COMPOSIO_JSON, DRAFT_CSV, DRAFT_META,
                     INDEX_HTML, OVERRIDES_CSV, PASS2_CSV, PATTERNS_JSON,
-                    RESEARCH_DRAFTS, VERIFY_JSON)
+                    RESEARCH_DRAFTS, ROOT, SCORED_FIELDS, VERIFY_JSON)
 from io_utils import read_csv, read_json, split_evidence
 
 NAV = [("patterns", "Patterns"), ("matrix", "The 100 apps"),
@@ -84,6 +84,10 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
         composio = read_json(COMPOSIO_JSON)
     except FileNotFoundError:
         composio = {}
+    try:
+        run_meta = read_json(ROOT / "out" / "run_meta.json")
+    except FileNotFoundError:
+        run_meta = {}
     rows = build_rows(pass2, patterns)
     today = dt.date.today().isoformat()
 
@@ -246,8 +250,8 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
 <section id="matrix"><div class="wrap">
   <div class="shead"><div class="snum">02 — THE MATRIX</div>
     <h2>All 100 apps, skimmable in two minutes</h2>
-    <p class="slede">Sort, filter, search. Click any row for details and evidence.
-      Verdict: <b style="color:{C['ready']}">Ready</b> ·
+    <p class="slede">Sort, filter, search. Click any row for details, evidence
+      and verbatim docs quotes. Verdict: <b style="color:{C['ready']}">Ready</b> ·
       <b style="color:{C['caveat']}">Ready with caveats</b> ·
       <b style="color:{C['blocked']}">Blocked</b>. Tier S/A/B/C = composite
       toolkit-readiness (gating + API surface + MCP gap). Every app links to the
@@ -264,6 +268,9 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
       <option>No</option><option>Unclear</option></select>
     <select id="fTier"><option value="">Any tier</option>
       <option>S</option><option>A</option><option>B</option><option>C</option></select>
+    <select id="fConf"><option value="">Any confidence</option>
+      <option value="5">5 - certain</option><option value="4">≤ 4</option>
+      <option value="3">≤ 3 - uncertain</option><option value="2">≤ 2 - shaky</option></select>
     <button class="btn" id="csvBtn">Export CSV</button>
     <span class="count" id="count"></span>
   </div>
@@ -333,6 +340,11 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     The {n_over} corrections in data/overrides.csv, by origin: {src_line}.
     Every row of the ledger carries its own label - open it and check.</p>
   <div class="stages">{stages_html}</div>
+  <p style="margin:18px 0 0;font-size:12.5px;color:var(--faint);text-align:center">
+    Last pipeline run: {esc(str(run_meta.get('duration_seconds', '?')) + 's')} ·
+    {esc(str(run_meta.get('mode', '?')))} mode ·
+    {len(run_meta.get('stages', []))} stages · full timings in
+    <a href="out/run_meta.json">out/run_meta.json</a></p>
   <div class="callout amber"><h4>Where a human was needed - said plainly</h4>
     <ul>
       <li><b>Conflict resolution.</b> Docs, pricing pages and changelogs sometimes
@@ -384,6 +396,32 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
                 f"source returns 403 to automated fetchers (Salesforce, PitchBook); "
                 f"open the links in a browser and they work.")
 
+    # per-field accuracy, pass 1 vs pass 2 (which fields the loop fixed most)
+    def field_acc(aud):
+        tot = {f: [0, 0] for f in SCORED_FIELDS}
+        for a in aud["per_app"]:
+            for f in a["fields"]:
+                tot[f["field"]][1] += 1
+                tot[f["field"]][0] += 1 if f["ok"] else 0
+        return tot
+    fa1, fa2 = field_acc(aud1), field_acc(aud2)
+    field_rows = "".join(
+        f'<tr><td><code>{esc(f)}</code></td>'
+        f'<td><div style="display:flex;align-items:center;gap:8px">'
+        f'<div style="height:10px;border-radius:4px;background:{C["p1"]};'
+        f'width:{fa1[f][0] / fa1[f][1] * 130:.0f}px"></div>'
+        f'<span class="app-ct">{fa1[f][0]}/{fa1[f][1]}</span></div></td>'
+        f'<td><div style="display:flex;align-items:center;gap:8px">'
+        f'<div style="height:10px;border-radius:4px;background:{C["p2"]};'
+        f'width:{fa2[f][0] / fa2[f][1] * 130:.0f}px"></div>'
+        f'<span class="app-ct">{fa2[f][0]}/{fa2[f][1]}</span></div></td></tr>'
+        for f in SCORED_FIELDS)
+    field_table = (f'<table class="miss-table" style="margin-top:14px">'
+                   f'<thead><tr><th>Field</th><th>Pass 1</th><th>Pass 2</th>'
+                   f'</tr></thead><tbody>{field_rows}</tbody></table>'
+                   f'<div class="csub" style="margin-top:8px">Bar length = share of '
+                   f'correct fields on the 20-app gold sample, per pass.</div>')
+
     ver_sec = f"""
 <section id="verification"><div class="wrap">
   <div class="shead"><div class="snum">04 — VERIFICATION</div>
@@ -408,7 +446,8 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
     <div class="chart"><h4>Accuracy moved because of the loop</h4>
       <div class="csub">strict exact-match scoring on {aud1['sample_size']} apps ·
         {liveness}</div>
-      {svg_accuracy_bars(aud1, aud2)}</div>
+      {svg_accuracy_bars(aud1, aud2)}
+      {field_table}</div>
     <div class="chart"><h4>What the first pass got wrong
       (all {len(miss_rows)} audited misses)</h4>
       <div class="csub">draft answer → ground truth. The loop + human fixed them;
@@ -514,7 +553,31 @@ def render() -> None:  # noqa: C901 - one big template, sections labeled
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>100 Apps, Agent-Researched · AI Product Ops Case Study</title>
 <meta name="description" content="An agent researched auth, gating, API surface and MCP status of 100 SaaS apps; a verification loop and human review pushed audit accuracy from {pct(aud1['field_accuracy'])} to {pct(aud2['field_accuracy'])}.">
+<meta property="og:title" content="100 Apps, Agent-Researched · AI Product Ops Case Study">
+<meta property="og:description" content="One agent + one verification loop researched 100 SaaS apps across 10 categories. Strict ground-truth audit: {pct(aud1['field_accuracy'])} → {pct(aud2['field_accuracy'])}. Every claim sourced, every miss shown.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ai-product-sachin.vercel.app">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="100 Apps, Agent-Researched · AI Product Ops Case Study">
+<meta name="twitter:description" content="Auth, gating, API surface and MCP status of 100 SaaS apps - researched by an agent, verified live, audited to {pct(aud2['field_accuracy'])}.">
+<meta name="author" content="Sachin Goyal">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ea580c'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Georgia' font-weight='bold' text-anchor='middle' fill='white'%3E100%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{json.dumps({
+    "@context": "https://schema.org",
+    "@type": "Report",
+    "name": "100 Apps, Agent-Researched - AI Product Ops Case Study",
+    "author": {"@type": "Person", "name": "Sachin Goyal",
+               "email": "mailto:sachingoyal9274@gmail.com"},
+    "datePublished": today,
+    "inLanguage": "en",
+    "about": "API integration readiness of 100 SaaS apps: auth, gating, API surface, MCP coverage",
+    "measurementTechnique": ("LLM memory-only draft, live HTTP evidence verification, "
+                             "deep-dive quote-grounded extraction, human-promoted "
+                             "corrections, strict 20-app ground-truth audit"),
+    "encodingFormat": "text/html",
+}, ensure_ascii=False)}
+</script>
 <style>{CSS}</style>
 </head><body>
 <nav><div class="wrap"><span class="brand">app-research<span class="dot">/100</span></span>
@@ -554,7 +617,7 @@ MATRIX_JS = r"""
   var T_C = {"S":"#ea580c","A":"#2563eb","B":"#7c3aed","C":"#9ca3af"};
   var M_C = {"Yes (official)":"#ea580c","Yes (community)":"#d97706","No":"#d6d3d1",
     "Unclear":"#f5f5f4"};
-  var state = {q:"",cat:"",verdict:"",mcp:"",tier:"",k:"id",dir:1};
+  var state = {q:"",cat:"",verdict:"",mcp:"",tier:"",conf:"",k:"id",dir:1};
   var cats = []; DATA.forEach(function(r){if(cats.indexOf(r.category)<0)cats.push(r.category);});
   var chipbox = document.getElementById('cats');
   cats.forEach(function(c){
@@ -619,6 +682,7 @@ MATRIX_JS = r"""
       if(state.verdict&&r.verdict!==state.verdict)return false;
       if(state.mcp&&r.mcp!==state.mcp)return false;
       if(state.tier&&r.tier!==state.tier)return false;
+      if(state.conf&&r.confidence>parseInt(state.conf,10))return false;
       if(q){var hay=(r.name+' '+r.does+' '+r.auth+' '+r.auth_detail+' '+r.gate+' '+
         r.blocker+' '+r.surface+' '+r.category).toLowerCase();
         if(hay.indexOf(q)<0)return false;}
@@ -641,9 +705,9 @@ MATRIX_JS = r"""
     document.getElementById('count').textContent='showing '+rows.length+' of '+DATA.length;
   }
   document.getElementById('q').oninput=function(e){state.q=e.target.value;render();};
-  ['fVerdict','fMcp','fTier'].forEach(function(id){
+  ['fVerdict','fMcp','fTier','fConf'].forEach(function(id){
     document.getElementById(id).onchange=function(e){
-      state[{fVerdict:'verdict',fMcp:'mcp',fTier:'tier'}[id]]=e.target.value;render();};});
+      state[{fVerdict:'verdict',fMcp:'mcp',fTier:'tier',fConf:'conf'}[id]]=e.target.value;render();};});
   document.querySelectorAll('th[data-k]').forEach(function(th){
     th.onclick=function(){var k=th.dataset.k;
       state.dir=(state.k===k)?-state.dir:1;state.k=k;render();};});
