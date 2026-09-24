@@ -1,0 +1,803 @@
+{
+  "n_apps": 100,
+  "n_overrides_applied": 117,
+  "auth_dist": [
+    {
+      "value": "Bearer token",
+      "count": 36,
+      "pct": 36.0
+    },
+    {
+      "value": "OAuth2",
+      "count": 26,
+      "pct": 26.0
+    },
+    {
+      "value": "API key",
+      "count": 25,
+      "pct": 25.0
+    },
+    {
+      "value": "Basic",
+      "count": 7,
+      "pct": 7.0
+    },
+    {
+      "value": "None",
+      "count": 3,
+      "pct": 3.0
+    },
+    {
+      "value": "HMAC",
+      "count": 2,
+      "pct": 2.0
+    },
+    {
+      "value": "JWT",
+      "count": 1,
+      "pct": 1.0
+    }
+  ],
+  "gate_dist": [
+    {
+      "value": "Self-serve",
+      "count": 59,
+      "pct": 59.0
+    },
+    {
+      "value": "Gated",
+      "count": 22,
+      "pct": 22.0
+    },
+    {
+      "value": "Open",
+      "count": 10,
+      "pct": 10.0
+    },
+    {
+      "value": "Self-serve (paid)",
+      "count": 9,
+      "pct": 9.0
+    }
+  ],
+  "verdict_dist": [
+    {
+      "value": "Ready",
+      "count": 68,
+      "pct": 68.0
+    },
+    {
+      "value": "Ready with caveats",
+      "count": 20,
+      "pct": 20.0
+    },
+    {
+      "value": "Blocked",
+      "count": 12,
+      "pct": 12.0
+    }
+  ],
+  "mcp_dist": [
+    {
+      "value": "Yes",
+      "count": 72,
+      "pct": 72.0
+    },
+    {
+      "value": "No",
+      "count": 28,
+      "pct": 28.0
+    }
+  ],
+  "surface_dist": [
+    {
+      "value": "Full REST",
+      "count": 63,
+      "pct": 63.0
+    },
+    {
+      "value": "Narrow REST",
+      "count": 27,
+      "pct": 27.0
+    },
+    {
+      "value": "None documented",
+      "count": 5,
+      "pct": 5.0
+    },
+    {
+      "value": "GraphQL",
+      "count": 4,
+      "pct": 4.0
+    },
+    {
+      "value": "SDK/CLI only",
+      "count": 1,
+      "pct": 1.0
+    }
+  ],
+  "auth_by_gate": {
+    "OAuth2": {
+      "Gated": 12,
+      "Self-serve": 14
+    },
+    "API key": {
+      "Self-serve": 18,
+      "Gated": 4,
+      "Self-serve (paid)": 3
+    },
+    "Bearer token": {
+      "Self-serve": 21,
+      "Open": 7,
+      "Gated": 4,
+      "Self-serve (paid)": 4
+    },
+    "Basic": {
+      "Gated": 1,
+      "Self-serve": 5,
+      "Self-serve (paid)": 1
+    },
+    "HMAC": {
+      "Open": 1,
+      "Self-serve": 1
+    },
+    "None": {
+      "Open": 2,
+      "Gated": 1
+    },
+    "JWT": {
+      "Self-serve (paid)": 1
+    }
+  },
+  "gate_by_category": {
+    "CRM and Sales": {
+      "Gated": 2,
+      "Self-serve": 7,
+      "Open": 1
+    },
+    "Support and Helpdesk": {
+      "Self-serve": 7,
+      "Gated": 3
+    },
+    "Communications and Messaging": {
+      "Self-serve": 7,
+      "Open": 2,
+      "Gated": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "Gated": 4,
+      "Self-serve": 6
+    },
+    "Ecommerce": {
+      "Self-serve": 4,
+      "Open": 3,
+      "Gated": 3
+    },
+    "Data, SEO and Scraping": {
+      "Self-serve (paid)": 5,
+      "Gated": 1,
+      "Self-serve": 3,
+      "Open": 1
+    },
+    "Developer, Infra and Data platforms": {
+      "Open": 2,
+      "Self-serve": 7,
+      "Self-serve (paid)": 1
+    },
+    "Productivity and Project Management": {
+      "Self-serve": 10
+    },
+    "Finance and Fintech": {
+      "Self-serve": 4,
+      "Gated": 6
+    },
+    "AI, Research and Media-native": {
+      "Gated": 2,
+      "Self-serve": 4,
+      "Self-serve (paid)": 3,
+      "Open": 1
+    }
+  },
+  "mcp_by_category": {
+    "CRM and Sales": {
+      "Yes": 8,
+      "No": 2
+    },
+    "Support and Helpdesk": {
+      "Yes": 7,
+      "No": 3
+    },
+    "Communications and Messaging": {
+      "Yes": 9,
+      "No": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "Yes": 10
+    },
+    "Ecommerce": {
+      "Yes": 6,
+      "No": 4
+    },
+    "Data, SEO and Scraping": {
+      "No": 5,
+      "Yes": 5
+    },
+    "Developer, Infra and Data platforms": {
+      "Yes": 9,
+      "No": 1
+    },
+    "Productivity and Project Management": {
+      "Yes": 10
+    },
+    "Finance and Fintech": {
+      "Yes": 2,
+      "No": 8
+    },
+    "AI, Research and Media-native": {
+      "No": 4,
+      "Yes": 6
+    }
+  },
+  "blocker_themes": [
+    {
+      "theme": "Paid plan required",
+      "count": 9,
+      "examples": [
+        "Salesforce: Developer org signup is free but API access needs Enterprise/Unlimited edition",
+        "LiveAgent: API keys via agent dashboard; free plan lacks API",
+        "Gorgias: Paid plans only; trial requires demo call",
+        "Zoho Cliq: Docs are fine but deep features need Zoho bundle"
+      ]
+    },
+    {
+      "theme": "App review / approval",
+      "count": 9,
+      "examples": [
+        "WhatsApp Business: Meta app review + business verification for production",
+        "Google Ads: Developer-token approval process; basic access is slow to get",
+        "Meta Ads: App review + business verification for advanced access",
+        "LinkedIn Ads: Marketing API access requires approved LinkedIn partner application"
+      ]
+    },
+    {
+      "theme": "Partnership / contact-sales",
+      "count": 6,
+      "examples": [
+        "DealCloud: Vendor onboarding; API credentials provisioned by admin/Intapp",
+        "Pylon: Product is sales-led; API docs public, keys via dashboard",
+        "Gladly: Sales-led onboarding; API credentials via CSM",
+        "Fanbasis: API docs live but behind a login wall; access requires partnership"
+      ]
+    },
+    {
+      "theme": "Thin API surface / docs",
+      "count": 5,
+      "examples": [
+        "Podio: Aging API; app-auth model adds friction",
+        "Gumroad: Small API surface, sparse docs",
+        "Sherlock: CLI/Python tool, not an API; wrap locally",
+        "Snowflake: SQL-over-REST only; SDKs do the heavy lifting"
+      ]
+    },
+    {
+      "theme": "Admin / instance needed",
+      "count": 2,
+      "examples": [
+        "Salesforce Commerce Cloud: Requires an SFCC instance; no self-serve sandbox",
+        "Brex: Customer token needs Brex dashboard admin"
+      ]
+    },
+    {
+      "theme": "Other",
+      "count": 1,
+      "examples": [
+        "iPayX: No public API docs; contact-sales only"
+      ]
+    }
+  ],
+  "verdict_flips": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "from": "Ready",
+      "to": "Ready with caveats"
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "from": "Ready with caveats",
+      "to": "Ready"
+    },
+    {
+      "id": 37,
+      "name": "Systeme.io",
+      "from": "Ready with caveats",
+      "to": "Ready"
+    },
+    {
+      "id": 54,
+      "name": "MrScraper",
+      "from": "Ready with caveats",
+      "to": "Ready"
+    },
+    {
+      "id": 59,
+      "name": "Waterfall",
+      "from": "Blocked",
+      "to": "Ready"
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "from": "Ready with caveats",
+      "to": "Ready"
+    },
+    {
+      "id": 94,
+      "name": "Consensus",
+      "from": "Ready with caveats",
+      "to": "Ready"
+    }
+  ],
+  "n_flips": 7,
+  "easy_wins": [
+    {
+      "id": 93,
+      "name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "auth": "API key"
+    },
+    {
+      "id": 94,
+      "name": "Consensus",
+      "category": "AI, Research and Media-native",
+      "auth": "API key"
+    },
+    {
+      "id": 95,
+      "name": "Reducto",
+      "category": "AI, Research and Media-native",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 96,
+      "name": "Devin",
+      "category": "AI, Research and Media-native",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 99,
+      "name": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "auth": "API key"
+    },
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "category": "CRM and Sales",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 3,
+      "name": "Pipedrive",
+      "category": "CRM and Sales",
+      "auth": "API key"
+    },
+    {
+      "id": 4,
+      "name": "Attio",
+      "category": "CRM and Sales",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 7,
+      "name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 8,
+      "name": "Close",
+      "category": "CRM and Sales",
+      "auth": "API key"
+    },
+    {
+      "id": 9,
+      "name": "Copper",
+      "category": "CRM and Sales",
+      "auth": "API key"
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "category": "Communications and Messaging",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "category": "Communications and Messaging",
+      "auth": "Basic"
+    },
+    {
+      "id": 24,
+      "name": "Lark",
+      "category": "Communications and Messaging",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "category": "Communications and Messaging",
+      "auth": "API key"
+    },
+    {
+      "id": 29,
+      "name": "Aircall",
+      "category": "Communications and Messaging",
+      "auth": "Basic"
+    },
+    {
+      "id": 30,
+      "name": "Vonage",
+      "category": "Communications and Messaging",
+      "auth": "Basic"
+    },
+    {
+      "id": 55,
+      "name": "Apify",
+      "category": "Data, SEO and Scraping",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 57,
+      "name": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 60,
+      "name": "Clay",
+      "category": "Data, SEO and Scraping",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 62,
+      "name": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 64,
+      "name": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 65,
+      "name": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "auth": "API key"
+    },
+    {
+      "id": 68,
+      "name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 69,
+      "name": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "auth": "API key"
+    },
+    {
+      "id": 70,
+      "name": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 41,
+      "name": "Shopify",
+      "category": "Ecommerce",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 46,
+      "name": "Squarespace",
+      "category": "Ecommerce",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 47,
+      "name": "Ecwid",
+      "category": "Ecommerce",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 81,
+      "name": "Stripe",
+      "category": "Finance and Fintech",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "auth": "Basic"
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "auth": "API key"
+    },
+    {
+      "id": 37,
+      "name": "Systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "auth": "API key"
+    },
+    {
+      "id": 38,
+      "name": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 71,
+      "name": "Notion",
+      "category": "Productivity and Project Management",
+      "auth": "OAuth2"
+    },
+    {
+      "id": 72,
+      "name": "Airtable",
+      "category": "Productivity and Project Management",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 73,
+      "name": "Linear",
+      "category": "Productivity and Project Management",
+      "auth": "API key"
+    },
+    {
+      "id": 74,
+      "name": "Jira",
+      "category": "Productivity and Project Management",
+      "auth": "Basic"
+    },
+    {
+      "id": 75,
+      "name": "Asana",
+      "category": "Productivity and Project Management",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 76,
+      "name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 77,
+      "name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 78,
+      "name": "Coda",
+      "category": "Productivity and Project Management",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 79,
+      "name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "category": "Productivity and Project Management",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "category": "Support and Helpdesk",
+      "auth": "Bearer token"
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "auth": "API key"
+    },
+    {
+      "id": 14,
+      "name": "Front",
+      "category": "Support and Helpdesk",
+      "auth": "API key"
+    },
+    {
+      "id": 17,
+      "name": "Plain",
+      "category": "Support and Helpdesk",
+      "auth": "API key"
+    }
+  ],
+  "needs_outreach": [
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "blocker": "No public API; enterprise-only via Gemini/Vertex waitlist"
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "blocker": "Toolkit building limited to Otter's MCP server; custom API integrations enterprise-only"
+    },
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "category": "CRM and Sales",
+      "blocker": "Developer org signup is free but API access needs Enterprise/Unlimited edition"
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "category": "CRM and Sales",
+      "blocker": "Vendor onboarding; API credentials provisioned by admin/Intapp"
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "blocker": "Meta app review + business verification for production"
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "blocker": "API v3 needs Enterprise plan or paid API units"
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "blocker": "Requires an SFCC instance; no self-serve sandbox"
+    },
+    {
+      "id": 49,
+      "name": "Amazon SP-API",
+      "category": "Ecommerce",
+      "blocker": "Developer registration requires professional seller account + vetting"
+    },
+    {
+      "id": 50,
+      "name": "Fanbasis",
+      "category": "Ecommerce",
+      "blocker": "API docs live but behind a login wall; access requires partnership"
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "category": "Finance and Fintech",
+      "blocker": "Sandbox instant; production needs company verification"
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "blocker": "NMI partner onboarding; no public self-serve signup"
+    },
+    {
+      "id": 85,
+      "name": "iPayX",
+      "category": "Finance and Fintech",
+      "blocker": "No public API docs; contact-sales only"
+    },
+    {
+      "id": 88,
+      "name": "Brex",
+      "category": "Finance and Fintech",
+      "blocker": "Customer token needs Brex dashboard admin"
+    },
+    {
+      "id": 89,
+      "name": "Ramp",
+      "category": "Finance and Fintech",
+      "blocker": "Account admin must create client; business verification"
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "category": "Finance and Fintech",
+      "blocker": "Subscription research product; API is partner-gated"
+    },
+    {
+      "id": 31,
+      "name": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "blocker": "Developer-token approval process; basic access is slow to get"
+    },
+    {
+      "id": 32,
+      "name": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "blocker": "App review + business verification for advanced access"
+    },
+    {
+      "id": 33,
+      "name": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "blocker": "Marketing API access requires approved LinkedIn partner application"
+    },
+    {
+      "id": 39,
+      "name": "Threads",
+      "category": "Marketing, Ads, Email and Social",
+      "blocker": "App review for production; publishing-only scope"
+    },
+    {
+      "id": 15,
+      "name": "Pylon",
+      "category": "Support and Helpdesk",
+      "blocker": "Product is sales-led; API docs public, keys via dashboard"
+    },
+    {
+      "id": 19,
+      "name": "Gorgias",
+      "category": "Support and Helpdesk",
+      "blocker": "Paid plans only; trial requires demo call"
+    },
+    {
+      "id": 20,
+      "name": "Gladly",
+      "category": "Support and Helpdesk",
+      "blocker": "Sales-led onboarding; API credentials via CSM"
+    }
+  ]
+}
